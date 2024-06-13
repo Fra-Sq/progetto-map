@@ -82,9 +82,9 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         use.setAlias(new String[]{"utilizza", "combina"});
         getCommands().add(use);
         //Rooms
-        Room portal = new Room(0, "Sala del portale", "La sala della navicella aliena è circolare e illuminata da una luce soffusa." +
+        Room portalRoom = new Room(0, "Sala del portale", "La sala della navicella aliena è circolare e illuminata da una luce soffusa." +
                 "\nAl centro, un portale scintillante fluttua, circondato da rune luminose. Pannelli di controllo e cavi collegano il portale a macchinari misteriosi. \nDevi attraversare il portale per scappare.");
-        portal.setLook("Sei nella sala del portale, il portale è l'unico modo per scappare ma non è attivo. \nAd EST vedi un corridoio.");
+        portalRoom.setLook("Sei nella sala del portale, il portale è l'unico modo per scappare ma non è attivo. \nAd EST vedi un corridoio.");
         Room corridor = new Room(1, "Corridoio", "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
         corridor.setLook("Sei nel corridoio, vedi che continua verso EST e noti una presa d’aria sul muro, senti dei passi venire verso di te.");
         Room corridor2 = new Room(2, "Corridoio", "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
@@ -111,9 +111,9 @@ public class FireHouseGame extends GameDescription implements GameObservable {
 
 
         //map
-        portal.setEast(corridor);
+        portalRoom.setEast(corridor);
         corridor.setEast(corridor2);
-        corridor.setWest(portal);
+        corridor.setWest(portalRoom);
         corridor2.setSouth(corridor3);
         corridor2.setNorth(controlRoom);
         corridor2.setWest(corridor);
@@ -133,7 +133,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         anteroom.setSouth(archive);
         anteroom.setNorth(corridor5);
         archive.setNorth(anteroom);
-        getRooms().add(portal);
+        getRooms().add(portalRoom);
         getRooms().add(corridor);
         getRooms().add(corridor2);
         getRooms().add(corridor3);
@@ -146,25 +146,45 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         getRooms().add(armory);
         getRooms().add(engineRoom);
         //obejcts
-        AdvObject battery = new AdvObject(1, "batteria", "Un pacco di batterie, chissà se sono cariche.");
-        battery.setAlias(new String[]{"batterie", "pile", "pila"});
-        bathroom.getObjects().add(battery);
-        AdvObjectContainer wardrobe = new AdvObjectContainer(2, "armadio", "Un semplice armadio.");
-        wardrobe.setAlias(new String[]{"guardaroba", "vestiario"});
-        wardrobe.setOpenable(false);
-        wardrobe.setPickupable(false);
-        wardrobe.setOpen(false);
-        yourRoom.getObjects().add(wardrobe);
-        AdvObject toy = new AdvObject(3, "giocattolo", "Il gioco che ti ha regalato zia Lina.");
-        toy.setAlias(new String[]{"gioco", "robot"});
-        toy.setPushable(false);
-        toy.setPush(false);
-        wardrobe.add(toy);
-        AdvObject kkey = new AdvObject(4, "chiave", "Usa semplice chiave come tante altre.");
-        kkey.setAlias(new String[]{"key"});
-        kkey.setPushable(false);
-        kkey.setPush(false);
-        kitchen.getObjects().add(kkey);
+        AdvObject portal = new AdvObject(1, "portale", "Un portale scintillante fluttua, circondato da rune luminose.");
+        portal.setAlias(new String[]{"portal"});
+        portal.setOpenable(true);
+        portalRoom.getObjects().add(portal);
+        AdvObject controlPanel = new AdvObject(2, "pannelli di controllo", "Schermi e console con interfacce aliene, pulsanti luminosi e ologrammi interattivi.");
+        controlPanel.setAlias(new String[]{"pannello", "console", "schermi", "console di controllo"});
+        controlPanel.setPushable(true);
+        portalRoom.getObjects().add(controlPanel);
+        AdvObject alien = new AdvObject(3, "alieno", "Un alieno gigante dormiente, ha qualcosa tatuato su uno dei suoi tentacoli.");
+        alien.setAlias(new String[]{"gigante", "mostro", "essere", "alieno gigante"});
+        anteroom.getObjects().add(alien);
+        AdvObjectContainer safe = new AdvObjectContainer(4, "cassaforte", "Una cassaforte con un pannello di controllo, \nnecessita di uuna chiave per poter essere aperta.");
+        safe.setAlias(new String[]{"cassa", "cassaforte"});
+        safe.setOpenable(true);
+        controlRoom.getObjects().add(safe);
+        AdvObject key = new AdvObject(5, "chiave", "Una chiave magnetica, potrebbe aprire la cassaforte.");
+        key.setAlias(new String[]{"tessera", "carta", "magnetica"});
+        key.setPickupable(true);
+        AdvObject gem = new AdvObject(6, "gemma", "Una gemma scintillante, sembra avere un potere magico.");
+        gem.setAlias(new String[]{"pietra", "sasso", "cristallo"});
+        gem.setPickupable(true);
+        safe.add(gem); //inseritaa la gemma all'interno della cassa forte
+        AdvObjectContainer table = new AdvObjectContainer(7, "tavolo", "Un tavolo di lavoro interattivo con strumenti scientifici avanzati.");
+        table.setAlias(new String[]{"tavolo di lavoro", "banco", "scrivania"});
+        table.setOpenable(false);
+        lab.getObjects().add(table);
+        table.add(key); //aggiunta la chiave sul tavolo
+        AdvObject sword = new AdvObject(8, "spada", "Una spada affilata, sembra essere di origine terrestre.");
+        sword.setAlias(new String[]{"arma", "spadone", "falcione"});
+        sword.setPickupable(true);
+        armory.getObjects().add(sword);
+        AdvObjectContainer door = new AdvObjectContainer(9, "porta", "Una porta rinforzata, sembra essere l'uscita.");
+        door.setAlias(new String[]{"uscita", "portone", "porta rinforzata"});
+        door.setOpenable(true);
+        corridor4.getObjects().add(door);
+        AdvObject vent = new AdvObject(10, "presadaria", "Una presa d’aria sul muro.");
+        vent.setAlias(new String[]{"presadaria", "presad'aria", "presad'aria", "condotto"});
+        vent.setPushable(true);
+        corridor.getObjects().add(vent);
         //Observer
         GameObserver moveObserver = new MoveObserver();
         this.attach(moveObserver);
@@ -181,7 +201,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         GameObserver useObserver = new UseObserver();
         this.attach(useObserver);
         //set starting room
-        setCurrentRoom(portal);
+        setCurrentRoom(portalRoom);
     }
 
     /**
