@@ -270,7 +270,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
      */
     @Override
     public String getWelcomeMsg() {
-        return "Sei appena tornato a casa e non sai cosa fare.\nTi ricordi che non hai ancora utilizzato quel fantastico regalo di tua zia Lina.\n"
-                + "Sarà il caso di cercarlo e di giocarci!";
+        return "Eri stato catturato da alcuni mercenari alieni ingaggiati da un collezionista galattico, ma sei riuscito a scappare dalla tua cella," + 
+            "sei riuscito ad arrivare al sistema di teletrasporto installato sulla nave, ma il portale è spento.";
     }
 }
