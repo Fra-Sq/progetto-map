@@ -20,6 +20,8 @@ public class AdvObject {
     private String name;
 
     private String description;
+
+    private String contents;
     
     private Set<String> alias;
 
@@ -32,6 +34,12 @@ public class AdvObject {
     private boolean open = false;
 
     private boolean push = false;
+
+    private boolean creature = false;
+
+    private boolean living = false;
+
+    private boolean readable = false;
 
     /**
      *
@@ -225,6 +233,54 @@ public class AdvObject {
      *
      * @return
      */
+    public boolean isCreature() { return creature; }
+
+    /**
+     *
+     * @param creature
+     */
+    public void setCreature(boolean creature) { this.creature = creature; this.living = true; }
+
+    /**
+     *
+     * @return
+     */
+    public boolean isLiving() { return living; }
+
+    /**
+     *
+     * @param living
+     */
+    public void setLiving(boolean living) { this.living = living; }
+
+    /**
+     *
+     * @return readable
+     */
+    public boolean isReadable() { return this.readable; }
+
+    /**
+     *
+     * @param readable
+     */
+    public void setReadable(boolean readable) { this.readable = readable; }
+
+    /**
+     *
+     * @param contents
+     */
+    public void setContents(String contents) { this.contents = contents; }
+
+    /**
+     *
+     * @return contents
+     */
+    public String getContents() { return this.contents; }
+
+    /**
+     *
+     * @return
+     */
     @Override
     public int hashCode() {
         int hash = 7;
@@ -254,5 +310,6 @@ public class AdvObject {
         }
         return true;
     }
+
 
 }
