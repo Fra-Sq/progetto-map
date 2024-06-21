@@ -61,7 +61,7 @@ public class OpenObserver implements GameObserver {
                     }
                 }
                 if (parserOutput.getInvObject() != null) {
-                    if (parserOutput.getInvObject().isOpenable() && parserOutput.getInvObject().isOpen() == false) {
+                    if (parserOutput.getInvObject().isOpenable() && !parserOutput.getInvObject().isOpen()) {
                         if (parserOutput.getInvObject() instanceof AdvObjectContainer) {
                             AdvObjectContainer c = (AdvObjectContainer) parserOutput.getInvObject();
                             if (!c.getList().isEmpty()) {

@@ -40,7 +40,7 @@ public class Engine {
             System.err.println(ex);
         }
         try {
-            Set<String> stopwords = Utils.loadFileListInSet(new File("./resources/stopwords"));
+            Set<String> stopwords = Utils.loadFileListInSet(new File("adventure/resources/stopwords"));
             parser = new Parser(stopwords);
         } catch (IOException ex) {
             System.err.println(ex);
@@ -51,14 +51,15 @@ public class Engine {
      *
      */
     public void execute() {
+        System.out.println("====================================");
+        System.out.println("* Space Adventure V1.0 - 2023-2024 *");
+        System.out.println("*           developed by           *");
+        System.out.println("*           Russo Nicola           *");
+        System.out.println("*        Scarale Francesco         *");
+        System.out.println("* Squarcella-Gorgoglione Francesco *");
+        System.out.println("====================================");
+      
         PlayTime.startGame();
-        System.out.println("================================================");
-        System.out.println("*      Adventure v. 0.4 - 2023-2024            *");
-        System.out.println("*               developed by                   *");
-        System.out.println("*       Scarale Francescopio                   *");
-        System.out.println("*       Russo Nicola                           *");
-        System.out.println("*       Squarcella Gorgoglione Francesco Pio   *");
-        System.out.println("================================================");
         System.out.println();
         System.out.println(game.getWelcomeMsg());
         System.out.println();
