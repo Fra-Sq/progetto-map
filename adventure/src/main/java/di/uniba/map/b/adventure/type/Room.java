@@ -245,5 +245,21 @@ public class Room {
         }
         return null;
     }
+    public String getDynamicLook() {
+        StringBuilder dynamicLook = new StringBuilder(look);
 
+        for (AdvObject obj : objects) {
+            if (obj instanceof AdvObjectContainer && obj.getId() == 9) { // porta rinforzata
+                if (((AdvObjectContainer) obj).isOpen()) {
+                    dynamicLook.append("\nLa porta rinforzata è aperta.");
+                } else {
+                    dynamicLook.append("\nLa porta rinforzata è chiusa.");
+                }
+            }
+        }
+        
+        return dynamicLook.toString();
+    }
 }
+
+

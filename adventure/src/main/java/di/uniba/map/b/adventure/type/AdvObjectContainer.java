@@ -16,6 +16,7 @@ import java.util.Set;
 public class AdvObjectContainer extends AdvObject {
 
     private List<AdvObject> list = new ArrayList<>();
+    private boolean open;
 
     /**
      *
@@ -85,6 +86,25 @@ public class AdvObjectContainer extends AdvObject {
      */
     public void remove(AdvObject o) {
         list.remove(o);
+    }
+    
+
+    @Override
+    public boolean isOpen() {
+        return open;
+    }
+
+    /**
+     *
+     * @param open
+     */
+    @Override
+    public void setOpen(boolean open) {
+        this.open = open;
+    }
+
+    public boolean setOpen() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }
