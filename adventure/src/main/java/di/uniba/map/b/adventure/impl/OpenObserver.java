@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package di.uniba.map.b.adventure.impl;
 
 import di.uniba.map.b.adventure.GameDescription;
@@ -12,31 +8,19 @@ import di.uniba.map.b.adventure.type.CommandType;
 import java.util.Iterator;
 import di.uniba.map.b.adventure.GameObserver;
 
-/**
- *
- * @author pierpaolo
- */
 public class OpenObserver implements GameObserver {
 
-    /**
-     *
-     * @param description
-     * @param parserOutput
-     * @return
-     */
     @Override
     public String update(GameDescription description, ParserOutput parserOutput) {
         StringBuilder msg = new StringBuilder();
         if (parserOutput.getCommand().getType() == CommandType.OPEN) {
-            /*ATTENZIONE: quando un oggetto contenitore viene aperto, tutti gli oggetti contenuti
-                * vengongo inseriti nella stanza o nell'inventario a seconda di dove si trova l'oggetto contenitore.
-                * Potrebbe non esssere la soluzione ottimale.
-             */
             if (parserOutput.getObject() == null && parserOutput.getInvObject() == null) {
                 msg.append("Non c'è niente da aprire qui.");
             } else {
                 if (parserOutput.getObject() != null) {
-                    if (parserOutput.getObject().isOpenable() && parserOutput.getObject().isOpen() == false) {
+                    if (parserOutput.getObject().getId() == 9 && !description.isKeyUsed()) {
+                        msg.append("La porta è chiusa. Hai bisogno di una chiave per aprirla.");
+                    } else if (parserOutput.getObject().isOpenable() && !parserOutput.getObject().isOpen()) {
                         if (parserOutput.getObject() instanceof AdvObjectContainer) {
                             msg.append("Hai aperto: ").append(parserOutput.getObject().getName());
                             AdvObjectContainer c = (AdvObjectContainer) parserOutput.getObject();
@@ -88,5 +72,4 @@ public class OpenObserver implements GameObserver {
         }
         return msg.toString();
     }
-
 }
