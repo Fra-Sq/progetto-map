@@ -109,8 +109,11 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         archive.setLook("Sei nell'archivio, ci sono decine di scaffali pieni di mappe varie con su scritti i nomi dei vari pianeti, magari c’è quello con le informazioni sulla Terra. \nL'uscita è a NORD.");
         Room armory = new Room(10, "Armeria", "Una stanza piena di armi e armature, con un odore di olio e metallo.");
         armory.setLook("Sei nell'armeria, vedi armi di ogni tipo, alcune ti sembrano familiari, forse potresti usarle per difenderti. \nL'uscita è a OVEST.");
-        Room engineRoom = new Room(11, "Sala motori", "Una stanza piena di macchinari e motori, con un rumore assordante e un odore di carburante. \nLa porta è bloccata, serve una tessera magnetica per aprirla.");
-        engineRoom.setLook("Sei nella sala motori, vedi un grande motore al centro della stanza, la porta è bloccata, serve una tessera magnetica per aprirla. \nL'uscita è a OVEST.");
+        Room engineRoom = new Room(11, "Sala motori", "Una stanza piena di macchinari e motori, con un rumore assordante e un odore di carburante. \nLa porta potrebbe essere bloccata, servirebbe una tessera magnetica per aprirla.");
+        engineRoom.setLook("Sei nella sala motori, vedi un grande motore al centro della stanza. \nL'uscita e' a OVEST.");
+        
+        
+        
 
 
         //map
@@ -173,9 +176,6 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         gem.setAlias(new String[]{"pietra", "sasso", "cristallo"});
         gem.setPickupable(true);
         safe.add(gem); //inseritaa la gemma all'interno della cassa forte
-        AdvObjectContainer table = new AdvObjectContainer(7, "tavolo", "Un tavolo di lavoro interattivo con strumenti scientifici avanzati.");
-        table.setAlias(new String[]{"tavolo di lavoro", "banco", "scrivania"});
-        lab.getObjects().add(table);
         AdvObject sword = new AdvObject(8, "spada", "Una spada affilata, sembra essere di origine terrestre.");
         sword.setAlias(new String[]{"arma", "spadone", "falcione"});
         sword.setPickupable(true);
@@ -183,7 +183,8 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         AdvObjectContainer door = new AdvObjectContainer(9, "porta", "Una porta rinforzata, sembra essere l'uscita.");
         door.setAlias(new String[]{"uscita", "portone", "porta rinforzata"});
         door.setOpenable(true);
-        corridor4.getObjects().add(door);
+        engineRoom.getObjects().add(door); // Aggiungi la porta agli oggetti della stanza
+        door.setOpen(false); // Imposta lo stato iniziale della porta come chiusa
         AdvObject vent = new AdvObject(10, "presadaria", "Una presa d’aria sul muro.");
         vent.setAlias(new String[]{"presadaria", "presad'aria", "presad'aria", "condotto", "presa d'aria"});
         vent.setPushable(true);
@@ -215,8 +216,6 @@ public class FireHouseGame extends GameDescription implements GameObservable {
             "Coordinate: 4° 35' 22\" N 137° 26' 30\" E\n" +
             "Pianeta: Sole\n" +
             "Coordinate: 18° 36' 57\" N 77° 33' 00\" E\n" +
-            "Pianeta: Plutone\n" +
-            "Coordinate: 23° 07' 13\" N 82° 11' 07\" E\n" +
             "Pianeta: Mercurio\n" +
             "Coordinate: 15° 07' 32\" N 7° 41' 57\" E\n");
         archive.getObjects().add(map);
@@ -246,16 +245,20 @@ public class FireHouseGame extends GameDescription implements GameObservable {
      * @param p
      * @param out
      */
-    @Override
-    public void nextMove(ParserOutput p, PrintStream out) {
-        parserOutput = p;
-        messages.clear();
-        if (p.getCommand() == null) {
-            out.println("Non ho capito cosa devo fare! Prova con un altro comando.");
+   @Override
+public void nextMove(ParserOutput p, PrintStream out) {
+    parserOutput = p;
+    messages.clear();
+    if (p.getCommand() == null) {
+        out.println("Non ho capito cosa devo fare! Prova con un altro comando.");
+    } else {
+        Room cr = getCurrentRoom();
+        notifyObservers();
+        boolean move = !cr.equals(getCurrentRoom()) && getCurrentRoom() != null;
+
+        if (p.getCommand().getType() == CommandType.LOOK_AT) {
+            out.println(cr.getDynamicLook());
         } else {
-            Room cr = getCurrentRoom();
-            notifyObservers();
-            boolean move = !cr.equals(getCurrentRoom()) && getCurrentRoom() != null;
             if (!messages.isEmpty()) {
                 for (String m : messages) {
                     if (m.length() > 0) {
@@ -263,6 +266,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
                     }
                 }
             }
+
             if (move) {
                 out.println(getCurrentRoom().getName());
                 out.println("================================================");
@@ -270,6 +274,9 @@ public class FireHouseGame extends GameDescription implements GameObservable {
             }
         }
     }
+}
+
+
 
     /**
      *
@@ -310,4 +317,5 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         return "Eri stato catturato da alcuni mercenari alieni ingaggiati da un collezionista galattico, ma sei riuscito a scappare dalla tua cella," + 
             "\nsei riuscito ad arrivare al sistema di teletrasporto installato sulla nave, ma il portale è spento.";
     }
+    
 }
