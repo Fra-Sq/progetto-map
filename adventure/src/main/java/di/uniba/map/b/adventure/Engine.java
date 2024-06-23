@@ -76,7 +76,7 @@ public class Engine {
                 System.out.println("Non capisco quello che mi vuoi dire.");
             } else if (p.getCommand() != null && p.getCommand().getType() == CommandType.END) {
                 System.out.println("Sei un fifone, addio!");
-                
+                PlayTime.endGame();
                 break;
             } else {
                 game.nextMove(p, System.out);

@@ -26,7 +26,8 @@ public abstract class GameDescription {
     private final List<AdvObject> inventory = new ArrayList<>();
 
     private Room currentRoom;
-
+    private boolean keyUsed; // Aggiungi questo flag
+    
     /**
      *
      * @return
@@ -49,6 +50,13 @@ public abstract class GameDescription {
      */
     public Room getCurrentRoom() {
         return currentRoom;
+    }
+     public boolean isKeyUsed() {
+        return keyUsed;
+    }
+
+    public void setKeyUsed(boolean keyUsed) {
+        this.keyUsed = keyUsed;
     }
 
     /**
