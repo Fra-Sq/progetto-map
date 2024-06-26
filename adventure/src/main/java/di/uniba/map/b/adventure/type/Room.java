@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package di.uniba.map.b.adventure.type;
 
 import java.util.ArrayList;
@@ -15,25 +10,17 @@ import java.util.List;
 public class Room {
 
     private final int id;
-
     private String name;
-
     private String description;
-
     private String look;
-
     private boolean visible = true;
-
     private Room south = null;
-
     private Room north = null;
-
     private Room east = null;
-
     private Room west = null;
-
     private final List<AdvObject> objects = new ArrayList<>();
-
+    private boolean monsterAlive = true;
+    private String dynamicLook;
     /**
      *
      * @param id
@@ -245,6 +232,7 @@ public class Room {
         }
         return null;
     }
+
     public String getDynamicLook() {
         StringBuilder dynamicLook = new StringBuilder(look);
 
@@ -257,9 +245,45 @@ public class Room {
                 }
             }
         }
-        
+
         return dynamicLook.toString();
     }
+
+    public AdvObject getObjectByName(String name) {
+        for (AdvObject obj : objects) {
+            if (obj.getName().equalsIgnoreCase(name)) {
+                return obj;
+            }
+        }
+        return null;
+    }
+    /**
+     * Verifica se il mostro è ancora vivo
+     * @return true se il mostro è vivo, false altrimenti
+     */
+    public boolean isMonsterAlive() {
+        return monsterAlive;
+    }
+
+    /**
+     * Imposta lo stato del mostro (vivo o morto)
+     * @param alive true se il mostro è vivo, false se è morto
+     */
+    public void setMonsterAlive(boolean alive) {
+        this.monsterAlive = alive;
+    }
+    /**
+     * Rimuove un oggetto dalla lista degli oggetti della stanza
+     * @param object L'oggetto da rimuovere
+     */
+    public void removeObject(AdvObject object) {
+        objects.remove(object);
+    }
+    public String getDynamicLookmonster() {
+        return dynamicLook != null ? dynamicLook : description;
+    }
+
+    public void setDynamicLook(String dynamicLook) {
+        this.dynamicLook = dynamicLook;
+    }
 }
-
-

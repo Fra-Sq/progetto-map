@@ -84,6 +84,9 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         Command read = new Command(CommandType.READ, "leggi");
         read.setAlias(new String[]{"sfoglia"});
         getCommands().add(read);
+        Command killMonster = new Command(CommandType.KILL, "ammazza");
+        killMonster.setAlias(new String[]{"uccidi", "elimina", "distruggi"});
+        getCommands().add(killMonster);
         //Rooms
         Room portalRoom = new Room(0, "Sala del portale", "La sala della navicella aliena è circolare e illuminata da una luce soffusa." +
                 "\nAl centro, un portale scintillante fluttua, circondato da rune luminose. Pannelli di controllo e cavi collegano il portale a macchinari misteriosi. \nDevi attraversare il portale per scappare.");
@@ -102,14 +105,14 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         controlRoom.setLook("Sei nella sala di controllo, Noti quella che (per noi terrestri) sembra una cassaforte in un angolo della stanza. L'uscita e' a SUD.");
         Room lab = new Room(7, "Laboratorio", "Una stanza piena di strumenti scientifici avanzati per l’analisi e la sperimentazione. \nContiene campioni di flora e fauna di diversi pianeti. Al centro, un tavolo di lavoro interattivo permette agli alieni di studiare la vita extraterrestre.");
         lab.setLook("Sei nel laboratorio, vedi un tavolo di lavoro al centro della stanza e una porta a EST.");
-        Room anteroom = new Room(8, "Anticamera", "Una stanza di transizione tra il corridoio e l'archivio, con armadietti e pannelli di controllo. \nEntri nell'anticamera, dopo pochi secondi si chiude la porta dietro di te e si apre quella davanti.");
-        anteroom.setLook("Sei nell'anticamera, Vedi un alieno gigante dormiente, noti che ha qualcosa tatuato su uno dei suoi tentacoli.\n" +
-                "Attento ad avvicinarti senza un’adeguata arma, potrebbe svegliarsi e non avresti l’opportunità di difenderti.\nvedi una porta a NORD e una a SUD.");
+        Room anteroom = new Room(8, "Anticamera", "Una stanza di transizione tra il corridoio e l'archivio, con armadietti e pannelli di controllo. \nEntri nell'anticamera, dopo pochi secondi si chiude la porta dietro di te e si apre quella davanti.\n");
+        anteroom.setMonsterAlive(true);  // Imposta il mostro come vivo all'inizio
+        anteroom.setLook("Sei nell'anticamera, vedi un alieno gigante dormiente, noti che ha qualcosa tatuato su uno dei suoi tentacoli.\nvedi una porta a NORD e una a SUD");
         Room archive = new Room(9, "Archivio", "Una stanza piena di scaffalature piene di rotoli di pergamena e dischi di cristallo. \nIl soffitto è illuminato da una luce soffusa che fa brillare i simboli alieni incisi sulle pareti.");
         archive.setLook("Sei nell'archivio, ci sono decine di scaffali pieni di mappe varie con su scritti i nomi dei vari pianeti, magari c’è quello con le informazioni sulla Terra. \nL'uscita è a NORD.");
         Room armory = new Room(10, "Armeria", "Una stanza piena di armi e armature, con un odore di olio e metallo.");
         armory.setLook("Sei nell'armeria, vedi armi di ogni tipo, alcune ti sembrano familiari, forse potresti usarle per difenderti. \nL'uscita è a OVEST.");
-        Room engineRoom = new Room(11, "Sala motori", "Una stanza piena di macchinari e motori, con un rumore assordante e un odore di carburante. \nLa porta potrebbe essere bloccata, servirebbe una tessera magnetica per aprirla.");
+        Room engineRoom = new Room(11, "Sala motori", "Una stanza piena di macchinari e motori, con un rumore assordante e un odore di carburante.\n");
         engineRoom.setLook("Sei nella sala motori, vedi un grande motore al centro della stanza. \nL'uscita e' a OVEST.");
         
         
@@ -164,6 +167,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         alien.setAlias(new String[]{"gigante", "mostro", "essere", "alieno gigante"});
         alien.setCreature(true);
         anteroom.getObjects().add(alien);
+        killMonster.setAlias(new String[]{"ammazza alieno", "ammazza mostro", "uccidi alieno", "uccidi mostro"});
         AdvObjectContainer safe = new AdvObjectContainer(4, "cassaforte", "Una cassaforte con un pannello di controllo, \nnecessita di uuna chiave per poter essere aperta.");
         safe.setAlias(new String[]{"cassa", "cassaforte"});
         safe.setOpenable(true);
@@ -219,6 +223,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
             "Pianeta: Mercurio\n" +
             "Coordinate: 15° 07' 32\" N 7° 41' 57\" E\n");
         archive.getObjects().add(map);
+        
         //Observer
         GameObserver moveObserver = new MoveObserver();
         this.attach(moveObserver);
@@ -236,19 +241,25 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         this.attach(useObserver);
         GameObserver readObserver = new ReadObserver();
         this.attach(readObserver);
+        GameObserver killObserver = new KillObserver();
+        this.attach(killObserver);
         //set starting room
         setCurrentRoom(portalRoom);
     }
+    
+
 
     /**
      *
      * @param p
      * @param out
      */
+   
    @Override
 public void nextMove(ParserOutput p, PrintStream out) {
     parserOutput = p;
     messages.clear();
+
     if (p.getCommand() == null) {
         out.println("Non ho capito cosa devo fare! Prova con un altro comando.");
     } else {
@@ -256,25 +267,29 @@ public void nextMove(ParserOutput p, PrintStream out) {
         notifyObservers();
         boolean move = !cr.equals(getCurrentRoom()) && getCurrentRoom() != null;
 
-        if (p.getCommand().getType() == CommandType.LOOK_AT) {
-            out.println(cr.getDynamicLook());
-        } else {
-            if (!messages.isEmpty()) {
-                for (String m : messages) {
-                    if (m.length() > 0) {
-                        out.println(m);
-                    }
+        if (!messages.isEmpty()) {
+            for (String m : messages) {
+                if (m.length() > 0) {
+                    out.println(m);
                 }
             }
+        }
 
-            if (move) {
-                out.println(getCurrentRoom().getName());
+        if (move) {
+            Room currentRoom = getCurrentRoom();
+            if (currentRoom.getName().equals("Sala motori")) {
+                // Resto del codice per gestire la sala motori
+            } else {
+                out.println(currentRoom.getName());
                 out.println("================================================");
-                out.println(getCurrentRoom().getDescription());
+                out.println(currentRoom.getDescription());
             }
         }
     }
 }
+
+
+
 
 
 
@@ -318,4 +333,8 @@ public void nextMove(ParserOutput p, PrintStream out) {
             "\nsei riuscito ad arrivare al sistema di teletrasporto installato sulla nave, ma il portale è spento.";
     }
     
-}
+
+    }
+
+
+

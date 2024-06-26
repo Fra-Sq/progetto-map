@@ -104,5 +104,9 @@ public enum CommandType {
     /**
      *
      */
-    READ
+    READ,
+    /**
+     * 
+     */
+    KILL
 }
