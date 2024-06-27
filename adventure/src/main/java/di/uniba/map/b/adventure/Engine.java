@@ -40,7 +40,7 @@ public class Engine {
             System.err.println(ex);
         }
         try {
-            Set<String> stopwords = Utils.loadFileListInSet(new File("./resources/stopwords"));
+            Set<String> stopwords = Utils.loadFileListInSet(new File("adventure/resources/stopwords"));
             parser = new Parser(stopwords);
         } catch (IOException ex) {
             System.err.println(ex);
@@ -82,8 +82,8 @@ public class Engine {
                 game.nextMove(p, System.out);
                 if (game.getCurrentRoom() == null) {
                     System.out.println("La tua avventura termina qui! Complimenti!");
-                    System.exit(0);
                     PlayTime.endGame();
+                    System.exit(0);
                 }
             }
             System.out.print("?> ");

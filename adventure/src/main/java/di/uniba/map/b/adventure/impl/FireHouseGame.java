@@ -90,7 +90,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         //Rooms
         Room portalRoom = new Room(0, "Sala del portale", "La sala della navicella aliena è circolare e illuminata da una luce soffusa." +
                 "\nAl centro, un portale scintillante fluttua, circondato da rune luminose. Pannelli di controllo e cavi collegano il portale a macchinari misteriosi. \nDevi attraversare il portale per scappare.");
-        portalRoom.setLook("Sei nella sala del portale, il portale è l'unico modo per scappare ma non è attivo, un pannello di controllo e' collegato a qusto  \nAd EST vedi un corridoio.");
+        portalRoom.setLook("Sei nella sala del portale, il portale è l'unico modo per scappare ma non è attivo, un pannello di controllo e' collegato a questo  \nAd EST vedi un corridoio.");
         Room corridor = new Room(1, "Corridoio", "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
         corridor.setLook("Sei nel corridoio, vedi che continua verso EST e noti una presa d’aria sul muro, senti dei passi venire verso di te.");
         Room corridor2 = new Room(2, "Corridoio", "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
@@ -115,9 +115,6 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         Room engineRoom = new Room(11, "Sala motori", "Una stanza piena di macchinari e motori, con un rumore assordante e un odore di carburante.\n");
         engineRoom.setLook("Sei nella sala motori, vedi un grande motore al centro della stanza. \nL'uscita e' a OVEST.");
         
-        
-        
-
 
         //map
         portalRoom.setEast(corridor);
@@ -157,9 +154,9 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         //obejcts
         AdvObject portal = new AdvObject(1, "portale", "Un portale scintillante fluttua, circondato da rune luminose.");
         portal.setAlias(new String[]{"portal"});
-        portal.setOpenable(true);
+        portal.setPushable(false);
         portalRoom.getObjects().add(portal);
-        AdvObject controlPanel = new AdvObject(2, "pannelli di controllo", "Schermi e console con interfacce aliene, pulsanti luminosi e ologrammi interattivi.");
+        AdvObject controlPanel = new AdvObject(2, "pannello di controllo", "Schermi e console con interfacce aliene, pulsanti luminosi e ologrammi interattivi.");
         controlPanel.setAlias(new String[]{"pannello", "console", "schermi", "console di controllo"});
         controlPanel.setPushable(true);
         portalRoom.getObjects().add(controlPanel);
@@ -167,7 +164,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         alien.setAlias(new String[]{"gigante", "mostro", "essere", "alieno gigante"});
         alien.setCreature(true);
         anteroom.getObjects().add(alien);
-        killMonster.setAlias(new String[]{"ammazza alieno", "ammazza mostro", "uccidi alieno", "uccidi mostro"});
+        //killMonster.setAlias(new String[]{"ammazza alieno", "ammazza mostro", "uccidi alieno", "uccidi mostro"});
         AdvObjectContainer safe = new AdvObjectContainer(4, "cassaforte", "Una cassaforte con un pannello di controllo, \nnecessita di uuna chiave per poter essere aperta.");
         safe.setAlias(new String[]{"cassa", "cassaforte"});
         safe.setOpenable(true);
@@ -199,29 +196,29 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         map.setReadable(true);
     map.setContents("COORDINATE VIA LATTEA\n" +
             "Pianeta: Marte\n" +
-            "Coordinate: 4° 35' 22\" N 137° 26' 30\" E\n" +
+            "Coordinate: 43522\" N 1372630\" E\n" +
             "Pianeta: Venere\n" +
-            "Coordinate: 18° 36' 57\" N 77° 33' 00\" E\n" +
+            "Coordinate: 183657\" N 773300\" E\n" +
             "Pianeta: Giove\n" +
-            "Coordinate: 23° 07' 13\" N 82° 11' 07\" E\n" +
+            "Coordinate: 230713\" N 821107\" E\n" +
             "Pianeta: Saturno\n" +
-            "Coordinate: 15° 07' 32\" N 7° 41' 57\" E\n" +
+            "Coordinate: 150732\" N 74157\" E\n" +
             "Pianeta: Urano\n" +
-            "Coordinate: 4° 35' 22\" N 137° 26' 30\" E\n" +
+            "Coordinate: 43522\" N 1372630\" E\n" +
             "Pianeta: Nettuno\n" +
-            "Coordinate: 18° 36' 57\" N 77° 33' 00\" E\n" +
+            "Coordinate: 183657\" N 773300\" E\n" +
             "Pianeta: Plutone\n" +
-            "Coordinate: 23° 07' 13\" N 82° 11' 07\" E\n" +
+            "Coordinate: 230713\" N 821107\" E\n" +
             "Pianeta: Mercurio\n" +
-            "Coordinate: 15° 07' 32\" N 7° 41' 57\" E\n" +
+            "Coordinate: 150732\" N 74157\" E\n" +
             "Pianeta: Terra\n" +
-            "Coordinate: 45° 07' 32\" N 7° 41' 57\" E\n" +
+            "Coordinate: 450732\" N 74157\" E\n" +
             "Pianeta: Luna\n" +
-            "Coordinate: 4° 35' 22\" N 137° 26' 30\" E\n" +
+            "Coordinate: 43522\" N 1372630\" E\n" +
             "Pianeta: Sole\n" +
-            "Coordinate: 18° 36' 57\" N 77° 33' 00\" E\n" +
+            "Coordinate: 183657\" N 773300\" E\n" +
             "Pianeta: Mercurio\n" +
-            "Coordinate: 15° 07' 32\" N 7° 41' 57\" E\n");
+            "Coordinate: 150732\" N 74157\" E\n");
         archive.getObjects().add(map);
         
         //Observer
