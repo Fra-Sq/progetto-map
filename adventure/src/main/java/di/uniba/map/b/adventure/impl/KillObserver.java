@@ -33,7 +33,7 @@ public class KillObserver implements GameObserver {
                             msg.append("Hai ucciso l'alieno con la tua spada!");
                             currentRoom.removeObject(alieno);
                             currentRoom.setMonsterAlive(false); // Imposta il mostro come morto
-                            currentRoom.setLook("Ti trovi nell'anticamera, ma il mostro è morto. Sul tentacolo del mostro c'è un codice tatuato");
+                            currentRoom.setLook("Ti trovi nell'anticamera, ma il mostro è morto. \nSul tentacolo del mostro c'è un codice tatuato: 07738");
                         } else {
                             msg.append("Non c'è nessun alieno qui da attaccare.");
                         }
