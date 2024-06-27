@@ -36,7 +36,7 @@ public class PushObserver implements GameObserver {
                     System.out.println("Hai attivato il pannello di controllo e hai aperto il portale per tornare a casa. \nprima di tornare a casa è necessario inserire delle coordinate spaziali ed un codice di accesso.\nSei riuscito a recuperarli?");
                     Scanner scanner = new Scanner(System.in);
                     String input = scanner.nextLine();
-                    input = input.toLowerCase()
+                    input = input.toLowerCase();
                     if (input.equals("si")) {
                         System.out.println("Inserire codice di accesso e le coordinate spaziali corrette per tornare a casa:");
                         input = scanner.nextLine();
