@@ -88,32 +88,76 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         killMonster.setAlias(new String[]{"uccidi", "elimina", "distruggi"});
         getCommands().add(killMonster);
         //Rooms
-        Room portalRoom = new Room(0, "Sala del portale", "La sala della navicella aliena è circolare e illuminata da una luce soffusa." +
-                "\nAl centro, un portale scintillante fluttua, circondato da rune luminose. Pannelli di controllo e cavi collegano il portale a macchinari misteriosi. \nDevi attraversare il portale per scappare.");
-        portalRoom.setLook("Sei nella sala del portale, il portale è l'unico modo per scappare ma non è attivo, un pannello di controllo e' collegato a questo  \nAd EST vedi un corridoio.");
-        Room corridor = new Room(1, "Corridoio", "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor.setLook("Sei nel corridoio, vedi che continua verso EST e noti una presa d’aria sul muro, senti dei passi venire verso di te.");
-        Room corridor2 = new Room(2, "Corridoio", "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor2.setLook("Sei arrivato nell’angolo del corridoio, noti una porta a NORD e il corridoio continua verso SUD.");
-        Room corridor3 = new Room(3, "Corridoio", "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor3.setLook("Sei ancora nel corridoio, vedi una porta verso EST e il corridoio continua verso SUD.");
-        Room corridor4 = new Room(4, "Corridoio", "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor4.setLook("Il corridoio continua, vedi una porta verso EST e una porta a OVEST, il corridoio continua verso SUD e verso NORD.");
-        Room corridor5 = new Room(5, "Corridoio", "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor5.setLook("Sei arrivato alla fine del corridoio e vedi una porta dritta di fronte a te, verso SUD, noti che è più rinforzata delle altre. Verso NORD ripercorri il corridoio.");
-        Room controlRoom = new Room(6, "Sala di controllo", "Il cuore pulsante della navicella, con pannelli di controllo bioluminescenti e schermi olografici che fluttuano nell’aria, un grande schermo mostra un pianeta sconosciuto.");
-        controlRoom.setLook("Sei nella sala di controllo, Noti quella che (per noi terrestri) sembra una cassaforte in un angolo della stanza. L'uscita e' a SUD.");
-        Room lab = new Room(7, "Laboratorio", "Una stanza piena di strumenti scientifici avanzati per l’analisi e la sperimentazione. \nContiene campioni di flora e fauna di diversi pianeti. Al centro, un tavolo di lavoro interattivo permette agli alieni di studiare la vita extraterrestre.");
-        lab.setLook("Sei nel laboratorio, vedi un tavolo di lavoro al centro della stanza e una porta a EST.");
-        Room anteroom = new Room(8, "Anticamera", "Una stanza di transizione tra il corridoio e l'archivio, con armadietti e pannelli di controllo. \nEntri nell'anticamera, dopo pochi secondi si chiude la porta dietro di te e si apre quella davanti.\n");
+        Room portalRoom = new Room(0, "Sala del portale", ""
+                + "La sala della navicella aliena è circolare e illuminata da una luce soffusa. Al centro,\n"
+                + "un portale scintillante fluttua, circondato da rune luminose. Pannelli di controllo e cavi\n"
+                + "collegano il portale a macchinari misteriosi. \nDevi attraversare il portale per scappare.");
+        portalRoom.setLook(""
+                + "Sei nella sala del portale, il portale è l'unico modo per scappare ma non è attivo, un\n"
+                + " pannello di controllo e' collegato a questo. Ad EST vedi un corridoio.");
+        Room corridor = new Room(1, "Corridoio", ""
+                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
+        corridor.setLook(""
+                + "Sei nel corridoio, vedi che continua verso EST e noti una presa d’aria sul muro, senti\n"
+                + " dei passi venire verso di te.");
+        Room corridor2 = new Room(2, "Corridoio", ""
+                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
+        corridor2.setLook(""
+                + "Sei arrivato nell’angolo del corridoio, noti una porta a NORD e il corridoio continua\n"
+                + "verso SUD.");
+        Room corridor3 = new Room(3, "Corridoio", ""
+                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
+        corridor3.setLook(""
+                + "Sei ancora nel corridoio, vedi una porta verso EST e il corridoio continua   n"
+                + "verso SUD.");
+        Room corridor4 = new Room(4, "Corridoio", ""
+                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
+        corridor4.setLook(""
+                + "Il corridoio continua, vedi una porta verso EST e una porta a OVEST,\n"
+                + "il corridoio continua verso SUD e verso NORD.");
+        Room corridor5 = new Room(5, "Corridoio", ""
+                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
+        corridor5.setLook(""
+                + "Sei arrivato alla fine del corridoio e vedi una porta dritta di fronte a te,verso SUD,\n"
+                + "noti che è più rinforzata delle altre. Verso NORD ripercorri il corridoio.");
+        Room controlRoom = new Room(6, "Sala di controllo", ""
+                + "Il cuore pulsante della navicella, con pannelli di controllo bioluminescenti e schermi\n"
+                + "olografici che fluttuano nell’aria, un grande schermo mostra un pianeta sconosciuto.");
+        controlRoom.setLook(""
+                + "Sei nella sala di controllo, Noti quella che (per noi terrestri) sembra una cassaforte\n"
+                + "in un angolo della stanza. L'uscita e' a SUD.");
+        Room lab = new Room(7, "Laboratorio", ""
+                + "Una stanza piena di strumenti scientifici avanzati per l’analisi e la sperimentazione. \n"
+                + "Contiene campioni di flora e fauna di diversi pianeti. Al centro, un tavolo di lavoro\n"
+                + "interattivo permette agli alieni di studiare la vita extraterrestre.");
+        lab.setLook(""
+                + "Sei nel laboratorio, vedi un tavolo di lavoro al centro della stanza e una\n"
+                + "porta a EST.");
+        Room anteroom = new Room(8, "Anticamera", ""
+                + "Una stanza di transizione tra il corridoio e l'archivio, con armadietti e pannelli\n"
+                + "di controllo. Entri nell'anticamera, dopo pochi secondi si chiude la porta dietro di\n"
+                + "te e si apre quella davanti.\n");
         anteroom.setMonsterAlive(true);  // Imposta il mostro come vivo all'inizio
-        anteroom.setLook("Sei nell'anticamera, vedi un alieno gigante dormiente, noti che ha qualcosa tatuato su uno dei suoi tentacoli.\nvedi una porta a NORD e una a SUD");
-        Room archive = new Room(9, "Archivio", "Una stanza piena di scaffalature piene di rotoli di pergamena e dischi di cristallo. \nIl soffitto è illuminato da una luce soffusa che fa brillare i simboli alieni incisi sulle pareti.");
-        archive.setLook("Sei nell'archivio, ci sono decine di scaffali pieni di mappe varie con su scritti i nomi dei vari pianeti, magari c’è quello con le informazioni sulla Terra. \nL'uscita è a NORD.");
-        Room armory = new Room(10, "Armeria", "Una stanza piena di armi e armature, con un odore di olio e metallo.");
-        armory.setLook("Sei nell'armeria, vedi armi di ogni tipo, alcune ti sembrano familiari, forse potresti usarle per difenderti. \nL'uscita è a OVEST.");
-        Room engineRoom = new Room(11, "Sala motori", "Una stanza piena di macchinari e motori, con un rumore assordante e un odore di carburante.\n");
-        engineRoom.setLook("Sei nella sala motori, vedi un grande motore al centro della stanza. \nL'uscita e' a OVEST.");
+        anteroom.setLook(""
+                + "Sei nell'anticamera, vedi un alieno gigante dormiente, noti che ha qualcosa tatuato su\n"
+                + "uno dei suoi tentacoli.\nvedi una porta a NORD e una a SUD");
+        Room archive = new Room(9, "Archivio", ""
+                + "Una stanza piena di scaffalature piene di rotoli di pergamena e dischi di cristallo.\n"
+                + "Il soffitto è illuminato da una luce soffusa che fa brillare i simboli alieni incisi\n"
+                + "sulle pareti.");
+        archive.setLook(""
+                + "Sei nell'archivio, ci sono decine di scaffali pieni di mappe varie con su scritti i nomi\n"
+                + "dei vari pianeti, magari c’è quello con le informazioni sulla Terra. L'uscita è a NORD.");
+        Room armory = new Room(10, "Armeria", ""
+                + "Una stanza piena di armi e armature, con un odore di olio e metallo.");
+        armory.setLook(""
+                + "Sei nell'armeria, vedi armi di ogni tipo, alcune ti sembrano familiari, forse potresti\n"
+                + "usarle per difenderti. L'uscita è a OVEST.");
+        Room engineRoom = new Room(11, "Sala motori", ""
+                + "Una stanza piena di macchinari e motori, con un rumore assordante e un odore\n"
+                + "di carburante.\n");
+        engineRoom.setLook(""
+                + "Sei nella sala motori, vedi un grande motore al centro della stanza. L'uscita e' a OVEST.");
         
 
         //map
@@ -156,7 +200,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         portal.setAlias(new String[]{"portal"});
         portal.setPushable(false);
         portalRoom.getObjects().add(portal);
-        AdvObject controlPanel = new AdvObject(2, "pannello di controllo", "Schermi e console con interfacce aliene, pulsanti luminosi e ologrammi interattivi.");
+        AdvObject controlPanel = new AdvObject(2, "pannello di controllo", "Schermi e console con interfacce aliene, pulsanti luminosi e ologrammi\ninterattivi.");
         controlPanel.setAlias(new String[]{"pannello", "console", "schermi", "console di controllo"});
         controlPanel.setPushable(true);
         portalRoom.getObjects().add(controlPanel);
@@ -182,7 +226,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         sword.setPickupable(true);
         armory.getObjects().add(sword);
         AdvObjectContainer door = new AdvObjectContainer(9, "porta", "Una porta rinforzata, sembra essere l'uscita.");
-        door.setAlias(new String[]{"uscita", "portone", "porta rinforzata"});
+        door.setAlias(new String[]{"uscita", "portone", "porta rinforzata, porta"});
         door.setOpenable(true);
         engineRoom.getObjects().add(door); // Aggiungi la porta agli oggetti della stanza
         door.setOpen(false); // Imposta lo stato iniziale della porta come chiusa
@@ -215,7 +259,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
             "Coordinate: 450732\" N 74157\" E\n" +
             "Pianeta: Luna\n" +
             "Coordinate: 43522\" N 1372630\" E\n" +
-            "Pianeta: Sole\n" +
+            "Stella: Sole\n" +
             "Coordinate: 183657\" N 773300\" E\n" +
             "Pianeta: Mercurio\n" +
             "Coordinate: 150732\" N 74157\" E\n");
@@ -246,28 +290,31 @@ public class FireHouseGame extends GameDescription implements GameObservable {
     
 
 
-    /**
-     *
-     * @param p
-     * @param out
-     */
+/**
+*
+* @param p
+* @param out
+     * @param window
+*/
    
-   @Override
-public void nextMove(ParserOutput p, PrintStream out) {
+@Override
+public void nextMove(ParserOutput p, PrintStream out, Window window) {
     parserOutput = p;
     messages.clear();
 
     if (p.getCommand() == null) {
         out.println("Non ho capito cosa devo fare! Prova con un altro comando.");
+        window.showMessage("Non ho capito cosa devo fare! Prova con un altro comando.");
     } else {
         Room cr = getCurrentRoom();
-        notifyObservers();
+        notifyObservers(window);
         boolean move = !cr.equals(getCurrentRoom()) && getCurrentRoom() != null;
 
         if (!messages.isEmpty()) {
             for (String m : messages) {
                 if (m.length() > 0) {
                     out.println(m);
+                    window.showMessage(m);
                 }
             }
         }
@@ -278,8 +325,10 @@ public void nextMove(ParserOutput p, PrintStream out) {
                 // Resto del codice per gestire la sala motori
             } else {
                 out.println(currentRoom.getName());
+                window.showRoomName(currentRoom.getName());
                 out.println("================================================");
                 out.println(currentRoom.getDescription());
+                window.showRoomDescription(currentRoom.getDescription());
             }
         }
     }
@@ -312,11 +361,11 @@ public void nextMove(ParserOutput p, PrintStream out) {
 
     /**
      *
-     */
+     * @param window */
     @Override
-    public void notifyObservers() {
+    public void notifyObservers(Window window) {
         for (GameObserver o : observer) {
-            messages.add(o.update(this, parserOutput));
+            messages.add(o.update(this, parserOutput, window));
         }
     }
 
@@ -326,12 +375,14 @@ public void nextMove(ParserOutput p, PrintStream out) {
      */
     @Override
     public String getWelcomeMsg() {
-        return "Eri stato catturato da alcuni mercenari alieni ingaggiati da un collezionista galattico, ma sei riuscito a scappare dalla tua cella," + 
-            "\nsei riuscito ad arrivare al sistema di teletrasporto installato sulla nave, ma il portale è spento.";
+
+        return "Eri stato catturato da alcuni mercenari alieni ingaggiati da un collezionista\n"
+                + "galattico, ma sei riuscito a scappare dalla tua cella, sei riuscito ad arrivare\n "
+                + "   al sistema di teletrasporto installato sulla nave, ma il portale è spento.\n"
+                + "                   premi un qualsiasi tasto della tastiera per iniziare      ";
     }
     
-
-    }
+}
 
 
 

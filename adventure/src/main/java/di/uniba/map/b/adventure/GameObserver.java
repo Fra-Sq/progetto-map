@@ -4,6 +4,7 @@
  */
 package di.uniba.map.b.adventure;
 
+import di.uniba.map.b.adventure.impl.Window;
 import di.uniba.map.b.adventure.parser.ParserOutput;
 
 /**
@@ -18,6 +19,6 @@ public interface GameObserver {
      * @param parserOutput
      * @return
      */
-    public String update(GameDescription description, ParserOutput parserOutput);
+    public String update(GameDescription description, ParserOutput parserOutput, Window window);
 
 }

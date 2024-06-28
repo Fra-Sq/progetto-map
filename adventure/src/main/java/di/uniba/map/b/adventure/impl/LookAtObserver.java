@@ -19,10 +19,11 @@ public class LookAtObserver implements GameObserver {
      *
      * @param description
      * @param parserOutput
+     * @param window
      * @return
      */
     @Override
-    public String update(GameDescription description, ParserOutput parserOutput) {
+    public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         StringBuilder msg = new StringBuilder();
         if (parserOutput.getCommand().getType() == CommandType.LOOK_AT) {
             if (description.getCurrentRoom().getLook() != null) {

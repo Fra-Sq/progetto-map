@@ -4,6 +4,8 @@
  */
 package di.uniba.map.b.adventure;
 
+import di.uniba.map.b.adventure.impl.Window;
+
 /**
  *
  * @author pierpaolo
@@ -25,6 +27,6 @@ public interface GameObservable {
     /**
      *
      */
-    public void notifyObservers();
+    public void notifyObservers(Window window);
     
 }

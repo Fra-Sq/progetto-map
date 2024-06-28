@@ -11,7 +11,7 @@ import di.uniba.map.b.adventure.type.Room;
 public class UseObserver implements GameObserver {
 
     @Override
-    public String update(GameDescription description, ParserOutput parserOutput) {
+    public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         StringBuilder msg = new StringBuilder();
         if (parserOutput.getCommand().getType() == CommandType.USE) {
             AdvObject usedObject = parserOutput.getInvObject();
@@ -90,9 +90,7 @@ public class UseObserver implements GameObserver {
                     }
                 }
             } 
-        } else {
-            msg.append("Non c'è nessuna porta da aprire qui.");
-        }
+        }        
     }
 
     return msg.toString();

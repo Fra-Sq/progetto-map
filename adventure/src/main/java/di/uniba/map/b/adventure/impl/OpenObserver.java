@@ -11,7 +11,7 @@ import di.uniba.map.b.adventure.GameObserver;
 public class OpenObserver implements GameObserver {
 
     @Override
-    public String update(GameDescription description, ParserOutput parserOutput) {
+    public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         StringBuilder msg = new StringBuilder();
         if (parserOutput.getCommand().getType() == CommandType.OPEN) {
             if (parserOutput.getObject() == null && parserOutput.getInvObject() == null) {

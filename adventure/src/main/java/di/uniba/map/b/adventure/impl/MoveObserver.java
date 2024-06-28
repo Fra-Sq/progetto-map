@@ -19,10 +19,11 @@ public class MoveObserver implements GameObserver {
      *
      * @param description
      * @param parserOutput
+     * @param window
      * @return
      */
     @Override
-    public String update(GameDescription description, ParserOutput parserOutput) {
+    public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         if (null != parserOutput.getCommand().getType()) switch (parserOutput.getCommand().getType()) {
             case NORD:
                 if (description.getCurrentRoom().getNorth() != null) {

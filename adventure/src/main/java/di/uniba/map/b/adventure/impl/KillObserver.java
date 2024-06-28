@@ -20,7 +20,7 @@ import di.uniba.map.b.adventure.type.Room;
 public class KillObserver implements GameObserver {
 
     @Override
-    public String update(GameDescription description, ParserOutput parserOutput) {
+    public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         StringBuilder msg = new StringBuilder();
         if (parserOutput.getCommand().getType() == CommandType.KILL) {
             Room currentRoom = description.getCurrentRoom();

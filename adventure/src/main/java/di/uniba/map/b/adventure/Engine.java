@@ -5,6 +5,8 @@
  */
 package di.uniba.map.b.adventure;
 
+import di.uniba.map.b.adventure.impl.Database;
+import di.uniba.map.b.adventure.impl.Window;
 import di.uniba.map.b.adventure.impl.FireHouseGame;
 import di.uniba.map.b.adventure.impl.PlayTime;
 import di.uniba.map.b.adventure.parser.Parser;
@@ -27,6 +29,9 @@ public class Engine {
     private final GameDescription game;
 
     private Parser parser;
+    
+    private Window window;
+    //private Database database;
 
     /**
      *
@@ -51,6 +56,7 @@ public class Engine {
      *
      */
     public void execute() {
+        window= new Window(game, parser);
         System.out.println("====================================");
         System.out.println("* Space Adventure V1.0 - 2023-2024 *");
         System.out.println("*           developed by           *");
@@ -62,10 +68,13 @@ public class Engine {
         PlayTime.startGame();
         System.out.println();
         System.out.println(game.getWelcomeMsg());
+        window.showStartDescription(game.getWelcomeMsg());
         System.out.println();
         System.out.println("Ti trovi qui: " + game.getCurrentRoom().getName());
+        window.showRoomName(game.getCurrentRoom().getName());
         System.out.println();
         System.out.println(game.getCurrentRoom().getDescription());
+        window.showRoomDescription(game.getCurrentRoom().getDescription());
         System.out.println();
         System.out.print("?> ");
         Scanner scanner = new Scanner(System.in);
@@ -79,7 +88,7 @@ public class Engine {
                 PlayTime.endGame();
                 break;
             } else {
-                game.nextMove(p, System.out);
+                game.nextMove(p, System.out, window);
                 if (game.getCurrentRoom() == null) {
                     System.out.println("La tua avventura termina qui! Complimenti!");
                     PlayTime.endGame();

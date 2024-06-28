@@ -23,10 +23,11 @@ public class PushObserver implements GameObserver {
      *
      * @param description
      * @param parserOutput
+     * @param window
      * @return
      */
     @Override
-    public String update(GameDescription description, ParserOutput parserOutput) {
+    public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         StringBuilder msg = new StringBuilder();
         if (parserOutput.getCommand().getType() == CommandType.PUSH) {
             //ricerca oggetti pushabili
@@ -34,31 +35,38 @@ public class PushObserver implements GameObserver {
                 msg.append("Hai premuto: ").append(parserOutput.getObject().getName()).append("\n");
                 if (parserOutput.getObject().getId() == 2 && GameUtils.getObjectFromInventory(description.getInventory(), 6) != null) {
                     System.out.println("Hai attivato il pannello di controllo e hai aperto il portale per tornare a casa. \nprima di tornare a casa è necessario inserire delle coordinate spaziali ed un codice di accesso.\nSei riuscito a recuperarli?");
+                    window.showMessage("Hai attivato il pannello di controllo e hai aperto il portale per tornare a casa. \nPrima di tornare a casa è necessario inserire delle coordinate spaziali ed un codice di accesso.\nSei riuscito a recuperarle?");
                     Scanner scanner = new Scanner(System.in);
                     String input = scanner.nextLine();
                     input = input.toLowerCase();
                     if (input.equals("si")) {
                         System.out.println("Inserire codice di accesso e le coordinate spaziali corrette per tornare a casa:");
+                        window.showMessage("Inserire codice di accesso e le coordinate spaziali corrette per tornare a casa:");
                         input = scanner.nextLine();
                         if (input.equals("07738")) {
                             System.out.println("Hai inserito correttamente il codice di accesso.");
+                            window.showMessage("Hai inserito correttamente il codice di accesso.");
                             input = scanner.nextLine();
                             if (verify(input)) {
                                 System.out.println("Hai inserito correttamente le coordinate spaziali \nSei tornato a casa sano e salvo.");
+                                window.showMessage("Hai inserito correttamente le coordinate spaziali \nSei tornato a casa sano e salvo.");
                                 description.setCurrentRoom(null);
                             } else {
                                 System.out.println("Hai inserito delle coordinate spaziali errate, muori malamente disperso nello spazio...");
+                                window.showMessage("Hai inserito delle coordinate spaziali errate, muori malamente disperso nello spazio...");
                                 description.setCurrentRoom(null);
                             }
                         } else {
                             System.out.println("Codice di accesso errato, non puoi tornare a casa.");
+                            window.showMessage("Codice di accesso errato, non puoi tornare a casa.");
                         }
                     } else {
                         System.out.println("Non hai recuperato i codici di accesso e le coordinate spaziali, non puoi tornare a casa.");
+                        window.showMessage("Non hai recuperato i codici di accesso e le coordinate spaziali, non puoi tornare a casa.");
                     }
                     msg = new StringBuilder();
                 } else if (parserOutput.getObject().getId() == 2) {
-                    msg.append("Per attivare il pannello di controllo ed utilizzare il portale è necessaria una particolare gemma");
+                    msg.append("Per attivare il pannello di controllo ed utilizzare il portale è necessaria una\nparticolare gemma");
                 }
             } else if (parserOutput.getInvObject() != null && parserOutput.getInvObject().isPushable()) {
                 msg.append("Hai premuto: ").append(parserOutput.getInvObject().getName()).append("\n");
