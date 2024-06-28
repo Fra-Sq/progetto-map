@@ -49,7 +49,7 @@ public class OpenObserver implements GameObserver {
                         if (parserOutput.getInvObject() instanceof AdvObjectContainer) {
                             AdvObjectContainer c = (AdvObjectContainer) parserOutput.getInvObject();
                             if (!c.getList().isEmpty()) {
-                                msg.append(c.getName()).append(" contiene:");
+                                msg.append("\n").append(c.getName()).append(" contiene:");
                                 Iterator<AdvObject> it = c.getList().iterator();
                                 while (it.hasNext()) {
                                     AdvObject next = it.next();

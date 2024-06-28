@@ -142,6 +142,7 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.setViewportView(messageTextArea);
+        scrollPane.setBorder(null);
         panel.add(scrollPane);
         
 //\JLabel scrollpanel-------------------------------------------------------------------------------------------------------------------------------------------------------------------

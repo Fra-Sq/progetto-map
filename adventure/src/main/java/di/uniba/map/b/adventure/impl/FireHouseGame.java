@@ -99,12 +99,12 @@ public class FireHouseGame extends GameDescription implements GameObservable {
                 + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
         corridor.setLook(""
                 + "Sei nel corridoio, vedi che continua verso EST e noti una presa d’aria sul muro, senti\n"
-                + " dei passi venire verso di te.");
+                + " dei passi venire verso di te.\nC'è una porta a OVEST.");
         Room corridor2 = new Room(2, "Corridoio", ""
                 + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
         corridor2.setLook(""
                 + "Sei arrivato nell’angolo del corridoio, noti una porta a NORD e il corridoio continua\n"
-                + "verso SUD.");
+                + "verso SUD e verso OVEST.");
         Room corridor3 = new Room(3, "Corridoio", ""
                 + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
         corridor3.setLook(""
@@ -292,7 +292,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
 * @param out
      * @param window
 */
-   
+
 @Override
 public void nextMove(ParserOutput p, PrintStream out, Window window) {
     parserOutput = p;
