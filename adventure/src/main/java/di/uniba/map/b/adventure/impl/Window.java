@@ -21,6 +21,8 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
     JTextArea startDescriptionTextArea;
     JTextArea messageTextArea;
     JTextField testo;
+    JTextField testo2;
+    JTextField testo3;
     JScrollPane scrollPane;
     
     Image image;
@@ -122,7 +124,6 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         messageTextArea.setBackground(Color.BLACK); 
         messageTextArea.setSize(200, 200);
         messageTextArea.setLocation(200, 200);
-        messageTextArea.setText("saba");
         messageTextArea.setVisible(false);
         //panel.add(messageTextArea);
 //\JTextArea message-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -257,7 +258,7 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
 
 //JTextField-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        testo=new JTextField(20);
+        testo = new JTextField(20);
         testo.setSize(200,20);
         testo.setLocation(200,470);
         testo.setForeground(Color.WHITE);
@@ -268,6 +269,8 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         testo.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
+                testo2.setVisible(false);
+                testo3.setVisible(false);
                 // Controlla se il tasto premuto è "Invio"
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
                     // Ottieni il testo dal JTextField e stampalo
@@ -280,24 +283,91 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
                     } else if (p.getCommand() != null && p.getCommand().getType() == CommandType.END) {
                         Window.this.showMessage("Sei un fifone, addio!");
                         testo.setVisible(false);
+                        testo2.setVisible(false);
+                        testo3.setVisible(false);
+                        PlayTime.endGame();
+                        roomDescriptionTextArea.setVisible(false);
+                        roomNameTextArea.setVisible(false);
                         
                     } else {
                         game.nextMove(p, System.out, Window.this);
                         if (game.getCurrentRoom() == null) {
                             Window.this.showMessage("La tua avventura termina qui! Complimenti!");
                             testo.setVisible(false);
-                            System.exit(0);
+                            testo2.setVisible(false);
+                            testo3.setVisible(false);
+                            roomDescriptionTextArea.setVisible(false);
+                            roomNameTextArea.setVisible(false);
                             PlayTime.endGame();
+                            System.exit(0);
                         }
                     }                    
                 }
             }
-        });        
+        });
+
+        testo2 = new JTextField(20);
+        testo2.setSize(200,20);
+        testo2.setLocation(200,490);
+        testo2.setForeground(Color.WHITE);
+        testo2.setBackground(Color.BLACK);
+        panel.add(testo2);
+        testo2.setVisible(false);
+
+        testo2.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                // Controlla se il tasto premuto è "Invio"
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    // Ottieni il testo dal JTextField e stampalo
+                    insertText = testo2.getText().replace(" ", "");
+                    if (PushObserver.verify(insertText)) {
+                        Window.this.showMessage("Hai inserito correttamente le coordinate spaziali \nSei tornato a casa sano e salvo.\nLa tua avventura termina qui! Complimenti!");
+                        testo2.setVisible(false);
+                        testo.setVisible(false);
+                        testo3.setVisible(false);
+                        roomDescriptionTextArea.setVisible(false);
+                        roomNameTextArea.setVisible(false);
+                        game.setCurrentRoom(null);
+                        PlayTime.endGame();
+                        currentBackground.setIcon(resizedPortaleAcceso);
+                    } else {
+                        Window.this.showMessage("Coordinate errate. Riprova.");
+                    }
+                }
+            }
+        });
+
+        testo3 = new JTextField(20);
+        testo3.setSize(200,20);
+        testo3.setLocation(200,490);
+        testo3.setForeground(Color.WHITE);
+        testo3.setBackground(Color.BLACK);
+        panel.add(testo3);
+        testo3.setVisible(false);
+
+        testo3.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                // Controlla se il tasto premuto è "Invio"
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    // Ottieni il testo dal JTextField e stampalo
+                    insertText = testo3.getText();
+                    if (insertText.equals("07738")) {
+                        Window.this.showMessage("Hai inserito correttamente il codice di accesso \nOra inserisci le coordinate.");
+                        testo3.setVisible(false);
+                        testo.setVisible(true);
+                        testo2.setVisible(true);
+                    } else {
+                        Window.this.showMessage("Codice errato. Riprova.");
+                    }
+                }
+            }
+        });
+
 //\JTextField-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-        
         setVisible(true);
     }
     
