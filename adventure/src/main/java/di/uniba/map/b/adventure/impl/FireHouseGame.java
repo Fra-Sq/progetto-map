@@ -99,12 +99,12 @@ public class FireHouseGame extends GameDescription implements GameObservable {
                 + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
         corridor.setLook(""
                 + "Sei nel corridoio, vedi che continua verso EST e noti una presa d’aria sul muro, senti\n"
-                + " dei passi venire verso di te.\nC'è una porta a OVEST.");
+                + " dei passi venire verso di te.");
         Room corridor2 = new Room(2, "Corridoio", ""
                 + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
         corridor2.setLook(""
                 + "Sei arrivato nell’angolo del corridoio, noti una porta a NORD e il corridoio continua\n"
-                + "verso SUD e verso OVEST.");
+                + "verso SUD.");
         Room corridor3 = new Room(3, "Corridoio", ""
                 + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
         corridor3.setLook(""
@@ -131,8 +131,8 @@ public class FireHouseGame extends GameDescription implements GameObservable {
                 + "Contiene campioni di flora e fauna di diversi pianeti. Al centro, un tavolo di lavoro\n"
                 + "interattivo permette agli alieni di studiare la vita extraterrestre.");
         lab.setLook(""
-                + "Sei nel laboratorio, vedi un tavolo di lavoro al centro della stanza,\n"
-                + "su di questo c'è una tessera magnetica. \nVedi una porta a EST.");
+                + "Sei nel laboratorio, vedi un tavolo di lavoro al centro della stanza e una\n"
+                + "porta a EST.");
         Room anteroom = new Room(8, "Anticamera", ""
                 + "Una stanza di transizione tra il corridoio e l'archivio, con armadietti e pannelli\n"
                 + "di controllo. Entri nell'anticamera, dopo pochi secondi si chiude la porta dietro di\n"
@@ -198,7 +198,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         //obejcts
         AdvObject portal = new AdvObject(1, "portale", "Un portale scintillante fluttua, circondato da rune luminose.");
         portal.setAlias(new String[]{"portal"});
-        portal.setPushable(true);
+        portal.setPushable(false);
         portalRoom.getObjects().add(portal);
         AdvObject controlPanel = new AdvObject(2, "pannello di controllo", "Schermi e console con interfacce aliene, pulsanti luminosi e ologrammi\ninterattivi.");
         controlPanel.setAlias(new String[]{"pannello", "console", "schermi", "console di controllo"});
@@ -230,35 +230,39 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         door.setOpenable(true);
         engineRoom.getObjects().add(door); // Aggiungi la porta agli oggetti della stanza
         door.setOpen(false); // Imposta lo stato iniziale della porta come chiusa
+        AdvObject vent = new AdvObject(10, "presadaria", "Una presa d’aria sul muro.");
+        vent.setAlias(new String[]{"presadaria", "presad'aria", "presad'aria", "condotto", "presa d'aria"});
+        vent.setPushable(true);
+        corridor.getObjects().add(vent);
         AdvObject map = new AdvObject(11, "mappa", "Una mappa stellare con rotte e pianeti.");
         map.setAlias(new String[]{"cartina", "pianeta", "coordinate", "mappe"});
         map.setPickupable(true);
         map.setReadable(true);
     map.setContents("COORDINATE VIA LATTEA\n" +
             "Pianeta: Marte\n" +
-            "Coordinate: 43522 N 1372630 E\n" +
+            "Coordinate: 43522\" N 1372630\" E\n" +
             "Pianeta: Venere\n" +
-            "Coordinate: 183657 N 773300 E\n" +
+            "Coordinate: 183657\" N 773300\" E\n" +
             "Pianeta: Giove\n" +
-            "Coordinate: 230713 N 821107 E\n" +
+            "Coordinate: 230713\" N 821107\" E\n" +
             "Pianeta: Saturno\n" +
-            "Coordinate: 150732 N 74157 E\n" +
+            "Coordinate: 150732\" N 74157\" E\n" +
             "Pianeta: Urano\n" +
-            "Coordinate: 43522 N 1372630 E\n" +
+            "Coordinate: 43522\" N 1372630\" E\n" +
             "Pianeta: Nettuno\n" +
-            "Coordinate: 183657 N 773300 E\n" +
+            "Coordinate: 183657\" N 773300\" E\n" +
             "Pianeta: Plutone\n" +
-            "Coordinate: 230713 N 821107 E\n" +
+            "Coordinate: 230713\" N 821107\" E\n" +
             "Pianeta: Mercurio\n" +
-            "Coordinate: 150732 N 74157 E\n" +
+            "Coordinate: 150732\" N 74157\" E\n" +
             "Pianeta: Terra\n" +
-            "Coordinate: 450732 N 74157 E\n" +
+            "Coordinate: 450732\" N 74157\" E\n" +
             "Pianeta: Luna\n" +
-            "Coordinate: 43522 N 1372630 E\n" +
+            "Coordinate: 43522\" N 1372630\" E\n" +
             "Stella: Sole\n" +
-            "Coordinate: 183657 N 773300 E\n" +
+            "Coordinate: 183657\" N 773300\" E\n" +
             "Pianeta: Mercurio\n" +
-            "Coordinate: 150732 N 74157 E\n");
+            "Coordinate: 150732\" N 74157\" E\n");
         archive.getObjects().add(map);
         
         //Observer
@@ -292,7 +296,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
 * @param out
      * @param window
 */
-
+   
 @Override
 public void nextMove(ParserOutput p, PrintStream out, Window window) {
     parserOutput = p;
@@ -306,29 +310,72 @@ public void nextMove(ParserOutput p, PrintStream out, Window window) {
         notifyObservers(window);
         boolean move = !cr.equals(getCurrentRoom()) && getCurrentRoom() != null;
 
-        if (!messages.isEmpty()) {
-            for (String m : messages) {
-                if (m.length() > 0) {
-                    out.println(m);
-                    window.showMessage(m);
+        // Controllo per il comando LOOK_AT
+        if (p.getCommand().getType() == CommandType.LOOK_AT) {
+            AdvObject object = p.getObject();
+            if (object != null) {
+                out.println("Osservi " + object.getName() + ": " + object.getDescription());
+                window.showMessage("Osservi " + object.getName() + ": " + object.getDescription());
+            } else {
+                out.println(cr.getLook());
+                window.showMessage(cr.getLook());
+                if (cr.getName().equalsIgnoreCase("Anticamera")) {
+                    if (cr.isMonsterAlive()) {
+                        cr.setDynamicLook("Sei nell'anticamera, l'alieno gigante si sta svegliando e ti osserva con occhi minacciosi!\n");
+                    }
+                    out.println(cr.getDynamicLook());
+                    window.showMessage(cr.getDynamicLook());
                 }
             }
-        }
+        } else {
+            if (!messages.isEmpty()) {
+                for (String m : messages) {
+                    if (m.length() > 0) {
+                        out.println(m);
+                        window.showMessage(m);
+                    }
+                }
+            }
 
-        if (move) {
-            Room currentRoom = getCurrentRoom();
-            if (currentRoom.getName().equals("Sala motori")) {
-                // Resto del codice per gestire la sala motori
+            if (move) {
+                Room currentRoom = getCurrentRoom();
+                if (currentRoom.getName().equals("Sala motori")) {
+                    boolean hasKey = getInventory().stream().anyMatch(obj -> obj.getId() == 5);
+                    if (hasKey) {
+                        if (isKeyUsed()) {
+                            out.println(currentRoom.getName());
+                            window.showRoomName(currentRoom.getName());
+                            out.println("================================================");
+                            out.println(currentRoom.getDescription());
+                            window.showRoomDescription(currentRoom.getDescription());
+                        } else {
+                            out.println("La porta è chiusa ma hai la chiave. Usa la chiave per aprirla.");
+                            window.showMessage("La porta è chiusa ma hai la chiave. Usa la chiave per aprirla.");
+                        }
+                    } else {
+                        out.println("La porta è chiusa e non puoi entrare perché non hai la chiave.");
+                        window.showMessage("La porta è chiusa e non puoi entrare perché non hai la chiave.");
+                        setCurrentRoom(cr); // Torna alla stanza precedente
+                    }
+                } else {
+                    out.println(currentRoom.getName());
+                    window.showRoomName(currentRoom.getName());
+                    out.println("================================================");
+                    out.println(currentRoom.getDescription());
+                    window.showRoomDescription(currentRoom.getDescription());
+                }
             } else {
-                out.println(currentRoom.getName());
-                window.showRoomName(currentRoom.getName());
+                // Se non c'è stato un movimento, mostra la stanza corrente
+                out.println(cr.getName());
+                window.showRoomName(cr.getName());
                 out.println("================================================");
-                out.println(currentRoom.getDescription());
-                window.showRoomDescription(currentRoom.getDescription());
+                out.println(cr.getDescription());
+                window.showRoomDescription(cr.getDescription());
             }
         }
     }
 }
+
 
 
 
