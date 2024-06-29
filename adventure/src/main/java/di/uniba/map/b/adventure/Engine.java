@@ -8,7 +8,6 @@ package di.uniba.map.b.adventure;
 import di.uniba.map.b.adventure.impl.Database;
 import di.uniba.map.b.adventure.impl.Window;
 import di.uniba.map.b.adventure.impl.FireHouseGame;
-import di.uniba.map.b.adventure.impl.PlayTime;
 import di.uniba.map.b.adventure.parser.Parser;
 import di.uniba.map.b.adventure.parser.ParserOutput;
 import di.uniba.map.b.adventure.type.CommandType;
@@ -63,7 +62,6 @@ public class Engine {
         System.out.println("* Squarcella-Gorgoglione Francesco *");
         System.out.println("====================================");
       
-        PlayTime.startGame();
         System.out.println();
         System.out.println(game.getWelcomeMsg());
         window.showStartDescription(game.getWelcomeMsg());
@@ -83,13 +81,11 @@ public class Engine {
                 System.out.println("Non capisco quello che mi vuoi dire.");
             } else if (p.getCommand() != null && p.getCommand().getType() == CommandType.END) {
                 System.out.println("Sei un fifone, addio!");
-                PlayTime.endGame();
                 break;
             } else {
                 game.nextMove(p, System.out, window);
                 if (game.getCurrentRoom() == null) {
                     System.out.println("La tua avventura termina qui! Complimenti!");
-                    PlayTime.endGame();
                     System.exit(0);
                 }
             }
@@ -104,5 +100,4 @@ public class Engine {
         Engine engine = new Engine(new FireHouseGame());
         engine.execute();
     }
-
 }

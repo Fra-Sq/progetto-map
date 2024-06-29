@@ -294,7 +294,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
 *
 * @param p
 * @param out
-     * @param window
+* @param window
 */
    
 @Override
@@ -373,9 +373,8 @@ public void nextMove(ParserOutput p, PrintStream out, Window window) {
                 window.showRoomDescription(cr.getDescription());
             }
         }
-    }
+   }
 }
-
 
 
 

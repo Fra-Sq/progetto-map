@@ -11,11 +11,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Window extends JFrame implements ActionListener, KeyListener, MouseListener
+public class Window extends JFrame
 {
     JPanel panel;
     JLabel currentBackground;
     JLabel labelNavicella;
+    JLabel timePlay;
     JTextArea roomNameTextArea;
     JTextArea roomDescriptionTextArea;
     JTextArea startDescriptionTextArea;
@@ -24,6 +25,7 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
     JTextField testo2;
     JTextField testo3;
     JScrollPane scrollPane;
+    AePlayWave sottofondo;
     
     Image image;
     Image resizedImage;
@@ -48,59 +50,65 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         setLayout(null);
         
 
+        sottofondo= new AePlayWave("./resources/audio/amongus.wav");
         
 //Resize di tutte le immagini-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// navicella
+        ImageIcon originalNavicella = new ImageIcon("./resources/immagini/navicella.jpg");
+        image = originalNavicella.getImage(); // Trasforma in un oggetto Image
+        resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); // Ridimensiona l'immagine
+        ImageIcon resizedNavicella = new ImageIcon(resizedImage);
 // portale
-        ImageIcon originalPortale = new ImageIcon("./immagini/portale.jpeg");
+        ImageIcon originalPortale = new ImageIcon("./resources/immagini/portale.jpeg");
         image = originalPortale.getImage();
         resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); 
         resizedPortale = new ImageIcon(resizedImage);
 //corridoio
-        ImageIcon originalCorridoio = new ImageIcon("./immagini/corridoio.jpeg");
+        ImageIcon originalCorridoio = new ImageIcon("./resources/immagini/corridoio.jpeg");
         image = originalCorridoio.getImage();
         resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); 
         resizedCorridoio = new ImageIcon(resizedImage);
 //sala comandi
-        ImageIcon originalSalaComandi = new ImageIcon("./immagini/sala_comandi.jpeg");
+        ImageIcon originalSalaComandi = new ImageIcon("./resources/immagini/sala_comandi.jpeg");
         image = originalSalaComandi.getImage();
         resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); 
         resizedSalaComandi = new ImageIcon(resizedImage);
 //laboratorio
-        ImageIcon originalLaboratorio = new ImageIcon("./immagini/laboratorio.jpeg");
+        ImageIcon originalLaboratorio = new ImageIcon("./resources/immagini/laboratorio.jpeg");
         image = originalLaboratorio.getImage();
         resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); 
         resizedLaboratorio = new ImageIcon(resizedImage);
 //motore
-        ImageIcon originalMotore = new ImageIcon("./immagini/motore.jpeg");
+        ImageIcon originalMotore = new ImageIcon("./resources/immagini/motore.jpeg");
         image = originalMotore.getImage();
         resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); 
         resizedMotore = new ImageIcon(resizedImage);
 //armeria
-        ImageIcon originalArmeria = new ImageIcon("./immagini/armeria.jpeg");
+        ImageIcon originalArmeria = new ImageIcon("./resources/immagini/armeria.jpeg");
         image = originalArmeria.getImage();
         resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); 
         resizedArmeria = new ImageIcon(resizedImage);
 //alieno
-        ImageIcon originalAlieno = new ImageIcon("./immagini/alieno.jpeg");
+        ImageIcon originalAlieno = new ImageIcon("./resources/immagini/alieno.jpeg");
         image = originalAlieno.getImage();
         resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); 
         resizedAlieno = new ImageIcon(resizedImage);
 //archivio
-        ImageIcon originalArchivio = new ImageIcon("./immagini/archivio.jpeg");
+        ImageIcon originalArchivio = new ImageIcon("./resources/immagini/archivio.jpeg");
         image = originalArchivio.getImage();
         resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); 
         resizedArchivio = new ImageIcon(resizedImage);
 //portale acceso
-        ImageIcon originalPortaleAcceso = new ImageIcon("./immagini/portale_acceso.jpeg");
+        ImageIcon originalPortaleAcceso = new ImageIcon("./resources/immagini/portale_acceso.jpeg");
         image = originalPortaleAcceso.getImage();
         resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); 
         resizedPortaleAcceso = new ImageIcon(resizedImage);
 //\Resize di tutte le immagini-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-        
+    startSound(sottofondo);
+    
 //JLabel panel-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         panel=new JPanel();
@@ -122,10 +130,7 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         messageTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
         messageTextArea.setForeground(Color.WHITE);
         messageTextArea.setBackground(Color.BLACK); 
-        messageTextArea.setSize(200, 200);
-        messageTextArea.setLocation(200, 200);
         messageTextArea.setVisible(false);
-        //panel.add(messageTextArea);
 //\JTextArea message-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -136,28 +141,56 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         scrollPane=new JScrollPane();
         scrollPane.setVisible(false);
         scrollPane.setSize(480, 51);
-        //scrollPane.setBackground(Color.BLACK);
-        //scrollPane.setForeground(Color.WHITE);
         scrollPane.setLocation(50, 415);
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.setViewportView(messageTextArea);
-        scrollPane.setBorder(null);
+        scrollPane.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         panel.add(scrollPane);
-        
 //\JLabel scrollpanel-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+//JLabel time-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //Creare una JLabel per visualizzare il tempo
+        timePlay = new JLabel("00:00:00");
+        timePlay.setForeground(Color.WHITE);
+        timePlay.setBackground(Color.BLACK);
+        timePlay.setHorizontalAlignment(SwingConstants.CENTER);
+        timePlay.setOpaque(true);
+        timePlay.setSize(55, 17);
+        timePlay.setLocation(470, 338);
+        timePlay.setVisible(false);
+        timePlay.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        
+        // Aggiungere JLabel al frame
+        panel.add(timePlay);
+        
+        // Creare un contatore per i secondi
+        final int[] elapsedSeconds = {0};
+        
+        // Timer per aggiornare l'etichetta ogni secondo
+        Timer timer = new Timer(1000, (ActionEvent e) -> {
+            // Incrementare il contatore dei secondi
+            elapsedSeconds[0]++;
+            // Convertire il tempo in ore, minuti e secondi
+            int hours = elapsedSeconds[0] / 3600;
+            int minutes = (elapsedSeconds[0] % 3600) / 60;
+            int seconds = elapsedSeconds[0] % 60;
+            // Formattare il tempo come stringa
+            String timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+            // Impostare il tempo formattato sull'etichetta
+            timePlay.setText(timeString);
+        });        
+//\JLabeltime-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 //JLabel Navicella-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        ImageIcon originalNavicella = new ImageIcon("./immagini/navicella.jpg");
-        
-        image = originalNavicella.getImage(); // Trasforma in un oggetto Image
-        resizedImage = image.getScaledInstance(600, 600,  java.awt.Image.SCALE_SMOOTH); // Ridimensiona l'immagine
-        ImageIcon resizedNavicella = new ImageIcon(resizedImage);
-        
         labelNavicella=new JLabel(resizedNavicella);
         labelNavicella.setSize(600,600);
         labelNavicella.setLocation(0,0);
@@ -173,6 +206,8 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
                 currentBackground.setVisible(true);
                 scrollPane.setVisible(true);
                 messageTextArea.setVisible(true);
+                timePlay.setVisible(true);
+                timer.start();
             }
         });
         
@@ -186,8 +221,6 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
 
 //JLabel currentBackground-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-        
-        
         currentBackground=new JLabel(resizedPortale);
         currentBackground.setSize(600, 600);
         currentBackground.setLocation(0, 0);
@@ -203,7 +236,7 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         startDescriptionTextArea = new JTextArea();
         startDescriptionTextArea.setEditable(false); // Rende la JTextArea non modificabile
         startDescriptionTextArea.setBackground(panel.getBackground()); // Rende lo sfondo uguale a quello del frame
-        startDescriptionTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
+        //startDescriptionTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
         startDescriptionTextArea.setOpaque(true);
         startDescriptionTextArea.setForeground(Color.WHITE);
         startDescriptionTextArea.setBackground(Color.BLACK);
@@ -221,15 +254,17 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         roomNameTextArea=new JTextArea();
         roomNameTextArea.setOpaque(true);
-        roomNameTextArea.setSize(250, 17);
-        roomNameTextArea.setLocation(50, 340);
-        panel.add(roomNameTextArea);
+        roomNameTextArea.setFont(new Font("Serif", Font.BOLD, 12));
+        roomNameTextArea.setSize(200, 20);
+        roomNameTextArea.setLocation(50, 338);
         roomNameTextArea.setEditable(false); // Rende la JTextArea non modificabile
         roomNameTextArea.setBackground(panel.getBackground()); // Rende lo sfondo uguale a quello del frame
-        roomNameTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
+        //roomNameTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
+        roomNameTextArea.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         roomNameTextArea.setForeground(Color.WHITE);
         roomNameTextArea.setBackground(Color.BLACK);
         roomNameTextArea.setVisible(false);
+        roomNameTextArea.setMargin(new Insets(0, 20, 0, 0));
         panel.add(roomNameTextArea);
         panel.setComponentZOrder(roomNameTextArea, 0);
 //\JTextArea RoomName-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -245,7 +280,8 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         roomDescriptionTextArea.setLocation(50, 360);
         roomDescriptionTextArea.setEditable(false); // Rende la JTextArea non modificabile
         roomDescriptionTextArea.setBackground(panel.getBackground()); // Rende lo sfondo uguale a quello del frame
-        roomDescriptionTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
+        //roomDescriptionTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
+        roomDescriptionTextArea.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         roomDescriptionTextArea.setForeground(Color.WHITE);
         roomDescriptionTextArea.setBackground(Color.BLACK); 
         roomDescriptionTextArea.setVisible(false);
@@ -264,8 +300,9 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         testo.setLocation(200,470);
         testo.setForeground(Color.WHITE);
         testo.setBackground(Color.BLACK); 
-        panel.add(testo);
+        testo.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         testo.setVisible(false);
+        panel.add(testo);
         
         testo.addKeyListener(new KeyAdapter() {
             @Override
@@ -286,7 +323,6 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
                         testo.setVisible(false);
                         testo2.setVisible(false);
                         testo3.setVisible(false);
-                        PlayTime.endGame();
                         roomDescriptionTextArea.setVisible(false);
                         roomNameTextArea.setVisible(false);
                         
@@ -299,7 +335,6 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
                             testo3.setVisible(false);
                             roomDescriptionTextArea.setVisible(false);
                             roomNameTextArea.setVisible(false);
-                            PlayTime.endGame();
                             System.exit(0);
                         }
                     }                    
@@ -312,9 +347,10 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         testo2.setLocation(200,490);
         testo2.setForeground(Color.WHITE);
         testo2.setBackground(Color.BLACK);
-        panel.add(testo2);
+        testo2.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         testo2.setVisible(false);
-
+        panel.add(testo2);
+        
         testo2.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -330,8 +366,8 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
                         roomDescriptionTextArea.setVisible(false);
                         roomNameTextArea.setVisible(false);
                         game.setCurrentRoom(null);
-                        PlayTime.endGame();
                         currentBackground.setIcon(resizedPortaleAcceso);
+                        timer.stop();
                     } else {
                         Window.this.showMessage("Coordinate errate. Riprova.");
                     }
@@ -344,8 +380,9 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         testo3.setLocation(200,490);
         testo3.setForeground(Color.WHITE);
         testo3.setBackground(Color.BLACK);
-        panel.add(testo3);
+        testo3.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         testo3.setVisible(false);
+        panel.add(testo3);
 
         testo3.addKeyListener(new KeyAdapter() {
             @Override
@@ -368,6 +405,17 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
 
 //\JTextField-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
+
+
+        // Aggiungi un WindowListener per gestire l'evento di chiusura della finestra
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                stopSound(sottofondo); // Chiamata al metodo per fermare il thread
+                dispose(); // Chiudi la finestra in modo appropriato
+            }
+        });
 
         setVisible(true);
     }
@@ -389,20 +437,14 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         if(roomName.equals("Armeria"))    currentBackground.setIcon(resizedArmeria);
         if(roomName.equals("Anticamera"))    currentBackground.setIcon(resizedAlieno);
         if(roomName.equals("Archivio"))    currentBackground.setIcon(resizedArchivio);
-        
-        //this.revalidate();
-    }
+            }
     
     public void showRoomDescription(String roomDescription){
-        //roomDescriptionTextArea.setVisible(true); 
         roomDescriptionTextArea.setText(roomDescription);
-        //this.revalidate();
     }
     
     public void showMessage(String message){
-        //messageTextArea.setVisible(true); 
         messageTextArea.setText(message);
-        //this.revalidate();
     }
     
     
@@ -410,47 +452,11 @@ public class Window extends JFrame implements ActionListener, KeyListener, Mouse
         return insertText;
     }
     
-    @Override
-    public void actionPerformed(ActionEvent e){
-
+    private void startSound(AePlayWave sound){
+        sound.start();
     }
     
-    @Override
-    public void keyReleased(KeyEvent e){
-    
-    }
-    
-    @Override
-    public void keyTyped(KeyEvent e){
-    
-    }
-    
-    @Override
-    public void keyPressed(KeyEvent e){
-        
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent e){
-        
-    }
-
-    @Override
-    public void mousePressed(MouseEvent e){
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent e){
-        
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent e){
-        
-    }
-
-    @Override
-    public void mouseExited(MouseEvent e){
-        
+    private void stopSound(AePlayWave sound){
+        sound.stopSound();
     }
 }
