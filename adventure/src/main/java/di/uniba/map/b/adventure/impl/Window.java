@@ -107,7 +107,7 @@ public class Window extends JFrame
 //\Resize di tutte le immagini-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    startSound(sottofondo);
+    startAudio(sottofondo);
     
 //JLabel panel-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -412,7 +412,7 @@ public class Window extends JFrame
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
-                stopSound(sottofondo); // Chiamata al metodo per fermare il thread
+                stopAudio(sottofondo); // Chiamata al metodo per fermare il thread
                 dispose(); // Chiudi la finestra in modo appropriato
             }
         });
@@ -452,11 +452,11 @@ public class Window extends JFrame
         return insertText;
     }
     
-    private void startSound(AePlayWave sound){
-        sound.start();
+    private void startAudio(AePlayWave sound){
+        sound.startSound();
     }
     
-    private void stopSound(AePlayWave sound){
+    private void stopAudio(AePlayWave sound){
         sound.stopSound();
     }
 }
