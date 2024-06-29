@@ -26,7 +26,7 @@ public class Engine {
     private final GameDescription game;
 
     private Parser parser;
-    
+    private Database database;
     private Window window;
     //private Database database;
 
@@ -36,8 +36,9 @@ public class Engine {
      */
     public Engine(GameDescription game) {
         this.game = game;
+        database= new Database();
         try {
-            this.game.init();
+            this.game.init(database);
         } catch (Exception ex) {
             System.err.println(ex);
         }

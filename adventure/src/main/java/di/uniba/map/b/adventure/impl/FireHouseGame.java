@@ -42,10 +42,11 @@ public class FireHouseGame extends GameDescription implements GameObservable {
 
     /**
      *
+     * @param database
      * @throws Exception
      */
     @Override
-    public void init() throws Exception {
+    public void init(Database database) throws Exception {
         messages.clear();
         //Commands
         Command nord = new Command(CommandType.NORD, "nord");
@@ -88,76 +89,31 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         killMonster.setAlias(new String[]{"uccidi", "elimina", "distruggi"});
         getCommands().add(killMonster);
         //Rooms
-        Room portalRoom = new Room(0, "Sala del portale", ""
-                + "La sala della navicella aliena è circolare e illuminata da una luce soffusa. Al centro,\n"
-                + "un portale scintillante fluttua, circondato da rune luminose. Pannelli di controllo e cavi\n"
-                + "collegano il portale a macchinari misteriosi. \nDevi attraversare il portale per scappare.");
-        portalRoom.setLook(""
-                + "Sei nella sala del portale, il portale è l'unico modo per scappare ma non è attivo, un\n"
-                + " pannello di controllo e' collegato a questo. Ad EST vedi un corridoio.");
-        Room corridor = new Room(1, "Corridoio", ""
-                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor.setLook(""
-                + "Sei nel corridoio, vedi che continua verso EST e noti una presa d’aria sul muro, senti\n"
-                + " dei passi venire verso di te.");
-        Room corridor2 = new Room(2, "Corridoio", ""
-                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor2.setLook(""
-                + "Sei arrivato nell’angolo del corridoio, noti una porta a NORD e il corridoio continua\n"
-                + "verso SUD.");
-        Room corridor3 = new Room(3, "Corridoio", ""
-                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor3.setLook(""
-                + "Sei ancora nel corridoio, vedi una porta verso EST e il corridoio continua   n"
-                + "verso SUD.");
-        Room corridor4 = new Room(4, "Corridoio", ""
-                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor4.setLook(""
-                + "Il corridoio continua, vedi una porta verso EST e una porta a OVEST,\n"
-                + "il corridoio continua verso SUD e verso NORD.");
-        Room corridor5 = new Room(5, "Corridoio", ""
-                + "Il corridoio è lungo e stretto, con pareti di metallo e luci intermittenti.");
-        corridor5.setLook(""
-                + "Sei arrivato alla fine del corridoio e vedi una porta dritta di fronte a te,verso SUD,\n"
-                + "noti che è più rinforzata delle altre. Verso NORD ripercorri il corridoio.");
-        Room controlRoom = new Room(6, "Sala di controllo", ""
-                + "Il cuore pulsante della navicella, con pannelli di controllo bioluminescenti e schermi\n"
-                + "olografici che fluttuano nell’aria, un grande schermo mostra un pianeta sconosciuto.");
-        controlRoom.setLook(""
-                + "Sei nella sala di controllo, Noti quella che (per noi terrestri) sembra una cassaforte\n"
-                + "in un angolo della stanza. L'uscita e' a SUD.");
-        Room lab = new Room(7, "Laboratorio", ""
-                + "Una stanza piena di strumenti scientifici avanzati per l’analisi e la sperimentazione. \n"
-                + "Contiene campioni di flora e fauna di diversi pianeti. Al centro, un tavolo di lavoro\n"
-                + "interattivo permette agli alieni di studiare la vita extraterrestre.");
-        lab.setLook(""
-                + "Sei nel laboratorio, vedi un tavolo di lavoro al centro della stanza e una\n"
-                + "porta a EST.");
-        Room anteroom = new Room(8, "Anticamera", ""
-                + "Una stanza di transizione tra il corridoio e l'archivio, con armadietti e pannelli\n"
-                + "di controllo. Entri nell'anticamera, dopo pochi secondi si chiude la porta dietro di\n"
-                + "te e si apre quella davanti.\n");
+        Room portalRoom = new Room(0, database.getNameById("portalRoom"), database.getDescriptionById("portalRoom"));
+        portalRoom.setLook(database.getRoomLookById("portalRoom"));
+        Room corridor = new Room(1, database.getNameById("corridor"), database.getDescriptionById("corridor"));
+        corridor.setLook(database.getRoomLookById("corridor"));
+        Room corridor2 = new Room(2, database.getNameById("corridor2"), database.getDescriptionById("corridor2"));
+        corridor2.setLook(database.getRoomLookById("corridor2"));
+        Room corridor3 = new Room(3, database.getNameById("corridor3"), database.getDescriptionById("corridor3"));
+        corridor3.setLook(database.getRoomLookById("corridor3"));
+        Room corridor4 = new Room(4, database.getNameById("corridor4"), database.getDescriptionById("corridor4"));
+        corridor4.setLook(database.getRoomLookById("corridor4"));
+        Room corridor5 = new Room(5, database.getNameById("corridor5"), database.getDescriptionById("corridor5"));
+        corridor5.setLook(database.getRoomLookById("corridor5"));
+        Room controlRoom = new Room(6, database.getNameById("controlRoom"), database.getDescriptionById("controlRoom"));
+        controlRoom.setLook(database.getRoomLookById("controlRoom"));
+        Room lab = new Room(7, database.getNameById("lab"), database.getDescriptionById("lab"));
+        lab.setLook(database.getRoomLookById("lab"));
+        Room anteroom = new Room(8, database.getNameById("anteroom"), database.getDescriptionById("anteroom"));
         anteroom.setMonsterAlive(true);  // Imposta il mostro come vivo all'inizio
-        anteroom.setLook(""
-                + "Sei nell'anticamera, vedi un alieno gigante dormiente, noti che ha qualcosa tatuato su\n"
-                + "uno dei suoi tentacoli.\nvedi una porta a NORD e una a SUD");
-        Room archive = new Room(9, "Archivio", ""
-                + "Una stanza piena di scaffalature piene di rotoli di pergamena e dischi di cristallo.\n"
-                + "Il soffitto è illuminato da una luce soffusa che fa brillare i simboli alieni incisi\n"
-                + "sulle pareti.");
-        archive.setLook(""
-                + "Sei nell'archivio, ci sono decine di scaffali pieni di mappe varie con su scritti i nomi\n"
-                + "dei vari pianeti, magari c’è quello con le informazioni sulla Terra. L'uscita è a NORD.");
-        Room armory = new Room(10, "Armeria", ""
-                + "Una stanza piena di armi e armature, con un odore di olio e metallo.");
-        armory.setLook(""
-                + "Sei nell'armeria, vedi armi di ogni tipo, alcune ti sembrano familiari, forse potresti\n"
-                + "usarle per difenderti. L'uscita è a OVEST.");
-        Room engineRoom = new Room(11, "Sala motori", ""
-                + "Una stanza piena di macchinari e motori, con un rumore assordante e un odore\n"
-                + "di carburante.\n");
-        engineRoom.setLook(""
-                + "Sei nella sala motori, vedi un grande motore al centro della stanza. L'uscita e' a OVEST.");
+        anteroom.setLook(database.getRoomLookById("anteroom"));
+        Room archive = new Room(9, database.getNameById("archive"), database.getDescriptionById("archive"));
+        archive.setLook(database.getRoomLookById("archive"));
+        Room armory = new Room(10, database.getNameById("armory"), database.getDescriptionById("armory"));
+        armory.setLook(database.getRoomLookById("armory"));
+        Room engineRoom = new Room(11, database.getNameById("engineRoom"), database.getDescriptionById("engineRoom"));
+        engineRoom.setLook(database.getRoomLookById("engineRoom"));
         
 
         //map
@@ -196,45 +152,41 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         getRooms().add(armory);
         getRooms().add(engineRoom);
         //obejcts
-        AdvObject portal = new AdvObject(1, "portale", "Un portale scintillante fluttua, circondato da rune luminose.");
+        AdvObject portal = new AdvObject(1, database.getNameById("portal"), database.getDescriptionById("portal"));
         portal.setAlias(new String[]{"portal"});
         portal.setPushable(false);
         portalRoom.getObjects().add(portal);
-        AdvObject controlPanel = new AdvObject(2, "pannello di controllo", "Schermi e console con interfacce aliene, pulsanti luminosi e ologrammi\ninterattivi.");
+        AdvObject controlPanel = new AdvObject(2, database.getNameById("controlPanel"), database.getDescriptionById("controlPanel"));
         controlPanel.setAlias(new String[]{"pannello", "console", "schermi", "console di controllo"});
         controlPanel.setPushable(true);
         portalRoom.getObjects().add(controlPanel);
-        AdvObjectContainer alien = new AdvObjectContainer(3, "alieno", "Un alieno gigante dormiente, ha qualcosa tatuato su uno dei suoi tentacoli.");
+        AdvObjectContainer alien = new AdvObjectContainer(3, database.getNameById("alien"), database.getDescriptionById("alien"));
         alien.setAlias(new String[]{"gigante", "mostro", "essere", "alieno gigante"});
         alien.setCreature(true);
         anteroom.getObjects().add(alien);
         //killMonster.setAlias(new String[]{"ammazza alieno", "ammazza mostro", "uccidi alieno", "uccidi mostro"});
-        AdvObjectContainer safe = new AdvObjectContainer(4, "cassaforte", "Una cassaforte con un pannello di controllo, \nnecessita di uuna chiave per poter essere aperta.");
+        AdvObjectContainer safe = new AdvObjectContainer(4, database.getNameById("safe"), database.getDescriptionById("safe"));
         safe.setAlias(new String[]{"cassa", "cassaforte"});
         safe.setOpenable(true);
         controlRoom.getObjects().add(safe);
-        AdvObject key = new AdvObject(5, "chiave", "Una chiave magnetica, potrebbe aprire le porte.");
+        AdvObject key = new AdvObject(5, database.getNameById("key"), database.getDescriptionById("key"));
         key.setAlias(new String[]{"tessera", "carta", "magnetica"});
         key.setPickupable(true);
         lab.getObjects().add(key);
-        AdvObject gem = new AdvObject(6, "gemma", "Una gemma scintillante, sembra avere un potere magico.");
+        AdvObject gem = new AdvObject(6, database.getNameById("gem"), database.getDescriptionById("gem"));
         gem.setAlias(new String[]{"pietra", "sasso", "cristallo"});
         gem.setPickupable(true);
         safe.add(gem); //inseritaa la gemma all'interno della cassa forte
-        AdvObject sword = new AdvObject(8, "spada", "Una spada affilata, sembra essere di origine terrestre.");
+        AdvObject sword = new AdvObject(8, database.getNameById("sword"), database.getDescriptionById("sword"));
         sword.setAlias(new String[]{"arma", "spadone", "falcione"});
         sword.setPickupable(true);
         armory.getObjects().add(sword);
-        AdvObjectContainer door = new AdvObjectContainer(9, "porta", "Una porta rinforzata, sembra essere l'uscita.");
+        AdvObjectContainer door = new AdvObjectContainer(9, database.getNameById("door"), database.getDescriptionById("door"));
         door.setAlias(new String[]{"uscita", "portone", "porta rinforzata, porta"});
         door.setOpenable(true);
         engineRoom.getObjects().add(door); // Aggiungi la porta agli oggetti della stanza
         door.setOpen(false); // Imposta lo stato iniziale della porta come chiusa
-        AdvObject vent = new AdvObject(10, "presadaria", "Una presa d’aria sul muro.");
-        vent.setAlias(new String[]{"presadaria", "presad'aria", "presad'aria", "condotto", "presa d'aria"});
-        vent.setPushable(true);
-        corridor.getObjects().add(vent);
-        AdvObject map = new AdvObject(11, "mappa", "Una mappa stellare con rotte e pianeti.");
+        AdvObject map = new AdvObject(11, database.getNameById("map"), database.getDescriptionById("map"));
         map.setAlias(new String[]{"cartina", "pianeta", "coordinate", "mappe"});
         map.setPickupable(true);
         map.setReadable(true);

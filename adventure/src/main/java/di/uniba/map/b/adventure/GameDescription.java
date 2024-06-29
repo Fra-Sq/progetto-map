@@ -5,6 +5,7 @@
  */
 package di.uniba.map.b.adventure;
 
+import di.uniba.map.b.adventure.impl.Database;
 import di.uniba.map.b.adventure.impl.Window;
 import di.uniba.map.b.adventure.parser.ParserOutput;
 import di.uniba.map.b.adventure.type.AdvObject;
@@ -80,14 +81,16 @@ public abstract class GameDescription {
 
     /**
      *
+     * @param database
      * @throws Exception
      */
-    public abstract void init() throws Exception;
+    public abstract void init(Database database) throws Exception;
 
     /**
      *
      * @param p
      * @param out
+     * @param window
      */
     public abstract void nextMove(ParserOutput p, PrintStream out, Window window);
     
