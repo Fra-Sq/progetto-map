@@ -11,7 +11,6 @@ import di.uniba.map.b.adventure.GameObserver;
 import di.uniba.map.b.adventure.GameUtils;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-import java.util.Scanner;
 
 /**
  *

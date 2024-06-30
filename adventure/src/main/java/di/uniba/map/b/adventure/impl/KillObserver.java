@@ -10,7 +10,6 @@ import di.uniba.map.b.adventure.GameObserver;
 import di.uniba.map.b.adventure.parser.ParserOutput;
 import di.uniba.map.b.adventure.type.CommandType;
 import di.uniba.map.b.adventure.type.AdvObject;
-import di.uniba.map.b.adventure.type.AdvObjectContainer;
 import di.uniba.map.b.adventure.type.Room;
 /**
  *

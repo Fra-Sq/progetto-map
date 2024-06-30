@@ -112,10 +112,7 @@ public class Command {
             return false;
         }
         final Command other = (Command) obj;
-        if (this.type != other.type) {
-            return false;
-        }
-        return true;
+        return this.type == other.type;
     }
 
 }

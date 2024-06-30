@@ -2,7 +2,6 @@ package di.uniba.map.b.adventure.impl;
 
 import di.uniba.map.b.adventure.GameDescription;
 import di.uniba.map.b.adventure.GameObserver;
-import di.uniba.map.b.adventure.GameUtils;
 import di.uniba.map.b.adventure.parser.ParserOutput;
 import di.uniba.map.b.adventure.type.CommandType;
 
@@ -35,7 +34,7 @@ public class ReadObserver implements GameObserver{
                 }
                 if (parserOutput.getInvObject() != null && parserOutput.getInvObject().getId() == 11) {
                     if (parserOutput.getInvObject().isReadable()) {
-                        msg.append("Mappa: " + parserOutput.getInvObject().getContents());
+                        msg.append("Mappa: ").append(parserOutput.getInvObject().getContents());
                         msg.append("Non sembra molto utile, ma potrebbe tornarti utile in futuro.");
                     }
                     interact = true;

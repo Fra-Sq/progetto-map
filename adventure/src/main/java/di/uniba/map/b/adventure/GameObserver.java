@@ -17,6 +17,7 @@ public interface GameObserver {
      *
      * @param description
      * @param parserOutput
+     * @param window
      * @return
      */
     public String update(GameDescription description, ParserOutput parserOutput, Window window);
