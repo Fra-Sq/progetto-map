@@ -325,6 +325,7 @@ public class Window extends JFrame
                         testo3.setVisible(false);
                         roomDescriptionTextArea.setVisible(false);
                         roomNameTextArea.setVisible(false);
+                        timer.stop();
                         
                     } else {
                         game.nextMove(p, System.out, Window.this);

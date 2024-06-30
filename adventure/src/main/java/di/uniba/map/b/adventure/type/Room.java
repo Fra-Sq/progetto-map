@@ -197,10 +197,7 @@ public class Room {
             return false;
         }
         final Room other = (Room) obj;
-        if (this.id != other.id) {
-            return false;
-        }
-        return true;
+        return this.id == other.id;
     }
 
     /**
@@ -234,19 +231,19 @@ public class Room {
     }
 
     public String getDynamicLook() {
-        StringBuilder dynamicLook = new StringBuilder(look);
+        StringBuilder dynamiclook = new StringBuilder(look);
 
         for (AdvObject obj : objects) {
             if (obj instanceof AdvObjectContainer && obj.getId() == 9) { // porta rinforzata
                 if (((AdvObjectContainer) obj).isOpen()) {
-                    dynamicLook.append("\nLa porta rinforzata è aperta.");
+                    dynamiclook.append("\nLa porta rinforzata è aperta.");
                 } else {
-                    dynamicLook.append("\nLa porta rinforzata è chiusa.");
+                    dynamiclook.append("\nLa porta rinforzata è chiusa.");
                 }
             }
         }
 
-        return dynamicLook.toString();
+        return dynamiclook.toString();
     }
 
     public AdvObject getObjectByName(String name) {

@@ -305,10 +305,7 @@ public class AdvObject {
             return false;
         }
         final AdvObject other = (AdvObject) obj;
-        if (this.id != other.id) {
-            return false;
-        }
-        return true;
+        return this.id == other.id;
     }
 
 

@@ -26,7 +26,7 @@ public interface GameObservable {
     
     /**
      *
-     */
+     * @param window */
     public void notifyObservers(Window window);
     
 }
