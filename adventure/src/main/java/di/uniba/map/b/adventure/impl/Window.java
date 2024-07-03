@@ -26,9 +26,13 @@ public class Window extends JFrame
     JTextField testo3;
     JScrollPane scrollPane;
     AePlayWave sottofondo;
+    JButton pauseButton = new JButton("Pausa");
+    JButton loadGameButton = new JButton("Carica Partita");
+    JButton newGameButton = new JButton("Inizia Partita");
     
     Image image;
     Image resizedImage;
+    private boolean isPaused = false;
     
     
     private String insertText;
@@ -195,6 +199,9 @@ public class Window extends JFrame
         labelNavicella.setSize(600,600);
         labelNavicella.setLocation(0,0);
         panel.add(labelNavicella);
+        pauseButton.setVisible(false);
+        newGameButton.setVisible(true);
+        loadGameButton.setVisible(true);
         labelNavicella.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -207,6 +214,9 @@ public class Window extends JFrame
                 scrollPane.setVisible(true);
                 messageTextArea.setVisible(true);
                 timePlay.setVisible(true);
+                pauseButton.setVisible(true);
+                newGameButton.setVisible(false);
+                loadGameButton.setVisible(false);
                 timer.start();
             }
         });
@@ -257,7 +267,7 @@ public class Window extends JFrame
         roomNameTextArea.setFont(new Font("Serif", Font.BOLD, 12));
         roomNameTextArea.setSize(200, 20);
         roomNameTextArea.setLocation(50, 338);
-        roomNameTextArea.setEditable(false); // Rende la JTextArea non modificabile
+        //roomNameTextArea.setEditable(false); // Rende la JTextArea non modificabile
         roomNameTextArea.setBackground(panel.getBackground()); // Rende lo sfondo uguale a quello del frame
         //roomNameTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
         roomNameTextArea.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
@@ -295,6 +305,58 @@ public class Window extends JFrame
 
 //JTextField-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    // Aggiungi il pulsante di pausa/riprendi
+        //JButton pauseButton = new JButton("Pausa");
+        pauseButton.setSize(100, 30);
+        pauseButton.setLocation(50, 500);
+        pauseButton.setForeground(Color.WHITE);
+        pauseButton.setBackground(Color.BLACK);
+        pauseButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        
+        panel.add(pauseButton);
+
+        // Gestione azione di pausa/riprendi
+        pauseButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (isPaused) {
+                    // Se il gioco è in pausa, riprendi
+                    isPaused = false;
+                    pauseButton.setText("Pausa");
+                    timer.start(); // Riprendi il timer
+                    testo.setEditable(true);
+                } else {
+                    // Se il gioco non è in pausa, metti in pausa
+                    isPaused = true;
+                    pauseButton.setText("Riprendi");
+                    timer.stop(); // Ferma il timer
+                    testo.setEditable(false);
+                }
+            }
+        });
+
+        // Avvia il gioco con la navicella visibile
+        setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //aggiunta tasti 'nuova partita' e 'carica partita'
+        //JButton newGameButton = new JButton("Nuova Partita");
+        newGameButton.setSize(100, 30);
+        newGameButton.setLocation(300, 510);
+        newGameButton.setForeground(Color.WHITE);
+        newGameButton.setBackground(Color.BLACK);
+        newGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        //newGameButton.setVisible(true);
+        panel.add(newGameButton);
+        
+        //JButton loadGameButton = new JButton("Carica Partita");
+        loadGameButton.setSize(100, 30);
+        loadGameButton.setLocation(100, 510);
+        loadGameButton.setForeground(Color.WHITE);
+        loadGameButton.setBackground(Color.BLACK);
+        loadGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        //loadGameButton.setVisible(true);
+        panel.add(loadGameButton);
+
         testo = new JTextField(20);
         testo.setSize(200,20);
         testo.setLocation(200,470);
@@ -323,6 +385,7 @@ public class Window extends JFrame
                         testo.setVisible(false);
                         testo2.setVisible(false);
                         testo3.setVisible(false);
+                        pauseButton.setVisible(false);
                         roomDescriptionTextArea.setVisible(false);
                         roomNameTextArea.setVisible(false);
                         timer.stop();
@@ -334,6 +397,7 @@ public class Window extends JFrame
                             testo.setVisible(false);
                             testo2.setVisible(false);
                             testo3.setVisible(false);
+                            pauseButton.setVisible(false);
                             roomDescriptionTextArea.setVisible(false);
                             roomNameTextArea.setVisible(false);
                             System.exit(0);
@@ -368,6 +432,7 @@ public class Window extends JFrame
                         roomNameTextArea.setVisible(false);
                         game.setCurrentRoom(null);
                         currentBackground.setIcon(resizedPortaleAcceso);
+                        pauseButton.setVisible(false);
                         timer.stop();
                     } else {
                         Window.this.showMessage("Coordinate errate. Riprova.");
