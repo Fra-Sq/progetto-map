@@ -28,7 +28,8 @@ public class Window extends JFrame
     AePlayWave sottofondo;
     JButton pauseButton = new JButton("Pausa");
     JButton loadGameButton = new JButton("Carica Partita");
-    JButton newGameButton = new JButton("Inizia Partita");
+    JButton newGameButton = new JButton("Nuova Partita");
+    JButton saveGameButton = new JButton("Salva Partita");
     
     Image image;
     Image resizedImage;
@@ -195,47 +196,45 @@ public class Window extends JFrame
 
 //JLabel Navicella-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        labelNavicella=new JLabel(resizedNavicella);
-        labelNavicella.setSize(600,600);
-        labelNavicella.setLocation(0,0);
+       labelNavicella = new JLabel(resizedNavicella);
+        labelNavicella.setSize(600, 600);
+        labelNavicella.setLocation(0, 0);
         panel.add(labelNavicella);
         pauseButton.setVisible(false);
-        newGameButton.setVisible(true);
-        loadGameButton.setVisible(true);
+        newGameButton.setVisible(false);
+        loadGameButton.setVisible(false);
+        saveGameButton.setVisible(false);
+
         labelNavicella.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                labelNavicella.setVisible(false);
+                labelNavicella.setVisible(true);
                 startDescriptionTextArea.setVisible(false);
-                roomNameTextArea.setVisible(true); 
-                roomDescriptionTextArea.setVisible(true);
-                testo.setVisible(true);
-                currentBackground.setVisible(true);
-                scrollPane.setVisible(true);
-                messageTextArea.setVisible(true);
-                timePlay.setVisible(true);
-                pauseButton.setVisible(true);
-                newGameButton.setVisible(false);
-                loadGameButton.setVisible(false);
-                timer.start();
+                currentBackground.setVisible(false); // Visualizza solo la prima immagine
+                roomNameTextArea.setVisible(false);
+                roomDescriptionTextArea.setVisible(false);
+                testo.setVisible(false);
+                messageTextArea.setVisible(false);
+                scrollPane.setVisible(false);
+                timePlay.setVisible(false);
+                pauseButton.setVisible(false);
+                newGameButton.setVisible(true);
+                loadGameButton.setVisible(true);
+                saveGameButton.setVisible(false);
+                timer.stop();
             }
         });
-        
+
         labelNavicella.setFocusable(true);
         labelNavicella.requestFocusInWindow();
         labelNavicella.setVisible(true);
-//\JLabel Navicella-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-//JLabel currentBackground-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-        currentBackground=new JLabel(resizedPortale);
+        currentBackground = new JLabel(resizedPortale); // Prima immagine di sfondo
         currentBackground.setSize(600, 600);
         currentBackground.setLocation(0, 0);
-        panel.add(currentBackground); 
+        panel.add(currentBackground);
         currentBackground.setVisible(false);
+
 //\JLabel portalRoomImage-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -308,12 +307,14 @@ public class Window extends JFrame
     // Aggiungi il pulsante di pausa/riprendi
         //JButton pauseButton = new JButton("Pausa");
         pauseButton.setSize(100, 30);
-        pauseButton.setLocation(50, 500);
+        pauseButton.setLocation(450, 50);
         pauseButton.setForeground(Color.WHITE);
         pauseButton.setBackground(Color.BLACK);
         pauseButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
-        
+        pauseButton.setOpaque(true);
+        //panel.setComponentZOrder(pauseButton, 0);
         panel.add(pauseButton);
+        panel.setComponentZOrder(pauseButton, 0);
 
         // Gestione azione di pausa/riprendi
         pauseButton.addActionListener(new ActionListener() {
@@ -325,12 +326,14 @@ public class Window extends JFrame
                     pauseButton.setText("Pausa");
                     timer.start(); // Riprendi il timer
                     testo.setEditable(true);
+                    saveGameButton.setVisible(false);
                 } else {
                     // Se il gioco non è in pausa, metti in pausa
                     isPaused = true;
                     pauseButton.setText("Riprendi");
                     timer.stop(); // Ferma il timer
                     testo.setEditable(false);
+                    saveGameButton.setVisible(true);
                 }
             }
         });
@@ -338,25 +341,73 @@ public class Window extends JFrame
         // Avvia il gioco con la navicella visibile
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //aggiunta tasti 'nuova partita' e 'carica partita'
+        //aggiunta tasti 'nuova partita' e 'carica partita' e 'salva partita'
         //JButton newGameButton = new JButton("Nuova Partita");
         newGameButton.setSize(100, 30);
-        newGameButton.setLocation(300, 510);
+        newGameButton.setLocation(400, 450);
         newGameButton.setForeground(Color.WHITE);
         newGameButton.setBackground(Color.BLACK);
         newGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
-        //newGameButton.setVisible(true);
+        //newGameButton.setVisible();
         panel.add(newGameButton);
+        panel.setComponentZOrder(newGameButton, 0);
+        // Gestione azione di nuova partita
+        newGameButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                labelNavicella.setVisible(false);
+                startDescriptionTextArea.setVisible(false);
+                currentBackground.setVisible(true); // Visualizza solo la prima immagine
+                roomNameTextArea.setVisible(true);
+                roomDescriptionTextArea.setVisible(true);
+                testo.setVisible(true);
+                messageTextArea.setVisible(true);
+                scrollPane.setVisible(true);
+                timePlay.setVisible(true);
+                pauseButton.setVisible(true);
+                newGameButton.setVisible(false);
+                loadGameButton.setVisible(false);
+                //saveGameButton.setVisible(true);
+                timer.start();
+            }
+        });
+        
         
         //JButton loadGameButton = new JButton("Carica Partita");
         loadGameButton.setSize(100, 30);
-        loadGameButton.setLocation(100, 510);
+        loadGameButton.setLocation(100, 450);
         loadGameButton.setForeground(Color.WHITE);
         loadGameButton.setBackground(Color.BLACK);
         loadGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+         //panel.setComponentZOrder(loadGameButton, 0);
         //loadGameButton.setVisible(true);
         panel.add(loadGameButton);
+        panel.setComponentZOrder(loadGameButton, 0);
+        
+        saveGameButton.setSize(100, 30);
+        saveGameButton.setLocation(250, 250);
+        saveGameButton.setForeground(Color.WHITE);
+        saveGameButton.setBackground(Color.BLACK);
+        saveGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        //panel.setComponentZOrder(saveGameButton, 0);
+        //saveGameButton.setVisible(true);
+        panel.add(saveGameButton);
+        panel.setComponentZOrder(saveGameButton, 0);
+        saveGameButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String fileName = JOptionPane.showInputDialog("Inserisci il nome del file per salvare la partita:");
+                if (fileName != null && !fileName.trim().isEmpty()) {
+                    SaveGame.save(game, fileName.trim() + ".sav");
+                    JOptionPane.showMessageDialog(null, "Partita salvata con successo!");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Nome del file non valido!");
+                }
+            }
+        });
+        
 
+        
         testo = new JTextField(20);
         testo.setSize(200,20);
         testo.setLocation(200,470);
@@ -365,6 +416,8 @@ public class Window extends JFrame
         testo.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         testo.setVisible(false);
         panel.add(testo);
+        panel.setComponentZOrder(testo, 0);
+        
         
         testo.addKeyListener(new KeyAdapter() {
             @Override
@@ -415,6 +468,7 @@ public class Window extends JFrame
         testo2.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         testo2.setVisible(false);
         panel.add(testo2);
+         panel.setComponentZOrder(testo2, 0);
         
         testo2.addKeyListener(new KeyAdapter() {
             @Override
@@ -449,6 +503,7 @@ public class Window extends JFrame
         testo3.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         testo3.setVisible(false);
         panel.add(testo3);
+        panel.setComponentZOrder(testo3, 0);
 
         testo3.addKeyListener(new KeyAdapter() {
             @Override
@@ -525,4 +580,5 @@ public class Window extends JFrame
     private void stopAudio(AePlayWave sound){
         sound.stopSound();
     }
+   
 }
