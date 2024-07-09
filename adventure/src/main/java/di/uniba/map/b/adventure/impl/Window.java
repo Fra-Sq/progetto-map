@@ -34,6 +34,7 @@ public class Window extends JFrame
     Image image;
     Image resizedImage;
     private boolean isPaused = false;
+    private int elapsedSeconds = 0;
     
     
     private String insertText;
@@ -174,21 +175,17 @@ public class Window extends JFrame
         panel.add(timePlay);
         
         // Creare un contatore per i secondi
-        final int[] elapsedSeconds = {0};
-        
-        // Timer per aggiornare l'etichetta ogni secondo
-        Timer timer = new Timer(1000, (ActionEvent e) -> {
-            // Incrementare il contatore dei secondi
-            elapsedSeconds[0]++;
-            // Convertire il tempo in ore, minuti e secondi
-            int hours = elapsedSeconds[0] / 3600;
-            int minutes = (elapsedSeconds[0] % 3600) / 60;
-            int seconds = elapsedSeconds[0] % 60;
-            // Formattare il tempo come stringa
-            String timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
-            // Impostare il tempo formattato sull'etichetta
-            timePlay.setText(timeString);
-        });        
+         // Sposta qui la definizione di elapsedSeconds
+
+    // Modifica del timer per aggiornare elapsedSeconds
+    Timer timer = new Timer(1000, (ActionEvent e) -> {
+        elapsedSeconds++;
+        int hours = elapsedSeconds / 3600;
+        int minutes = (elapsedSeconds % 3600) / 60;
+        int seconds = elapsedSeconds % 60;
+        String timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+        timePlay.setText(timeString);
+    });
 //\JLabeltime-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -398,7 +395,7 @@ public class Window extends JFrame
             public void actionPerformed(ActionEvent e) {
                 String fileName = JOptionPane.showInputDialog("Inserisci il nome del file per salvare la partita:");
                 if (fileName != null && !fileName.trim().isEmpty()) {
-                    SaveGame.save(game, fileName.trim() + ".sav");
+                    SaveGame.save(game, fileName.trim() + ".txt", elapsedSeconds);
                     JOptionPane.showMessageDialog(null, "Partita salvata con successo!");
                 } else {
                     JOptionPane.showMessageDialog(null, "Nome del file non valido!");

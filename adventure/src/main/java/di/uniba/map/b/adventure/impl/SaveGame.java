@@ -6,19 +6,24 @@ package di.uniba.map.b.adventure.impl;
 
 import di.uniba.map.b.adventure.GameDescription;
 
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class SaveGame {
 
-    public static void save(GameDescription game, String fileName) {
-        try (FileOutputStream fileOut = new FileOutputStream(fileName);
-             ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
-            out.writeObject(game);
-            System.out.println("Game saved in " + fileName);
-        } catch (Exception e) {
+    public static void save(GameDescription game, String fileName, int elapsedSeconds) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            writer.write("ElapsedSeconds:" + elapsedSeconds + "\n");
+            writer.write("CurrentRoom:" + game.getCurrentRoom().getName() + "\n");
+            writer.write("Inventory:" + game.getInventory().toString() + "\n");
+            //writer.write("History:" + game.getHistory().toString() + "\n"); // Assumi che GameDescription abbia un metodo getHistory()
+            //System.out.println("Game saved in " + fileName);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 }
+
+
 
