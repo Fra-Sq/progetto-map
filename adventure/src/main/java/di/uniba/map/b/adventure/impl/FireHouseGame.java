@@ -89,30 +89,30 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         killMonster.setAlias(new String[]{"uccidi", "elimina", "distruggi"});
         getCommands().add(killMonster);
         //Rooms
-        Room portalRoom = new Room(0, database.getNameById("portalRoom"), database.getDescriptionById("portalRoom"));
+        Room portalRoom = new Room(0, database.getNameById("portalRoom"), database.getDescriptionById("portalRoom"), this);
         portalRoom.setLook(database.getRoomLookById("portalRoom"));
-        Room corridor = new Room(1, database.getNameById("corridor"), database.getDescriptionById("corridor"));
+        Room corridor = new Room(1, database.getNameById("corridor"), database.getDescriptionById("corridor"), this);
         corridor.setLook(database.getRoomLookById("corridor"));
-        Room corridor2 = new Room(2, database.getNameById("corridor2"), database.getDescriptionById("corridor2"));
+        Room corridor2 = new Room(2, database.getNameById("corridor2"), database.getDescriptionById("corridor2"), this);
         corridor2.setLook(database.getRoomLookById("corridor2"));
-        Room corridor3 = new Room(3, database.getNameById("corridor3"), database.getDescriptionById("corridor3"));
+        Room corridor3 = new Room(3, database.getNameById("corridor3"), database.getDescriptionById("corridor3"), this);
         corridor3.setLook(database.getRoomLookById("corridor3"));
-        Room corridor4 = new Room(4, database.getNameById("corridor4"), database.getDescriptionById("corridor4"));
+        Room corridor4 = new Room(4, database.getNameById("corridor4"), database.getDescriptionById("corridor4"), this);
         corridor4.setLook(database.getRoomLookById("corridor4"));
-        Room corridor5 = new Room(5, database.getNameById("corridor5"), database.getDescriptionById("corridor5"));
+        Room corridor5 = new Room(5, database.getNameById("corridor5"), database.getDescriptionById("corridor5"), this);
         corridor5.setLook(database.getRoomLookById("corridor5"));
-        Room controlRoom = new Room(6, database.getNameById("controlRoom"), database.getDescriptionById("controlRoom"));
+        Room controlRoom = new Room(6, database.getNameById("controlRoom"), database.getDescriptionById("controlRoom"), this);
         controlRoom.setLook(database.getRoomLookById("controlRoom"));
-        Room lab = new Room(7, database.getNameById("lab"), database.getDescriptionById("lab"));
+        Room lab = new Room(7, database.getNameById("lab"), database.getDescriptionById("lab"), this);
         lab.setLook(database.getRoomLookById("lab"));
-        Room anteroom = new Room(8, database.getNameById("anteroom"), database.getDescriptionById("anteroom"));
+        Room anteroom = new Room(8, database.getNameById("anteroom"), database.getDescriptionById("anteroom"), this);
         anteroom.setMonsterAlive(true);  // Imposta il mostro come vivo all'inizio
         anteroom.setLook(database.getRoomLookById("anteroom"));
-        Room archive = new Room(9, database.getNameById("archive"), database.getDescriptionById("archive"));
+        Room archive = new Room(9, database.getNameById("archive"), database.getDescriptionById("archive"), this);
         archive.setLook(database.getRoomLookById("archive"));
-        Room armory = new Room(10, database.getNameById("armory"), database.getDescriptionById("armory"));
+        Room armory = new Room(10, database.getNameById("armory"), database.getDescriptionById("armory"), this);
         armory.setLook(database.getRoomLookById("armory"));
-        Room engineRoom = new Room(11, database.getNameById("engineRoom"), database.getDescriptionById("engineRoom"));
+        Room engineRoom = new Room(11, database.getNameById("engineRoom"), database.getDescriptionById("engineRoom"), this);
         engineRoom.setLook(database.getRoomLookById("engineRoom"));
         
 
@@ -156,36 +156,51 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         portal.setAlias(new String[]{"portal"});
         portal.setPushable(false);
         portalRoom.getObjects().add(portal);
+        portalRoom.addObject(portal);
+        
         AdvObject controlPanel = new AdvObject(2, database.getNameById("controlPanel"), database.getDescriptionById("controlPanel"));
         controlPanel.setAlias(new String[]{"pannello", "console", "schermi", "console di controllo"});
         controlPanel.setPushable(true);
         portalRoom.getObjects().add(controlPanel);
+        portalRoom.addObject(controlPanel);
+        
         AdvObjectContainer alien = new AdvObjectContainer(3, database.getNameById("alien"), database.getDescriptionById("alien"));
         alien.setAlias(new String[]{"gigante", "mostro", "essere", "alieno gigante"});
         alien.setCreature(true);
         anteroom.getObjects().add(alien);
-        //killMonster.setAlias(new String[]{"ammazza alieno", "ammazza mostro", "uccidi alieno", "uccidi mostro"});
+        anteroom.addObject(alien);
+        
         AdvObjectContainer safe = new AdvObjectContainer(4, database.getNameById("safe"), database.getDescriptionById("safe"));
         safe.setAlias(new String[]{"cassa", "cassaforte"});
         safe.setOpenable(true);
         controlRoom.getObjects().add(safe);
+        controlRoom.addObject(safe);
+        
         AdvObject key = new AdvObject(5, database.getNameById("key"), database.getDescriptionById("key"));
         key.setAlias(new String[]{"tessera", "carta", "magnetica"});
         key.setPickupable(true);
         lab.getObjects().add(key);
+        lab.addObject(key);
+        
         AdvObject gem = new AdvObject(6, database.getNameById("gem"), database.getDescriptionById("gem"));
         gem.setAlias(new String[]{"pietra", "sasso", "cristallo"});
         gem.setPickupable(true);
         safe.add(gem); //inseritaa la gemma all'interno della cassa forte
+        lab.addObject(gem);
+        
         AdvObject sword = new AdvObject(8, database.getNameById("sword"), database.getDescriptionById("sword"));
         sword.setAlias(new String[]{"arma", "spadone", "falcione"});
         sword.setPickupable(true);
         armory.getObjects().add(sword);
+        armory.addObject(sword);
+        
         AdvObjectContainer door = new AdvObjectContainer(9, database.getNameById("door"), database.getDescriptionById("door"));
         door.setAlias(new String[]{"uscita", "portone", "porta rinforzata, porta"});
         door.setOpenable(true);
         engineRoom.getObjects().add(door); // Aggiungi la porta agli oggetti della stanza
         door.setOpen(false); // Imposta lo stato iniziale della porta come chiusa
+        engineRoom.addObject(door);
+        
         AdvObject map = new AdvObject(11, database.getNameById("map"), database.getDescriptionById("map"));
         map.setAlias(new String[]{"cartina", "pianeta", "coordinate", "mappe"});
         map.setPickupable(true);
@@ -216,6 +231,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
             "Pianeta: Mercurio\n" +
             "Coordinate: 150732\" N 74157\" E\n");
         archive.getObjects().add(map);
+        archive.addObject(map);
         
         //Observer
         GameObserver moveObserver = new MoveObserver();

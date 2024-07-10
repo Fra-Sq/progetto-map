@@ -7,9 +7,11 @@ import di.uniba.map.b.adventure.GameDescription;
 import di.uniba.map.b.adventure.parser.Parser;
 import di.uniba.map.b.adventure.parser.ParserOutput;
 import di.uniba.map.b.adventure.type.CommandType;
+import java.util.List;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Map;
 
 public class Window extends JFrame
 {
@@ -26,9 +28,9 @@ public class Window extends JFrame
     JTextField testo3;
     JScrollPane scrollPane;
     AePlayWave sottofondo;
-    JButton pauseButton = new JButton("Pausa");
+    JButton pauseButton;
     JButton loadGameButton = new JButton("Carica Partita");
-    JButton newGameButton = new JButton("Nuova Partita");
+    JButton newGameButton;
     JButton saveGameButton = new JButton("Salva Partita");
     
     Image image;
@@ -160,7 +162,6 @@ public class Window extends JFrame
 
 //JLabel time-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        //Creare una JLabel per visualizzare il tempo
         timePlay = new JLabel("00:00:00");
         timePlay.setForeground(Color.WHITE);
         timePlay.setBackground(Color.BLACK);
@@ -175,10 +176,10 @@ public class Window extends JFrame
         panel.add(timePlay);
         
         // Creare un contatore per i secondi
-         // Sposta qui la definizione di elapsedSeconds
+        // Sposta qui la definizione di elapsedSeconds
 
-    // Modifica del timer per aggiornare elapsedSeconds
-    Timer timer = new Timer(1000, (ActionEvent e) -> {
+        // Modifica del timer per aggiornare elapsedSeconds
+        Timer timer = new Timer(1000, (ActionEvent e) -> {
         elapsedSeconds++;
         int hours = elapsedSeconds / 3600;
         int minutes = (elapsedSeconds % 3600) / 60;
@@ -191,9 +192,167 @@ public class Window extends JFrame
 
 
 
+//JButton newGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        newGameButton = new JButton("Nuova Partita");
+        newGameButton.setSize(100, 30);
+        newGameButton.setLocation(400, 450);
+        newGameButton.setForeground(Color.WHITE);
+        newGameButton.setBackground(Color.BLACK);
+        newGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        //newGameButton.setVisible();
+        panel.add(newGameButton);
+        panel.setComponentZOrder(newGameButton, 0);
+        // Gestione azione di nuova partita
+        newGameButton.addActionListener((ActionEvent e) -> {
+            labelNavicella.setVisible(false);
+            startDescriptionTextArea.setVisible(false);
+            currentBackground.setVisible(true); // Visualizza solo la prima immagine
+            roomNameTextArea.setVisible(true);
+            roomDescriptionTextArea.setVisible(true);
+            testo.setVisible(true);
+            messageTextArea.setVisible(true);
+            scrollPane.setVisible(true);
+            timePlay.setVisible(true);
+            pauseButton.setVisible(true);
+            newGameButton.setVisible(false);
+            loadGameButton.setVisible(false);
+            //saveGameButton.setVisible(true);
+            timer.start();
+        });
+//\JButton newGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+        
+//JButton loadGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        loadGameButton.setSize(100, 30);
+        loadGameButton.setLocation(100, 450);
+        loadGameButton.setForeground(Color.WHITE);
+        loadGameButton.setBackground(Color.BLACK);
+        loadGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        panel.add(loadGameButton);
+        panel.setComponentZOrder(loadGameButton, 0);
+
+        loadGameButton.addActionListener((ActionEvent e) -> {
+            String gameName = JOptionPane.showInputDialog("Inserisci il nome della partita da caricare:");
+            if (gameName != null && !gameName.trim().isEmpty()) {
+                Map<String, Object> loadedGame = SaveGame.load(gameName.trim());
+                if (!loadedGame.isEmpty()) {
+                    // Recupera i dati della partita caricata
+                    elapsedSeconds = (int) loadedGame.get("ElapsedSeconds");
+                    int currentRoomId = (int) loadedGame.get("CurrentRoom");
+                    List<Integer> inventoryIds = (List<Integer>) loadedGame.get("Inventory");
+
+                    // Aggiorna l'oggetto game con i dati caricati
+                    game.setCurrentRoomById(currentRoomId); // Assicurati che ci sia un metodo per impostare la stanza corrente tramite ID
+                    game.setInventoryByIds(inventoryIds); // Assicurati che ci sia un metodo per impostare l'inventario tramite una lista di ID
+
+                    // Aggiorna l'interfaccia utente
+                    String currentRoomName = game.getCurrentRoom().getName(); // Assumendo che tu abbia un metodo per ottenere il nome della stanza corrente
+                    showRoomName(currentRoomName);
+
+                    labelNavicella.setVisible(false);
+                    startDescriptionTextArea.setVisible(false);
+                    currentBackground.setVisible(true); // Visualizza solo la prima immagine
+                    roomNameTextArea.setVisible(true);
+                    roomDescriptionTextArea.setVisible(true);
+                    testo.setVisible(true);
+                    messageTextArea.setVisible(true);
+                    scrollPane.setVisible(true);
+                    timePlay.setVisible(true);
+                    pauseButton.setVisible(true);
+                    newGameButton.setVisible(false);
+                    loadGameButton.setVisible(false);
+                    timer.start();
+
+                    JOptionPane.showMessageDialog(null, "Partita caricata con successo!");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Partita non trovata!");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Nome della partita non valido!");
+            }
+        });
+
+//\JButton loadGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//\JButton saveGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        saveGameButton.setSize(100, 30);
+        saveGameButton.setLocation(250, 250);
+        saveGameButton.setForeground(Color.WHITE);
+        saveGameButton.setBackground(Color.BLACK);
+        saveGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        panel.add(saveGameButton);
+        panel.setComponentZOrder(saveGameButton, 0);
+        saveGameButton.addActionListener((ActionEvent e) -> {
+            while (true) {
+                String gameName = JOptionPane.showInputDialog("Inserisci il nome della partita da salvare:");
+                if (gameName == null) {
+                    JOptionPane.showMessageDialog(null, "Operazione di salvataggio annullata.");
+                    break; // Esci dal ciclo se l'utente preme "Cancel"
+                } else if (!gameName.trim().isEmpty()) {
+                    if (!SaveGame.gameExists(gameName.trim())) {
+                        SaveGame.save(game.getCurrentRoom(), game.getInventory(), gameName.trim(), elapsedSeconds);
+                        JOptionPane.showMessageDialog(null, "Partita salvata con successo!");
+                        break; // Esci dal ciclo dopo un salvataggio riuscito
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Una partita con questo nome esiste già. Inserisci un altro nome.");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Nome della partita non valido! Inserisci un nome valido.");
+                }
+            }
+        });
+//\JButton saveGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        
+
+
+//JButton Pausebutton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        pauseButton = new JButton("Pausa");
+        pauseButton.setSize(100, 30);
+        pauseButton.setLocation(450, 50);
+        pauseButton.setForeground(Color.WHITE);
+        pauseButton.setBackground(Color.BLACK);
+        pauseButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        pauseButton.setOpaque(true);
+        //panel.setComponentZOrder(pauseButton, 0);
+        panel.add(pauseButton);
+        panel.setComponentZOrder(pauseButton, 0);
+
+        // Gestione azione di pausa/riprendi
+        pauseButton.addActionListener((ActionEvent e) -> {
+            if (isPaused) {
+                // Se il gioco è in pausa, riprendi
+                isPaused = false;
+                pauseButton.setText("Pausa");
+                timer.start(); // Riprendi il timer
+                testo.setEditable(true);
+                saveGameButton.setVisible(false);
+            } else {
+                // Se il gioco non è in pausa, metti in pausa
+                isPaused = true;
+                pauseButton.setText("Riprendi");
+                timer.stop(); // Ferma il timer
+                testo.setEditable(false);
+                saveGameButton.setVisible(true);
+            }
+        });
+
+//\JButton Pausebutton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //JLabel Navicella-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-       labelNavicella = new JLabel(resizedNavicella);
+        labelNavicella = new JLabel(resizedNavicella);
         labelNavicella.setSize(600, 600);
         labelNavicella.setLocation(0, 0);
         panel.add(labelNavicella);
@@ -218,7 +377,6 @@ public class Window extends JFrame
                 newGameButton.setVisible(true);
                 loadGameButton.setVisible(true);
                 saveGameButton.setVisible(false);
-                timer.stop();
             }
         });
 
@@ -301,110 +459,6 @@ public class Window extends JFrame
 
 //JTextField-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    // Aggiungi il pulsante di pausa/riprendi
-        //JButton pauseButton = new JButton("Pausa");
-        pauseButton.setSize(100, 30);
-        pauseButton.setLocation(450, 50);
-        pauseButton.setForeground(Color.WHITE);
-        pauseButton.setBackground(Color.BLACK);
-        pauseButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
-        pauseButton.setOpaque(true);
-        //panel.setComponentZOrder(pauseButton, 0);
-        panel.add(pauseButton);
-        panel.setComponentZOrder(pauseButton, 0);
-
-        // Gestione azione di pausa/riprendi
-        pauseButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (isPaused) {
-                    // Se il gioco è in pausa, riprendi
-                    isPaused = false;
-                    pauseButton.setText("Pausa");
-                    timer.start(); // Riprendi il timer
-                    testo.setEditable(true);
-                    saveGameButton.setVisible(false);
-                } else {
-                    // Se il gioco non è in pausa, metti in pausa
-                    isPaused = true;
-                    pauseButton.setText("Riprendi");
-                    timer.stop(); // Ferma il timer
-                    testo.setEditable(false);
-                    saveGameButton.setVisible(true);
-                }
-            }
-        });
-
-        // Avvia il gioco con la navicella visibile
-        setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //aggiunta tasti 'nuova partita' e 'carica partita' e 'salva partita'
-        //JButton newGameButton = new JButton("Nuova Partita");
-        newGameButton.setSize(100, 30);
-        newGameButton.setLocation(400, 450);
-        newGameButton.setForeground(Color.WHITE);
-        newGameButton.setBackground(Color.BLACK);
-        newGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
-        //newGameButton.setVisible();
-        panel.add(newGameButton);
-        panel.setComponentZOrder(newGameButton, 0);
-        // Gestione azione di nuova partita
-        newGameButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                labelNavicella.setVisible(false);
-                startDescriptionTextArea.setVisible(false);
-                currentBackground.setVisible(true); // Visualizza solo la prima immagine
-                roomNameTextArea.setVisible(true);
-                roomDescriptionTextArea.setVisible(true);
-                testo.setVisible(true);
-                messageTextArea.setVisible(true);
-                scrollPane.setVisible(true);
-                timePlay.setVisible(true);
-                pauseButton.setVisible(true);
-                newGameButton.setVisible(false);
-                loadGameButton.setVisible(false);
-                //saveGameButton.setVisible(true);
-                timer.start();
-            }
-        });
-        
-        
-        //JButton loadGameButton = new JButton("Carica Partita");
-        loadGameButton.setSize(100, 30);
-        loadGameButton.setLocation(100, 450);
-        loadGameButton.setForeground(Color.WHITE);
-        loadGameButton.setBackground(Color.BLACK);
-        loadGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
-         //panel.setComponentZOrder(loadGameButton, 0);
-        //loadGameButton.setVisible(true);
-        panel.add(loadGameButton);
-        panel.setComponentZOrder(loadGameButton, 0);
-        
-        saveGameButton.setSize(100, 30);
-        saveGameButton.setLocation(250, 250);
-        saveGameButton.setForeground(Color.WHITE);
-        saveGameButton.setBackground(Color.BLACK);
-        saveGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
-        //panel.setComponentZOrder(saveGameButton, 0);
-        //saveGameButton.setVisible(true);
-        panel.add(saveGameButton);
-        panel.setComponentZOrder(saveGameButton, 0);
-        saveGameButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String fileName = JOptionPane.showInputDialog("Inserisci il nome del file per salvare la partita:");
-                if (fileName != null && !fileName.trim().isEmpty()) {
-                    SaveGame.save(game, fileName.trim() + ".txt", elapsedSeconds);
-                    JOptionPane.showMessageDialog(null, "Partita salvata con successo!");
-                } else {
-                    JOptionPane.showMessageDialog(null, "Nome del file non valido!");
-                }
-            }
-        });
-        
-
-        
         testo = new JTextField(20);
         testo.setSize(200,20);
         testo.setLocation(200,470);
@@ -465,7 +519,7 @@ public class Window extends JFrame
         testo2.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         testo2.setVisible(false);
         panel.add(testo2);
-         panel.setComponentZOrder(testo2, 0);
+        panel.setComponentZOrder(testo2, 0);
         
         testo2.addKeyListener(new KeyAdapter() {
             @Override

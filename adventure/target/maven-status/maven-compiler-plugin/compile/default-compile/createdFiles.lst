@@ -1,4 +1,5 @@
 di\uniba\map\b\adventure\impl\FireHouseGame.class
+di\uniba\map\b\adventure\impl\SaveGame.class
 di\uniba\map\b\adventure\impl\MoveObserver$1.class
 di\uniba\map\b\adventure\impl\Window$4.class
 di\uniba\map\b\adventure\type\Inventory.class
