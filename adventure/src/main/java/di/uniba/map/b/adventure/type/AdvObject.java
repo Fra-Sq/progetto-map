@@ -283,10 +283,14 @@ public class AdvObject {
      */
     @Override
     public int hashCode() {
+        return Integer.hashCode(id);
+    }
+    /*@Override
+    public int hashCode() {
         int hash = 7;
         hash = 37 * hash + this.id;
         return hash;
-    }
+    }*/
 
     /**
      *
@@ -298,15 +302,10 @@ public class AdvObject {
         if (this == obj) {
             return true;
         }
-        if (obj == null) {
+        if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final AdvObject other = (AdvObject) obj;
-        return this.id == other.id;
+        AdvObject other = (AdvObject) obj;
+        return id == other.id;
     }
-
-
 }

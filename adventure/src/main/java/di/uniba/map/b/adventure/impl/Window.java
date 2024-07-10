@@ -29,9 +29,9 @@ public class Window extends JFrame
     JScrollPane scrollPane;
     AePlayWave sottofondo;
     JButton pauseButton;
-    JButton loadGameButton = new JButton("Carica Partita");
+    JButton loadGameButton;
     JButton newGameButton;
-    JButton saveGameButton = new JButton("Salva Partita");
+    JButton exitAndSaveButton;
     
     Image image;
     Image resizedImage;
@@ -119,7 +119,7 @@ public class Window extends JFrame
     
 //JLabel panel-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        panel=new JPanel();
+        panel = new JPanel();
         panel.setSize(600, 600);
         panel.setLocation(1,1);
         panel.setVisible(true);
@@ -171,9 +171,8 @@ public class Window extends JFrame
         timePlay.setLocation(470, 338);
         timePlay.setVisible(false);
         timePlay.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
-        
-        // Aggiungere JLabel al frame
         panel.add(timePlay);
+        panel.setComponentZOrder(timePlay, 0);
         
         // Creare un contatore per i secondi
         // Sposta qui la definizione di elapsedSeconds
@@ -191,7 +190,6 @@ public class Window extends JFrame
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
 //JButton newGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         newGameButton = new JButton("Nuova Partita");
@@ -200,7 +198,6 @@ public class Window extends JFrame
         newGameButton.setForeground(Color.WHITE);
         newGameButton.setBackground(Color.BLACK);
         newGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
-        //newGameButton.setVisible();
         panel.add(newGameButton);
         panel.setComponentZOrder(newGameButton, 0);
         // Gestione azione di nuova partita
@@ -211,13 +208,13 @@ public class Window extends JFrame
             roomNameTextArea.setVisible(true);
             roomDescriptionTextArea.setVisible(true);
             testo.setVisible(true);
+            testo.setEditable(true);
             messageTextArea.setVisible(true);
             scrollPane.setVisible(true);
             timePlay.setVisible(true);
             pauseButton.setVisible(true);
             newGameButton.setVisible(false);
             loadGameButton.setVisible(false);
-            //saveGameButton.setVisible(true);
             timer.start();
         });
 //\JButton newGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -227,6 +224,7 @@ public class Window extends JFrame
         
 //JButton loadGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        loadGameButton = new JButton("Carica Partita");
         loadGameButton.setSize(100, 30);
         loadGameButton.setLocation(100, 450);
         loadGameButton.setForeground(Color.WHITE);
@@ -258,6 +256,7 @@ public class Window extends JFrame
                     currentBackground.setVisible(true); // Visualizza solo la prima immagine
                     roomNameTextArea.setVisible(true);
                     roomDescriptionTextArea.setVisible(true);
+                    showRoomDescription(game.getCurrentRoom().getDescription());
                     testo.setVisible(true);
                     messageTextArea.setVisible(true);
                     scrollPane.setVisible(true);
@@ -280,16 +279,17 @@ public class Window extends JFrame
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-//\JButton saveGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//\JButton exitAndSaveButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        saveGameButton.setSize(100, 30);
-        saveGameButton.setLocation(250, 250);
-        saveGameButton.setForeground(Color.WHITE);
-        saveGameButton.setBackground(Color.BLACK);
-        saveGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
-        panel.add(saveGameButton);
-        panel.setComponentZOrder(saveGameButton, 0);
-        saveGameButton.addActionListener((ActionEvent e) -> {
+        exitAndSaveButton = new JButton("Esci e salva");
+        exitAndSaveButton.setSize(100, 30);
+        exitAndSaveButton.setLocation(250, 250);
+        exitAndSaveButton.setForeground(Color.WHITE);
+        exitAndSaveButton.setBackground(Color.BLACK);
+        exitAndSaveButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        panel.add(exitAndSaveButton);
+        panel.setComponentZOrder(exitAndSaveButton, 0);
+        exitAndSaveButton.addActionListener((ActionEvent e) -> {
             while (true) {
                 String gameName = JOptionPane.showInputDialog("Inserisci il nome della partita da salvare:");
                 if (gameName == null) {
@@ -299,6 +299,7 @@ public class Window extends JFrame
                     if (!SaveGame.gameExists(gameName.trim())) {
                         SaveGame.save(game.getCurrentRoom(), game.getInventory(), gameName.trim(), elapsedSeconds);
                         JOptionPane.showMessageDialog(null, "Partita salvata con successo!");
+                        System.exit(0);
                         break; // Esci dal ciclo dopo un salvataggio riuscito
                     } else {
                         JOptionPane.showMessageDialog(null, "Una partita con questo nome esiste già. Inserisci un altro nome.");
@@ -308,10 +309,10 @@ public class Window extends JFrame
                 }
             }
         });
-//\JButton saveGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//\JButton exitAndSaveButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-        
+
 
 
 //JButton Pausebutton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -323,7 +324,6 @@ public class Window extends JFrame
         pauseButton.setBackground(Color.BLACK);
         pauseButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         pauseButton.setOpaque(true);
-        //panel.setComponentZOrder(pauseButton, 0);
         panel.add(pauseButton);
         panel.setComponentZOrder(pauseButton, 0);
 
@@ -335,19 +335,20 @@ public class Window extends JFrame
                 pauseButton.setText("Pausa");
                 timer.start(); // Riprendi il timer
                 testo.setEditable(true);
-                saveGameButton.setVisible(false);
+                exitAndSaveButton.setVisible(false);
             } else {
                 // Se il gioco non è in pausa, metti in pausa
                 isPaused = true;
                 pauseButton.setText("Riprendi");
                 timer.stop(); // Ferma il timer
                 testo.setEditable(false);
-                saveGameButton.setVisible(true);
+                exitAndSaveButton.setVisible(true);
             }
         });
 
 //\JButton Pausebutton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 //JLabel Navicella-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -359,12 +360,12 @@ public class Window extends JFrame
         pauseButton.setVisible(false);
         newGameButton.setVisible(false);
         loadGameButton.setVisible(false);
-        saveGameButton.setVisible(false);
+        exitAndSaveButton.setVisible(false);
 
         labelNavicella.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                labelNavicella.setVisible(true);
+                //labelNavicella.setVisible(true);
                 startDescriptionTextArea.setVisible(false);
                 currentBackground.setVisible(false); // Visualizza solo la prima immagine
                 roomNameTextArea.setVisible(false);
@@ -376,7 +377,7 @@ public class Window extends JFrame
                 pauseButton.setVisible(false);
                 newGameButton.setVisible(true);
                 loadGameButton.setVisible(true);
-                saveGameButton.setVisible(false);
+                exitAndSaveButton.setVisible(false);
             }
         });
 
@@ -389,7 +390,6 @@ public class Window extends JFrame
         currentBackground.setLocation(0, 0);
         panel.add(currentBackground);
         currentBackground.setVisible(false);
-
 //\JLabel portalRoomImage-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -400,7 +400,6 @@ public class Window extends JFrame
         startDescriptionTextArea = new JTextArea();
         startDescriptionTextArea.setEditable(false); // Rende la JTextArea non modificabile
         startDescriptionTextArea.setBackground(panel.getBackground()); // Rende lo sfondo uguale a quello del frame
-        //startDescriptionTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
         startDescriptionTextArea.setOpaque(true);
         startDescriptionTextArea.setForeground(Color.WHITE);
         startDescriptionTextArea.setBackground(Color.BLACK);
@@ -421,9 +420,7 @@ public class Window extends JFrame
         roomNameTextArea.setFont(new Font("Serif", Font.BOLD, 12));
         roomNameTextArea.setSize(200, 20);
         roomNameTextArea.setLocation(50, 338);
-        //roomNameTextArea.setEditable(false); // Rende la JTextArea non modificabile
         roomNameTextArea.setBackground(panel.getBackground()); // Rende lo sfondo uguale a quello del frame
-        //roomNameTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
         roomNameTextArea.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         roomNameTextArea.setForeground(Color.WHITE);
         roomNameTextArea.setBackground(Color.BLACK);
@@ -459,6 +456,7 @@ public class Window extends JFrame
 
 //JTextField-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //testo comandi
         testo = new JTextField(20);
         testo.setSize(200,20);
         testo.setLocation(200,470);
@@ -510,7 +508,9 @@ public class Window extends JFrame
                 }
             }
         });
-
+        
+        
+        //testo coordinate
         testo2 = new JTextField(20);
         testo2.setSize(200,20);
         testo2.setLocation(200,490);
@@ -545,7 +545,9 @@ public class Window extends JFrame
                 }
             }
         });
-
+        
+        
+        //testo codice
         testo3 = new JTextField(20);
         testo3.setSize(200,20);
         testo3.setLocation(200,490);
@@ -586,6 +588,7 @@ public class Window extends JFrame
             public void windowClosing(WindowEvent e) {
                 stopAudio(sottofondo); // Chiamata al metodo per fermare il thread
                 dispose(); // Chiudi la finestra in modo appropriato
+                System.exit(0);
             }
         });
 

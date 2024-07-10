@@ -33,22 +33,33 @@ public abstract class GameDescription {
         Optional<Room> room = rooms.stream()
                 .filter(r -> r.getId() == roomId)
                 .findFirst();
-        room.ifPresentOrElse(r -> this.currentRoom = r,
-                () -> System.out.println("Stanza non trovata: " + roomId));
+        room.ifPresent(r -> this.currentRoom = r);
     }
+
 
     public void setInventoryByIds(List<Integer> inventoryIds) {
         this.inventory = new ArrayList<>();
         for (int id : inventoryIds) {
             Optional<AdvObject> obj = getObjectById(id);
-            obj.ifPresent(this.inventory::add);
-        }
-        // Stampa il contenuto dell'inventario
-        System.out.println("Inventario impostato con i seguenti oggetti:");
-        for (AdvObject obj : inventory) {
-            System.out.println("ID: " + obj.getId() + ", Nome: " + obj.getName());
+            obj.ifPresent(o -> {
+                this.inventory.add(o);
+                // Rimuovi l'oggetto dalla stanza in cui si trova
+                for (Room room : rooms) {
+                    if (room.getObjects().contains(o)) {
+                        room.getObjects().remove(o);
+                        if (o.getId() == 6) {
+                            AdvObject door = room.getObject(4);
+                            if (door != null) {
+                                door.setOpenable(false);
+                            }
+                        }
+                    }
+                }
+            });
         }
     }
+
+
 
     public List<Command> getCommands() {
         return commands;
@@ -85,9 +96,6 @@ public abstract class GameDescription {
     }
 
     public Optional<AdvObject> getObjectById(int id) {
-        for (AdvObject obj : allObjects) {
-            System.out.println("ID: " + obj.getId() + ", Nome: " + obj.getName());
-        }
         return allObjects.stream()
                 .filter(o -> o.getId() == id)
                 .findFirst();

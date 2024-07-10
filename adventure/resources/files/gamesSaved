@@ -1,5 +1,10 @@
-GameName:saba
-ElapsedSeconds:16
+GameName:scaralone
+ElapsedSeconds:36
 CurrentRoom:6
 Inventory:6,
+---
+GameName:saba
+ElapsedSeconds:83
+CurrentRoom:10
+Inventory:6,8,
 ---

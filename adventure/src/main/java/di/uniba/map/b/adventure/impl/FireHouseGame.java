@@ -139,65 +139,46 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         anteroom.setSouth(archive);
         anteroom.setNorth(corridor5);
         archive.setNorth(anteroom);
-        getRooms().add(portalRoom);
-        getRooms().add(corridor);
-        getRooms().add(corridor2);
-        getRooms().add(corridor3);
-        getRooms().add(corridor4);
-        getRooms().add(corridor5);
-        getRooms().add(controlRoom);
-        getRooms().add(lab);
-        getRooms().add(anteroom);
-        getRooms().add(archive);
-        getRooms().add(armory);
-        getRooms().add(engineRoom);
+        
         //obejcts
         AdvObject portal = new AdvObject(1, database.getNameById("portal"), database.getDescriptionById("portal"));
         portal.setAlias(new String[]{"portal"});
         portal.setPushable(false);
-        portalRoom.getObjects().add(portal);
         portalRoom.addObject(portal);
         
         AdvObject controlPanel = new AdvObject(2, database.getNameById("controlPanel"), database.getDescriptionById("controlPanel"));
         controlPanel.setAlias(new String[]{"pannello", "console", "schermi", "console di controllo"});
         controlPanel.setPushable(true);
-        portalRoom.getObjects().add(controlPanel);
         portalRoom.addObject(controlPanel);
         
         AdvObjectContainer alien = new AdvObjectContainer(3, database.getNameById("alien"), database.getDescriptionById("alien"));
         alien.setAlias(new String[]{"gigante", "mostro", "essere", "alieno gigante"});
         alien.setCreature(true);
-        anteroom.getObjects().add(alien);
         anteroom.addObject(alien);
         
         AdvObjectContainer safe = new AdvObjectContainer(4, database.getNameById("safe"), database.getDescriptionById("safe"));
         safe.setAlias(new String[]{"cassa", "cassaforte"});
         safe.setOpenable(true);
-        controlRoom.getObjects().add(safe);
         controlRoom.addObject(safe);
         
         AdvObject key = new AdvObject(5, database.getNameById("key"), database.getDescriptionById("key"));
         key.setAlias(new String[]{"tessera", "carta", "magnetica"});
         key.setPickupable(true);
-        lab.getObjects().add(key);
         lab.addObject(key);
         
         AdvObject gem = new AdvObject(6, database.getNameById("gem"), database.getDescriptionById("gem"));
         gem.setAlias(new String[]{"pietra", "sasso", "cristallo"});
         gem.setPickupable(true);
         safe.add(gem); //inseritaa la gemma all'interno della cassa forte
-        lab.addObject(gem);
         
         AdvObject sword = new AdvObject(8, database.getNameById("sword"), database.getDescriptionById("sword"));
         sword.setAlias(new String[]{"arma", "spadone", "falcione"});
         sword.setPickupable(true);
-        armory.getObjects().add(sword);
         armory.addObject(sword);
         
         AdvObjectContainer door = new AdvObjectContainer(9, database.getNameById("door"), database.getDescriptionById("door"));
         door.setAlias(new String[]{"uscita", "portone", "porta rinforzata, porta"});
         door.setOpenable(true);
-        engineRoom.getObjects().add(door); // Aggiungi la porta agli oggetti della stanza
         door.setOpen(false); // Imposta lo stato iniziale della porta come chiusa
         engineRoom.addObject(door);
         
@@ -230,7 +211,6 @@ public class FireHouseGame extends GameDescription implements GameObservable {
             "Coordinate: 183657\" N 773300\" E\n" +
             "Pianeta: Mercurio\n" +
             "Coordinate: 150732\" N 74157\" E\n");
-        archive.getObjects().add(map);
         archive.addObject(map);
         
         //Observer
@@ -253,6 +233,18 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         GameObserver killObserver = new KillObserver();
         this.attach(killObserver);
         //set starting room
+        getRooms().add(portalRoom);
+        getRooms().add(corridor);
+        getRooms().add(corridor2);
+        getRooms().add(corridor3);
+        getRooms().add(corridor4);
+        getRooms().add(corridor5);
+        getRooms().add(controlRoom);
+        getRooms().add(lab);
+        getRooms().add(anteroom);
+        getRooms().add(archive);
+        getRooms().add(armory);
+        getRooms().add(engineRoom);
         setCurrentRoom(portalRoom);
     }
     

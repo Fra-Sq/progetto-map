@@ -28,11 +28,11 @@ public class Utils {
      */
     public static Set<String> loadFileListInSet(File file) throws IOException {
         Set<String> set = new HashSet<>();
-        BufferedReader reader = new BufferedReader(new FileReader(file));
-        while (reader.ready()) {
-            set.add(reader.readLine().trim().toLowerCase());
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            while (reader.ready()) {
+                set.add(reader.readLine().trim().toLowerCase());
+            }
         }
-        reader.close();
         return set;
     }
 
