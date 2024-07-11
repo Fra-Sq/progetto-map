@@ -6,12 +6,12 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 ## INDICE
 
 1. [Introduzione](#introduzione)
-   - [Mappa di gioco](#mappa_di_gioco)
+   - [Mappa di gioco](#mappa-di-gioco)
 2. [Utilizzo](#utilizzo)
    - [Esempi](#esempi)
    - [Comandi principali](#comandi-principali)
 3. [Diagrammi UML](#Diagrammi_UML)
-4. [Specifica algebrica](#specifica_algebrica)
+4. [Specifica algebrica](#specifica-algebrica)
 
 ## Introduzione
 Questo documento ha lo scopo di illustrare l'applicazione **SPACE ESCAPE**.
