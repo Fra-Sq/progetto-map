@@ -37,6 +37,7 @@ public class Window extends JFrame
     JButton newGameButton;
     JButton exitAndSaveButton;
     JButton exitWithoutSaveButton;
+    JButton showLeaderBoardButton;
     
     Image image;
     Image resizedImage;
@@ -220,13 +221,14 @@ public class Window extends JFrame
             pauseButton.setVisible(true);
             newGameButton.setVisible(false);
             loadGameButton.setVisible(false);
+            showLeaderBoardButton.setVisible(false);
             timer.start();
         });
 //\JButton newGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-        
+
 //JButton loadGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         loadGameButton = new JButton("Carica Partita");
@@ -391,6 +393,35 @@ public class Window extends JFrame
 
 
 
+//JButton showLeaderBoardButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        showLeaderBoardButton = new JButton("Mostra Classifica");
+        showLeaderBoardButton.setSize(120, 30);
+        showLeaderBoardButton.setLocation(450, 50);
+        showLeaderBoardButton.setForeground(Color.WHITE);
+        showLeaderBoardButton.setBackground(Color.BLACK);
+        showLeaderBoardButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        showLeaderBoardButton.setVisible(false);
+        panel.add(showLeaderBoardButton);
+        panel.setComponentZOrder(showLeaderBoardButton, 0);
+        showLeaderBoardButton.addActionListener((ActionEvent e) -> {
+            if (showLeaderBoardButton.getText().equals("Mostra Classifica")){
+                showLeaderBoardButton.setSize(60, 30);
+                showLeaderBoardButton.setText("X");
+                leaderBoard.setVisible(true);
+            }
+            else if(showLeaderBoardButton.getText().equals("X")){
+                showLeaderBoardButton.setSize(120, 30);
+                showLeaderBoardButton.setText("Mostra Classifica");
+                leaderBoard.setVisible(false);
+            } 
+        });
+//\JButton showLeaderBoardButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 //JLabel Navicella-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         labelNavicella = new JLabel(resizedNavicella);
@@ -415,6 +446,9 @@ public class Window extends JFrame
                 loadGameButton.setVisible(true);
                 exitAndSaveButton.setVisible(false);
                 exitWithoutSaveButton.setVisible(false);
+                showLeaderBoardButton.setVisible(true);
+                showLeaderBoard();
+                showLeaderBoardButton.setLocation(250, 450);
             }
         });
 
@@ -491,7 +525,7 @@ public class Window extends JFrame
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         leaderBoard=new JTextArea();
         leaderBoard.setOpaque(true);
-        leaderBoard.setSize(480, 480);
+        leaderBoard.setSize(320, 170);
         leaderBoard.setLocation(50, 50);
         leaderBoard.setEditable(false); // Rende la JTextArea non modificabile
         leaderBoard.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
@@ -587,24 +621,37 @@ public class Window extends JFrame
                         testo3.setVisible(false);
                         roomDescriptionTextArea.setVisible(false);
                         roomNameTextArea.setVisible(false);
-                        leaderBoard.setVisible(true);
+                        showLeaderBoardButton.setLocation(450, 50);
+                        showLeaderBoardButton.setVisible(true);
                         game.setCurrentRoom(null);
                         currentBackground.setIcon(resizedPortaleAcceso);
                         pauseButton.setVisible(false);
                         timer.stop();
         
-                        String name = JOptionPane.showInputDialog(Window.this, "Inserisci il tuo nome:", "Nome Giocatore", JOptionPane.PLAIN_MESSAGE);
-                        if (name != null && !name.trim().isEmpty()) {
-                                // Ottieni la data corrente
-                            String date = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+                        String name;
+                        do {
+                            name = JOptionPane.showInputDialog(Window.this, "Inserisci il tuo nome (max 10 caratteri):", "Nome Giocatore", JOptionPane.PLAIN_MESSAGE);
+                            if (name == null) {
+                                Window.this.showMessage("Inserimento annullato.");
+                                return; // Esce dal metodo se l'utente annulla l'inserimento
+                            }
+                            if (name.length() > 10) {
+                                Window.this.showMessage("Nome troppo lungo. Reinserisci un nome con massimo 10 caratteri.");
+                            }
+                        } while (name.length() > 10 || name.trim().isEmpty());
 
-                            String time = timeString;
+                        if (!name.trim().isEmpty()) {
+                            // Ottieni la data corrente
+                            String date = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+                            String time = timeString;  // Assumendo che timeString sia già definito da qualche parte nel codice
                             PlayerData player = new PlayerData(name, date, time);
                             client.addPlayer(player);
                             showLeaderBoard();
+                            Window.this.showMessage("Hai inserito correttamente le coordinate spaziali \nSei tornato a casa sano e salvo.\nLa tua avventura termina qui! Complimenti!");
                         } else {
-                                Window.this.showMessage("Nome non valido. Inserimento annullato.");
+                            Window.this.showMessage("Nome non valido. Inserimento annullato.");
                         }
+
                     } else {
                         Window.this.showMessage("Coordinate errate. Riprova.");
                     }
