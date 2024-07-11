@@ -23,7 +23,8 @@ Il giocatore, per muoversi intorno alla mappa, deve utilizzare i comandi **nord*
 si può utilizzare il comando **osserva**, con i vari comandi **utilizza**, **prendi**, **apri**, ecc... si possono appunto utilizzare, aprire , prendere i vari oggetti e porte...
 
 ### Mappa di gioco
-![Mappa di gioco](img/mappa_gioco.png)
+![Mappa di gioco](mappa_gioco.png)
+Le freccette in nero in ogni stanza/ corridoio indicano i movimenti che posso fare.
 
 
 
