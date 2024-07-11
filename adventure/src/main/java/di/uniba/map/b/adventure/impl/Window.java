@@ -368,23 +368,28 @@ public class Window extends JFrame
         panel.setComponentZOrder(pauseButton, 0);
 
         // Gestione azione di pausa/riprendi
-        pauseButton.addActionListener((ActionEvent e) -> {
-            if (isPaused) {
-                // Se il gioco è in pausa, riprendi
-                isPaused = false;
-                pauseButton.setText("Pausa");
-                timer.start(); // Riprendi il timer
-                testo.setEditable(true);
-                exitAndSaveButton.setVisible(false);
-                exitWithoutSaveButton.setVisible(false);
-            } else {
-                // Se il gioco non è in pausa, metti in pausa
-                isPaused = true;
-                pauseButton.setText("Riprendi");
-                timer.stop(); // Ferma il timer
-                testo.setEditable(false);
-                exitAndSaveButton.setVisible(true);
-                exitWithoutSaveButton.setVisible(true);
+        pauseButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (isPaused) {
+                    // Se il gioco è in pausa, riprendi
+                    isPaused = false;
+                    pauseButton.setText("Pausa");
+                    timer.start(); // Riprendi il timer
+                    testo.setEditable(true);
+                    testo2.setEditable(true);
+                    exitAndSaveButton.setVisible(false);
+                    exitWithoutSaveButton.setVisible(false);
+                } else {
+                    // Se il gioco non è in pausa, metti in pausa
+                    isPaused = true;
+                    pauseButton.setText("Riprendi");
+                    timer.stop(); // Ferma il timer
+                    testo.setEditable(false);
+                    testo2.setEditable(false);
+                    exitAndSaveButton.setVisible(true);
+                    exitWithoutSaveButton.setVisible(true);
+                }
             }
         });
 
