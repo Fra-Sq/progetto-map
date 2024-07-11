@@ -1,4 +1,5 @@
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\GameObserver.java
+C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\impl\PlayerData.java
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\parser\Parser.java
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\GameUtils.java
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\impl\ReadObserver.java
@@ -20,6 +21,7 @@ C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\j
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\impl\MoveObserver.java
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\Utils.java
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\impl\InventoryObserver.java
+C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\impl\RESTClient.java
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\Engine.java
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\impl\SaveGame.java
 C:\Users\Nicola Russo\Desktop\Progetto-scarale\progetto-map\adventure\src\main\java\di\uniba\map\b\adventure\impl\Database.java

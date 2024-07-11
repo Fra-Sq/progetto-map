@@ -11,6 +11,8 @@ import java.util.List;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Map;
 
 public class Window extends JFrame
@@ -19,6 +21,7 @@ public class Window extends JFrame
     JLabel currentBackground;
     JLabel labelNavicella;
     JLabel timePlay;
+    JTextArea leaderBoard;
     JTextArea roomNameTextArea;
     JTextArea roomDescriptionTextArea;
     JTextArea startDescriptionTextArea;
@@ -28,17 +31,18 @@ public class Window extends JFrame
     JTextField testo3;
     JScrollPane scrollPane;
     AePlayWave sottofondo;
+    RESTClient client;
     JButton pauseButton;
     JButton loadGameButton;
     JButton newGameButton;
     JButton exitAndSaveButton;
+    JButton exitWithoutSaveButton;
     
     Image image;
     Image resizedImage;
     private boolean isPaused = false;
     private int elapsedSeconds = 0;
-    
-    
+    private String timeString;
     private String insertText;
     private final ImageIcon resizedPortale;
     private final ImageIcon resizedCorridoio;
@@ -57,7 +61,7 @@ public class Window extends JFrame
         setResizable(false);
         setLayout(null);
         
-
+        client = new RESTClient();
         sottofondo= new AePlayWave("./resources/audio/amongus.wav");
         
 //Resize di tutte le immagini-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -183,7 +187,7 @@ public class Window extends JFrame
         int hours = elapsedSeconds / 3600;
         int minutes = (elapsedSeconds % 3600) / 60;
         int seconds = elapsedSeconds % 60;
-        String timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+        timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
         timePlay.setText(timeString);
     });
 //\JLabeltime-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -198,6 +202,7 @@ public class Window extends JFrame
         newGameButton.setForeground(Color.WHITE);
         newGameButton.setBackground(Color.BLACK);
         newGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        newGameButton.setVisible(false);
         panel.add(newGameButton);
         panel.setComponentZOrder(newGameButton, 0);
         // Gestione azione di nuova partita
@@ -230,6 +235,7 @@ public class Window extends JFrame
         loadGameButton.setForeground(Color.WHITE);
         loadGameButton.setBackground(Color.BLACK);
         loadGameButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        loadGameButton.setVisible(false);
         panel.add(loadGameButton);
         panel.setComponentZOrder(loadGameButton, 0);
 
@@ -283,10 +289,11 @@ public class Window extends JFrame
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         exitAndSaveButton = new JButton("Esci e salva");
         exitAndSaveButton.setSize(100, 30);
-        exitAndSaveButton.setLocation(250, 250);
+        exitAndSaveButton.setLocation(270, 250);
         exitAndSaveButton.setForeground(Color.WHITE);
         exitAndSaveButton.setBackground(Color.BLACK);
         exitAndSaveButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        exitAndSaveButton.setVisible(false);
         panel.add(exitAndSaveButton);
         panel.setComponentZOrder(exitAndSaveButton, 0);
         exitAndSaveButton.addActionListener((ActionEvent e) -> {
@@ -314,6 +321,36 @@ public class Window extends JFrame
 
 
 
+//\JButton exitWithoutSaveButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        exitWithoutSaveButton = new JButton("Esci senza salvare");
+        exitWithoutSaveButton.setSize(130, 30);
+        exitWithoutSaveButton.setLocation(120, 250);
+        exitWithoutSaveButton.setForeground(Color.WHITE);
+        exitWithoutSaveButton.setBackground(Color.BLACK);
+        exitWithoutSaveButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        exitWithoutSaveButton.setVisible(false);
+        panel.add(exitWithoutSaveButton);
+        panel.setComponentZOrder(exitWithoutSaveButton, 0);
+
+        exitWithoutSaveButton.addActionListener((ActionEvent e) -> {
+            int response = JOptionPane.showConfirmDialog(
+                null,
+                "Sei sicuro di voler uscire senza salvare?",
+                "Conferma uscita",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.WARNING_MESSAGE
+            );
+
+            if (response == JOptionPane.OK_OPTION) {
+                System.exit(0);
+            }
+        });
+//\JButton exitWithoutSaveButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 //JButton Pausebutton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -324,6 +361,7 @@ public class Window extends JFrame
         pauseButton.setBackground(Color.BLACK);
         pauseButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         pauseButton.setOpaque(true);
+        pauseButton.setVisible(false);
         panel.add(pauseButton);
         panel.setComponentZOrder(pauseButton, 0);
 
@@ -336,6 +374,7 @@ public class Window extends JFrame
                 timer.start(); // Riprendi il timer
                 testo.setEditable(true);
                 exitAndSaveButton.setVisible(false);
+                exitWithoutSaveButton.setVisible(false);
             } else {
                 // Se il gioco non è in pausa, metti in pausa
                 isPaused = true;
@@ -343,6 +382,7 @@ public class Window extends JFrame
                 timer.stop(); // Ferma il timer
                 testo.setEditable(false);
                 exitAndSaveButton.setVisible(true);
+                exitWithoutSaveButton.setVisible(true);
             }
         });
 
@@ -357,10 +397,6 @@ public class Window extends JFrame
         labelNavicella.setSize(600, 600);
         labelNavicella.setLocation(0, 0);
         panel.add(labelNavicella);
-        pauseButton.setVisible(false);
-        newGameButton.setVisible(false);
-        loadGameButton.setVisible(false);
-        exitAndSaveButton.setVisible(false);
 
         labelNavicella.addKeyListener(new KeyAdapter() {
             @Override
@@ -378,6 +414,7 @@ public class Window extends JFrame
                 newGameButton.setVisible(true);
                 loadGameButton.setVisible(true);
                 exitAndSaveButton.setVisible(false);
+                exitWithoutSaveButton.setVisible(false);
             }
         });
 
@@ -399,7 +436,6 @@ public class Window extends JFrame
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         startDescriptionTextArea = new JTextArea();
         startDescriptionTextArea.setEditable(false); // Rende la JTextArea non modificabile
-        startDescriptionTextArea.setBackground(panel.getBackground()); // Rende lo sfondo uguale a quello del frame
         startDescriptionTextArea.setOpaque(true);
         startDescriptionTextArea.setForeground(Color.WHITE);
         startDescriptionTextArea.setBackground(Color.BLACK);
@@ -420,7 +456,6 @@ public class Window extends JFrame
         roomNameTextArea.setFont(new Font("Serif", Font.BOLD, 12));
         roomNameTextArea.setSize(200, 20);
         roomNameTextArea.setLocation(50, 338);
-        roomNameTextArea.setBackground(panel.getBackground()); // Rende lo sfondo uguale a quello del frame
         roomNameTextArea.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         roomNameTextArea.setForeground(Color.WHITE);
         roomNameTextArea.setBackground(Color.BLACK);
@@ -440,8 +475,6 @@ public class Window extends JFrame
         roomDescriptionTextArea.setSize(480, 51);
         roomDescriptionTextArea.setLocation(50, 360);
         roomDescriptionTextArea.setEditable(false); // Rende la JTextArea non modificabile
-        roomDescriptionTextArea.setBackground(panel.getBackground()); // Rende lo sfondo uguale a quello del frame
-        //roomDescriptionTextArea.setBorder(BorderFactory.createEmptyBorder()); // Rimuove i bordi
         roomDescriptionTextArea.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         roomDescriptionTextArea.setForeground(Color.WHITE);
         roomDescriptionTextArea.setBackground(Color.BLACK); 
@@ -449,7 +482,26 @@ public class Window extends JFrame
         panel.add(roomDescriptionTextArea);
         panel.setComponentZOrder(roomDescriptionTextArea, 0);
         
-//\JTextArea RoomDescription-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//\JTextArea roomDescription-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+//JTextArea leaderBoard-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        leaderBoard=new JTextArea();
+        leaderBoard.setOpaque(true);
+        leaderBoard.setSize(480, 480);
+        leaderBoard.setLocation(50, 50);
+        leaderBoard.setEditable(false); // Rende la JTextArea non modificabile
+        leaderBoard.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        leaderBoard.setForeground(Color.WHITE);
+        leaderBoard.setBackground(Color.BLACK); 
+        leaderBoard.setVisible(false);
+        panel.add(leaderBoard);
+        panel.setComponentZOrder(leaderBoard, 0);
+        
+//\JTextArea leaderBoard-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -535,10 +587,23 @@ public class Window extends JFrame
                         testo3.setVisible(false);
                         roomDescriptionTextArea.setVisible(false);
                         roomNameTextArea.setVisible(false);
+                        leaderBoard.setVisible(true);
                         game.setCurrentRoom(null);
                         currentBackground.setIcon(resizedPortaleAcceso);
                         pauseButton.setVisible(false);
                         timer.stop();
+        
+                        String name = JOptionPane.showInputDialog(Window.this, "Inserisci il tuo nome:", "Nome Giocatore", JOptionPane.PLAIN_MESSAGE);
+                        if (name != null && !name.trim().isEmpty()) {
+                                // Ottieni la data corrente
+                            String date = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+
+                            String time = timeString;
+                            PlayerData player = new PlayerData(name, date, time);
+                            client.addPlayer(player);
+                        } else {
+                                Window.this.showMessage("Nome non valido. Inserimento annullato.");
+                        }
                     } else {
                         Window.this.showMessage("Coordinate errate. Riprova.");
                     }
@@ -622,6 +687,10 @@ public class Window extends JFrame
         messageTextArea.setText(message);
     }
     
+    public void showLeaderBoard(String message){
+        String leaderboard = client.getLeaderboard();
+        leaderBoard.setText(leaderboard);
+    }    
     
     public String getInsertText(){
         return insertText;
