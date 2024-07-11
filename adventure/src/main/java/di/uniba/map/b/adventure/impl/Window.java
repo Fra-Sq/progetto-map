@@ -601,6 +601,7 @@ public class Window extends JFrame
                             String time = timeString;
                             PlayerData player = new PlayerData(name, date, time);
                             client.addPlayer(player);
+                            showLeaderBoard();
                         } else {
                                 Window.this.showMessage("Nome non valido. Inserimento annullato.");
                         }
@@ -687,7 +688,7 @@ public class Window extends JFrame
         messageTextArea.setText(message);
     }
     
-    public void showLeaderBoard(String message){
+    public void showLeaderBoard(){
         String leaderboard = client.getLeaderboard();
         leaderBoard.setText(leaderboard);
     }    

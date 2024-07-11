@@ -143,7 +143,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         //obejcts
         AdvObject portal = new AdvObject(1, database.getNameById("portal"), database.getDescriptionById("portal"));
         portal.setAlias(new String[]{"portal"});
-        portal.setPushable(false);
+        portal.setPushable(true);
         portalRoom.addObject(portal);
         
         AdvObject controlPanel = new AdvObject(2, database.getNameById("controlPanel"), database.getDescriptionById("controlPanel"));
