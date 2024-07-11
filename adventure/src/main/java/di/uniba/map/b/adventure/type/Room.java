@@ -94,7 +94,8 @@ public class Room {
     }
 
     public void addObject(AdvObject obj) {
-        objects.add(obj);
+        if(obj.getId()!=6)
+            objects.add(obj);
         game.addObject(obj);  // Aggiungi l'oggetto alla lista allObjects
     }
 

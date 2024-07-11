@@ -170,6 +170,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         gem.setAlias(new String[]{"pietra", "sasso", "cristallo"});
         gem.setPickupable(true);
         safe.add(gem); //inseritaa la gemma all'interno della cassa forte
+        controlRoom.addObject(gem);
         
         AdvObject sword = new AdvObject(8, database.getNameById("sword"), database.getDescriptionById("sword"));
         sword.setAlias(new String[]{"arma", "spadone", "falcione"});

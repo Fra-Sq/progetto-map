@@ -222,6 +222,7 @@ public class Window extends JFrame
             newGameButton.setVisible(false);
             loadGameButton.setVisible(false);
             showLeaderBoardButton.setVisible(false);
+            leaderBoard.setVisible(false);
             timer.start();
         });
 //\JButton newGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -272,6 +273,8 @@ public class Window extends JFrame
                     pauseButton.setVisible(true);
                     newGameButton.setVisible(false);
                     loadGameButton.setVisible(false);
+                    showLeaderBoardButton.setVisible(false);
+                    leaderBoard.setVisible(false);
                     timer.start();
 
                     JOptionPane.showMessageDialog(null, "Partita caricata con successo!");
@@ -375,6 +378,7 @@ public class Window extends JFrame
                 pauseButton.setText("Pausa");
                 timer.start(); // Riprendi il timer
                 testo.setEditable(true);
+                testo2.setEditable(true);
                 exitAndSaveButton.setVisible(false);
                 exitWithoutSaveButton.setVisible(false);
             } else {
@@ -383,6 +387,7 @@ public class Window extends JFrame
                 pauseButton.setText("Riprendi");
                 timer.stop(); // Ferma il timer
                 testo.setEditable(false);
+                testo2.setEditable(false);
                 exitAndSaveButton.setVisible(true);
                 exitWithoutSaveButton.setVisible(true);
             }
@@ -406,12 +411,10 @@ public class Window extends JFrame
         panel.setComponentZOrder(showLeaderBoardButton, 0);
         showLeaderBoardButton.addActionListener((ActionEvent e) -> {
             if (showLeaderBoardButton.getText().equals("Mostra Classifica")){
-                showLeaderBoardButton.setSize(60, 30);
-                showLeaderBoardButton.setText("X");
+                showLeaderBoardButton.setText("Nascondi Classifica");
                 leaderBoard.setVisible(true);
             }
-            else if(showLeaderBoardButton.getText().equals("X")){
-                showLeaderBoardButton.setSize(120, 30);
+            else if(showLeaderBoardButton.getText().equals("Nascondi Classifica")){
                 showLeaderBoardButton.setText("Mostra Classifica");
                 leaderBoard.setVisible(false);
             } 
@@ -432,23 +435,13 @@ public class Window extends JFrame
         labelNavicella.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                //labelNavicella.setVisible(true);
                 startDescriptionTextArea.setVisible(false);
-                currentBackground.setVisible(false); // Visualizza solo la prima immagine
-                roomNameTextArea.setVisible(false);
-                roomDescriptionTextArea.setVisible(false);
-                testo.setVisible(false);
-                messageTextArea.setVisible(false);
-                scrollPane.setVisible(false);
-                timePlay.setVisible(false);
-                pauseButton.setVisible(false);
                 newGameButton.setVisible(true);
                 loadGameButton.setVisible(true);
-                exitAndSaveButton.setVisible(false);
-                exitWithoutSaveButton.setVisible(false);
+                showLeaderBoardButton.setLocation(242, 450);
                 showLeaderBoardButton.setVisible(true);
                 showLeaderBoard();
-                showLeaderBoardButton.setLocation(250, 450);
+                
             }
         });
 
@@ -627,7 +620,9 @@ public class Window extends JFrame
                         currentBackground.setIcon(resizedPortaleAcceso);
                         pauseButton.setVisible(false);
                         timer.stop();
-        
+                        timePlay.setText("Tempo impiegato: "+timeString);
+                        timePlay.setLocation(50, 470);
+                        timePlay.setSize(180, 17);
                         String name;
                         do {
                             name = JOptionPane.showInputDialog(Window.this, "Inserisci il tuo nome (max 10 caratteri):", "Nome Giocatore", JOptionPane.PLAIN_MESSAGE);

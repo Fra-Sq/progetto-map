@@ -8,3 +8,13 @@ ElapsedSeconds:83
 CurrentRoom:10
 Inventory:6,8,
 ---
+GameName:mimmo
+ElapsedSeconds:43
+CurrentRoom:0
+Inventory:8,6,
+---
+GameName:sabb
+ElapsedSeconds:37
+CurrentRoom:10
+Inventory:6,8,
+---

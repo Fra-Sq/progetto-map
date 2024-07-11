@@ -40,7 +40,7 @@ public class PushObserver implements GameObserver {
                 }
 
                 if (parserOutput.getObject().getId() == 2 && description.getCurrentRoom().getObject(1).isPush()) {
-                    msg.append("Inserisci il codie di accesso");
+                    msg.append("Inserisci il codice di accesso");
                     window.testo3.setVisible(true);
                 } else if (parserOutput.getObject().getId() == 2) {
                     msg.append("Per utilizzare il pannello ed il portale e' necessario attivarli prima.");

@@ -47,17 +47,18 @@ public abstract class GameDescription {
                 for (Room room : rooms) {
                     if (room.getObjects().contains(o)) {
                         room.getObjects().remove(o);
-                        if (o.getId() == 6) {
-                            AdvObject door = room.getObject(4);
-                            if (door != null) {
-                                door.setOpenable(false);
-                            }
+                    }
+                    if (o.getId() == 6) {
+                        AdvObject safe = room.getObject(4);
+                        if (safe != null) {
+                            safe.setOpenable(false);
                         }
                     }
                 }
             });
         }
     }
+
 
 
 
