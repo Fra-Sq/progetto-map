@@ -24,7 +24,8 @@ si può utilizzare il comando **osserva**, con i vari comandi **utilizza**, **pr
 
 ### Mappa di gioco
 ![Mappa di gioco](mappa_gioco.png) <br>
-Le freccette in nero in ogni stanza/ corridoio indicano i movimenti che posso fare.
+Le freccette in nero in ogni stanza/ corridoio indicano i movimenti che posso fare.<br>
+Gli oggetti/ ostacoli che ci sono nelle stanze sono gli oggetti/ostacoli che si trovano nell'avventura testuale.
 
 
 
