@@ -179,7 +179,7 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         
         AdvObjectContainer door = new AdvObjectContainer(9, database.getNameById("door"), database.getDescriptionById("door"));
         door.setAlias(new String[]{"uscita", "portone", "porta rinforzata, porta"});
-        door.setOpenable(true);
+        //door.setOpenable(true);
         door.setOpen(false); // Imposta lo stato iniziale della porta come chiusa
         engineRoom.addObject(door);
         

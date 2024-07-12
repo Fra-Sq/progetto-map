@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package di.uniba.map.b.adventure.impl;
 
 import java.util.List;
@@ -26,9 +22,10 @@ public class SaveGame {
      * @param inventory
      * @param gameName
      * @param elapsedSeconds
+     * @param monsterAlive
      */
-    public static void save(Room currentRoom, List<AdvObject> inventory, String gameName, int elapsedSeconds) {
-        int currentRoomId=currentRoom.getId();
+    public static void save(Room currentRoom, List<AdvObject> inventory, String gameName, int elapsedSeconds, boolean monsterAlive, boolean isDoorOpen) {
+        int currentRoomId = currentRoom.getId();
         // Check if a game with the same name already exists
         if (gameExists(gameName)) {
             System.out.println("Una partita con questo nome esiste già. Salvataggio annullato.");
@@ -39,6 +36,8 @@ public class SaveGame {
             writer.write("GameName:" + gameName + "\n");
             writer.write("ElapsedSeconds:" + elapsedSeconds + "\n");
             writer.write("CurrentRoom:" + currentRoomId + "\n");
+            writer.write("MonsterAlive:" + monsterAlive + "\n");
+            writer.write("IsDoorOpen:" + isDoorOpen + "\n");
             writer.write("Inventory:");
             for (AdvObject obj : inventory) {
                 writer.write(obj.getId() + ",");
@@ -77,6 +76,10 @@ public class SaveGame {
                         gameData.put("ElapsedSeconds", Integer.valueOf(line.substring(15).trim()));
                     } else if (line.startsWith("CurrentRoom:")) {
                         gameData.put("CurrentRoom", Integer.valueOf(line.substring(12).trim()));
+                    } else if (line.startsWith("MonsterAlive:")) {
+                        gameData.put("MonsterAlive", Boolean.valueOf(line.substring(13).trim()));
+                    } else if (line.startsWith("IsDoorOpen:")) {
+                        gameData.put("IsDoorOpen", Boolean.valueOf(line.substring(13).trim()));
                     } else if (line.startsWith("Inventory:")) {
                         String[] inventoryIds = line.substring(10).trim().split(",");
                         List<Integer> inventory = new ArrayList<>();

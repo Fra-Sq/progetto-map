@@ -28,38 +28,48 @@ public abstract class GameDescription {
     public List<Room> getRooms() {
         return rooms;
     }
-
-    public void setCurrentRoomById(int roomId) {
+    
+    
+    public void setGame(int roomId, List<Integer> inventoryIds, boolean monsterAlive, boolean isDoorOpen){
         Optional<Room> room = rooms.stream()
                 .filter(r -> r.getId() == roomId)
                 .findFirst();
         room.ifPresent(r -> this.currentRoom = r);
-    }
-
-
-    public void setInventoryByIds(List<Integer> inventoryIds) {
+        
         this.inventory = new ArrayList<>();
         for (int id : inventoryIds) {
             Optional<AdvObject> obj = getObjectById(id);
             obj.ifPresent(o -> {
                 this.inventory.add(o);
                 // Rimuovi l'oggetto dalla stanza in cui si trova
-                for (Room room : rooms) {
-                    if (room.getObjects().contains(o)) {
-                        room.getObjects().remove(o);
+                for (Room stanze : rooms) {
+                    if (stanze.getObjects().contains(o)) {
+                        stanze.getObjects().remove(o);
                     }
                     if (o.getId() == 6) {
-                        AdvObject safe = room.getObject(4);
+                        AdvObject safe = stanze.getObject(4);
                         if (safe != null) {
                             safe.setOpenable(false);
                         }
+                    }
+                    if (stanze.getId()==8 && monsterAlive==false) {
+                        stanze.removeObject(stanze.getObject(3));
+                        stanze.setMonsterAlive(monsterAlive);
+                        stanze.setLook("Ti trovi nell'anticamera, ma il mostro è morto. \nSul tentacolo del mostro c'è un codice tatuato: 07738");
+                    }
+                    if (stanze.getId()==11 && isDoorOpen==true) {
+                        stanze.getObject(9).setOpen(isDoorOpen);
                     }
                 }
             });
         }
     }
+    
 
 
+    
+    
+    
 
 
     public List<Command> getCommands() {

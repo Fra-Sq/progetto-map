@@ -6,7 +6,9 @@ package di.uniba.map.b.adventure.impl;
 import di.uniba.map.b.adventure.GameDescription;
 import di.uniba.map.b.adventure.parser.Parser;
 import di.uniba.map.b.adventure.parser.ParserOutput;
+import di.uniba.map.b.adventure.type.AdvObject;
 import di.uniba.map.b.adventure.type.CommandType;
+import di.uniba.map.b.adventure.type.Room;
 import java.util.List;
 import javax.swing.*;
 import java.awt.*;
@@ -251,11 +253,12 @@ public class Window extends JFrame
                     elapsedSeconds = (int) loadedGame.get("ElapsedSeconds");
                     int currentRoomId = (int) loadedGame.get("CurrentRoom");
                     List<Integer> inventoryIds = (List<Integer>) loadedGame.get("Inventory");
+                    boolean monsterAlive=(boolean) loadedGame.get("MonsterAlive");
+                    boolean isDoorOpen=(boolean) loadedGame.get("IsDoorOpen");
 
                     // Aggiorna l'oggetto game con i dati caricati
-                    game.setCurrentRoomById(currentRoomId); // Assicurati che ci sia un metodo per impostare la stanza corrente tramite ID
-                    game.setInventoryByIds(inventoryIds); // Assicurati che ci sia un metodo per impostare l'inventario tramite una lista di ID
-
+                    game.setGame(currentRoomId, inventoryIds, monsterAlive, isDoorOpen); 
+                    
                     // Aggiorna l'interfaccia utente
                     String currentRoomName = game.getCurrentRoom().getName(); // Assumendo che tu abbia un metodo per ottenere il nome della stanza corrente
                     showRoomName(currentRoomName);
@@ -309,7 +312,24 @@ public class Window extends JFrame
                     break; // Esci dal ciclo se l'utente preme "Cancel"
                 } else if (!gameName.trim().isEmpty()) {
                     if (!SaveGame.gameExists(gameName.trim())) {
-                        SaveGame.save(game.getCurrentRoom(), game.getInventory(), gameName.trim(), elapsedSeconds);
+                        boolean monsterAlive=true, isDoorOpen=false;
+                        List<Room> rooms;
+                        rooms=game.getRooms();
+                        for (Room room : rooms) {
+                            if (room.getId()==8) {
+                                monsterAlive=room.isMonsterAlive();
+                            }
+                            if (room.getId()==11) {
+                                 for (AdvObject obj : room.getObjects()) {
+                                    if (obj.getId() == 9) { 
+                                        isDoorOpen = obj.isOpen();
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        SaveGame.save(game.getCurrentRoom(), game.getInventory(), gameName.trim(), elapsedSeconds, monsterAlive, isDoorOpen);
                         JOptionPane.showMessageDialog(null, "Partita salvata con successo!");
                         System.exit(0);
                         break; // Esci dal ciclo dopo un salvataggio riuscito
@@ -481,7 +501,7 @@ public class Window extends JFrame
         roomNameTextArea=new JTextArea();
         roomNameTextArea.setOpaque(true);
         roomNameTextArea.setFont(new Font("Serif", Font.BOLD, 12));
-        roomNameTextArea.setSize(200, 20);
+        roomNameTextArea.setSize(160, 20);
         roomNameTextArea.setLocation(50, 338);
         roomNameTextArea.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
         roomNameTextArea.setForeground(Color.WHITE);
