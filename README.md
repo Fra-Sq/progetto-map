@@ -1,6 +1,6 @@
 # SPACE ESCAPE
-Progetto per l'esame 'Metodi avanzati di programmazione' per l'anno accademico 2023/24. <br>
-Nome gruppo: I SanGiovannesi.<br>
+Progetto per l'esame 'Metodi avanzati di programmazione' per l'anno accademico 2023/24.  
+Nome gruppo: I SanGiovannesi.  
 Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 
 ## INDICE
@@ -8,25 +8,40 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 1. [Introduzione](#introduzione)
    - [Mappa di gioco](#mappa-di-gioco)
 2. [Utilizzo](#utilizzo)
-   - [Esempi](#esempi)
    - [Comandi principali](#comandi-principali)
-3. [Diagrammi UML](#Diagrammi_UML)
+3. [Diagrammi UML](#diagrammi-uml)
 4. [Specifica algebrica](#specifica-algebrica)
 
 ## Introduzione
-Questo documento ha lo scopo di illustrare l'applicazione **SPACE ESCAPE**.
-Il programma attraverso un'interfaccia grafica(**GUI**), permette all'utente di giocare all'avventura testuale **SPACE ESCAPE**.
-Il software presenta una schermata iniziale in cui spiega l'inizio del gioco, e anche come iniziare a giocare. 
-L'obiettivo della avventura testuale è quello di riuscire ad attivare la navicella spaziale in cui si è intrappolati per riuscire a tornare sul pianeta Terra, cioe a casa, trovando nella mappa vari oggetti e codici che poi serviranno per 
-l'attivazione della navicella spaziale. 
-Il giocatore, per muoversi intorno alla mappa, deve utilizzare i comandi **nord**, **sud**, **est** e **ovest**, per capire che movimento si può fare all interno della stanza/corridoio
-si può utilizzare il comando **osserva**, con i vari comandi **utilizza**, **prendi**, **apri**, ecc... si possono appunto utilizzare, aprire , prendere i vari oggetti e porte...
+**SPACE ESCAPE** è un'avventura testuale interattiva progettata per l'esame di 'Metodi avanzati di programmazione'. Il gioco si svolge attraverso un'interfaccia grafica (**GUI**), che consente agli utenti di immergersi nell'avventura di una navicella spaziale intrappolata nello spazio.
+
+### Descrizione del gioco
+L'obiettivo del gioco è attivare la navicella spaziale e tornare sani e salvi sulla Terra. Per raggiungere questo obiettivo, i giocatori devono esplorare la mappa di gioco, raccogliere oggetti e codici, e risolvere enigmi. Il gioco inizia con una schermata introduttiva che spiega il contesto e le prime istruzioni per iniziare.
+
+### Come si gioca
+Per muoversi all'interno della mappa, il giocatore deve utilizzare i comandi direzionali **nord**, **sud**, **est** e **ovest**. È possibile esplorare le stanze e i corridoi usando il comando **osserva**, che fornisce una descrizione dettagliata dell'ambiente circostante. Inoltre, il giocatore può interagire con oggetti e porte tramite comandi come **utilizza**, **prendi**, **apri**, e altri.
 
 ### Mappa di gioco
-![Mappa di gioco](mappa_gioco.png) <br>
-Le freccette in nero in ogni stanza/ corridoio indicano i movimenti che posso fare.<br>
-Gli oggetti/ ostacoli che ci sono nelle stanze sono gli oggetti/ostacoli che si trovano nell'avventura testuale.
+![Mappa di gioco](mappa_gioco.png)  
+La mappa di gioco mostra tutte le stanze e i corridoi esplorabili. Le freccette nere indicano i possibili movimenti tra le diverse aree. Gli oggetti e gli ostacoli rappresentati nella mappa sono quelli che i giocatori incontreranno durante l'avventura.
 
+## Utilizzo
+In **SPACE ESCAPE**, il giocatore assume il ruolo di un astronauta intrappolato su una navicella spaziale alla deriva nello spazio. L'obiettivo è esplorare l'ambiente, risolvere enigmi e raccogliere oggetti necessari per attivare la navicella e tornare sulla Terra.
 
-
-
+### Comandi Principali
+Per interagire con il gioco, utilizza i seguenti comandi:
+<br>
+nord: Spostati a nord.<br>
+sud: Spostati a sud.<br>
+est: Spostati a est.<br>
+ovest: Spostati a ovest.<br>
+osserva: Osserva la stanza attuale per una descrizione dettagliata.<br>
+prendi : Prendi un oggetto.<br>
+usa : Usa un oggetto nell'inventario.<br>
+apri : Apri una porta, una cassa, se possibile.<br>
+ammazza : Ammazza qualsiasi mostro/alieno esistente.<br>
+inventario : Stampa tutti gli oggetti che ci sono all'interno.<br>
+abbandona: Termina il gioco.<br>
+attiva: Attiva i vari pannelli e portali.<br>
+leggi: Legge le varie mappe/cartine.<br>
+Man mano che esplori la navicella, troverai vari oggetti che potrebbero essere utili per risolvere enigmi e superare ostacoli. Usa i comandi sopra elencati per interagire con l'ambiente e avanzare nel gioco.
