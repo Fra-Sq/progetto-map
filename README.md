@@ -174,5 +174,5 @@ La classe `LeaderboardService` è il cuore del servizio RESTful che gestisce le 
 Questa architettura separa chiaramente le responsabilità tra client, server e logica di business, facilitando la manutenzione e l'estensione dell'applicazione. Il client REST è responsabile dell'invio delle richieste e della gestione delle risposte, il server REST gestisce le connessioni HTTP e il servizio RESTful contiene la logica di business per l'elaborazione delle richieste relative alla classifica.
 
 ## Doxygen
-Per visualizzare la documentazione doxygen aprire il collegamento "index" inserito nella cartella "progetto-map".
+Per visualizzare la documentazione doxygen aprire il collegamento `index` inserito nella cartella `progetto-map`.
 
