@@ -120,33 +120,33 @@ Nel secondo caso invece il database viene gestito con la classe `Database` inser
 In entrambi i casi abbiamo utilizzato Database `Engine H2` poiché possono essere utilizzati in modo embedded senza necessità di installare un server.
 
 ### Utilizzo dei thread
-La classe AePlayWave è progettata per riprodurre file audio WAV in un thread separato, permettendo così operazioni asincrone come la riproduzione, l'interruzione e la gestione del pan audio (sinistra, destra, normale). Questa classe fa parte del package di.uniba.map.b.adventure.impl e gestisce la riproduzione del suono utilizzando la libreria javax.sound.sampled.<br>
+La classe `AePlayWave` è progettata per riprodurre file audio WAV in un thread separato, permettendo così operazioni asincrone come la riproduzione, l'interruzione e la gestione del pan audio (sinistra, destra, normale). Questa classe fa parte del package `di.uniba.map.b.adventure.impl` e gestisce la riproduzione del suono utilizzando la libreria javax.sound.sampled.<br>
 Nella classe sono stati inseriti diversi metodi così da gestire al meglio il thread:
-- stopSound(): Metodo che imposta il flag isInterrupted a true e interrompe il thread corrente chiamando interrupt(). Questo metodo permette di fermare la riproduzione del suono in qualsiasi momento.
-- startSound(): Metodo che avvia o riprende la riproduzione del suono. Se il suono non è attualmente in riproduzione (!isPlaying), reimposta isInterrupted a false e avvia il thread chiamando start(), il quale a sua volta esegue il metodo run().
-- run(): Metodo che sovrascrive il metodo run della classe Thread e contiene la logica per la riproduzione del file audio. La riproduzione continua finché isInterrupted è false. All'interno del metodo, viene aperto il file audio e letto in un buffer che viene poi scritto su un SourceDataLine per la riproduzione. Se il controllo del pan è supportato, viene regolato in base alla posizione corrente (sinistra, destra, normale).
+- **stopSound()**: Metodo che imposta il flag `isInterrupted` a true e interrompe il thread corrente chiamando `interrupt()`. Questo metodo permette di fermare la riproduzione del suono in qualsiasi momento.
+- **startSound()**: Metodo che avvia o riprende la riproduzione del suono. Se il suono non è attualmente in riproduzione (`!isPlaying`), reimposta `isInterrupted` a false e avvia il thread chiamando `start()`, il quale a sua volta esegue il metodo `run()`.
+- **run()**: Metodo che sovrascrive il metodo run della classe Thread e contiene la logica per la riproduzione del file audio. La riproduzione continua finché `isInterrupted` è false. All'interno del metodo, viene aperto il file audio e letto in un buffer che viene poi scritto su un `SourceDataLine` per la riproduzione. Se il controllo del pan è supportato, viene regolato in base alla posizione corrente (sinistra, destra, normale).
 
 I thread vengono utilizzati per eseguire la riproduzione del suono in parallelo rispetto al thread principale dell'applicazione. Questo permette all'utente di eseguire altre operazioni mentre l'audio è in riproduzione, senza bloccare l'interfaccia utente o altre funzionalità dell'applicazione.<br>
-Quando si chiama startSound(), il thread viene avviato utilizzando il metodo start(), che a sua volta invoca il metodo run() del thread. Questo metodo contiene il loop principale di riproduzione del suono. Durante la riproduzione, il thread legge i dati dal file audio e li scrive nel buffer del SourceDataLine per la riproduzione.<br>
-Quando si chiama stopSound(), il flag isInterrupted viene impostato a true e il thread corrente viene interrotto utilizzando interrupt(). Questo provoca l'uscita dal loop principale nel metodo run() e consente la pulizia delle risorse, come la chiusura del SourceDataLine e dell'AudioInputStream.<br><br>
+Quando si chiama `startSound()`, il thread viene avviato utilizzando il metodo `start()`, che a sua volta invoca il metodo `run()` del thread. Questo metodo contiene il loop principale di riproduzione del suono. Durante la riproduzione, il thread legge i dati dal file audio e li scrive nel buffer del SourceDataLine per la riproduzione.<br>
+Quando si chiama `stopSound()`, il flag `isInterrupted` viene impostato a true e il thread corrente viene interrotto utilizzando interrupt()`. Questo provoca l'uscita dal loop principale nel metodo `run()` e consente la pulizia delle risorse, come la chiusura del SourceDataLine e dell'AudioInputStream.<br><br>
 Vantaggi dell'uso dei Thread:
-- Asincronia: La riproduzione del suono avviene in modo asincrono, permettendo all'applicazione principale di continuare a funzionare senza blocchi.
-- Reattività: L'interfaccia utente rimane reattiva, poiché la riproduzione audio non blocca il thread principale.
-- Controllo: È possibile interrompere la riproduzione del suono in qualsiasi momento senza dover aspettare che il file audio termini.
+- **Asincronia**: La riproduzione del suono avviene in modo asincrono, permettendo all'applicazione principale di continuare a funzionare senza blocchi.
+- **Reattività**: L'interfaccia utente rimane reattiva, poiché la riproduzione audio non blocca il thread principale.
+- **Controllo**: È possibile interrompere la riproduzione del suono in qualsiasi momento senza dover aspettare che il file audio termini.
 La classe AePlayWave dimostra come i thread possono essere utilizzati per eseguire operazioni che richiedono tempo, come la riproduzione di file audio, in modo efficiente e senza compromettere l'esperienza dell'utente..
 
 ### Swing
 Nel progetto abbiamo utilizzato la libreria grafica Swing per garantire al giocatore un'esperienza più immersiva.<br>
 Lo sfondo del gioco varia a seconda di cosa si sta facendo, di fatti si parte con un'immagine nella schermata iniziale, quella in cui si introduce il gioco, poi una volta iniziato a giocare l'immagine di sfondo varia a seconda della stanza in cui ci si trova. Le immagini sono state create da vari software generativi.<br>
 Nella finestra che viene creata oltre alle immagini di sfondo sono stati aggiunti vari componenti di interfaccia frafica:
-- Caselle di testo per prendere in input i comandi del giocatore.
-- Arree di testo per far visualizzare:
+- **Caselle di testo** per prendere in input i comandi del giocatore.
+- **Arree di testo** per far visualizzare:
    - I nomi delle stanze
    - La descrizione delle stanze
    - I Messaggi del gioco
    - La classifica
    - Il tempo di gioco
-- Tasti per permettere al giocatore di svolgere diverse operazioni:
+- **Tasti** per permettere al giocatore di svolgere diverse operazioni:
    - Iniziare una nuova partita
    - Caricare una partita salvata
    - Visualizzare la classifica
