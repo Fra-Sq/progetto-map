@@ -11,7 +11,10 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [Comandi principali](#comandi-principali)
 3. [Diagrammi UML](#diagrammi-uml)
 4. [Specifica algebrica](#specifica-algebrica)
-
+   - [Specifica sintattica](#specifica-sintattica)
+   - [Specifica semantica](#specifica-semantica)
+   - [Specifica di restrizione](#specifica-di-restrizione)
+   
 ## Introduzione
 **SPACE ESCAPE** è un'avventura testuale interattiva progettata per l'esame di 'Metodi avanzati di programmazione'. Il gioco si svolge attraverso un'interfaccia grafica (**GUI**), che consente agli utenti di immergersi nell'avventura di una navicella spaziale intrappolata nello spazio.
 
@@ -45,3 +48,52 @@ abbandona: Termina il gioco.<br>
 attiva: Attiva i vari pannelli e portali.<br>
 leggi: Legge le varie mappe/cartine.<br>
 Man mano che esplori la navicella, troverai vari oggetti che potrebbero essere utili per risolvere enigmi e superare ostacoli. Usa i comandi sopra elencati per interagire con l'ambiente e avanzare nel gioco.
+
+
+## Specifica algebrica
+### Specifica sintattica
+sorts:Dizionario, chiave, valore, Boolean<br><br>
+
+operations:<br>
+- newDizionario: () -> Dizionario
+- put: Dizionario, chiave, valore -> Dizionario
+- get: Dizionario, chiave -> valore
+- remove: Dizionario, chiave -> Dizionario
+- isEmpty: Dizionario -> Boolean
+- containsKey: Dizionario, chiave -> Boolean
+- containsValue: Dizionario, valore -> Boolean
+- size: Dizionario -> Integer
+- keySet: Dizionario -> List<chiave>
+- values: Dizionario -> List<valore>
+- clear: Dizionario -> Dizionario
+
+
+### Specifica semantica
+declase:d:dizionario, k:chiave, v:valore.<br><br>
+- isEmpty(newDizionario()) = true
+- isEmpty(put(d, k, v)) = false
+- get(put(d, k, v), k) = v
+- get(d, k) = undefined se containsKey(d, k) = false
+- remove(d, k) = d se containsKey(d, k) = false
+- containsKey(remove(d, k), k) = false
+- containsKey(put(d, k, v), k) = true
+- containsValue(d, v) = (∃k | get(d, k) = v)
+- size(newDizionario()) = 0
+- size(put(d, k, v)) = size(d) + 1 se containsKey(d, k) = false
+- size(put(d, k, v)) = size(d) se containsKey(d, k) = true
+- size(remove(d, k)) = size(d) - 1 se containsKey(d, k) = true
+- size(remove(d, k)) = size(d) se containsKey(d, k) = false
+- keySet(d) = { k | containsKey(d, k) }
+- values(d) = [ get(d, k) | k ∈ keySet(d) ]
+- isEmpty(clear(d)) = true
+
+
+
+### Specifica di restrizione
+restrictions:
+∀ d:Dizionario, k: chiave, v: valore.<br><br>
+- ∀k' | (k' ≠ k implica get(put(d, k, v), k') = get(d, k'))        
+- ∀k' | (k' ≠ k implica get(remove(d, k), k') = get(d, k'))
+- keySet(d).contains(k) = containsKey(d, k)
+- values(d).contains(v) = containsValue(d, v)        
+- ∀k . containsKey(clear(d), k) = false
