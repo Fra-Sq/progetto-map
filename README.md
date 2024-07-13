@@ -17,7 +17,7 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 5. [Contenuti rilevanti](#contenuti-rilevanti)
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
-   - [Utilizzo dei thread](utilizzo-dei-thread)
+   - [Utilizzo dei thread](#utilizzo-dei-thread)
 6. [Link Doxygen](#Link-Doxygen)
    
 ## Introduzione
