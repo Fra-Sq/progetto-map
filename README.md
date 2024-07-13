@@ -17,6 +17,7 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 5. [Contenuti rilevanti](#contenuti-rilevanti)
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
+6. [Link Doxygen](#Link-Doxygen)
    
 ## Introduzione
 **SPACE ESCAPE** è un'avventura testuale interattiva progettata per l'esame di 'Metodi avanzati di programmazione', sviluppata interamente in linguaggio java. Il gioco si svolge attraverso un'interfaccia grafica (**GUI**), che consente agli utenti interagire con essa e immergersi nell'avventura di una navicella spaziale intrappolata nello spazio. Inoltre il programma supporta il salvataggio e il caricamento di una partita, oltre ad una classifica globale gestita tramite server.
@@ -115,4 +116,6 @@ Nel primo caso la gestione del database è effettuata tramite la classe "Databas
 Nel secondo caso invece il database viene gestito con la classe "Database" inserita nel package "com.mycompany.restserver" all'interno del progetto "Restserver". Anche in questo caso la connessione viene effettuata all'interno del costruttore, poi abbiamo dei metodi per l'inserimento dei dati (insertInLeaderboard), la restituzione delle info di un giocatore ricevendo in input l'id (getFromLeaderboard) e la restituzione dei migliori giocatori ricevendo in input il numero di giocatori che si vuole avere (getTopPlayers).<br>
 In entrambi i casi abbiamo utilizzato Database Engine H2 poiché possono essere utilizzati in modo embedded senza necessità di installare un server.
 
+## Link Doxygen
+[Apri Doxygen](./doxygen/html/index.html)
 
