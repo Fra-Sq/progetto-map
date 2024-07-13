@@ -17,7 +17,7 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 5. [Contenuti rilevanti](#contenuti-rilevanti)
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
-   - [Utilizzo det thread](utilizzo-dei-thread)
+   - [Utilizzo dei thread](utilizzo-dei-thread)
 6. [Link Doxygen](#Link-Doxygen)
    
 ## Introduzione
@@ -123,6 +123,7 @@ Nella classe sono stati inseriti diversi metodi così da gestire al meglio il th
 - stopSound(): Metodo che imposta il flag isInterrupted a true e interrompe il thread corrente chiamando interrupt(). Questo metodo permette di fermare la riproduzione del suono in qualsiasi momento.
 - startSound(): Metodo che avvia o riprende la riproduzione del suono. Se il suono non è attualmente in riproduzione (!isPlaying), reimposta isInterrupted a false e avvia il thread chiamando start(), il quale a sua volta esegue il metodo run().
 - run(): Metodo che sovrascrive il metodo run della classe Thread e contiene la logica per la riproduzione del file audio. La riproduzione continua finché isInterrupted è false. All'interno del metodo, viene aperto il file audio e letto in un buffer che viene poi scritto su un SourceDataLine per la riproduzione. Se il controllo del pan è supportato, viene regolato in base alla posizione corrente (sinistra, destra, normale).
+
 <br>Ii thread vengono utilizzati per eseguire la riproduzione del suono in parallelo rispetto al thread principale dell'applicazione. Questo permette all'utente di eseguire altre operazioni mentre l'audio è in riproduzione, senza bloccare l'interfaccia utente o altre funzionalità dell'applicazione.<br>
 Quando si chiama startSound(), il thread viene avviato utilizzando il metodo start(), che a sua volta invoca il metodo run() del thread. Questo metodo contiene il loop principale di riproduzione del suono. Durante la riproduzione, il thread legge i dati dal file audio e li scrive nel buffer del SourceDataLine per la riproduzione.<br>
 Quando si chiama stopSound(), il flag isInterrupted viene impostato a true e il thread corrente viene interrotto utilizzando interrupt(). Questo provoca l'uscita dal loop principale nel metodo run() e consente la pulizia delle risorse, come la chiusura del SourceDataLine e dell'AudioInputStream.<br>
