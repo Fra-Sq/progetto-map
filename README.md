@@ -18,6 +18,8 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
    - [Utilizzo dei thread](#utilizzo-dei-thread)
+   - [Swing](#swing)
+   - [RESTful](#restful)
 6. [Doxygen](#doxygen)
    
 ## Introduzione
@@ -131,7 +133,45 @@ Vantaggi dell'uso dei Thread:
 - Asincronia: La riproduzione del suono avviene in modo asincrono, permettendo all'applicazione principale di continuare a funzionare senza blocchi.
 - Reattività: L'interfaccia utente rimane reattiva, poiché la riproduzione audio non blocca il thread principale.
 - Controllo: È possibile interrompere la riproduzione del suono in qualsiasi momento senza dover aspettare che il file audio termini.
-La classe AePlayWave dimostra come i thread possono essere utilizzati per eseguire operazioni che richiedono tempo, come la riproduzione di file audio, in modo efficiente e senza compromettere l'esperienza dell'utente.
+La classe AePlayWave dimostra come i thread possono essere utilizzati per eseguire operazioni che richiedono tempo, come la riproduzione di file audio, in modo efficiente e senza compromettere l'esperienza dell'utente..
+
+### Swing
+Nel progetto abbiamo utilizzato la libreria grafica Swing per garantire al giocatore un'esperienza più immersiva.<br>
+Lo sfondo del gioco varia a seconda di cosa si sta facendo, di fatti si parte con un'immagine nella schermata iniziale, quella in cui si introduce il gioco, poi una volta iniziato a giocare l'immagine di sfondo varia a seconda della stanza in cui ci si trova. Le immagini sono state create da vari software generativi.<br>
+Nella finestra che viene creata oltre alle immagini di sfondo sono stati aggiunti vari componenti di interfaccia frafica:
+- Caselle di testo per prendere in input i comandi del giocatore.
+- Arree di testo per far visualizzare:
+   - I nomi delle stanze
+   - La descrizione delle stanze
+   - I Messaggi del gioco
+   - La classifica
+   - Il tempo di gioco
+- Tasti per permettere al giocatore di svolgere diverse operazioni:
+   - Iniziare una nuova partita
+   - Caricare una partita salvata
+   - Visualizzare la classifica
+   - Nascondere la clasifica
+   - Mettere in pausa il gioco
+   - Uscire dal gioco senza salvare la partita
+   - Uscire dal gioco salvando la partita
+ 
+### RESTful
+Questo progetto utilizza un'architettura RESTful per gestire una classifica di un gioco, composta da un client REST, un server REST e un servizio RESTful. Questi componenti lavorano insieme per consentire l'aggiunta di dati dei giocatori alla classifica e il recupero delle posizioni attuali della classifica.
+#### RESTClient
+La classe `RESTClient` è progettata per interagire con il servizio RESTful. Utilizza l'API JAX-RS per inviare richieste HTTP al server e la libreria Gson per la serializzazione e deserializzazione dei dati JSON. Il costruttore della classe inizializza il client REST, imposta l'URL di destinazione del servizio e il parser JSON. La classe `RESTClient` ha due metodi principali:
+- **addPlayer(PlayerData player)**: Questo metodo invia una richiesta PUT al server per aggiungere i dati di un nuovo giocatore alla classifica. I dati del giocatore vengono convertiti in formato JSON e inviati al server. La risposta del server viene quindi stampata sulla console per la verifica.
+- **getLeaderboard()**: Questo metodo invia una richiesta GET al server per ottenere la classifica attuale. La risposta JSON viene deserializzata in una lista di oggetti, che vengono poi formattati in una stringa leggibile che rappresenta la classifica e restituita.
+#### RESTServer
+La classe `RESTServer` avvia il server HTTP utilizzando la libreria Grizzly. Configura il server per ascoltare le richieste sulla porta 4321 e mappa le richieste al servizio `LeaderboardService`. Il metodo `startServer()` configura e avvia il server, aggiungendo anche un hook di spegnimento per garantire che il server si chiuda correttamente quando l'applicazione termina. Il server viene avviato nel metodo `main`, che è il punto di ingresso dell'applicazione.
+#### LeaderboardService
+La classe `LeaderboardService` è il cuore del servizio RESTful che gestisce le richieste relative alla classifica. Utilizza le annotazioni JAX-RS per mappare le richieste HTTP ai metodi Java e interagisce con un database per recuperare e inserire i dati dei giocatori. Questa classe contiene due metodi principali:
+- **getLeaderboard()**: Questo metodo gestisce le richieste GET per recuperare le prime posizioni della classifica. Quando viene ricevuta una richiesta GET, il metodo interroga il database per ottenere i migliori giocatori, converte i dati in formato JSON e li restituisce al client come risposta. In caso di errore, restituisce un messaggio di errore adeguato.
+- **addPlayer(String json)**: Questo metodo gestisce le richieste PUT per aggiungere un nuovo giocatore alla classifica. Riceve i dati del giocatore in formato JSON, li deserializza in un oggetto `PlayerData` e inserisce i dati nel database. Se l'operazione ha successo, restituisce una risposta di conferma; altrimenti, restituisce un messaggio di errore.
+
+#### Interazione tra i Componenti
+1. **Aggiunta di un Giocatore**: Il client (`RESTClient`) invia una richiesta PUT al server per aggiungere un nuovo giocatore alla classifica. La richiesta è gestita dal servizio (`LeaderboardService`), che inserisce i dati nel database e restituisce una risposta al client.
+2. **Recupero della Classifica**: Il client invia una richiesta GET al server per ottenere la classifica attuale. Il servizio (`LeaderboardService`) recupera i dati dal database, li converte in formato JSON e li restituisce al client, che li deserializza e formatta in una stringa leggibile.
+Questa architettura separa chiaramente le responsabilità tra client, server e logica di business, facilitando la manutenzione e l'estensione dell'applicazione. Il client REST è responsabile dell'invio delle richieste e della gestione delle risposte, il server REST gestisce le connessioni HTTP e il servizio RESTful contiene la logica di business per l'elaborazione delle richieste relative alla classifica.
 
 ## Doxygen
 Per visualizzare la documentazione doxygen aprire il collegamento "index" inserito nella cartella "progetto-map".
