@@ -9,8 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author sangiovannesi
+ * Represents a room within the adventure game. A room can have various properties such as a name, description,
+ * visibility, connections to other rooms (north, south, east, west), and objects within it. Rooms can also contain
+ * a monster, and have dynamic descriptions based on game state.
  */
 public class Room {
 
@@ -28,12 +29,26 @@ public class Room {
     private String dynamicLook;
     private final GameDescription game;  // Riferimento alla GameDescription
 
-    // Costruttore aggiornato
+    /**
+     * Constructs a Room with a specified ID and a reference to the game description.
+     * This constructor initializes a room without a name or a static description.
+     *
+     * @param id The unique identifier for the room.
+     * @param game The game description, providing access to global game state.
+     */
     public Room(int id, GameDescription game) {
         this.id = id;
         this.game = game;
     }
 
+    /**
+     * Constructs a Room with a specified ID, name, description, and a reference to the game description.
+     *
+     * @param id The unique identifier for the room.
+     * @param name The name of the room.
+     * @param description The static description of the room.
+     * @param game The game description, providing access to global game state.
+     */
     public Room(int id, String name, String description, GameDescription game) {
         this.id = id;
         this.name = name;
@@ -101,6 +116,12 @@ public class Room {
         return objects;
     }
 
+    /**
+     * Adds an object to the room. If the object's ID is not 6, it is added to the room's object list
+     * and the global game object list.
+     *
+     * @param obj The object to add to the room.
+     */
     public void addObject(AdvObject obj) {
         if(obj.getId()!=6)
             objects.add(obj);
@@ -150,6 +171,12 @@ public class Room {
         return null;
     }
 
+    /**
+     * Generates a dynamic description of the room, including details about objects and their states.
+     * For example, if a reinforced door object (ID 9) is open, this is reflected in the description.
+     *
+     * @return A string representing the dynamic look of the room.
+     */
     public String getDynamicLook() {
         StringBuilder dynamiclook = new StringBuilder(look);
 

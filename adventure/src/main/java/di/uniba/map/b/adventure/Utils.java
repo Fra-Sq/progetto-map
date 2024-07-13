@@ -14,16 +14,16 @@ import java.util.List;
 import java.util.Set;
 
 /**
- *
- * @author sangiovannesi
+ * Utility class providing static methods for common operations such as loading a list of strings from a file into a set and parsing strings into a list of tokens.
  */
 public class Utils {
 
     /**
+     * Loads each line from a specified file into a {@link Set} of strings. This method is useful for loading data where each line represents a unique entry, such as a list of stopwords.
      *
-     * @param file
-     * @return
-     * @throws IOException
+     * @param file The file to read from.
+     * @return A {@link Set} containing all lines from the file, trimmed and converted to lowercase.
+     * @throws IOException If an I/O error occurs reading from the file.
      */
     public static Set<String> loadFileListInSet(File file) throws IOException {
         Set<String> set = new HashSet<>();
@@ -36,10 +36,11 @@ public class Utils {
     }
 
     /**
+     * Parses a given string into a list of tokens (words), excluding any tokens that are contained in a provided set of stopwords. This method is useful for text processing tasks such as tokenization.
      *
-     * @param string
-     * @param stopwords
-     * @return
+     * @param string The string to parse.
+     * @param stopwords A {@link Set} of stopwords to exclude from the resulting list of tokens.
+     * @return A {@link List} of tokens derived from the input string, excluding any stopwords.
      */
     public static List<String> parseString(String string, Set<String> stopwords) {
         List<String> tokens = new ArrayList<>();

@@ -11,16 +11,21 @@ import di.uniba.map.b.adventure.type.CommandType;
 import di.uniba.map.b.adventure.GameObserver;
 
 /**
- *
- * @author sangiovannesi
+ * Implements the observer for inventory-related events in the game.
+ * This observer is responsible for handling the display of the player's inventory
+ * when the inventory command is issued.
  */
 public class InventoryObserver implements GameObserver {
 
     /**
+     * Updates the game state in response to an inventory command and generates a message
+     * describing the current contents of the player's inventory.
      *
-     * @param description
-     * @param parserOutput
-     * @return
+     * @param description The current state of the game.
+     * @param parserOutput The output from the command parser, containing the parsed command.
+     * @param window The game window where output messages are displayed.
+     * @return A string message detailing the contents of the player's inventory, or a message
+     *         indicating the inventory is empty if no items are present.
      */
     @Override
     public String update(GameDescription description, ParserOutput parserOutput, Window window) {

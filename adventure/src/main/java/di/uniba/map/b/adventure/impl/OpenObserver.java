@@ -13,11 +13,22 @@ import java.util.Iterator;
 import di.uniba.map.b.adventure.GameObserver;
 
 /**
- *
- * @author sangiovannesi
+ * Observer implementation for handling "open" commands within the game.
+ * This observer allows players to open objects or containers in the game environment,
+ * potentially revealing or releasing items contained within.
  */
 public class OpenObserver implements GameObserver {
 
+    /**
+     * Processes an "open" command, attempting to open the specified object or container.
+     * If the object is openable and not already open, it is opened, and any contained items are moved to the current room.
+     * Messages are generated to inform the player of the action's outcome.
+     *
+     * @param description The current state of the game, including the player's current room and inventory.
+     * @param parserOutput The parsed output of the player's command, including the command type and targeted object.
+     * @param window The game window where output messages are displayed.
+     * @return A string message indicating the outcome of the "open" command.
+     */
     @Override
     public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         StringBuilder msg = new StringBuilder();
@@ -39,6 +50,15 @@ public class OpenObserver implements GameObserver {
         return msg.toString();
     }
 
+    /**
+     * Attempts to open a specified object or container. If the object is an instance of AdvObjectContainer
+     * and contains items, those items are moved to the current room. Messages are generated to inform the player
+     * of the action's outcome.
+     *
+     * @param msg The StringBuilder object used to build the outcome message.
+     * @param description The current state of the game, including the player's current room.
+     * @param object The object or container to be opened.
+     */
     private void openObject(StringBuilder msg, GameDescription description, AdvObject object) {
         if (object.isOpenable() && !object.isOpen()) {
             if (object instanceof AdvObjectContainer) {

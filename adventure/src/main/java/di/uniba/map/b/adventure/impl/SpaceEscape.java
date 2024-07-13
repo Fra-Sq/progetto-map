@@ -17,8 +17,8 @@ import di.uniba.map.b.adventure.GameObservable;
 import di.uniba.map.b.adventure.GameObserver;
 
 /**
- *
- * @author sangiovannesi
+ * Main class for the SpaceEscape game, extending GameDescription and implementing GameObservable.
+ * This class initializes the game environment, including rooms, objects, and commands, and handles player moves.
  */
 public class SpaceEscape extends GameDescription implements GameObservable {
 
@@ -29,9 +29,11 @@ public class SpaceEscape extends GameDescription implements GameObservable {
     private final List<String> messages = new ArrayList<>();
 
     /**
+     * Initializes the game environment using data from the provided database.
+     * This includes setting up rooms, commands, objects, and observers.
      *
-     * @param database
-     * @throws Exception
+     * @param database The database containing game data such as room descriptions and object details.
+     * @throws Exception If there is an error accessing the database.
      */
     @Override
     public void init(Database database) throws Exception {
@@ -235,15 +237,16 @@ public class SpaceEscape extends GameDescription implements GameObservable {
         getRooms().add(engineRoom);
         setCurrentRoom(portalRoom);
     }
-    
+
 
 
 /**
-*
-* @param p
-* @param window
-*/
-   
+ * Processes the next move based on the player's command.
+ * This method updates the game state, notifies observers, and displays messages to the player.
+ *
+ * @param p The parsed output of the player's command.
+ * @param window The game window where messages are displayed.
+ */
 @Override
 public void nextMove(ParserOutput p, Window window) {
     parserOutput = p;
@@ -314,8 +317,10 @@ public void nextMove(ParserOutput p, Window window) {
 
 
     /**
+     * Attaches an observer to the game.
+     * Observers are notified of game events and can update the game state or display messages.
      *
-     * @param o
+     * @param o The observer to attach.
      */
     @Override
     public void attach(GameObserver o) {
@@ -325,8 +330,9 @@ public void nextMove(ParserOutput p, Window window) {
     }
 
     /**
+     * Detaches an observer from the game.
      *
-     * @param o
+     * @param o The observer to detach.
      */
     @Override
     public void detach(GameObserver o) {
@@ -334,8 +340,11 @@ public void nextMove(ParserOutput p, Window window) {
     }
 
     /**
+     * Notifies all attached observers of a game event.
+     * Observers can update the game state or generate messages based on the event.
      *
-     * @param window */
+     * @param window The game window where messages may be displayed.
+     */
     @Override
     public void notifyObservers(Window window) {
         for (GameObserver o : observer) {
@@ -344,8 +353,9 @@ public void nextMove(ParserOutput p, Window window) {
     }
 
     /**
+     * Returns the welcome message to be displayed at the start of the game.
      *
-     * @return
+     * @return The welcome message string.
      */
     @Override
     public String getWelcomeMsg() {

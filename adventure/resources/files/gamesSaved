@@ -5,6 +5,13 @@ MonsterAlive:true
 IsDoorOpen:true
 Inventory:5,
 ---
+GameName:palle
+ElapsedSeconds:65
+CurrentRoom:0
+MonsterAlive:true
+IsDoorOpen:false
+Inventory:6,
+---
 GameName:mimmo
 ElapsedSeconds:15
 CurrentRoom:4

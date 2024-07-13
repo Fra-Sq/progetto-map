@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package di.uniba.map.b.adventure;
 
 import di.uniba.map.b.adventure.impl.Database;
@@ -13,25 +9,27 @@ import java.io.IOException;
 import java.util.Set;
 
 /**
- *
- * @author sangiovannesi
+ * The Engine class is the main driver of the game. It initializes the game environment,
+ * including the game description, parser, database, and window. It also handles the execution
+ * of the game by displaying the start description, room name, and room description.
  */
 public class Engine {
 
-    private final GameDescription game;
+    private final GameDescription game; // The game description instance
 
-    private Parser parser;
-    private Database database;
-    private Window window;
-    //private Database database;
+    private Parser parser; // The parser instance for interpreting player commands
+    private Database database; // The database instance for game data management
+    private Window window; // The window instance for displaying game information
 
     /**
+     * Constructs an Engine object with a specified game description.
+     * Initializes the database and attempts to initialize the game and parser.
      *
-     * @param game
+     * @param game The game description to be used for this engine instance.
      */
     public Engine(GameDescription game) {
         this.game = game;
-        database= new Database();
+        database = new Database();
         try {
             this.game.init(database);
         } catch (Exception ex) {
@@ -46,17 +44,21 @@ public class Engine {
     }
 
     /**
-     *
+     * Executes the game by setting up the window, displaying the start description,
+     * and showing the current room's name and description.
      */
     public void execute() {
-        window= new Window(game, parser);
+        window = new Window(game, parser);
         window.showStartDescription(game.getWelcomeMsg());
         window.showRoomName(game.getCurrentRoom().getName());
         window.showRoomDescription(game.getCurrentRoom().getDescription());
     }
 
     /**
-     * @param args the command line arguments
+     * The main method to start the game. It creates an Engine instance with a SpaceEscape game
+     * description and executes the game.
+     *
+     * @param args the command line arguments (not used).
      */
     public static void main(String[] args) {
         Engine engine = new Engine(new SpaceEscape());

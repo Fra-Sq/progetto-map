@@ -10,17 +10,22 @@ import di.uniba.map.b.adventure.type.CommandType;
 import di.uniba.map.b.adventure.GameObserver;
 
 /**
- *
- * @author pierpaolo
+ * Observer implementation for handling "pick up" commands within the game.
+ * This observer allows players to pick up objects from the current room and add them to their inventory,
+ * provided the objects are pickupable.
  */
 public class PickUpObserver implements GameObserver {
 
     /**
+     * Processes a "pick up" command, attempting to add the specified object to the player's inventory.
+     * Verifies if the object is present in the current room and if it is pickupable.
+     * If successful, the object is removed from the room and added to the inventory, and a success message is returned.
+     * Otherwise, an appropriate failure message is generated.
      *
-     * @param description
-     * @param parserOutput
-     * @param window
-     * @return
+     * @param description The current state of the game, including the player's current room and inventory.
+     * @param parserOutput The parsed output of the player's command, including the command type and targeted object.
+     * @param window The game window where output messages are displayed.
+     * @return A string message indicating the outcome of the "pick up" command.
      */
     @Override
     public String update(GameDescription description, ParserOutput parserOutput, Window window) {
