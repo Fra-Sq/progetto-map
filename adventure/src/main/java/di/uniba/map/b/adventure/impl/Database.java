@@ -11,6 +11,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
 
+/**
+ *
+ * @author sangiovannesi
+ */
 public class Database {
 
     Properties dbprops;

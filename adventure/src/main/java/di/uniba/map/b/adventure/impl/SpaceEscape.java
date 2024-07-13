@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package di.uniba.map.b.adventure.impl;
 
@@ -18,20 +17,10 @@ import di.uniba.map.b.adventure.GameObservable;
 import di.uniba.map.b.adventure.GameObserver;
 
 /**
- * ATTENZIONE: La descrizione del gioco è fatta in modo che qualsiasi gioco
- * debba estendere la classe GameDescription. L'Engine è fatto in modo che possa
- * eseguire qualsiasi gioco che estende GameDescription, in questo modo si
- * possono creare più gioci utilizzando lo stesso Engine.
  *
- * Diverse migliorie possono essere applicate: - la descrizione del gioco
- * potrebbe essere caricate da file o da DBMS in modo da non modificare il
- * codice sorgente - l'utilizzo di file e DBMS non è semplice poiché all'interno
- * del file o del DBMS dovrebbe anche essere codificata la logica del gioco
- * (nextMove) oltre alla descrizione di stanze, oggetti, ecc...
- *
- * @author pierpaolo
+ * @author sangiovannesi
  */
-public class FireHouseGame extends GameDescription implements GameObservable {
+public class SpaceEscape extends GameDescription implements GameObservable {
 
     private final List<GameObserver> observer = new ArrayList<>();
 

@@ -9,7 +9,7 @@ import di.uniba.map.b.adventure.parser.ParserOutput;
 
 /**
  *
- * @author pierpaolo
+ * @author sangiovannesi
  */
 public interface GameObserver {
 

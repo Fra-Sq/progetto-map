@@ -8,6 +8,10 @@ import di.uniba.map.b.adventure.type.AdvObject;
 import di.uniba.map.b.adventure.type.AdvObjectContainer;
 import di.uniba.map.b.adventure.type.Room;
 
+/**
+ *
+ * @author sangiovannesi
+ */
 public class UseObserver implements GameObserver {
 
     @Override

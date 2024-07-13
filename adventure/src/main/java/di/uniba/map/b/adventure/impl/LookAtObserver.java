@@ -11,7 +11,7 @@ import di.uniba.map.b.adventure.GameObserver;
 
 /**
  *
- * @author pierpaolo
+ * @author sangiovannesi
  */
 public class LookAtObserver implements GameObserver {
 

@@ -1,9 +1,17 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package di.uniba.map.b.adventure.type;
 
 import di.uniba.map.b.adventure.GameDescription;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author sangiovannesi
+ */
 public class Room {
 
     private final int id;

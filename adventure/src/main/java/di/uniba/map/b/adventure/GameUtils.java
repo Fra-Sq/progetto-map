@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author pierpaolo
+ * @author sangiovannesi
  */
 public class GameUtils {
 

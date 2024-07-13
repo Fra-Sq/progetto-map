@@ -12,7 +12,7 @@ import di.uniba.map.b.adventure.GameObserver;
 
 /**
  *
- * @author pierpaolo
+ * @author sangiovannesi
  */
 public class InventoryObserver implements GameObserver {
 

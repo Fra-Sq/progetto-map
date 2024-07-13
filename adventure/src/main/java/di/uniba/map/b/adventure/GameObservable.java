@@ -8,7 +8,7 @@ import di.uniba.map.b.adventure.impl.Window;
 
 /**
  *
- * @author pierpaolo
+ * @author sangiovannesi
  */
 public interface GameObservable {
     
