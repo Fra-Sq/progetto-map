@@ -116,6 +116,6 @@ Nel primo caso la gestione del database è effettuata tramite la classe "Databas
 Nel secondo caso invece il database viene gestito con la classe "Database" inserita nel package "com.mycompany.restserver" all'interno del progetto "Restserver". Anche in questo caso la connessione viene effettuata all'interno del costruttore, poi abbiamo dei metodi per l'inserimento dei dati (insertInLeaderboard), la restituzione delle info di un giocatore ricevendo in input l'id (getFromLeaderboard) e la restituzione dei migliori giocatori ricevendo in input il numero di giocatori che si vuole avere (getTopPlayers).<br>
 In entrambi i casi abbiamo utilizzato Database Engine H2 poiché possono essere utilizzati in modo embedded senza necessità di installare un server.
 
-## Link Doxygen
-[Apri Doxygen](./doxygen/html/index.html)
+## Doxygen
+Per visualizzare la documentazione doxygen aprire il collegamento "index" inserito nella cartella "progetto-map".
 
