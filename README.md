@@ -38,9 +38,9 @@ ovest: Spostati a ovest.<br>
 osserva: Osserva la stanza attuale per una descrizione dettagliata.<br>
 prendi : Prendi un oggetto.<br>
 usa : Usa un oggetto nell'inventario.<br>
-apri : Apri una porta, una cassa, se possibile.<br>
+apri : Apri una un oggetto, se possibile.<br>
 ammazza : Ammazza qualsiasi mostro/alieno esistente.<br>
-inventario : Stampa tutti gli oggetti che ci sono all'interno.<br>
+inventario : Stampa tutti gli oggetti che il giocatore ha raccolto durante la partita.<br>
 abbandona: Termina il gioco.<br>
 attiva: Attiva i vari pannelli e portali.<br>
 leggi: Legge le varie mappe/cartine.<br>
