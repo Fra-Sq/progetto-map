@@ -12,11 +12,10 @@ import javax.sound.sampled.DataLine;
 import javax.sound.sampled.FloatControl; 
 import javax.sound.sampled.LineUnavailableException; 
 import javax.sound.sampled.SourceDataLine; 
-import javax.sound.sampled.UnsupportedAudioFileException; 
- 
+import javax.sound.sampled.UnsupportedAudioFileException;
+
 /**
- *
- * @author sangiovannesi
+ * This class is designed to play sound files in a separate thread. It supports basic operations such as play, stop, and handling of audio pan (left, right, normal).
  */
 public class AePlayWave extends Thread {
 

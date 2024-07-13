@@ -9,17 +9,20 @@ import di.uniba.map.b.adventure.parser.ParserOutput;
 import di.uniba.map.b.adventure.GameObserver;
 
 /**
- *
- * @author sangiovannesi
+ * Observer implementation for handling movement commands within the game.
+ * This observer updates the player's current room based on the direction specified in the command.
  */
 public class MoveObserver implements GameObserver {
 
     /**
+     * Processes movement commands (NORTH, SOUTH, EAST, WEST), updating the player's current room accordingly.
+     * If the movement is not possible (e.g., a wall blocks the way), it returns a message indicating so.
+     * Otherwise, it silently updates the player's current room to the new location.
      *
-     * @param description
-     * @param parserOutput
-     * @param window
-     * @return
+     * @param description The current state of the game, including the player's current room.
+     * @param parserOutput The parsed output of the player's command, including the command type and arguments.
+     * @param window The game window where output messages are displayed.
+     * @return A string message indicating the outcome of the movement command, or an empty string if the movement was successful.
      */
     @Override
     public String update(GameDescription description, ParserOutput parserOutput, Window window) {

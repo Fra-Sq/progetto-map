@@ -17,8 +17,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.Map;
 
 /**
- *
- * @author sangiovannesi
+ * The main window for the adventure game, providing the graphical user interface.
+ * This class extends JFrame, incorporating various UI components to interact with the game.
  */
 public class Window extends JFrame
 {
@@ -59,8 +59,12 @@ public class Window extends JFrame
     private final ImageIcon resizedAlieno;
     private final ImageIcon resizedArchivio;
     private final ImageIcon resizedPortaleAcceso;
-    
-    
+
+    /**
+     * Constructs the main game window, initializing UI components and setting up event listeners.
+     * @param game The game description, containing the state and logic of the adventure game.
+     * @param parser The parser used to interpret player commands.
+     */
     public Window(GameDescription game, Parser parser)
     {          
         setSize(600,600);  
@@ -722,12 +726,20 @@ public class Window extends JFrame
 
         setVisible(true);
     }
-    
+
+    /**
+     * Displays the starting description of the game in a text area.
+     * @param startDescription The starting description text.
+     */
     public void showStartDescription(String startDescription){
         
         startDescriptionTextArea.setText(startDescription);
     }
-    
+
+    /**
+     * Updates and displays the name of the current room in a text area.
+     * @param roomName The name of the current room.
+     */
     public void showRoomName(String roomName){
              
         roomNameTextArea.setText("Ti trovi qui: " + roomName);
@@ -741,20 +753,35 @@ public class Window extends JFrame
         if(roomName.equals("Anticamera"))    currentBackground.setIcon(resizedAlieno);
         if(roomName.equals("Archivio"))    currentBackground.setIcon(resizedArchivio);
             }
-    
+
+    /**
+     * Updates and displays the description of the current room in a text area.
+     * @param roomDescription The description of the current room.
+     */
     public void showRoomDescription(String roomDescription){
         roomDescriptionTextArea.setText(roomDescription);
     }
-    
+
+    /**
+     * Displays a message in a text area, typically used for feedback or game instructions.
+     * @param message The message to display.
+     */
     public void showMessage(String message){
         messageTextArea.setText(message);
     }
-    
+
+    /**
+     * Fetches and displays the leaderboard from a RESTful service.
+     */
     public void showLeaderBoard(){
         String leaderboard = client.getLeaderboard();
         leaderBoard.setText(leaderboard);
-    }    
-    
+    }
+
+    /**
+     * Retrieves the text currently inserted by the player.
+     * @return The text inserted by the player.
+     */
     public String getInsertText(){
         return insertText;
     }   

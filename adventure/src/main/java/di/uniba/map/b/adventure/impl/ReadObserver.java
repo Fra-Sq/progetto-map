@@ -10,16 +10,19 @@ import di.uniba.map.b.adventure.parser.ParserOutput;
 import di.uniba.map.b.adventure.type.CommandType;
 
 /**
- *
- * @author sangiovannesi
+ * Observer implementation for handling "read" commands within the game.
+ * This observer allows players to read objects that contain readable content, such as maps or notes.
  */
 public class ReadObserver implements GameObserver{
     /**
+     * Processes a "read" command, displaying the content of the readable object to the player.
+     * It checks if the object is in the player's inventory or in the current room and if it is readable.
+     * If the object is a map, it provides additional handling.
      *
-     * @param description
-     * @param parserOutput
-     * @param window
-     * @return
+     * @param description The current state of the game, including the player's current room and inventory.
+     * @param parserOutput The parsed output of the player's command, including the command type and targeted object.
+     * @param window The game window where output messages are displayed.
+     * @return A string message indicating the outcome of the "read" command, such as the content of the object or an error message.
      */
 
     @Override

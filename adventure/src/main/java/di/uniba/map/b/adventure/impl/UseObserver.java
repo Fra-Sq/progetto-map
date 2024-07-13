@@ -9,11 +9,20 @@ import di.uniba.map.b.adventure.type.AdvObjectContainer;
 import di.uniba.map.b.adventure.type.Room;
 
 /**
- *
- * @author sangiovannesi
+ * Observer implementation for handling "use" commands within the game.
+ * This observer allows players to interact with objects by using them, triggering specific game events or actions.
  */
 public class UseObserver implements GameObserver {
 
+     /**
+     * Updates the game state based on the player's input.
+     * This observer handles the "use" command, allowing players to interact with objects by using them.
+     *
+     * @param description The current game description.
+     * @param parserOutput The output of the parser, containing the command and the objects involved.
+     * @param window The game window.
+     * @return A message describing the result of the interaction.
+     */
     @Override
     public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         StringBuilder msg = new StringBuilder();

@@ -12,12 +12,24 @@ import di.uniba.map.b.adventure.type.CommandType;
 import di.uniba.map.b.adventure.type.AdvObject;
 import di.uniba.map.b.adventure.type.Room;
 /**
- *
- * @author franc
+ * Observer implementation for handling "kill" commands within the game.
+ * This observer checks if the player can kill a monster in the current room,
+ * based on the presence of a weapon in the player's inventory and the monster's existence.
  */
 
 public class KillObserver implements GameObserver {
 
+    /**
+     * Processes a "kill" command, determining if the player successfully kills a monster in the current room.
+     * The method checks if the player is in the correct room, if the monster is alive, and if the player has the required weapon.
+     * If the conditions are met, the monster is killed, and a success message is returned.
+     * Otherwise, appropriate messages are returned based on the failure condition (e.g., no monster, no weapon).
+     *
+     * @param description The current state of the game, including rooms, inventory, and game objects.
+     * @param parserOutput The parsed output of the player's command, including the command type and arguments.
+     * @param window The game window where output messages are displayed.
+     * @return A string message indicating the outcome of the "kill" command.
+     */
     @Override
     public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         StringBuilder msg = new StringBuilder();

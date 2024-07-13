@@ -1,0 +1,162 @@
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT LOOK FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT NOME FROM descrizioni WHERE ID = ? [42102-200]
+2024-07-12 16:03:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DESCRIZIONI" not found; SQL statement:
+SELECT DESCRIZIONE FROM descrizioni WHERE ID = ? [42102-200]
