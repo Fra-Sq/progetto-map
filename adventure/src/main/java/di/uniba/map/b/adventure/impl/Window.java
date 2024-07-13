@@ -121,7 +121,7 @@ public class Window extends JFrame
 //\Resize di tutte le immagini-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    startAudio(sottofondo);
+    sottofondo.startSound();
     
 //JLabel panel-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -325,6 +325,7 @@ public class Window extends JFrame
                         isDoorOpen = game.isKeyUsed();
                         SaveGame.save(game.getCurrentRoom(), game.getInventory(), gameName.trim(), elapsedSeconds, monsterAlive, isDoorOpen);
                         JOptionPane.showMessageDialog(null, "Partita salvata con successo!");
+                        sottofondo.stopSound();
                         System.exit(0);
                         break; // Esci dal ciclo dopo un salvataggio riuscito
                     } else {
@@ -362,6 +363,7 @@ public class Window extends JFrame
             );
 
             if (response == JOptionPane.OK_OPTION) {
+                sottofondo.stopSound();
                 System.exit(0);
             }
         });
@@ -708,7 +710,7 @@ public class Window extends JFrame
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
-                stopAudio(sottofondo); // Chiamata al metodo per fermare il thread
+                sottofondo.stopSound();
                 dispose(); // Chiudi la finestra in modo appropriato
                 System.exit(0);
             }
@@ -751,14 +753,5 @@ public class Window extends JFrame
     
     public String getInsertText(){
         return insertText;
-    }
-    
-    private void startAudio(AePlayWave sound){
-        sound.startSound();
-    }
-    
-    private void stopAudio(AePlayWave sound){
-        sound.stopSound();
-    }
-   
+    }   
 }
