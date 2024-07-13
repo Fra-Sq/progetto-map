@@ -12,7 +12,6 @@ import di.uniba.map.b.adventure.type.AdvObjectContainer;
 import di.uniba.map.b.adventure.type.Command;
 import di.uniba.map.b.adventure.type.CommandType;
 import di.uniba.map.b.adventure.type.Room;
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import di.uniba.map.b.adventure.GameObservable;
@@ -177,17 +176,16 @@ public class FireHouseGame extends GameDescription implements GameObservable {
         sword.setPickupable(true);
         armory.addObject(sword);
         
-        AdvObjectContainer door = new AdvObjectContainer(9, database.getNameById("door"), database.getDescriptionById("door"));
+        AdvObject door = new AdvObjectContainer(9, database.getNameById("door"), database.getDescriptionById("door"));
         door.setAlias(new String[]{"uscita", "portone", "porta rinforzata, porta"});
-        //door.setOpenable(true);
         door.setOpen(false); // Imposta lo stato iniziale della porta come chiusa
-        engineRoom.addObject(door);
+        corridor4.addObject(door);
         
         AdvObject map = new AdvObject(11, database.getNameById("map"), database.getDescriptionById("map"));
         map.setAlias(new String[]{"cartina", "pianeta", "coordinate", "mappe"});
         map.setPickupable(true);
         map.setReadable(true);
-    map.setContents("COORDINATE VIA LATTEA\n" +
+        map.setContents("COORDINATE VIA LATTEA\n" +
             "Pianeta: Marte\n" +
             "Coordinate: 43522\" N 1372630\" E\n" +
             "Pianeta: Venere\n" +
@@ -254,17 +252,15 @@ public class FireHouseGame extends GameDescription implements GameObservable {
 /**
 *
 * @param p
-* @param out
 * @param window
 */
    
 @Override
-public void nextMove(ParserOutput p, PrintStream out, Window window) {
+public void nextMove(ParserOutput p, Window window) {
     parserOutput = p;
     messages.clear();
 
     if (p.getCommand() == null) {
-        out.println("Non ho capito cosa devo fare! Prova con un altro comando.");
         window.showMessage("Non ho capito cosa devo fare! Prova con un altro comando.");
     } else {
         Room cr = getCurrentRoom();
@@ -275,16 +271,13 @@ public void nextMove(ParserOutput p, PrintStream out, Window window) {
         if (p.getCommand().getType() == CommandType.LOOK_AT) {
             AdvObject object = p.getObject();
             if (object != null) {
-                out.println("Osservi " + object.getName() + ": " + object.getDescription());
                 window.showMessage("Osservi " + object.getName() + ": " + object.getDescription());
             } else {
-                out.println(cr.getLook());
                 window.showMessage(cr.getLook());
                 if (cr.getName().equalsIgnoreCase("Anticamera")) {
                     if (cr.isMonsterAlive()) {
                         cr.setDynamicLook("Sei nell'anticamera, l'alieno gigante si sta svegliando e ti osserva con occhi minacciosi!\n");
                     }
-                    out.println(cr.getDynamicLook());
                     window.showMessage(cr.getDynamicLook());
                 }
             }
@@ -292,7 +285,6 @@ public void nextMove(ParserOutput p, PrintStream out, Window window) {
             if (!messages.isEmpty()) {
                 for (String m : messages) {
                     if (m.length() > 0) {
-                        out.println(m);
                         window.showMessage(m);
                     }
                 }
@@ -304,33 +296,23 @@ public void nextMove(ParserOutput p, PrintStream out, Window window) {
                     boolean hasKey = getInventory().stream().anyMatch(obj -> obj.getId() == 5);
                     if (hasKey) {
                         if (isKeyUsed()) {
-                            out.println(currentRoom.getName());
                             window.showRoomName(currentRoom.getName());
-                            out.println("================================================");
-                            out.println(currentRoom.getDescription());
                             window.showRoomDescription(currentRoom.getDescription());
                         } else {
-                            out.println("La porta è chiusa ma hai la chiave. Usa la chiave per aprirla.");
                             window.showMessage("La porta è chiusa ma hai la chiave. Usa la chiave per aprirla.");
+                            setCurrentRoom(cr);
                         }
                     } else {
-                        out.println("La porta è chiusa e non puoi entrare perché non hai la chiave.");
                         window.showMessage("La porta è chiusa e non puoi entrare perché non hai la chiave.");
                         setCurrentRoom(cr); // Torna alla stanza precedente
                     }
                 } else {
-                    out.println(currentRoom.getName());
                     window.showRoomName(currentRoom.getName());
-                    out.println("================================================");
-                    out.println(currentRoom.getDescription());
                     window.showRoomDescription(currentRoom.getDescription());
                 }
             } else {
                 // Se non c'è stato un movimento, mostra la stanza corrente
-                out.println(cr.getName());
                 window.showRoomName(cr.getName());
-                out.println("================================================");
-                out.println(cr.getDescription());
                 window.showRoomDescription(cr.getDescription());
             }
         }

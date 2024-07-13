@@ -30,6 +30,13 @@ public abstract class GameDescription {
     }
     
     
+    public void setCurrentRoomById(int roomId){
+    Optional<Room> room = rooms.stream()
+                .filter(r -> r.getId() == roomId)
+                .findFirst();
+        room.ifPresent(r -> this.currentRoom = r);
+    }
+    
     public void setGame(int roomId, List<Integer> inventoryIds, boolean monsterAlive, boolean isDoorOpen){
         Optional<Room> room = rooms.stream()
                 .filter(r -> r.getId() == roomId)
@@ -57,8 +64,9 @@ public abstract class GameDescription {
                         stanze.setMonsterAlive(monsterAlive);
                         stanze.setLook("Ti trovi nell'anticamera, ma il mostro è morto. \nSul tentacolo del mostro c'è un codice tatuato: 07738");
                     }
-                    if (stanze.getId()==11 && isDoorOpen==true) {
-                        stanze.getObject(9).setOpen(isDoorOpen);
+                    if (stanze.getId()==4 && isDoorOpen==true) {
+                        stanze.getObject(9).setOpen(true);
+                        setKeyUsed(true);
                     }
                 }
             });
@@ -98,7 +106,7 @@ public abstract class GameDescription {
 
     public abstract void init(Database database) throws Exception;
 
-    public abstract void nextMove(ParserOutput p, PrintStream out, Window window);
+    public abstract void nextMove(ParserOutput p, Window window);
 
     public abstract String getWelcomeMsg();
 

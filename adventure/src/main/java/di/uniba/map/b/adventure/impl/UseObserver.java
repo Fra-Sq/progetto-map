@@ -51,16 +51,12 @@ public class UseObserver implements GameObserver {
                     AdvObject doorObject = currentRoom.getObject(9); // Supponiamo che 9 sia l'ID della porta
                     if (doorObject != null && doorObject instanceof AdvObjectContainer) {
                         AdvObjectContainer door = (AdvObjectContainer) doorObject;
-                        if (door.isOpenable()) {
-                            if (door.isOpen()) {
-                                msg.append("La porta è già aperta.");
-                            } else {
-                                msg.append("Hai usato la chiave per aprire la porta.");
-                                door.setOpen(true); // Apri la porta
-                                description.setKeyUsed(true); // Imposta il flag a true
-                            }
+                        if (door.isOpen()) {
+                            msg.append("La porta è già aperta.");
                         } else {
-                            msg.append("Non riesci ad aprire la porta con questa chiave.");
+                            msg.append("Hai usato la chiave per aprire la porta.");
+                            door.setOpen(true); // Apri la porta
+                            description.setKeyUsed(true); // Imposta il flag a true
                         }
                     } else {
                         msg.append("Porta non trovata nella stanza.");

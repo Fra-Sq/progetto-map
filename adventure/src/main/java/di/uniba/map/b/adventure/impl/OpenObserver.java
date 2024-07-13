@@ -14,62 +14,46 @@ public class OpenObserver implements GameObserver {
     public String update(GameDescription description, ParserOutput parserOutput, Window window) {
         StringBuilder msg = new StringBuilder();
         if (parserOutput.getCommand().getType() == CommandType.OPEN) {
-            if (parserOutput.getObject() == null && parserOutput.getInvObject() == null) {
+            AdvObject object = parserOutput.getObject();
+            AdvObject invObject = parserOutput.getInvObject();
+
+            if (object == null && invObject == null) {
                 msg.append("Non c'è niente da aprire qui.");
             } else {
-                if (parserOutput.getObject() != null) {
-                    if (parserOutput.getObject().getId() == 9 && !description.isKeyUsed()) {
-                        msg.append("La porta è chiusa. Hai bisogno di una chiave per aprirla.");
-                    } else if (parserOutput.getObject().isOpenable() && !parserOutput.getObject().isOpen()) {
-                        if (parserOutput.getObject() instanceof AdvObjectContainer) {
-                            msg.append("Hai aperto: ").append(parserOutput.getObject().getName());
-                            AdvObjectContainer c = (AdvObjectContainer) parserOutput.getObject();
-                            if (!c.getList().isEmpty()) {
-                                msg.append(c.getName()).append(" contiene:");
-                                Iterator<AdvObject> it = c.getList().iterator();
-                                while (it.hasNext()) {
-                                    AdvObject next = it.next();
-                                    description.getCurrentRoom().getObjects().add(next);
-                                    msg.append(" ").append(next.getName());
-                                    it.remove();
-                                }
-                                msg.append("\n");
-                            }
-                            parserOutput.getObject().setOpen(true);
-                        } else {
-                            msg.append("Hai aperto: ").append(parserOutput.getObject().getName());
-                            parserOutput.getObject().setOpen(true);
-                        }
-                    } else {
-                        msg.append("Non puoi aprire questo oggetto.");
-                    }
+                if (object != null) {
+                    openObject(msg, description, object);
                 }
-                if (parserOutput.getInvObject() != null) {
-                    if (parserOutput.getInvObject().isOpenable() && !parserOutput.getInvObject().isOpen()) {
-                        if (parserOutput.getInvObject() instanceof AdvObjectContainer) {
-                            AdvObjectContainer c = (AdvObjectContainer) parserOutput.getInvObject();
-                            if (!c.getList().isEmpty()) {
-                                msg.append("\n").append(c.getName()).append(" contiene:");
-                                Iterator<AdvObject> it = c.getList().iterator();
-                                while (it.hasNext()) {
-                                    AdvObject next = it.next();
-                                    description.getInventory().add(next);
-                                    msg.append(" ").append(next.getName());
-                                    it.remove();
-                                }
-                                msg.append("\n");
-                            }
-                            parserOutput.getInvObject().setOpen(true);
-                        } else {
-                            parserOutput.getInvObject().setOpen(true);
-                        }
-                        msg.append("Hai aperto nel tuo inventario: ").append(parserOutput.getInvObject().getName());
-                    } else {
-                        msg.append("Non puoi aprire questo oggetto.");
-                    }
+                if (invObject != null) {
+                    openObject(msg, description, invObject);
                 }
             }
         }
         return msg.toString();
+    }
+
+    private void openObject(StringBuilder msg, GameDescription description, AdvObject object) {
+        if (object.isOpenable() && !object.isOpen()) {
+            if (object instanceof AdvObjectContainer) {
+                AdvObjectContainer container = (AdvObjectContainer) object;
+                msg.append("Hai aperto: ").append(container.getName());
+                if (!container.getList().isEmpty()) {
+                    msg.append(" contiene:");
+                    Iterator<AdvObject> it = container.getList().iterator();
+                    while (it.hasNext()) {
+                        AdvObject next = it.next();
+                        description.getCurrentRoom().getObjects().add(next);
+                        msg.append(" ").append(next.getName());
+                        it.remove();
+                    }
+                    msg.append("\n");
+                }
+                container.setOpen(true);
+            } else {
+                msg.append("Hai aperto: ").append(object.getName());
+                object.setOpen(true);
+            }
+        } else {
+            msg.append("Non puoi aprire questo oggetto.");
+        }
     }
 }

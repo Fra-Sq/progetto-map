@@ -79,7 +79,7 @@ public class SaveGame {
                     } else if (line.startsWith("MonsterAlive:")) {
                         gameData.put("MonsterAlive", Boolean.valueOf(line.substring(13).trim()));
                     } else if (line.startsWith("IsDoorOpen:")) {
-                        gameData.put("IsDoorOpen", Boolean.valueOf(line.substring(13).trim()));
+                        gameData.put("IsDoorOpen", Boolean.valueOf(line.substring(11).trim()));
                     } else if (line.startsWith("Inventory:")) {
                         String[] inventoryIds = line.substring(10).trim().split(",");
                         List<Integer> inventory = new ArrayList<>();

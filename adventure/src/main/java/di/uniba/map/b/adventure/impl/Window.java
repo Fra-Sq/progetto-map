@@ -6,7 +6,6 @@ package di.uniba.map.b.adventure.impl;
 import di.uniba.map.b.adventure.GameDescription;
 import di.uniba.map.b.adventure.parser.Parser;
 import di.uniba.map.b.adventure.parser.ParserOutput;
-import di.uniba.map.b.adventure.type.AdvObject;
 import di.uniba.map.b.adventure.type.CommandType;
 import di.uniba.map.b.adventure.type.Room;
 import java.util.List;
@@ -225,6 +224,8 @@ public class Window extends JFrame
             loadGameButton.setVisible(false);
             showLeaderBoardButton.setVisible(false);
             leaderBoard.setVisible(false);
+            testo.setFocusable(true);
+            testo.requestFocusInWindow();
             timer.start();
         });
 //\JButton newGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -278,6 +279,8 @@ public class Window extends JFrame
                     loadGameButton.setVisible(false);
                     showLeaderBoardButton.setVisible(false);
                     leaderBoard.setVisible(false);
+                    testo.setFocusable(true);
+                    testo.requestFocusInWindow();
                     timer.start();
 
                     JOptionPane.showMessageDialog(null, "Partita caricata con successo!");
@@ -288,7 +291,6 @@ public class Window extends JFrame
                 JOptionPane.showMessageDialog(null, "Nome della partita non valido!");
             }
         });
-
 //\JButton loadGameButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -296,8 +298,8 @@ public class Window extends JFrame
 //\JButton exitAndSaveButton-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         exitAndSaveButton = new JButton("Esci e salva");
-        exitAndSaveButton.setSize(100, 30);
-        exitAndSaveButton.setLocation(270, 250);
+        exitAndSaveButton.setSize(130, 30);
+        exitAndSaveButton.setLocation(310, 250);
         exitAndSaveButton.setForeground(Color.WHITE);
         exitAndSaveButton.setBackground(Color.BLACK);
         exitAndSaveButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
@@ -312,23 +314,15 @@ public class Window extends JFrame
                     break; // Esci dal ciclo se l'utente preme "Cancel"
                 } else if (!gameName.trim().isEmpty()) {
                     if (!SaveGame.gameExists(gameName.trim())) {
-                        boolean monsterAlive=true, isDoorOpen=false;
+                        boolean monsterAlive=true, isDoorOpen;
                         List<Room> rooms;
                         rooms=game.getRooms();
                         for (Room room : rooms) {
                             if (room.getId()==8) {
                                 monsterAlive=room.isMonsterAlive();
                             }
-                            if (room.getId()==11) {
-                                 for (AdvObject obj : room.getObjects()) {
-                                    if (obj.getId() == 9) { 
-                                        isDoorOpen = obj.isOpen();
-                                        break;
-                                    }
-                                }
-                            }
                         }
-                        
+                        isDoorOpen = game.isKeyUsed();
                         SaveGame.save(game.getCurrentRoom(), game.getInventory(), gameName.trim(), elapsedSeconds, monsterAlive, isDoorOpen);
                         JOptionPane.showMessageDialog(null, "Partita salvata con successo!");
                         System.exit(0);
@@ -350,7 +344,7 @@ public class Window extends JFrame
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         exitWithoutSaveButton = new JButton("Esci senza salvare");
         exitWithoutSaveButton.setSize(130, 30);
-        exitWithoutSaveButton.setLocation(120, 250);
+        exitWithoutSaveButton.setLocation(160, 250);
         exitWithoutSaveButton.setForeground(Color.WHITE);
         exitWithoutSaveButton.setBackground(Color.BLACK);
         exitWithoutSaveButton.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
@@ -592,7 +586,7 @@ public class Window extends JFrame
                         timer.stop();
                         
                     } else {
-                        game.nextMove(p, System.out, Window.this);
+                        game.nextMove(p, Window.this);
                         if (game.getCurrentRoom() == null) {
                             Window.this.showMessage("La tua avventura termina qui! Complimenti!");
                             testo.setVisible(false);

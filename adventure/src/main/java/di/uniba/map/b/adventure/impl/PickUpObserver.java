@@ -32,9 +32,7 @@ public class PickUpObserver implements GameObserver {
                         description.getInventory().add(parserOutput.getObject());
                         description.getCurrentRoom().getObjects().remove(parserOutput.getObject());
                         msg.append("Hai raccolto: ").append(parserOutput.getObject().getDescription());
-                        if (description.getCurrentRoom().getId() == 2) {
-                            description.getCurrentRoom().setLook("La solita cucina...");
-                        } else if (description.getCurrentRoom().getId() == 3) {
+                        if (description.getCurrentRoom().getId() == 3) {
                             description.getCurrentRoom().setLook("Non c'è nulla di interessante qui.");
                         }
                     } else {
