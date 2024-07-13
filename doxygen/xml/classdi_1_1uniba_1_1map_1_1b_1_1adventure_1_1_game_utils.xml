@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::GameUtils</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils_1abc449f8cf790ce32ce610be40a80e0fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref></type>
+        <definition>static AdvObject di.uniba.map.b.adventure.GameUtils.getObjectFromInventory</definition>
+        <argsstring>(List&lt; AdvObject &gt; inventory, int id)</argsstring>
+        <name>getObjectFromInventory</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameUtils.getObjectFromInventory</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+          <declname>inventory</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Searches for an object in the player&apos;s inventory by its ID.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inventory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of <computeroutput><ref refid="" kindref="compound">AdvObject</ref></computeroutput> representing the player&apos;s inventory. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique identifier of the object to search for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <computeroutput><ref refid="" kindref="compound">AdvObject</ref></computeroutput> if found in the inventory; otherwise, returns <javadoccode>null</javadoccode>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameUtils.java" line="22" column="29" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameUtils.java" bodystart="22" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utility class containing helper methods for game operations. </para>
+    </detaileddescription>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameUtils.java" line="13" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameUtils.java" bodystart="13" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils_1abc449f8cf790ce32ce610be40a80e0fd" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameUtils</scope><name>getObjectFromInventory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

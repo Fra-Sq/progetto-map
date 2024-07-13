@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::impl::UseObserver</compoundname>
+    <basecompoundref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" prot="public" virt="non-virtual">di.uniba.map.b.adventure.GameObserver</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer_1a4e2335cd4239f4fac2f69d3591585a28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String di.uniba.map.b.adventure.impl.UseObserver.update</definition>
+        <argsstring>(GameDescription description, ParserOutput parserOutput, Window window)</argsstring>
+        <name>update</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.UseObserver.update</qualifiedname>
+        <reimplements refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_1a580cffeadfcbea825b482519e4deadb6">update</reimplements>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" kindref="compound">GameDescription</ref></type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref></type>
+          <declname>parserOutput</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates the game state based on the player&apos;s input. This observer handles the &quot;use&quot; command, allowing players to interact with objects by using them.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current game description. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parserOutput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output of the parser, containing the command and the objects involved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game window. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A message describing the result of the interaction. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/UseObserver.java" line="27" column="19" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/UseObserver.java" bodystart="27" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Observer implementation for handling &quot;use&quot; commands within the game. This observer allows players to interact with objects by using them, triggering specific game events or actions. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.UseObserver</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameObserver</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.UseObserver</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameObserver</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/UseObserver.java" line="15" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/UseObserver.java" bodystart="15" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer_1a4e2335cd4239f4fac2f69d3591585a28" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::UseObserver</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

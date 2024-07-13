@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dir_8d538571e6144d01ec27c9a0f55aecb9" kind="dir">
+    <compoundname>adventure/src</compoundname>
+    <innerdir refid="dir_4daf57147b74d32dfcd0f1c8ce44e4a3">adventure/src/main</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="adventure/src/"/>
+  </compounddef>
+</doxygen>

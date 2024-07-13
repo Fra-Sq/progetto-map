@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::impl::SpaceEscape</compoundname>
+    <basecompoundref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" prot="public" virt="non-virtual">di.uniba.map.b.adventure.GameDescription</basecompoundref>
+    <basecompoundref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable" prot="public" virt="non-virtual">di.uniba.map.b.adventure.GameObservable</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a5106a4e5815ed5f763edb374eb508572" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" kindref="compound">GameObserver</ref> &gt;</type>
+        <definition>final List&lt;GameObserver&gt; di.uniba.map.b.adventure.impl.SpaceEscape.observer</definition>
+        <argsstring></argsstring>
+        <name>observer</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.SpaceEscape.observer</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="25" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a9d3e2d3d06edc5f1c96d475dbefa6740" prot="private" static="no" mutable="no">
+        <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref></type>
+        <definition>ParserOutput di.uniba.map.b.adventure.impl.SpaceEscape.parserOutput</definition>
+        <argsstring></argsstring>
+        <name>parserOutput</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.SpaceEscape.parserOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="27" column="26" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a35902a0964d555b4208f5c58e97e5de2" prot="private" static="no" mutable="no">
+        <type>final List&lt; String &gt;</type>
+        <definition>final List&lt;String&gt; di.uniba.map.b.adventure.impl.SpaceEscape.messages</definition>
+        <argsstring></argsstring>
+        <name>messages</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.SpaceEscape.messages</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="29" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a31f539d1ede9f25760a7aeb6595f1542" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.impl.SpaceEscape.init</definition>
+        <argsstring>(Database database)</argsstring>
+        <name>init</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.SpaceEscape.init</qualifiedname>
+        <reimplements refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a36349151ae38dc99267786336138a5d5">init</reimplements>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database" kindref="compound">Database</ref></type>
+          <declname>database</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the game environment using data from the provided database. This includes setting up rooms, commands, objects, and observers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>database</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The database containing game data such as room descriptions and object details. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If there is an error accessing the database. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="39" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="39" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.impl.SpaceEscape.nextMove</definition>
+        <argsstring>(ParserOutput p, Window window)</argsstring>
+        <name>nextMove</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.SpaceEscape.nextMove</qualifiedname>
+        <reimplements refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae0bcdd2f802d72bb4de83f7b4e80ef84">nextMove</reimplements>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Processes the next move based on the player&apos;s command. This method updates the game state, notifies observers, and displays messages to the player.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed output of the player&apos;s command. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game window where messages are displayed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="251" column="13" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="251" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a5f50efac1fea5096ba76665f01d728a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.impl.SpaceEscape.attach</definition>
+        <argsstring>(GameObserver o)</argsstring>
+        <name>attach</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.SpaceEscape.attach</qualifiedname>
+        <reimplements refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1a7c5c0719519fe02e6ef8ad1a03a7e743">attach</reimplements>
+        <param>
+          <type><ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" kindref="compound">GameObserver</ref></type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attaches an observer to the game. Observers are notified of game events and can update the game state or display messages.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The observer to attach. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="326" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="326" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1aafaa92ab8492f68d5d20f8194425b425" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.impl.SpaceEscape.detach</definition>
+        <argsstring>(GameObserver o)</argsstring>
+        <name>detach</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.SpaceEscape.detach</qualifiedname>
+        <reimplements refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1ae310adf10210d4108e8ccb55d80910b4">detach</reimplements>
+        <param>
+          <type><ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" kindref="compound">GameObserver</ref></type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detaches an observer from the game.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The observer to detach. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="338" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="338" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1aff4f17f6db842fdbb46c01198abeb670" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.impl.SpaceEscape.notifyObservers</definition>
+        <argsstring>(Window window)</argsstring>
+        <name>notifyObservers</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.SpaceEscape.notifyObservers</qualifiedname>
+        <reimplements refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1aee803193d726892552f3c24ea5dd8d80">notifyObservers</reimplements>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies all attached observers of a game event. Observers can update the game state or generate messages based on the event.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game window where messages may be displayed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="349" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="349" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a6be501aa2b5a1c70fd9c38ba10e894d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String di.uniba.map.b.adventure.impl.SpaceEscape.getWelcomeMsg</definition>
+        <argsstring>()</argsstring>
+        <name>getWelcomeMsg</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.SpaceEscape.getWelcomeMsg</qualifiedname>
+        <reimplements refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a1019a567cc65258ba7231be04b6f6c44">getWelcomeMsg</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the welcome message to be displayed at the start of the game.</para>
+<para><simplesect kind="return"><para>The welcome message string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="361" column="19" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="361" bodyend="367"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Main class for the <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape" kindref="compound">SpaceEscape</ref> game, extending <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" kindref="compound">GameDescription</ref> and implementing <ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable" kindref="compound">GameObservable</ref>. This class initializes the game environment, including rooms, objects, and commands, and handles player moves. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.SpaceEscape</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameDescription</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description"/>
+      </node>
+      <node id="3">
+        <label>di.uniba.map.b.adventure.GameObservable</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.SpaceEscape</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameDescription</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description"/>
+      </node>
+      <node id="3">
+        <label>di.uniba.map.b.adventure.GameObservable</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" line="23" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/SpaceEscape.java" bodystart="23" bodyend="369"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8866a8bbe3fea390a0e4f89741b80f77" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>addObject</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a5f50efac1fea5096ba76665f01d728a6" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>attach</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1aafaa92ab8492f68d5d20f8194425b425" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>detach</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1aac13b7db39539b6f2449e754561b9871" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>getCommands</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>getCurrentRoom</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>getInventory</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac2c90759e68c6f9f17265f2d2d0ab3cb" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>getObjectById</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae6d265375fc241fb5346dc1521d35497" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>getRooms</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a6be501aa2b5a1c70fd9c38ba10e894d5" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>getWelcomeMsg</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a31f539d1ede9f25760a7aeb6595f1542" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>init</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac7ab01cd9fd9d243243f4cc0b1a13a1f" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>isKeyUsed</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a35902a0964d555b4208f5c58e97e5de2" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>messages</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>nextMove</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1aff4f17f6db842fdbb46c01198abeb670" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>notifyObservers</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a5106a4e5815ed5f763edb374eb508572" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>observer</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a9d3e2d3d06edc5f1c96d475dbefa6740" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>parserOutput</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1adc3220b5f1adbcd7115d0a2f230f054d" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>setCurrentRoom</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a184c5cecd35b4e50cda8b1a77ff6dbfe" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>setCurrentRoomById</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a9a7e02f4831b6c8600f62b7296cf6f12" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>setGame</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::SpaceEscape</scope><name>setKeyUsed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

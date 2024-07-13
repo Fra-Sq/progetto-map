@@ -1,0 +1,48 @@
+\doxysection{di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Move\+Observer Class Reference}
+\hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer}{}\label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer}\index{di.uniba.map.b.adventure.impl.MoveObserver@{di.uniba.map.b.adventure.impl.MoveObserver}}
+Inheritance diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Move\+Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer_ae51630cc6a0529974a3d64869d4b1013}{update}} (\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}} description, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}} parser\+Output, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}} window)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Observer implementation for handling movement commands within the game. This observer updates the player\textquotesingle{}s current room based on the direction specified in the command. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer_ae51630cc6a0529974a3d64869d4b1013}\index{di.uniba.map.b.adventure.impl.MoveObserver@{di.uniba.map.b.adventure.impl.MoveObserver}!update@{update}}
+\index{update@{update}!di.uniba.map.b.adventure.impl.MoveObserver@{di.uniba.map.b.adventure.impl.MoveObserver}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer_ae51630cc6a0529974a3d64869d4b1013} 
+String di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Move\+Observer.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}}}]{description}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}}}]{parser\+Output}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}}}]{window}{}\end{DoxyParamCaption})}
+
+Processes movement commands (NORTH, SOUTH, EAST, WEST), updating the player\textquotesingle{}s current room accordingly. If the movement is not possible (e.\+g., a wall blocks the way), it returns a message indicating so. Otherwise, it silently updates the player\textquotesingle{}s current room to the new location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The current state of the game, including the player\textquotesingle{}s current room. \\
+\hline
+{\em parser\+Output} & The parsed output of the player\textquotesingle{}s command, including the command type and arguments. \\
+\hline
+{\em window} & The game window where output messages are displayed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string message indicating the outcome of the movement command, or an empty string if the movement was successful. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_a580cffeadfcbea825b482519e4deadb6}{di.\+uniba.\+map.\+b.\+adventure.\+Game\+Observer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+adventure/src/main/java/di/uniba/map/b/adventure/impl/Move\+Observer.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\doxysection{di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Push\+Observer Class Reference}
+\hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer}{}\label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer}\index{di.uniba.map.b.adventure.impl.PushObserver@{di.uniba.map.b.adventure.impl.PushObserver}}
+Inheritance diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Push\+Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_ac3e97a89860c377b76277749109befa4}{update}} (\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}} description, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}} parser\+Output, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}} window)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_ada881c7baabc1190437c7af00a6a3421}{verify}} (final String input)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Observer implementation for handling "{}push"{} commands within the game. This observer allows players to interact with objects that can be pushed, triggering specific game events or actions. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_ac3e97a89860c377b76277749109befa4}\index{di.uniba.map.b.adventure.impl.PushObserver@{di.uniba.map.b.adventure.impl.PushObserver}!update@{update}}
+\index{update@{update}!di.uniba.map.b.adventure.impl.PushObserver@{di.uniba.map.b.adventure.impl.PushObserver}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_ac3e97a89860c377b76277749109befa4} 
+String di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Push\+Observer.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}}}]{description}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}}}]{parser\+Output}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}}}]{window}{}\end{DoxyParamCaption})}
+
+Processes a "{}push"{} command, performing actions based on the object being pushed. If the object is pushable, it triggers specific events such as activating a control panel or requiring further input from the player. Messages are generated to inform the player of the action\textquotesingle{}s outcome or next steps.
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The current state of the game, including the player\textquotesingle{}s current room and inventory. \\
+\hline
+{\em parser\+Output} & The parsed output of the player\textquotesingle{}s command, including the command type and targeted object. \\
+\hline
+{\em window} & The game window where output messages are displayed and interactive elements may be shown. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string message indicating the outcome of the "{}push"{} command or further instructions for the player. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_a580cffeadfcbea825b482519e4deadb6}{di.\+uniba.\+map.\+b.\+adventure.\+Game\+Observer}}.
+
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_ada881c7baabc1190437c7af00a6a3421}\index{di.uniba.map.b.adventure.impl.PushObserver@{di.uniba.map.b.adventure.impl.PushObserver}!verify@{verify}}
+\index{verify@{verify}!di.uniba.map.b.adventure.impl.PushObserver@{di.uniba.map.b.adventure.impl.PushObserver}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_ada881c7baabc1190437c7af00a6a3421} 
+static boolean di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Push\+Observer.\+verify (\begin{DoxyParamCaption}\item[{final String}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verifies if the given input matches a specific pattern, typically used for validating codes or inputs in the game. This method is used to check if the player has entered a correct access code or similar input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The string input to be verified against the pattern. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the input matches the pattern, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+adventure/src/main/java/di/uniba/map/b/adventure/impl/Push\+Observer.\+java\end{DoxyCompactItemize}

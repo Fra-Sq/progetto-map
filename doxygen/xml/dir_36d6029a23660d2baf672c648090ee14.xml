@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dir_36d6029a23660d2baf672c648090ee14" kind="dir">
+    <compoundname>adventure/src/main/java/di/uniba/map/b/adventure</compoundname>
+    <innerdir refid="dir_e5b91f08b6a4e3e680ea2723cb7a0c79">adventure/src/main/java/di/uniba/map/b/adventure/impl</innerdir>
+    <innerdir refid="dir_09c200f4e10cfb1bf516e23bd4648736">adventure/src/main/java/di/uniba/map/b/adventure/parser</innerdir>
+    <innerdir refid="dir_9cef88f3061897f698776950a565cbef">adventure/src/main/java/di/uniba/map/b/adventure/type</innerdir>
+    <innerfile refid="_engine_8java">Engine.java</innerfile>
+    <innerfile refid="_game_description_8java">GameDescription.java</innerfile>
+    <innerfile refid="_game_observable_8java">GameObservable.java</innerfile>
+    <innerfile refid="_game_observer_8java">GameObserver.java</innerfile>
+    <innerfile refid="_game_utils_8java">GameUtils.java</innerfile>
+    <innerfile refid="_utils_8java">Utils.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/"/>
+  </compounddef>
+</doxygen>

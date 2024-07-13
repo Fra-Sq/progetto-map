@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="namespacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser" kind="namespace" language="Java">
+    <compoundname>di::uniba::map::b::adventure::parser</compoundname>
+    <innerclass refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser" prot="public">di::uniba::map::b::adventure::parser::Parser</innerclass>
+    <innerclass refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" prot="public">di::uniba::map::b::adventure::parser::ParserOutput</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" line="5" column="15"/>
+  </compounddef>
+</doxygen>

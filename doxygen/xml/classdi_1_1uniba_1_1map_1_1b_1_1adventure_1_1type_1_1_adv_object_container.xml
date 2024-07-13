@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::type::AdvObjectContainer</compoundname>
+    <basecompoundref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" prot="public" virt="non-virtual">di.uniba.map.b.adventure.type.AdvObject</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1afec530212fa3aa9bac517f970924076d" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+        <definition>List&lt;AdvObject&gt; di.uniba.map.b.adventure.type.AdvObjectContainer.list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.list</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="17" column="18" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a3650d6ec3f152e6662d3516422a92e19" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.type.AdvObjectContainer.open</definition>
+        <argsstring></argsstring>
+        <name>open</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.open</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="18" column="21" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1acd9a4a104932848d497c0888215e7524" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.type.AdvObjectContainer.AdvObjectContainer</definition>
+        <argsstring>(int id)</argsstring>
+        <name>AdvObjectContainer</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.AdvObjectContainer</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="24" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a99b0c89fb5557026682796b07e085666" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.type.AdvObjectContainer.AdvObjectContainer</definition>
+        <argsstring>(int id, String name)</argsstring>
+        <name>AdvObjectContainer</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.AdvObjectContainer</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="33" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1aeba5a015d14408dc66438806e2d1a89f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.type.AdvObjectContainer.AdvObjectContainer</definition>
+        <argsstring>(int id, String name, String description)</argsstring>
+        <name>AdvObjectContainer</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.AdvObjectContainer</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="43" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1acc5ca0df4cd01d54369f392e17a7abab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.type.AdvObjectContainer.AdvObjectContainer</definition>
+        <argsstring>(int id, String name, String description, Set&lt; String &gt; alias)</argsstring>
+        <name>AdvObjectContainer</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.AdvObjectContainer</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type>Set&lt; String &gt;</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="54" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1ad061304f7c82b21306c09666ceaa50a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+        <definition>List&lt; AdvObject &gt; di.uniba.map.b.adventure.type.AdvObjectContainer.getList</definition>
+        <argsstring>()</argsstring>
+        <name>getList</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.getList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="62" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a9f75dd8709217523d56ca479d3ba3539" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.type.AdvObjectContainer.setList</definition>
+        <argsstring>(List&lt; AdvObject &gt; list)</argsstring>
+        <name>setList</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.setList</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="70" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a0158d14466fde23c17c6e3d9056df716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.type.AdvObjectContainer.add</definition>
+        <argsstring>(AdvObject o)</argsstring>
+        <name>add</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.add</qualifiedname>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref></type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="78" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a7dbd9be2cfed60da4da3f17f95a667f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.type.AdvObjectContainer.remove</definition>
+        <argsstring>(AdvObject o)</argsstring>
+        <name>remove</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.remove</qualifiedname>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref></type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="86" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1afab93d2768dc15ef28b8fdcfd6eab9ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.type.AdvObjectContainer.isOpen</definition>
+        <argsstring>()</argsstring>
+        <name>isOpen</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.isOpen</qualifiedname>
+        <reimplements refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a31027928ec81ef8e1ad0f140135e8315">isOpen</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="92" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a684f5cb2780a824c01fc298360a8b820" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.type.AdvObjectContainer.setOpen</definition>
+        <argsstring>(boolean open)</argsstring>
+        <name>setOpen</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.setOpen</qualifiedname>
+        <reimplements refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1abfd22cc782ae3395c0af61b747b8797b">setOpen</reimplements>
+        <param>
+          <type>boolean</type>
+          <declname>open</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>open</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="101" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1aea00d98bd529f73ae9247ec4041f238e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.type.AdvObjectContainer.setOpen</definition>
+        <argsstring>()</argsstring>
+        <name>setOpen</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.AdvObjectContainer.setOpen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="105" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="105" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sangiovannesi </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.type.AdvObjectContainer</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.type.AdvObject</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.type.AdvObjectContainer</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.type.AdvObject</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" line="15" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObjectContainer.java" bodystart="15" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a0158d14466fde23c17c6e3d9056df716" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>add</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a20838e7d265a7b330bec6c8156230075" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>AdvObject</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aa1c2c21ca83266bf6a50ae158a94104f" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>AdvObject</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ad9cf122c01897c5a5c7c51292ad747fa" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>AdvObject</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a856690bee70fb6c47bdb8710241df77e" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>AdvObject</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1acd9a4a104932848d497c0888215e7524" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>AdvObjectContainer</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a99b0c89fb5557026682796b07e085666" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>AdvObjectContainer</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1aeba5a015d14408dc66438806e2d1a89f" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>AdvObjectContainer</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1acc5ca0df4cd01d54369f392e17a7abab" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>AdvObjectContainer</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a1278661f5736763873ab3407d7464486" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>equals</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a5aba1d8f4fc217957dc87c0a015083db" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>getAlias</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a079d6994871e7ed4fb8dc4844c2e2da8" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>getContents</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ab3c2f2b70e45f651431ebcd1e631ae14" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>getDescription</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a574de9727e7d8957bd265a06e1611052" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>getId</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1ad061304f7c82b21306c09666ceaa50a3" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>getList</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a094731968d56cadb1274bfcf31c474fa" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>getName</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ac8d0e063e0971fd775eccc45373553dd" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>hashCode</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ae6347f2c165add59f417f46b48fe1fbb" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>isCreature</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aacb51db33d66a1ed86da7c547102239e" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>isLiving</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1afab93d2768dc15ef28b8fdcfd6eab9ba" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>isOpen</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a443b6651c97cb2edfbb38d9363d95b98" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>isOpenable</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a70ec19949e8e3637ca915920cf3ba2c4" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>isPickupable</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aef3cc255646b9115b68d5da313b3749c" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>isPush</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a0498094520bcd048b59d9cf6f3b1ad9b" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>isPushable</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a8f17062d6613e6a829bfe6c5ddda52c3" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>isReadable</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1afec530212fa3aa9bac517f970924076d" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>list</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a3650d6ec3f152e6662d3516422a92e19" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>open</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a7dbd9be2cfed60da4da3f17f95a667f8" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>remove</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aac77d8af8bc19180b52cd1a3fc103ac4" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setAlias</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a631a338a0ae33c89c5a9c06473ae7588" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setAlias</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a77b9388c3f94e334e6bec615c87d21fd" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setContents</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a8405505a0e5da051ac72e6f81a7b9a46" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setCreature</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a9aad9fee5eea5e2623a8d24ebf07d4f6" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setDescription</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a9f75dd8709217523d56ca479d3ba3539" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setList</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1af5b165b7cdca0f00ff832dad38949ba6" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setLiving</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a89b408c2cae991b09d4cca16f1c1dde7" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setName</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a684f5cb2780a824c01fc298360a8b820" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setOpen</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1aea00d98bd529f73ae9247ec4041f238e" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setOpen</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a58b77d327d599e34e91479637ebf7ee6" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setOpenable</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1abeb7c9ea6b9bfb1890ed139798494619" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setPickupable</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a261b682698bd7d3369a372c243daf380" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setPush</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aadb1cedc859c20a8f2e1b0cc21332bbf" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setPushable</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1af6dde388988aed97e0298aaaaaebec11" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::AdvObjectContainer</scope><name>setReadable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

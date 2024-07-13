@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="namespacedi_1_1uniba_1_1map_1_1b_1_1adventure" kind="namespace" language="Java">
+    <compoundname>di::uniba::map::b::adventure</compoundname>
+    <innerclass refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" prot="public">di::uniba::map::b::adventure::Engine</innerclass>
+    <innerclass refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" prot="public">di::uniba::map::b::adventure::GameDescription</innerclass>
+    <innerclass refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable" prot="public">di::uniba::map::b::adventure::GameObservable</innerclass>
+    <innerclass refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" prot="public">di::uniba::map::b::adventure::GameObserver</innerclass>
+    <innerclass refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils" prot="public">di::uniba::map::b::adventure::GameUtils</innerclass>
+    <innerclass refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils" prot="public">di::uniba::map::b::adventure::Utils</innerclass>
+    <innernamespace refid="namespacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl">di::uniba::map::b::adventure::impl</innernamespace>
+    <innernamespace refid="namespacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser">di::uniba::map::b::adventure::parser</innernamespace>
+    <innernamespace refid="namespacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type">di::uniba::map::b::adventure::type</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

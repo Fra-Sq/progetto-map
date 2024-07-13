@@ -1,0 +1,48 @@
+\doxysection{di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Pick\+Up\+Observer Class Reference}
+\hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer}{}\label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer}\index{di.uniba.map.b.adventure.impl.PickUpObserver@{di.uniba.map.b.adventure.impl.PickUpObserver}}
+Inheritance diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Pick\+Up\+Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer_a859e7f0b50a281e571a85ef872ee1374}{update}} (\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}} description, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}} parser\+Output, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}} window)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Observer implementation for handling "{}pick up"{} commands within the game. This observer allows players to pick up objects from the current room and add them to their inventory, provided the objects are pickupable. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer_a859e7f0b50a281e571a85ef872ee1374}\index{di.uniba.map.b.adventure.impl.PickUpObserver@{di.uniba.map.b.adventure.impl.PickUpObserver}!update@{update}}
+\index{update@{update}!di.uniba.map.b.adventure.impl.PickUpObserver@{di.uniba.map.b.adventure.impl.PickUpObserver}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer_a859e7f0b50a281e571a85ef872ee1374} 
+String di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Pick\+Up\+Observer.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}}}]{description}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}}}]{parser\+Output}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}}}]{window}{}\end{DoxyParamCaption})}
+
+Processes a "{}pick up"{} command, attempting to add the specified object to the player\textquotesingle{}s inventory. Verifies if the object is present in the current room and if it is pickupable. If successful, the object is removed from the room and added to the inventory, and a success message is returned. Otherwise, an appropriate failure message is generated.
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The current state of the game, including the player\textquotesingle{}s current room and inventory. \\
+\hline
+{\em parser\+Output} & The parsed output of the player\textquotesingle{}s command, including the command type and targeted object. \\
+\hline
+{\em window} & The game window where output messages are displayed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string message indicating the outcome of the "{}pick up"{} command. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_a580cffeadfcbea825b482519e4deadb6}{di.\+uniba.\+map.\+b.\+adventure.\+Game\+Observer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+adventure/src/main/java/di/uniba/map/b/adventure/impl/Pick\+Up\+Observer.\+java\end{DoxyCompactItemize}

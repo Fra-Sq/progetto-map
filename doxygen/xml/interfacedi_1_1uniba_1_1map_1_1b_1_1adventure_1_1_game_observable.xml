@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable" kind="interface" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::GameObservable</compoundname>
+    <derivedcompoundref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape" prot="public" virt="non-virtual">di.uniba.map.b.adventure.impl.SpaceEscape</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1a7c5c0719519fe02e6ef8ad1a03a7e743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.GameObservable.attach</definition>
+        <argsstring>(GameObserver o)</argsstring>
+        <name>attach</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameObservable.attach</qualifiedname>
+        <reimplementedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a5f50efac1fea5096ba76665f01d728a6">attach</reimplementedby>
+        <param>
+          <type><ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" kindref="compound">GameObserver</ref></type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameObservable.java" line="19" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1ae310adf10210d4108e8ccb55d80910b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.GameObservable.detach</definition>
+        <argsstring>(GameObserver o)</argsstring>
+        <name>detach</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameObservable.detach</qualifiedname>
+        <reimplementedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1aafaa92ab8492f68d5d20f8194425b425">detach</reimplementedby>
+        <param>
+          <type><ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" kindref="compound">GameObserver</ref></type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameObservable.java" line="25" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1aee803193d726892552f3c24ea5dd8d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.GameObservable.notifyObservers</definition>
+        <argsstring>(Window window)</argsstring>
+        <name>notifyObservers</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameObservable.notifyObservers</qualifiedname>
+        <reimplementedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1aff4f17f6db842fdbb46c01198abeb670">notifyObservers</reimplementedby>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameObservable.java" line="30" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sangiovannesi </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.GameObservable</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable"/>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.impl.SpaceEscape</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameObservable.java" line="13" column="18" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameObservable.java" bodystart="13" bodyend="32"/>
+    <listofallmembers>
+      <member refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1a7c5c0719519fe02e6ef8ad1a03a7e743" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameObservable</scope><name>attach</name></member>
+      <member refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1ae310adf10210d4108e8ccb55d80910b4" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameObservable</scope><name>detach</name></member>
+      <member refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1aee803193d726892552f3c24ea5dd8d80" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameObservable</scope><name>notifyObservers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

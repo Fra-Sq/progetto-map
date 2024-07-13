@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dir_e5b91f08b6a4e3e680ea2723cb7a0c79" kind="dir">
+    <compoundname>adventure/src/main/java/di/uniba/map/b/adventure/impl</compoundname>
+    <innerfile refid="_ae_play_wave_8java">AePlayWave.java</innerfile>
+    <innerfile refid="_database_8java">Database.java</innerfile>
+    <innerfile refid="_inventory_observer_8java">InventoryObserver.java</innerfile>
+    <innerfile refid="_kill_observer_8java">KillObserver.java</innerfile>
+    <innerfile refid="_look_at_observer_8java">LookAtObserver.java</innerfile>
+    <innerfile refid="_move_observer_8java">MoveObserver.java</innerfile>
+    <innerfile refid="_open_observer_8java">OpenObserver.java</innerfile>
+    <innerfile refid="_pick_up_observer_8java">PickUpObserver.java</innerfile>
+    <innerfile refid="_player_data_8java">PlayerData.java</innerfile>
+    <innerfile refid="_push_observer_8java">PushObserver.java</innerfile>
+    <innerfile refid="_read_observer_8java">ReadObserver.java</innerfile>
+    <innerfile refid="_r_e_s_t_client_8java">RESTClient.java</innerfile>
+    <innerfile refid="_save_game_8java">SaveGame.java</innerfile>
+    <innerfile refid="_space_escape_8java">SpaceEscape.java</innerfile>
+    <innerfile refid="_use_observer_8java">UseObserver.java</innerfile>
+    <innerfile refid="_window_8java">Window.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/"/>
+  </compounddef>
+</doxygen>

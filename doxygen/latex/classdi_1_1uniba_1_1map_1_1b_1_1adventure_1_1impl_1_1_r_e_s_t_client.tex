@@ -1,0 +1,55 @@
+\doxysection{di.\+uniba.\+map.\+b.\+adventure.\+impl.\+RESTClient Class Reference}
+\hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client}{}\label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client}\index{di.uniba.map.b.adventure.impl.RESTClient@{di.uniba.map.b.adventure.impl.RESTClient}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a6ae57a1ffa8980c2f10b52d33aa652a4}{RESTClient}} ()
+\item 
+void \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a55f0303bae1c4283a839b58d051a7c7d}{add\+Player}} (\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data}{Player\+Data}} player)
+\item 
+String \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a56214565b72918918d359c5c1e30ea2a}{get\+Leaderboard}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A client for interacting with a RESTful service, specifically designed for managing a game\textquotesingle{}s leaderboard. This client allows for adding player data to the leaderboard and retrieving the current leaderboard standings. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a6ae57a1ffa8980c2f10b52d33aa652a4}\index{di.uniba.map.b.adventure.impl.RESTClient@{di.uniba.map.b.adventure.impl.RESTClient}!RESTClient@{RESTClient}}
+\index{RESTClient@{RESTClient}!di.uniba.map.b.adventure.impl.RESTClient@{di.uniba.map.b.adventure.impl.RESTClient}}
+\doxysubsubsection{\texorpdfstring{RESTClient()}{RESTClient()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a6ae57a1ffa8980c2f10b52d33aa652a4} 
+di.\+uniba.\+map.\+b.\+adventure.\+impl.\+RESTClient.\+RESTClient (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructs a new \doxylink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client}{RESTClient} instance, initializing the REST client, target URL, and Gson parser. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a55f0303bae1c4283a839b58d051a7c7d}\index{di.uniba.map.b.adventure.impl.RESTClient@{di.uniba.map.b.adventure.impl.RESTClient}!addPlayer@{addPlayer}}
+\index{addPlayer@{addPlayer}!di.uniba.map.b.adventure.impl.RESTClient@{di.uniba.map.b.adventure.impl.RESTClient}}
+\doxysubsubsection{\texorpdfstring{addPlayer()}{addPlayer()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a55f0303bae1c4283a839b58d051a7c7d} 
+void di.\+uniba.\+map.\+b.\+adventure.\+impl.\+RESTClient.\+add\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data}{Player\+Data}}}]{player}{}\end{DoxyParamCaption})}
+
+Adds a player\textquotesingle{}s data to the leaderboard by sending a PUT request to the RESTful service. The player\textquotesingle{}s data is serialized to JSON format before being sent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player data to add to the leaderboard. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a56214565b72918918d359c5c1e30ea2a}\index{di.uniba.map.b.adventure.impl.RESTClient@{di.uniba.map.b.adventure.impl.RESTClient}!getLeaderboard@{getLeaderboard}}
+\index{getLeaderboard@{getLeaderboard}!di.uniba.map.b.adventure.impl.RESTClient@{di.uniba.map.b.adventure.impl.RESTClient}}
+\doxysubsubsection{\texorpdfstring{getLeaderboard()}{getLeaderboard()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a56214565b72918918d359c5c1e30ea2a} 
+String di.\+uniba.\+map.\+b.\+adventure.\+impl.\+RESTClient.\+get\+Leaderboard (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves the current leaderboard standings by sending a GET request to the RESTful service. The response is deserialized from JSON format into a human-\/readable string.
+
+\begin{DoxyReturn}{Returns}
+A string representation of the leaderboard standings. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+adventure/src/main/java/di/uniba/map/b/adventure/impl/RESTClient.\+java\end{DoxyCompactItemize}

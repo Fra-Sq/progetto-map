@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dir_a950c4bbd0d6200042c2cc65e8766a5f" kind="dir">
+    <compoundname>adventure/src/main/java/di/uniba/map</compoundname>
+    <innerdir refid="dir_2c6de2d4684bae29e172351164871999">adventure/src/main/java/di/uniba/map/b</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="adventure/src/main/java/di/uniba/map/"/>
+  </compounddef>
+</doxygen>
