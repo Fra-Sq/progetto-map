@@ -15,13 +15,13 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [Specifica semantica](#specifica-semantica)
    - [Specifica di restrizione](#specifica-di-restrizione)
 5. [Contenuti rilevanti](#contenuti-rilevanti)
+   - [OOP](#oop)
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
    - [Utilizzo dei thread](#utilizzo-dei-thread)
    - [Swing](#swing)
    - [RESTful](#restful)
    - [Lambda expressions](#lambda-expressions)
-   - [OOP](#oop)
 6. [Doxygen](#doxygen)
    
 ## Introduzione
@@ -114,6 +114,53 @@ restrictions:<br>
 - ∀k . containsKey(clear(d), k) = false
 
 ## Contenuti rilevanti
+### OOP
+## Utilizzo della Programmazione Orientata agli Oggetti (OOP)
+
+Nel nostro progetto, abbiamo adottato il paradigma della Programmazione Orientata agli Oggetti (OOP) per organizzare il codice in modo modulare, riutilizzabile e mantenibile.
+
+### Principali Concetti OOP Utilizzati
+
+- **Classi e Oggetti:** 
+  - Le classi rappresentano i modelli dei vari elementi del gioco, come stanze, oggetti e giocatori. Gli oggetti sono istanze di queste classi, che contengono dati e metodi per manipolarli.
+  - Esempio: La classe `Database` gestisce le operazioni relative al database, mentre la classe `PlayerData` rappresenta i dati di un giocatore.
+
+- **Incapsulamento:**
+  - I dati e i metodi delle classi sono incapsulati all'interno delle classi stesse, rendendoli accessibili solo tramite metodi pubblici (getter e setter) e mantenendo nascosti i dettagli di implementazione.
+  - Esempio: I campi del database, come `conn` e `dbprops`, sono privati e possono essere acceduti solo attraverso metodi pubblici.
+
+- **Ereditarietà:**
+  - L'ereditarietà consente di creare nuove classi basate su classi esistenti, promuovendo il riutilizzo del codice e la creazione di gerarchie di classi.
+  - Esempio: Non è stato esplicitamente usato nel codice fornito, ma potrebbe essere utilizzato per estendere funzionalità comuni tra diverse tipologie di database o entità di gioco.
+
+- **Polimorfismo:**
+  - Il polimorfismo permette di trattare oggetti di diverse classi attraverso un'interfaccia comune, facilitando l'uso intercambiabile di oggetti.
+  - Esempio: Anche se non è direttamente visibile nel codice fornito, il polimorfismo può essere utilizzato per implementare comportamenti diversi a seconda del tipo di oggetto (ad esempio, diverse modalità di salvataggio dei dati).
+
+### Esempi di Classi e Metodi
+
+- **Classe `Database` (package `di.uniba.map.b.adventure.impl`):**
+  - Gestisce le operazioni di connessione, inserimento, aggiornamento e recupero dei dati per stanze e oggetti.
+  - Metodi principali: `getNameById(String id)`, `getDescriptionById(String id)`, `insertNewData()`, `close()`.
+
+- **Classe `Database` (package `com.mycompany.restserver`):**
+  - Gestisce le operazioni di connessione, inserimento e recupero dei dati relativi ai giocatori.
+  - Metodi principali: `insertInLeaderboard(String name, String date, String time)`, `getFromLeaderboard(String id)`, `getTopPlayers(int maxPlayers)`, `close()`.
+
+- **Classe `PlayerData`:**
+  - Rappresenta i dati di un giocatore, inclusi nome, data e tempo di gioco.
+  - Campi principali: `name`, `date`, `time`.
+
+### Vantaggi dell'OOP nel Progetto
+
+- **Modularità:** Ogni classe è responsabile di una specifica funzionalità, rendendo il codice più organizzato e facile da gestire.
+- **Riutilizzabilità:** Le classi e i metodi possono essere riutilizzati in diverse parti del progetto senza duplicare il codice.
+- **Manutenibilità:** L'uso di classi e metodi ben definiti facilita la comprensione e la modifica del codice.
+- **Flessibilità:** L'ereditarietà e il polimorfismo permettono di estendere e modificare le funzionalità del sistema senza alterare il codice esistente.
+
+L'adozione dell'OOP nel nostro progetto ha contribuito a creare un sistema robusto, flessibile e facilmente manutenibile.
+
+
 ### Utilizzo dei file
 Abbiamo implementato un sistema di salvataggio e caricamento dei dati del gioco utilizzando file di testo per garantire che lo stato del gioco possa essere memorizzato e ripreso in modo efficiente. Il metodo save nella classe SaveGame è responsabile della scrittura dello stato attuale del gioco in un file di salvataggio. Questo metodo accetta vari parametri come la stanza corrente (`currentRoom`), l'inventario del giocatore (`inventory`), il nome del gioco (`gameName`), il tempo trascorso (`elapsedSeconds`), lo stato del mostro (`monsterAlive`) e lo stato della porta (`isDoorOpen`). Prima di procedere con il salvataggio, il metodo verifica se esiste già un salvataggio con lo stesso nome, evitando duplicati.<br>
 I dati vengono scritti nel file in un formato leggibile, con ogni salvataggio separato da una linea delimitatrice `---`. Le informazioni includono dettagli specifici come GameName, ElapsedSeconds, CurrentRoom, MonsterAlive, DoorOpen e l'elenco degli oggetti nell'inventario. Ogni campo viene scritto in una nuova riga per garantire la chiarezza e la facilità di parsing durante il caricamento.<br>
