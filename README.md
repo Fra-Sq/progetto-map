@@ -122,7 +122,7 @@ In sintesi, il sistema di salvataggio e caricamento utilizza file di testo per m
 ### Utilizzo dei database
 Abbiamo deciso di utilizzare due database nel nostro programma: uno per il salvataggio delle informazioni delle stanze e degli oggetti, e uno per salvare le informazioni relative ai giocatori che riescono a concludere il gioco.
 
-### Database delle Stanze e degli Oggetti
+#### Database delle Stanze e degli Oggetti
 La gestione del database per le stanze e gli oggetti è effettuata tramite la classe `Database` inserita nel package `di.uniba.map.b.adventure.impl` del progetto `adventure`. 
 
 - **Connessione al Database:** La connessione al database avviene all'interno del costruttore della classe utilizzando JDBC e il motore di database H2.
@@ -135,7 +135,7 @@ La gestione del database per le stanze e gli oggetti è effettuata tramite la cl
   - `updateRoomLookById(String id, String newRoomLook)`: Aggiorna la descrizione dettagliata (look) associata a un dato ID.
   - `insertNewData()`: Inserisce nuovi dati nel database chiedendo all'utente di fornire input tramite riga di comando.
 
-### Database dei Giocatori
+#### Database dei Giocatori
 La gestione del database per i giocatori che concludono il gioco è effettuata con la classe `Database` inserita nel package `com.mycompany.restserver` all'interno del progetto `Restserver`.
 - **Connessione al Database:** Anche in questo caso, la connessione viene effettuata all'interno del costruttore utilizzando JDBC e il motore di database H2.
 - **Metodi di Accesso e Modifica:**
@@ -143,7 +143,7 @@ La gestione del database per i giocatori che concludono il gioco è effettuata c
   - `getFromLeaderboard(String id)`: Restituisce le informazioni di un giocatore ricevendo in input l'ID.
   - `getTopPlayers(int maxPlayers)`: Restituisce i migliori giocatori in base al numero di giocatori specificato.
 
-### Motore di Database H2
+#### Motore di Database H2
 In entrambi i casi abbiamo utilizzato il gestore di basi di dati relazionale H2 poiché può essere utilizzato in modo embedded senza necessità di installare un server, facilitando così la gestione e l'implementazione.
 
 ### Utilizzo dei thread
