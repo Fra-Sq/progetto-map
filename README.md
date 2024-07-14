@@ -23,9 +23,9 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
    - [Utilizzo dei thread](#utilizzo-dei-thread)
-   - [Swing](#swing)
-   - [RESTful](#restful)
-   - [Lambda expressions](#lambda-expressions)
+   - [Utilizzo della Swing](#utilizzo-della-swing)
+   - [Utilizzo delle RESTful](#utilizzo-delle-restful)
+   - [Utilizzo delle Lambda expressions](#utilizzo-delle-lambda-expressions)
 7. [Doxygen](#doxygen)
 
 <br><br>
@@ -246,7 +246,7 @@ Vantaggi dell'uso dei Thread:
 - **Controllo**: È possibile interrompere la riproduzione del suono in qualsiasi momento senza dover aspettare che il file audio termini.
 La classe AePlayWave dimostra come i thread possono essere utilizzati per eseguire operazioni che richiedono tempo, come la riproduzione di file audio, in modo efficiente e senza compromettere l'esperienza dell'utente..
 
-### Swing
+### Utilizzo della Swing
 Nel progetto abbiamo utilizzato la libreria grafica Swing per garantire al giocatore un'esperienza più immersiva.<br>
 Lo sfondo del gioco varia a seconda di cosa si sta facendo, di fatti si parte con un'immagine nella schermata iniziale, quella in cui si introduce il gioco, poi una volta iniziato a giocare l'immagine di sfondo varia a seconda della stanza in cui ci si trova. Le immagini sono state create da vari software generativi.<br>
 Nella finestra che viene creata oltre alle immagini di sfondo sono stati aggiunti vari componenti di interfaccia frafica:
@@ -266,7 +266,7 @@ Nella finestra che viene creata oltre alle immagini di sfondo sono stati aggiunt
    - Uscire dal gioco senza salvare la partita
    - Uscire dal gioco salvando la partita
  
-### RESTful
+### Utilizzo delle RESTful
 Questo progetto utilizza un'architettura RESTful per gestire una classifica di un gioco, composta da un client REST, un server REST e un servizio RESTful. Questi componenti lavorano insieme per consentire l'aggiunta di dati dei giocatori alla classifica e il recupero delle posizioni attuali della classifica.
 #### RESTClient
 La classe `RESTClient` è progettata per interagire con il servizio RESTful. Utilizza l'API JAX-RS per inviare richieste HTTP al server e la libreria Gson per la serializzazione e deserializzazione dei dati JSON. Il costruttore della classe inizializza il client REST, imposta l'URL di destinazione del servizio e il parser JSON. La classe `RESTClient` ha due metodi principali:
@@ -285,7 +285,7 @@ La classe `LeaderboardService` è il cuore del servizio RESTful che gestisce le 
 Questa architettura separa chiaramente le responsabilità tra client, server e logica di business, facilitando la manutenzione e l'estensione dell'applicazione. Il client REST è responsabile dell'invio delle richieste e della gestione delle risposte, il server REST gestisce le connessioni HTTP e il servizio RESTful contiene la logica di business per l'elaborazione delle richieste relative alla classifica.<br><br>
 
 Per un corretto funzionamento  della visualizzazione della classifica basta far partire il progetto `RESTServer` e lasciarlo in run, sucecssivamente si può far partire il progetto `SPACE ESCAPE`. 
-## Lambda expressions
+### Utilizzo delle Lambda expressions
 Le lambda expressions in Java sono una funzionalità che consente di scrivere funzioni anonime in modo conciso e leggibile. Sono particolarmente utili quando si lavora con collezioni e flussi di dati, poiché permettono di eseguire operazioni come il filtraggio, la trasformazione e l'iterazione in maniera più elegante.
 #### esempio 1: Impostare la stanza corrente per ID
 Optional<Room> room = rooms.stream()<br>
