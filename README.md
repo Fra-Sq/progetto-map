@@ -15,7 +15,7 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [Specifica semantica](#specifica-semantica)
    - [Specifica di restrizione](#specifica-di-restrizione)
 5. [Contenuti rilevanti](#contenuti-rilevanti)
-   - [Utilizzo della Programmazione Orientata agli Oggetti (OOP)](utilizzo-della-programmazione-orientata-agli-oggetti (oop))
+   - [Utilizzo della Programmazione Orientata agli Oggetti (OOP)](#utilizzo-della-programmazione-orientata-agli-oggetti (oop))
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
    - [Utilizzo dei thread](#utilizzo-dei-thread)
