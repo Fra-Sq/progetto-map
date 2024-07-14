@@ -42,7 +42,7 @@ Per muoversi all'interno della mappa, il giocatore deve utilizzare i comandi dir
 ### Obiettivo del gioco
 L'obiettivo finale del gioco è attivare un portale che permetterà al giocatore di tornare a casa. Per raggiungere questo obiettivo, il giocatore dovrà seguire una serie di passi chiave che richiedono l'esplorazione della mappa e l'interazione con vari oggetti e personaggi.
 
-## Fasi del gioco
+### Fasi del gioco
 Raggiungere la Sala Comandi
 <br>
 Descrizione: La Sala Comandi è una stanza fondamentale dove il giocatore troverà una cassa chiusa.<br>
