@@ -131,19 +131,15 @@ Nel nostro progetto, abbiamo adottato il paradigma della Programmazione Orientat
 
 - **Classi e Oggetti:** 
   - Le classi rappresentano i modelli dei vari elementi del gioco, come stanze, oggetti e giocatori. Gli oggetti sono istanze di queste classi, che contengono dati e metodi per manipolarli.
-  - Esempio: La classe `Database` gestisce le operazioni relative al database, mentre la classe `PlayerData` rappresenta i dati di un giocatore.
 
 - **Incapsulamento:**
   - I dati e i metodi delle classi sono incapsulati all'interno delle classi stesse, rendendoli accessibili solo tramite metodi pubblici (getter e setter) e mantenendo nascosti i dettagli di implementazione.
-  - Esempio: I campi del database, come `conn` e `dbprops`, sono privati e possono essere acceduti solo attraverso metodi pubblici.
 
 - **Ereditarietà:**
   - L'ereditarietà consente di creare nuove classi basate su classi esistenti, promuovendo il riutilizzo del codice e la creazione di gerarchie di classi.
-  - Esempio: Non è stato esplicitamente usato nel codice fornito, ma potrebbe essere utilizzato per estendere funzionalità comuni tra diverse tipologie di database o entità di gioco.
 
 - **Polimorfismo:**
   - Il polimorfismo permette di trattare oggetti di diverse classi attraverso un'interfaccia comune, facilitando l'uso intercambiabile di oggetti.
-  - Esempio: Anche se non è direttamente visibile nel codice fornito, il polimorfismo può essere utilizzato per implementare comportamenti diversi a seconda del tipo di oggetto (ad esempio, diverse modalità di salvataggio dei dati).
 
 #### Vantaggi dell'OOP nel Progetto
 
