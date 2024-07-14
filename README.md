@@ -284,7 +284,15 @@ La classe `LeaderboardService` è il cuore del servizio RESTful che gestisce le 
 2. **Recupero della Classifica**: Il client invia una richiesta GET al server per ottenere la classifica attuale. Il servizio (`LeaderboardService`) recupera i dati dal database, li converte in formato JSON e li restituisce al client, che li deserializza e formatta in una stringa leggibile.
 Questa architettura separa chiaramente le responsabilità tra client, server e logica di business, facilitando la manutenzione e l'estensione dell'applicazione. Il client REST è responsabile dell'invio delle richieste e della gestione delle risposte, il server REST gestisce le connessioni HTTP e il servizio RESTful contiene la logica di business per l'elaborazione delle richieste relative alla classifica.<br><br>
 
-Per un corretto funzionamento  della visualizzazione della classifica basta far partire il progetto `RESTServer` e lasciarlo in run, sucecssivamente si può far partire il proggetto `SPACE ESCAPE`. 
+Per un corretto funzionamento  della visualizzazione della classifica basta far partire il progetto `RESTServer` e lasciarlo in run, sucecssivamente si può far partire il progetto `SPACE ESCAPE`. 
+## Lambda expressions
+Le lambda expressions in Java sono una funzionalità che consente di scrivere funzioni anonime in modo conciso e leggibile. Sono particolarmente utili quando si lavora con collezioni e flussi di dati, poiché permettono di eseguire operazioni come il filtraggio, la trasformazione e l'iterazione in maniera più elegante.
+### esempio 1: Impostare la stanza corrente per ID
+In questo caso, vogliamo trovare una stanza specifica in una lista di stanze usando il suo ID. La lambda expression specifica il criterio di filtraggio (in questo caso, l'ID della stanza) in modo chiaro e conciso. Il risultato è un'operazione di ricerca più leggibile e facile da mantenere.
+### esempio 2: Impostare lo stato del gioco
+Qui, vogliamo aggiornare lo stato del gioco impostando la stanza corrente e aggiornando l'inventario del giocatore. In questo caso possiamo usare lambda expressions per eseguire queste operazioni in modo compatto. Le lambda expressions ci permettono di specificare cosa fare se un oggetto è trovato, rendendo il codice più pulito e diretto.
+### esempio 3: Controllo nella chiave nell'inventario
+In questo esempio, vogliamo verificare se l'inventario del giocatore contiene un oggetto specifico (una chiave). Con le lambda expressions, possiamo esprimere questa verifica in modo semplice e leggibile. Anziché iterare manualmente su tutti gli oggetti nell'inventario, possiamo usare una lambda expression per definire la condizione che stiamo cercando (l'ID dell'oggetto) e lasciare che il linguaggio si occupi della logica di iterazione.
 
 <br><br>
 ## Doxygen
