@@ -20,6 +20,8 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [Utilizzo dei thread](#utilizzo-dei-thread)
    - [Swing](#swing)
    - [RESTful](#restful)
+   - [Lambda expressions](#lambda-expressions)
+   - [Linguaggio OOP](#linguaggio-oop)
 6. [Doxygen](#doxygen)
    
 ## Introduzione
@@ -58,7 +60,9 @@ Man mano che esplori la navicella, troverai vari oggetti che potrebbero essere u
 
 
 ## Specifica algebrica
+Questa specifica algebrica definisce il comportamento di un dizionario, una struttura dati che associa chiavi uniche a valori. Il dizionario è rappresentato tramite diverse operazioni che permettono di creare, modificare e interrogare la struttura.
 ### Specifica sintattica
+La specifica sintattica descrive i tipi di dati (sorts) e le operazioni disponibili per il dizionario:<br>
 sorts:Dizionario, chiave, valore, Boolean<br><br>
 
 operations:<br>
@@ -76,6 +80,7 @@ operations:<br>
 
 
 ### Specifica semantica
+La specifica semantica definisce formalmente il comportamento atteso delle operazioni.<br>
 declase:d:dizionario, k:chiave, v:valore.<br><br>
 - isEmpty(newDizionario()) = true
 - isEmpty(put(d, k, v)) = false
@@ -97,6 +102,7 @@ declase:d:dizionario, k:chiave, v:valore.<br><br>
 
 
 ### Specifica di restrizione
+La specifica di restrizione aggiunge vincoli che le operazioni devono rispettare per garantire la coerenza del dizionario.<br>
 restrictions:
 ∀ d:Dizionario, k: chiave, v: valore.<br><br>
 - ∀k' | (k' ≠ k implica get(put(d, k, v), k') = get(d, k'))        
