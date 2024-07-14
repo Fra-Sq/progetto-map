@@ -126,7 +126,6 @@ Abbiamo deciso di utilizzare due database nel nostro programma: uno per il salva
 
 #### Database delle Stanze e degli Oggetti
 La gestione del database per le stanze e gli oggetti è effettuata tramite la classe `Database` inserita nel package `di.uniba.map.b.adventure.impl` del progetto `adventure`. 
-
 - **Connessione al Database:** La connessione al database avviene all'interno del costruttore della classe utilizzando JDBC e il motore di database H2.
 - **Metodi di Accesso e Modifica:**
   - `getNameById(String id)`: Restituisce il nome associato a un dato ID.
@@ -136,17 +135,23 @@ La gestione del database per le stanze e gli oggetti è effettuata tramite la cl
   - `updateDescriptionById(String id, String newDescription)`: Aggiorna la descrizione associata a un dato ID.
   - `updateRoomLookById(String id, String newRoomLook)`: Aggiorna la descrizione dettagliata (look) associata a un dato ID.
   - `insertNewData()`: Inserisce nuovi dati nel database chiedendo all'utente di fornire input tramite riga di comando.
+  - `close()`: Chiude la connessione al database per liberare risorse.
 
 #### Database dei Giocatori
 La gestione del database per i giocatori che concludono il gioco è effettuata con la classe `Database` inserita nel package `com.mycompany.restserver` all'interno del progetto `Restserver`.
+
 - **Connessione al Database:** Anche in questo caso, la connessione viene effettuata all'interno del costruttore utilizzando JDBC e il motore di database H2.
 - **Metodi di Accesso e Modifica:**
   - `insertInLeaderboard(String name, String date, String time)`: Inserisce le informazioni di un giocatore nella classifica.
   - `getFromLeaderboard(String id)`: Restituisce le informazioni di un giocatore ricevendo in input l'ID.
   - `getTopPlayers(int maxPlayers)`: Restituisce i migliori giocatori in base al numero di giocatori specificato.
+  - `close()`: Chiude la connessione al database per liberare risorse.
 
 #### Motore di Database H2
-In entrambi i casi abbiamo utilizzato il gestore di basi di dati relazionale H2 poiché può essere utilizzato in modo embedded senza necessità di installare un server, facilitando così la gestione e l'implementazione.
+
+In entrambi i casi abbiamo utilizzato il gestore di database relazionale H2 poiché può essere utilizzato in modo embedded senza necessità di installare un server, facilitando così la gestione e l'implementazione.
+
+
 
 ### Utilizzo dei thread
 La classe `AePlayWave` è progettata per riprodurre file audio WAV in un thread separato, permettendo così operazioni asincrone come la riproduzione, l'interruzione e la gestione del pan audio (sinistra, destra, normale). Questa classe fa parte del package `di.uniba.map.b.adventure.impl` e gestisce la riproduzione del suono utilizzando la libreria javax.sound.sampled.<br>
