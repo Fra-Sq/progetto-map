@@ -6,23 +6,29 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 ## INDICE
 
 1. [Introduzione](#introduzione)
+   - [Descrizione del gioco](#descrizione-del-gioco)
+   - [Come si gioca](#Come-si-gioca)
+   - [Obiettivo del gioco](#obiettivo-del-gioco)
+      - [Fasi del gioco](#Fasi-del-gioco) 
    - [Mappa di gioco](#mappa-di-gioco)
-2. [Utilizzo](#utilizzo)
+3. [Utilizzo](#utilizzo)
    - [Comandi principali](#comandi-principali)
-3. [Diagrammi UML](#diagrammi-uml)
-4. [Specifica algebrica](#specifica-algebrica)
+4. [Diagrammi UML](#diagrammi-uml)
+5. [Specifica algebrica](#specifica-algebrica)
    - [Specifica sintattica](#specifica-sintattica)
    - [Specifica semantica](#specifica-semantica)
    - [Specifica di restrizione](#specifica-di-restrizione)
-5. [Contenuti rilevanti](#contenuti-rilevanti)
+6. [Contenuti rilevanti](#contenuti-rilevanti)
+   - [Utilizzo della Programmazione Orientata agli Oggetti (OOP)](#utilizzo-della-programmazione-orientata-agli-oggetti-oop)
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
    - [Utilizzo dei thread](#utilizzo-dei-thread)
    - [Swing](#swing)
    - [RESTful](#restful)
    - [Lambda expressions](#lambda-expressions)
-   - [OOP](#oop)
-6. [Doxygen](#doxygen)
+7. [Doxygen](#doxygen)
+
+<br><br>
    
 ## Introduzione
 **SPACE ESCAPE** è un'avventura testuale interattiva progettata per l'esame di 'Metodi avanzati di programmazione', sviluppata interamente in linguaggio java. Il gioco si svolge attraverso un'interfaccia grafica (**GUI**), che consente agli utenti interagire con essa e immergersi nell'avventura di una navicella spaziale intrappolata nello spazio. Inoltre il programma supporta il salvataggio e il caricamento di una partita, oltre ad una classifica globale gestita tramite server.
@@ -31,11 +37,48 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 L'obiettivo del gioco è scappare dalla navicella spaziale per tornare sani e salvi sulla Terra. Per raggiungere questo obiettivo, i giocatori devono esplorare la mappa di gioco, raccogliere oggetti e codici, e risolvere enigmi. Il gioco inizia con una schermata introduttiva che spiega il contesto e le prime istruzioni per iniziare.
 
 ### Come si gioca
-Per muoversi all'interno della mappa, il giocatore deve utilizzare i comandi direzionali **nord**, **sud**, **est** e **ovest**. È possibile esplorare le stanze e i corridoi usando il comando **osserva**, che fornisce una descrizione dettagliata dell'ambiente circostante. Inoltre, il giocatore può interagire con oggetti e porte tramite comandi come **utilizza**, **prendi**, **apri**, e altri.
+Per muoversi all'interno della mappa, il giocatore deve utilizzare i comandi direzionali nord, sud, est e ovest. È possibile esplorare le stanze e i corridoi usando il comando osserva, che fornisce una descrizione dettagliata dell'ambiente circostante. Inoltre, il giocatore può interagire con oggetti e porte tramite comandi come utilizza, prendi, apri, e altri.
+
+### Obiettivo del gioco
+L'obiettivo finale del gioco è attivare un portale che permetterà al giocatore di tornare a casa. Per raggiungere questo obiettivo, il giocatore dovrà seguire una serie di passi chiave che richiedono l'esplorazione della mappa e l'interazione con vari oggetti e personaggi.
+
+### Fasi del gioco
+Raggiungere la Sala Comandi
+<br>
+Descrizione: La Sala Comandi è una stanza fondamentale dove il giocatore troverà una cassa chiusa.<br>
+Azione: Usare il comando apri per aprire la cassa.<br>
+Oggetto: All'interno della cassa si trova una gemma. Il giocatore deve usare il comando prendi per raccogliere la gemma.
+Scopo: La gemma è necessaria per l'attivazione del portale.<br>
+Dirigersi verso l'Armeria<br>
+
+Descrizione: L'Armeria contiene varie armi che il giocatore può utilizzare.<br>
+Azione: Usare il comando prendi per raccogliere un'arma.<br>
+Oggetto: L'arma sarà indispensabile per sconfiggere il mostro alieno che si trova nell'anticamera.<br>
+Affrontare il Mostro Alieno nell'Anticamera
+<br>
+Descrizione: L'anticamera ospita un mostro alieno che deve essere sconfitto.
+Azione: Usare il comando utilizza seguito dal nome dell'arma e per attaccare usare il comando ammazza per uccidere il mostro.<br>
+Oggetto: Dopo aver sconfitto il mostro, il giocatore noterà un tatuaggio sul corpo dell'alieno. Il tatuaggio contiene un codice essenziale per l'attivazione del portale. Usare il comando osserva per leggere e annotare il codice.<br>
+Ottenere la Mappa delle Coordinate Spaziali<br>
+
+Descrizione: La mappa delle coordinate spaziali si trova nell'archivio.<br>
+Azione: Usare il comando prendi per raccogliere la mappa.<br>
+Oggetto: La mappa contiene le coordinate di tutti i pianeti della galassia, compresa la Terra. Queste coordinate saranno necessarie per tornare a casa.
+Attivare il Portale<br>
+
+Descrizione: Tornare alla stanza del portale con tutti gli oggetti e le informazioni raccolte.<br>
+Azione:<br>
+Usare il comando attiva portale per iniziare la procedura.<br>
+Usare il comando attiva pannello per accendere il pannello di controllo del portale.<br>
+Inserire il codice del mostro alieno alla seconda riga del pannello.<br>
+Inserire le coordinate della Terra alla seconda riga del pannello.<br>
+Fine del gioco: Se tutte le operazioni sono state eseguite correttamente, il portale si attiverà e il giocatore potrà tornare a casa, completando così il gioco.<br>
+Seguendo attentamente questi passaggi e utilizzando correttamente i comandi, il giocatore riuscirà a superare le sfide e a raggiungere l'obiettivo finale del gioco.
 
 ### Mappa di gioco
 ![Mappa di gioco](mappa_gioco.png)  
 La mappa di gioco mostra tutte le stanze e i corridoi esplorabili. Le freccette nere indicano i possibili movimenti tra le diverse aree. Gli oggetti e gli ostacoli rappresentati nella mappa sono quelli che i giocatori incontreranno durante l'avventura.
+<br><br>
 
 ## Utilizzo
 In **SPACE ESCAPE**, il giocatore assume il ruolo di un astronauta intrappolato su una navicella spaziale alla deriva nello spazio. L'obiettivo è esplorare l'ambiente, risolvere enigmi e raccogliere oggetti necessari per attivare la navicella e tornare sulla Terra.
@@ -57,7 +100,7 @@ abbandona: Termina il gioco.<br>
 attiva: Attiva i vari pannelli e portali.<br>
 leggi: Legge le varie mappe/cartine.<br>
 Man mano che esplori la navicella, troverai vari oggetti che potrebbero essere utili per risolvere enigmi e superare ostacoli. Usa i comandi sopra elencati per interagire con l'ambiente e avanzare nel gioco.
-
+<br><br>
 
 ## Specifica algebrica
 Questa specifica algebrica definisce il comportamento di un dizionario, una struttura dati che associa chiavi uniche a valori. Il dizionario è rappresentato tramite diverse operazioni che permettono di creare, modificare e interrogare la struttura.
@@ -106,14 +149,48 @@ Declase:d:dizionario, k:chiave, v:valore.<br>
 La specifica di restrizione aggiunge vincoli che le operazioni devono rispettare per garantire la coerenza del dizionario.<br><br>
 
 restrictions:<br>
-∀ d:Dizionario, k: chiave, v: valore.<br><br>
+∀ d:Dizionario, k: chiave, v: valore.<br>
 - ∀k' | (k' ≠ k implica get(put(d, k, v), k') = get(d, k'))        
 - ∀k' | (k' ≠ k implica get(remove(d, k), k') = get(d, k'))
 - keySet(d).contains(k) = containsKey(d, k)
 - values(d).contains(v) = containsValue(d, v)        
 - ∀k . containsKey(clear(d), k) = false
+<br><br>
+
+
+
+
+
 
 ## Contenuti rilevanti
+### Utilizzo della Programmazione Orientata agli Oggetti (OOP)
+
+Nel nostro progetto, abbiamo adottato il paradigma della Programmazione Orientata agli Oggetti (OOP) per organizzare il codice in modo modulare, riutilizzabile e mantenibile.
+
+#### Principali Concetti OOP Utilizzati
+
+- **Classi e Oggetti:** 
+  - Le classi rappresentano i modelli dei vari elementi del gioco, come stanze, oggetti e giocatori. Gli oggetti sono istanze di queste classi, che contengono dati e metodi per manipolarli.
+
+- **Incapsulamento:**
+  - I dati e i metodi delle classi sono incapsulati all'interno delle classi stesse, rendendoli accessibili solo tramite metodi pubblici (getter e setter) e mantenendo nascosti i dettagli di implementazione.
+
+- **Ereditarietà:**
+  - L'ereditarietà consente di creare nuove classi basate su classi esistenti, promuovendo il riutilizzo del codice e la creazione di gerarchie di classi.
+
+- **Polimorfismo:**
+  - Il polimorfismo permette di trattare oggetti di diverse classi attraverso un'interfaccia comune, facilitando l'uso intercambiabile di oggetti.
+
+#### Vantaggi dell'OOP nel Progetto
+
+- **Modularità:** Ogni classe è responsabile di una specifica funzionalità, rendendo il codice più organizzato e facile da gestire.
+- **Riutilizzabilità:** Le classi e i metodi possono essere riutilizzati in diverse parti del progetto senza duplicare il codice.
+- **Manutenibilità:** L'uso di classi e metodi ben definiti facilita la comprensione e la modifica del codice.
+- **Flessibilità:** L'ereditarietà e il polimorfismo permettono di estendere e modificare le funzionalità del sistema senza alterare il codice esistente.
+
+L'adozione dell'OOP nel nostro progetto ha contribuito a creare un sistema robusto, flessibile e facilmente manutenibile.
+
+
 ### Utilizzo dei file
 Abbiamo implementato un sistema di salvataggio e caricamento dei dati del gioco utilizzando file di testo per garantire che lo stato del gioco possa essere memorizzato e ripreso in modo efficiente. Il metodo save nella classe SaveGame è responsabile della scrittura dello stato attuale del gioco in un file di salvataggio. Questo metodo accetta vari parametri come la stanza corrente (`currentRoom`), l'inventario del giocatore (`inventory`), il nome del gioco (`gameName`), il tempo trascorso (`elapsedSeconds`), lo stato del mostro (`monsterAlive`) e lo stato della porta (`isDoorOpen`). Prima di procedere con il salvataggio, il metodo verifica se esiste già un salvataggio con lo stesso nome, evitando duplicati.<br>
 I dati vengono scritti nel file in un formato leggibile, con ogni salvataggio separato da una linea delimitatrice `---`. Le informazioni includono dettagli specifici come GameName, ElapsedSeconds, CurrentRoom, MonsterAlive, DoorOpen e l'elenco degli oggetti nell'inventario. Ogni campo viene scritto in una nuova riga per garantire la chiarezza e la facilità di parsing durante il caricamento.<br>
@@ -207,6 +284,7 @@ La classe `LeaderboardService` è il cuore del servizio RESTful che gestisce le 
 2. **Recupero della Classifica**: Il client invia una richiesta GET al server per ottenere la classifica attuale. Il servizio (`LeaderboardService`) recupera i dati dal database, li converte in formato JSON e li restituisce al client, che li deserializza e formatta in una stringa leggibile.
 Questa architettura separa chiaramente le responsabilità tra client, server e logica di business, facilitando la manutenzione e l'estensione dell'applicazione. Il client REST è responsabile dell'invio delle richieste e della gestione delle risposte, il server REST gestisce le connessioni HTTP e il servizio RESTful contiene la logica di business per l'elaborazione delle richieste relative alla classifica.
 
+<br><br>
 ## Doxygen
 Per visualizzare la documentazione doxygen aprire il collegamento `index` inserito nella cartella `progetto-map`.
 
