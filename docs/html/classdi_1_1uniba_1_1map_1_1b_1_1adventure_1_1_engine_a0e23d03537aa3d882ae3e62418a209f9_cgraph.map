@@ -1,0 +1,21 @@
+<map id="di.uniba.map.b.adventure.Engine.main" name="di.uniba.map.b.adventure.Engine.main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,172,175,215"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0aac5add5a958af0c635be1d49581f3a" title=" " alt="" coords="223,72,392,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,169,244,119,247,124,140,174"/>
+<area shape="rect" id="Node000005" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a16eb715b8df13421f41cf1995106b4cc" title=" " alt="" coords="223,239,392,281"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="162,213,222,231,220,236,161,218"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ace481a2be2f2f56ee9cbaf26c8692516" title=" " alt="" coords="467,5,636,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,69,456,50,457,55,389,74"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#ac62e8ebb99f39d3af6c6cf06f534ed5f" title=" " alt="" coords="467,72,636,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="393,91,452,91,452,96,393,96"/>
+<area shape="rect" id="Node000006" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a63b6f071dc00caa521638067b84ce514" title=" " alt="" coords="442,139,661,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="346,236,439,191,456,184,458,189,441,196,349,240"/>
+<area shape="rect" id="Node000007" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a1019a567cc65258ba7231be04b6f6c44" title=" " alt="" coords="440,205,663,248"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="392,246,424,241,425,247,393,251"/>
+<area shape="rect" id="Node000008" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a7d48bd7d07aa3d24b4bd41f487db360c" title=" " alt="" coords="452,272,652,315"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="393,269,436,275,435,280,392,274"/>
+<area shape="rect" id="Node000009" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#aa45f0143ed093c6ce28415bcff983ca7" title=" " alt="" coords="453,339,650,381"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="349,280,441,324,458,331,456,336,439,329,346,284"/>
+<area shape="rect" id="Node000010" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a24105046a31874be367da6483142aa16" title=" " alt="" coords="453,405,650,448"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="326,280,374,336,406,365,441,391,451,396,448,401,439,396,403,370,370,339,322,283"/>
+</map>

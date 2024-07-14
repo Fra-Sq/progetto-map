@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave" xml:lang="en-US">
+<title>di.uniba.map.b.adventure.impl.AePlayWave Class Reference</title>
+<indexterm><primary>di.uniba.map.b.adventure.impl.AePlayWave</primary></indexterm>
+<para>
+Inherits Thread.</para>
+Collaboration diagram for di.uniba.map.b.adventure.impl.AePlayWave:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>This class is designed to play sound files in a separate thread. It supports basic operations such as play, stop, and handling of audio pan (left, right, normal). </para>
+<para>
+Definition at line <link linkend="__ae_play_wave_8java_source_1l00020">20</link> of file <link linkend="__ae_play_wave_8java_source">AePlayWave.java</link>.</para>
+<para>
+The documentation for this class was generated from the following file:</para>
+adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java</section>
+</section>

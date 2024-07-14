@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::impl::AePlayWave</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+    <innerclass refid="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1_1_position" prot="public">di::uniba::map::b::adventure::impl::AePlayWave::Position</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a08cbd872b23b1a078d01ee545e6966f6" prot="private" static="no" mutable="no">
+        <type>final String</type>
+        <definition>final String di.uniba.map.b.adventure.impl.AePlayWave.filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.AePlayWave.filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="22" column="26" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a8499d689b115c9200fe686dc42e877af" prot="private" static="no" mutable="no">
+        <type>final Position</type>
+        <definition>final Position di.uniba.map.b.adventure.impl.AePlayWave.curPosition</definition>
+        <argsstring></argsstring>
+        <name>curPosition</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.AePlayWave.curPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="23" column="28" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1aaa0a4d6ce582706158d2c2a75cdad134" prot="private" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int di.uniba.map.b.adventure.impl.AePlayWave.EXTERNAL_BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>EXTERNAL_BUFFER_SIZE</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.AePlayWave.EXTERNAL_BUFFER_SIZE</qualifiedname>
+        <initializer>= 524288</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="24" column="23" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a5aa5d09c585401be2f26d42ac936d955" prot="private" static="no" mutable="no">
+        <type>volatile boolean</type>
+        <definition>volatile boolean di.uniba.map.b.adventure.impl.AePlayWave.isInterrupted</definition>
+        <argsstring></argsstring>
+        <name>isInterrupted</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.AePlayWave.isInterrupted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="26" column="30" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a5dd291fbe0989c427c1e21cbf6ea98c7" prot="private" static="no" mutable="no">
+        <type>volatile boolean</type>
+        <definition>volatile boolean di.uniba.map.b.adventure.impl.AePlayWave.isPlaying</definition>
+        <argsstring></argsstring>
+        <name>isPlaying</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.AePlayWave.isPlaying</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="27" column="30" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1ac2111d5c9a6779f5d776cf8f2cf70f9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.impl.AePlayWave.AePlayWave</definition>
+        <argsstring>(String wavfile)</argsstring>
+        <name>AePlayWave</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.AePlayWave.AePlayWave</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>wavfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="33" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1abc869f07737a3e3f6e7cd9050f532823" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.impl.AePlayWave.stopSound</definition>
+        <argsstring>()</argsstring>
+        <name>stopSound</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.AePlayWave.stopSound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="39" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a45e1b48341be48fac8a11c80f28776d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized void</type>
+        <definition>synchronized void di.uniba.map.b.adventure.impl.AePlayWave.startSound</definition>
+        <argsstring>()</argsstring>
+        <name>startSound</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.AePlayWave.startSound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="45" column="30" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1acb288cb18150c5717713db865efb15c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.impl.AePlayWave.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.AePlayWave.run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="53" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="53" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is designed to play sound files in a separate thread. It supports basic operations such as play, stop, and handling of audio pan (left, right, normal). </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.AePlayWave</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" line="20" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/AePlayWave.java" bodystart="20" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1ac2111d5c9a6779f5d776cf8f2cf70f9f" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::AePlayWave</scope><name>AePlayWave</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a8499d689b115c9200fe686dc42e877af" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::AePlayWave</scope><name>curPosition</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1aaa0a4d6ce582706158d2c2a75cdad134" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::AePlayWave</scope><name>EXTERNAL_BUFFER_SIZE</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a08cbd872b23b1a078d01ee545e6966f6" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::AePlayWave</scope><name>filename</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a5aa5d09c585401be2f26d42ac936d955" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::AePlayWave</scope><name>isInterrupted</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a5dd291fbe0989c427c1e21cbf6ea98c7" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::AePlayWave</scope><name>isPlaying</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1acb288cb18150c5717713db865efb15c9" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::AePlayWave</scope><name>run</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1a45e1b48341be48fac8a11c80f28776d7" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::AePlayWave</scope><name>startSound</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1abc869f07737a3e3f6e7cd9050f532823" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::AePlayWave</scope><name>stopSound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

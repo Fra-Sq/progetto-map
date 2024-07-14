@@ -1,0 +1,9 @@
+<map id="di.uniba.map.b.adventure.impl.Window.showRoomName" name="di.uniba.map.b.adventure.impl.Window.showRoomName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="468,39,665,81"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a16eb715b8df13421f41cf1995106b4cc" title=" " alt="" coords="237,5,406,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="452,47,406,41,407,36,453,42"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee" title=" " alt="" coords="223,72,420,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="453,78,421,83,420,77,452,73"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0e23d03537aa3d882ae3e62418a209f9" title=" " alt="" coords="5,5,175,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,29,175,29,175,24,221,24"/>
+</map>

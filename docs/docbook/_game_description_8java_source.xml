@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__game_description_8java_source" xml:lang="en-US">
+<title>GameDescription.java</title>
+<indexterm><primary>adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="__game_description_8java_source_1l00001"/>00001 <emphasis role="comment">/*</emphasis>
+<anchor xml:id="__game_description_8java_source_1l00002"/>00002 <emphasis role="comment">&#32;*&#32;Click&#32;nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt&#32;to&#32;change&#32;this&#32;license</emphasis>
+<anchor xml:id="__game_description_8java_source_1l00003"/>00003 <emphasis role="comment">&#32;*&#32;Click&#32;nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java&#32;to&#32;edit&#32;this&#32;template</emphasis>
+<anchor xml:id="__game_description_8java_source_1l00004"/>00004 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="__game_description_8java_source_1l00005"/>00005 <emphasis role="keyword">package&#32;</emphasis>di.uniba.map.b.adventure;
+<anchor xml:id="__game_description_8java_source_1l00006"/>00006 
+<anchor xml:id="__game_description_8java_source_1l00007"/>00007 <emphasis role="keyword">import</emphasis>&#32;di.uniba.map.b.adventure.impl.Database;
+<anchor xml:id="__game_description_8java_source_1l00008"/>00008 <emphasis role="keyword">import</emphasis>&#32;di.uniba.map.b.adventure.impl.Window;
+<anchor xml:id="__game_description_8java_source_1l00009"/>00009 <emphasis role="keyword">import</emphasis>&#32;di.uniba.map.b.adventure.parser.ParserOutput;
+<anchor xml:id="__game_description_8java_source_1l00010"/>00010 <emphasis role="keyword">import</emphasis>&#32;di.uniba.map.b.adventure.type.AdvObject;
+<anchor xml:id="__game_description_8java_source_1l00011"/>00011 <emphasis role="keyword">import</emphasis>&#32;di.uniba.map.b.adventure.type.Command;
+<anchor xml:id="__game_description_8java_source_1l00012"/>00012 <emphasis role="keyword">import</emphasis>&#32;di.uniba.map.b.adventure.type.Room;
+<anchor xml:id="__game_description_8java_source_1l00013"/>00013 <emphasis role="keyword">import</emphasis>&#32;java.util.ArrayList;
+<anchor xml:id="__game_description_8java_source_1l00014"/>00014 <emphasis role="keyword">import</emphasis>&#32;java.util.List;
+<anchor xml:id="__game_description_8java_source_1l00015"/>00015 <emphasis role="keyword">import</emphasis>&#32;java.util.Optional;
+<anchor xml:id="__game_description_8java_source_1l00016"/>00016 
+<anchor xml:id="__game_description_8java_source_1l00021"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">00021</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">abstract</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link>&#32;{
+<anchor xml:id="__game_description_8java_source_1l00022"/>00022 
+<anchor xml:id="__game_description_8java_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">final</emphasis>&#32;List&lt;Room&gt;&#32;rooms&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;ArrayList&lt;&gt;();
+<anchor xml:id="__game_description_8java_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">final</emphasis>&#32;List&lt;Command&gt;&#32;commands&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;ArrayList&lt;&gt;();
+<anchor xml:id="__game_description_8java_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;List&lt;AdvObject&gt;&#32;inventory&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;ArrayList&lt;&gt;();
+<anchor xml:id="__game_description_8java_source_1l00026"/>00026 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link>&#32;currentRoom;
+<anchor xml:id="__game_description_8java_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;keyUsed&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_description_8java_source_1l00028"/>00028 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keyword">final</emphasis>&#32;List&lt;AdvObject&gt;&#32;allObjects&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;ArrayList&lt;&gt;();
+<anchor xml:id="__game_description_8java_source_1l00029"/>00029 
+<anchor xml:id="__game_description_8java_source_1l00034"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae6d265375fc241fb5346dc1521d35497">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;List&lt;Room&gt;&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae6d265375fc241fb5346dc1521d35497">getRooms</link>()&#32;{
+<anchor xml:id="__game_description_8java_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;rooms;
+<anchor xml:id="__game_description_8java_source_1l00036"/>00036 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00037"/>00037 
+<anchor xml:id="__game_description_8java_source_1l00042"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a184c5cecd35b4e50cda8b1a77ff6dbfe">00042</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a184c5cecd35b4e50cda8b1a77ff6dbfe">setCurrentRoomById</link>(<emphasis role="keywordtype">int</emphasis>&#32;roomId){
+<anchor xml:id="__game_description_8java_source_1l00043"/>00043 &#32;&#32;&#32;&#32;Optional&lt;Room&gt;&#32;room&#32;=&#32;rooms.stream()
+<anchor xml:id="__game_description_8java_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;.filter(r&#32;-&gt;&#32;r.getId()&#32;==&#32;roomId)
+<anchor xml:id="__game_description_8java_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;.findFirst();
+<anchor xml:id="__game_description_8java_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;room.ifPresent(r&#32;-&gt;&#32;this.currentRoom&#32;=&#32;r);
+<anchor xml:id="__game_description_8java_source_1l00047"/>00047 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00048"/>00048 
+<anchor xml:id="__game_description_8java_source_1l00056"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a9a7e02f4831b6c8600f62b7296cf6f12">00056</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a9a7e02f4831b6c8600f62b7296cf6f12">setGame</link>(<emphasis role="keywordtype">int</emphasis>&#32;roomId,&#32;List&lt;Integer&gt;&#32;inventoryIds,&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;monsterAlive,&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;isDoorOpen){
+<anchor xml:id="__game_description_8java_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Optional&lt;Room&gt;&#32;room&#32;=&#32;rooms.stream()
+<anchor xml:id="__game_description_8java_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;.filter(r&#32;-&gt;&#32;r.getId()&#32;==&#32;roomId)
+<anchor xml:id="__game_description_8java_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;.findFirst();
+<anchor xml:id="__game_description_8java_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;room.ifPresent(r&#32;-&gt;&#32;this.currentRoom&#32;=&#32;r);
+<anchor xml:id="__game_description_8java_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__game_description_8java_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.inventory&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;ArrayList&lt;&gt;();
+<anchor xml:id="__game_description_8java_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keywordtype">id</emphasis>&#32;:&#32;inventoryIds)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Optional&lt;AdvObject&gt;&#32;obj&#32;=&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac2c90759e68c6f9f17265f2d2d0ab3cb">getObjectById</link>(<emphasis role="keywordtype">id</emphasis>);
+<anchor xml:id="__game_description_8java_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;obj.ifPresent(o&#32;-&gt;&#32;{
+<anchor xml:id="__game_description_8java_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.inventory.add(o);
+<anchor xml:id="__game_description_8java_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Rimuovi&#32;l&apos;oggetto&#32;dalla&#32;stanza&#32;in&#32;cui&#32;si&#32;trova</emphasis>
+<anchor xml:id="__game_description_8java_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link>&#32;stanze&#32;:&#32;rooms)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(stanze.getObjects().contains(o))&#32;{
+<anchor xml:id="__game_description_8java_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;stanze.getObjects().remove(o);
+<anchor xml:id="__game_description_8java_source_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(o.getId()&#32;==&#32;6)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link>&#32;safe&#32;=&#32;stanze.getObject(4);
+<anchor xml:id="__game_description_8java_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(safe&#32;!=&#32;<emphasis role="keyword">null</emphasis>)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;safe.<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a58b77d327d599e34e91479637ebf7ee6">setOpenable</link>(<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="__game_description_8java_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(stanze.getId()==8&#32;&amp;&amp;&#32;monsterAlive==<emphasis role="keyword">false</emphasis>)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;stanze.removeObject(stanze.getObject(3));
+<anchor xml:id="__game_description_8java_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;stanze.setMonsterAlive(monsterAlive);
+<anchor xml:id="__game_description_8java_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;stanze.setLook(<emphasis role="stringliteral">&quot;Ti&#32;trovi&#32;nell&apos;anticamera,&#32;ma&#32;il&#32;mostro&#32;è&#32;morto.&#32;\nSul&#32;tentacolo&#32;del&#32;mostro&#32;c&apos;è&#32;un&#32;codice&#32;tatuato:&#32;07738&quot;</emphasis>);
+<anchor xml:id="__game_description_8java_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(stanze.getId()==4&#32;&amp;&amp;&#32;isDoorOpen==<emphasis role="keyword">true</emphasis>)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;stanze.getObject(9).setOpen(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__game_description_8java_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05">setKeyUsed</link>(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__game_description_8java_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;});
+<anchor xml:id="__game_description_8java_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00090"/>00090 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00091"/>00091 
+<anchor xml:id="__game_description_8java_source_1l00092"/>00092 
+<anchor xml:id="__game_description_8java_source_1l00093"/>00093 
+<anchor xml:id="__game_description_8java_source_1l00094"/>00094 
+<anchor xml:id="__game_description_8java_source_1l00095"/>00095 
+<anchor xml:id="__game_description_8java_source_1l00096"/>00096 
+<anchor xml:id="__game_description_8java_source_1l00097"/>00097 
+<anchor xml:id="__game_description_8java_source_1l00102"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1aac13b7db39539b6f2449e754561b9871">00102</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;List&lt;Command&gt;&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1aac13b7db39539b6f2449e754561b9871">getCommands</link>()&#32;{
+<anchor xml:id="__game_description_8java_source_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;commands;
+<anchor xml:id="__game_description_8java_source_1l00104"/>00104 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00105"/>00105 
+<anchor xml:id="__game_description_8java_source_1l00110"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514">00110</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514">getCurrentRoom</link>()&#32;{
+<anchor xml:id="__game_description_8java_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;currentRoom;
+<anchor xml:id="__game_description_8java_source_1l00112"/>00112 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00113"/>00113 
+<anchor xml:id="__game_description_8java_source_1l00118"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac7ab01cd9fd9d243243f4cc0b1a13a1f">00118</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac7ab01cd9fd9d243243f4cc0b1a13a1f">isKeyUsed</link>()&#32;{
+<anchor xml:id="__game_description_8java_source_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;keyUsed;
+<anchor xml:id="__game_description_8java_source_1l00120"/>00120 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00121"/>00121 
+<anchor xml:id="__game_description_8java_source_1l00126"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05">00126</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05">setKeyUsed</link>(<emphasis role="keywordtype">boolean</emphasis>&#32;keyUsed)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00127"/>00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.keyUsed&#32;=&#32;keyUsed;
+<anchor xml:id="__game_description_8java_source_1l00128"/>00128 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00129"/>00129 
+<anchor xml:id="__game_description_8java_source_1l00134"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1adc3220b5f1adbcd7115d0a2f230f054d">00134</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1adc3220b5f1adbcd7115d0a2f230f054d">setCurrentRoom</link>(<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link>&#32;currentRoom)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.currentRoom&#32;=&#32;currentRoom;
+<anchor xml:id="__game_description_8java_source_1l00136"/>00136 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00137"/>00137 
+<anchor xml:id="__game_description_8java_source_1l00142"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1">00142</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;List&lt;AdvObject&gt;&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1">getInventory</link>()&#32;{
+<anchor xml:id="__game_description_8java_source_1l00143"/>00143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;inventory;
+<anchor xml:id="__game_description_8java_source_1l00144"/>00144 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00145"/>00145 
+<anchor xml:id="__game_description_8java_source_1l00150"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ace481a2be2f2f56ee9cbaf26c8692516">00150</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">abstract</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ace481a2be2f2f56ee9cbaf26c8692516">init</link>()&#32;throws&#32;Exception;
+<anchor xml:id="__game_description_8java_source_1l00151"/>00151 
+<anchor xml:id="__game_description_8java_source_1l00158"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae0bcdd2f802d72bb4de83f7b4e80ef84">00158</link> &#32;&#32;&#32;&#32;public&#32;abstract&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae0bcdd2f802d72bb4de83f7b4e80ef84">nextMove</link>(<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output">ParserOutput</link>&#32;p,&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window">Window</link>&#32;window);
+<anchor xml:id="__game_description_8java_source_1l00159"/>00159 
+<anchor xml:id="__game_description_8java_source_1l00164"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a1019a567cc65258ba7231be04b6f6c44">00164</link> &#32;&#32;&#32;&#32;public&#32;abstract&#32;String&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a1019a567cc65258ba7231be04b6f6c44">getWelcomeMsg</link>();
+<anchor xml:id="__game_description_8java_source_1l00165"/>00165 
+<anchor xml:id="__game_description_8java_source_1l00170"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8866a8bbe3fea390a0e4f89741b80f77">00170</link> &#32;&#32;&#32;&#32;public&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8866a8bbe3fea390a0e4f89741b80f77">addObject</link>(<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link>&#32;obj)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00171"/>00171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;allObjects.add(obj);
+<anchor xml:id="__game_description_8java_source_1l00172"/>00172 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00173"/>00173 
+<anchor xml:id="__game_description_8java_source_1l00179"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac2c90759e68c6f9f17265f2d2d0ab3cb">00179</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;Optional&lt;AdvObject&gt;&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac2c90759e68c6f9f17265f2d2d0ab3cb">getObjectById</link>(<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keywordtype">id</emphasis>)&#32;{
+<anchor xml:id="__game_description_8java_source_1l00180"/>00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;allObjects.stream()
+<anchor xml:id="__game_description_8java_source_1l00181"/>00181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;.filter(o&#32;-&gt;&#32;o.getId()&#32;==&#32;<emphasis role="keywordtype">id</emphasis>)
+<anchor xml:id="__game_description_8java_source_1l00182"/>00182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;.findFirst();
+<anchor xml:id="__game_description_8java_source_1l00183"/>00183 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_description_8java_source_1l00184"/>00184 }
+</programlisting></section>

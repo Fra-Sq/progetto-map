@@ -1,0 +1,97 @@
+\doxysection{di.\+uniba.\+map.\+b.\+adventure.\+Utils Class Reference}
+\hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils}{}\label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils}\index{di.uniba.map.b.adventure.Utils@{di.uniba.map.b.adventure.Utils}}
+
+
+Collaboration diagram for di.\+uniba.\+map.\+b.\+adventure.\+Utils\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Set$<$ String $>$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_ac62e8ebb99f39d3af6c6cf06f534ed5f}{load\+File\+List\+In\+Set}} (File file)  throws IOException 
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_a7e85679dc02c8c772afe2604c5a98c20}{parse\+String}} (String string, Set$<$ String $>$ stopwords)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class providing static methods for common operations such as loading a list of strings from a file into a set and parsing strings into a list of tokens. 
+
+Definition at line \mbox{\hyperlink{_utils_8java_source_l00019}{19}} of file \mbox{\hyperlink{_utils_8java_source}{Utils.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_ac62e8ebb99f39d3af6c6cf06f534ed5f}\index{di.uniba.map.b.adventure.Utils@{di.uniba.map.b.adventure.Utils}!loadFileListInSet@{loadFileListInSet}}
+\index{loadFileListInSet@{loadFileListInSet}!di.uniba.map.b.adventure.Utils@{di.uniba.map.b.adventure.Utils}}
+\doxysubsubsection{\texorpdfstring{loadFileListInSet()}{loadFileListInSet()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_ac62e8ebb99f39d3af6c6cf06f534ed5f} 
+static Set$<$ String $>$ di.\+uniba.\+map.\+b.\+adventure.\+Utils.\+load\+File\+List\+In\+Set (\begin{DoxyParamCaption}\item[{File}]{file}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads each line from a specified file into a {\ttfamily \doxylink{}{Set}} of strings. This method is useful for loading data where each line represents a unique entry, such as a list of stopwords.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\ttfamily \doxylink{}{Set}} containing all lines from the file, trimmed and converted to lowercase. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If an I/O error occurs reading from the file. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_utils_8java_source_l00028}{28}} of file \mbox{\hyperlink{_utils_8java_source}{Utils.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_ac62e8ebb99f39d3af6c6cf06f534ed5f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_a7e85679dc02c8c772afe2604c5a98c20}\index{di.uniba.map.b.adventure.Utils@{di.uniba.map.b.adventure.Utils}!parseString@{parseString}}
+\index{parseString@{parseString}!di.uniba.map.b.adventure.Utils@{di.uniba.map.b.adventure.Utils}}
+\doxysubsubsection{\texorpdfstring{parseString()}{parseString()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_a7e85679dc02c8c772afe2604c5a98c20} 
+static List$<$ String $>$ di.\+uniba.\+map.\+b.\+adventure.\+Utils.\+parse\+String (\begin{DoxyParamCaption}\item[{String}]{string}{, }\item[{Set$<$ String $>$}]{stopwords}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses a given string into a list of tokens (words), excluding any tokens that are contained in a provided set of stopwords. This method is useful for text processing tasks such as tokenization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The string to parse. \\
+\hline
+{\em stopwords} & A {\ttfamily \doxylink{}{Set}} of stopwords to exclude from the resulting list of tokens. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\ttfamily \doxylink{}{List}} of tokens derived from the input string, excluding any stopwords. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_utils_8java_source_l00045}{45}} of file \mbox{\hyperlink{_utils_8java_source}{Utils.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_a7e85679dc02c8c772afe2604c5a98c20_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+adventure/src/main/java/di/uniba/map/b/adventure/Utils.\+java\end{DoxyCompactItemize}

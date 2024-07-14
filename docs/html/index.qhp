@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+<namespace>org.doxygen.Project</namespace>
+<virtualFolder>doc</virtualFolder>
+<filterSection>
+<filterAttribute>doxygen</filterAttribute>
+<toc>
+<section title="My Project" ref="index.html">
+<section title="Classes" ref="annotated.html">
+<section title="Class List" ref="annotated.html">
+<section title="di" ref="doxygen_blank.html">
+<section title="uniba" ref="doxygen_blank.html">
+<section title="map" ref="doxygen_blank.html">
+<section title="b" ref="doxygen_blank.html">
+<section title="adventure" ref="doxygen_blank.html">
+<section title="impl" ref="doxygen_blank.html">
+<section title="AePlayWave" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html">
+</section>
+<section title="Database" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html">
+<section title="Database" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#ab8f61a7b1ba1fc40053f9b3535c7d354"/>
+<section title="close" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a714e5312efe9bd729f1e9b70a0995c11"/>
+<section title="getDescriptionById" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#abba764263d9d62ab0c3785f2a4146803"/>
+<section title="getNameById" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a379089667952dc981cb9ab4b8a6952f8"/>
+<section title="getRoomLookById" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#af3d19c59a0b5cfe6a92f0c47529396aa"/>
+<section title="insertNewData" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#adb497352ce996d96b4bae8c09d79ba9b"/>
+<section title="updateDescriptionById" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9da44c7659651cab0c086cdc1163e6ef"/>
+<section title="updateNameById" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9ed1bc2b29d6412b294c2c80af5b4234"/>
+<section title="updateRoomLookById" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a933fe7549e0d415271874fa7bde8aa9e"/>
+</section>
+<section title="InventoryObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html">
+<section title="update" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html#a207e3d5f908ea6e751e10534d159f1f1"/>
+</section>
+<section title="KillObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html">
+<section title="update" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html#a6f74bf9bc7ff679eccfe9c50177f2003"/>
+</section>
+<section title="LookAtObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html">
+<section title="update" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html#a28cdef8cf07906c6886c516e6763913f"/>
+</section>
+<section title="MoveObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html">
+<section title="update" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html#ae51630cc6a0529974a3d64869d4b1013"/>
+</section>
+<section title="OpenObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html">
+<section title="openObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#a60a902699e64320759b6871ed86f6ade"/>
+<section title="update" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#af5f5d96d94324ba5e0e9070ede8e789a"/>
+</section>
+<section title="PickUpObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html">
+<section title="update" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html#a859e7f0b50a281e571a85ef872ee1374"/>
+</section>
+<section title="PlayerData" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html">
+<section title="PlayerData" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a97ae769aeafd2a9b4666e7dfc9e9cca4"/>
+<section title="getDate" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#ae5bc41ce832360883ad9ef38effc2970"/>
+<section title="getName" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a160f236df4b269dd01b55bcaf82da4bc"/>
+<section title="getTime" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#ada1a07121459f98bcdfdf3ff8422ef8c"/>
+<section title="setDate" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a59fabb365de8a67573c6945310cb6022"/>
+<section title="setName" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a12dbb78b538a084659b894abcdef2066"/>
+<section title="setTime" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a9e4b8a765072938167fc11f56c65f8fa"/>
+<section title="toString" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a1f70fb2e58319aea81e8df263a92c377"/>
+</section>
+<section title="PushObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html">
+<section title="update" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ac3e97a89860c377b76277749109befa4"/>
+<section title="verify" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ada881c7baabc1190437c7af00a6a3421"/>
+</section>
+<section title="ReadObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html">
+<section title="update" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html#a3c550a2289d5b47a7411bf138078e19b"/>
+</section>
+<section title="RESTClient" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html">
+<section title="RESTClient" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a6ae57a1ffa8980c2f10b52d33aa652a4"/>
+<section title="addPlayer" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a55f0303bae1c4283a839b58d051a7c7d"/>
+<section title="getLeaderboard" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a56214565b72918918d359c5c1e30ea2a"/>
+</section>
+<section title="SaveGame" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html">
+<section title="gameExists" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a6615a57fbc0112ac161b5557852354c6"/>
+<section title="load" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a5e7b7efbc8049d4a9ea4c22a188265cd"/>
+<section title="save" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a9a143f46c1029a94f48a4d6a3bacbd32"/>
+</section>
+<section title="SpaceEscape" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html">
+<section title="attach" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a5f50efac1fea5096ba76665f01d728a6"/>
+<section title="detach" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aafaa92ab8492f68d5d20f8194425b425"/>
+<section title="getWelcomeMsg" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a6be501aa2b5a1c70fd9c38ba10e894d5"/>
+<section title="init" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a7a02f030860fe5216c2f347fbc983dbe"/>
+<section title="nextMove" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee"/>
+<section title="notifyObservers" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aff4f17f6db842fdbb46c01198abeb670"/>
+</section>
+<section title="UseObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html">
+<section title="update" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html#a4e2335cd4239f4fac2f69d3591585a28"/>
+</section>
+<section title="Window" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html">
+<section title="Window" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a3e9d3603a5d8b7fc174a91b7912f3045"/>
+<section title="getInsertText" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a10756cfd003a108ab2025ca5ee45a86d"/>
+<section title="showLeaderBoard" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#ac4aa46b98d4df7232d639b7cfe1a85e7"/>
+<section title="showMessage" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a80196f752c0b9526fd64a57d484a57b7"/>
+<section title="showRoomDescription" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a7d48bd7d07aa3d24b4bd41f487db360c"/>
+<section title="showRoomName" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#aa45f0143ed093c6ce28415bcff983ca7"/>
+<section title="showStartDescription" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a24105046a31874be367da6483142aa16"/>
+</section>
+</section>
+<section title="parser" ref="doxygen_blank.html">
+<section title="Parser" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html">
+<section title="Parser" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#a0e24595f9263ddcd796c3d46176fb01b"/>
+<section title="checkForCommand" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#adadde018ee4a00c9bbf9894a83a172d9"/>
+<section title="parse" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#a1671cce0ea9375ac45ff8b15beff3291"/>
+</section>
+<section title="ParserOutput" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html">
+<section title="ParserOutput" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#aadce6083d0c0dade8d0604543add28f1"/>
+<section title="ParserOutput" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a9ec1aac4862a937a26579511deeb25e4"/>
+<section title="getCommand" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a94f39efa449452a2cde5aabf835cb261"/>
+<section title="getInvObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a19d36754b0020953c69ae2e8149d5f4c"/>
+<section title="getObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a717066c607a85979b776a12a32b9059f"/>
+<section title="setCommand" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#ad42b865bf724d5949bd0725325113bdb"/>
+<section title="setInvObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a8519c7725df385366d7a7d2474509893"/>
+<section title="setObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#aaa492c0b903a325f86139b32a6de56bc"/>
+</section>
+</section>
+<section title="type" ref="doxygen_blank.html">
+<section title="AdvObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html">
+<section title="AdvObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a20838e7d265a7b330bec6c8156230075"/>
+<section title="AdvObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aa1c2c21ca83266bf6a50ae158a94104f"/>
+<section title="AdvObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ad9cf122c01897c5a5c7c51292ad747fa"/>
+<section title="AdvObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a856690bee70fb6c47bdb8710241df77e"/>
+<section title="equals" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a1278661f5736763873ab3407d7464486"/>
+<section title="getAlias" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a5aba1d8f4fc217957dc87c0a015083db"/>
+<section title="getContents" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a079d6994871e7ed4fb8dc4844c2e2da8"/>
+<section title="getDescription" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ab3c2f2b70e45f651431ebcd1e631ae14"/>
+<section title="getId" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a574de9727e7d8957bd265a06e1611052"/>
+<section title="getName" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a094731968d56cadb1274bfcf31c474fa"/>
+<section title="hashCode" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ac8d0e063e0971fd775eccc45373553dd"/>
+<section title="isCreature" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ae6347f2c165add59f417f46b48fe1fbb"/>
+<section title="isLiving" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aacb51db33d66a1ed86da7c547102239e"/>
+<section title="isOpen" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a31027928ec81ef8e1ad0f140135e8315"/>
+<section title="isOpenable" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a443b6651c97cb2edfbb38d9363d95b98"/>
+<section title="isPickupable" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a70ec19949e8e3637ca915920cf3ba2c4"/>
+<section title="isPush" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aef3cc255646b9115b68d5da313b3749c"/>
+<section title="isPushable" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a0498094520bcd048b59d9cf6f3b1ad9b"/>
+<section title="isReadable" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a8f17062d6613e6a829bfe6c5ddda52c3"/>
+<section title="setAlias" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aac77d8af8bc19180b52cd1a3fc103ac4"/>
+<section title="setAlias" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a631a338a0ae33c89c5a9c06473ae7588"/>
+<section title="setContents" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a77b9388c3f94e334e6bec615c87d21fd"/>
+<section title="setCreature" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a8405505a0e5da051ac72e6f81a7b9a46"/>
+<section title="setDescription" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a9aad9fee5eea5e2623a8d24ebf07d4f6"/>
+<section title="setLiving" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#af5b165b7cdca0f00ff832dad38949ba6"/>
+<section title="setName" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a89b408c2cae991b09d4cca16f1c1dde7"/>
+<section title="setOpen" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#abfd22cc782ae3395c0af61b747b8797b"/>
+<section title="setOpenable" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a58b77d327d599e34e91479637ebf7ee6"/>
+<section title="setPickupable" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#abeb7c9ea6b9bfb1890ed139798494619"/>
+<section title="setPush" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a261b682698bd7d3369a372c243daf380"/>
+<section title="setPushable" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aadb1cedc859c20a8f2e1b0cc21332bbf"/>
+<section title="setReadable" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#af6dde388988aed97e0298aaaaaebec11"/>
+</section>
+<section title="AdvObjectContainer" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html">
+<section title="AdvObjectContainer" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#acd9a4a104932848d497c0888215e7524"/>
+<section title="AdvObjectContainer" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a99b0c89fb5557026682796b07e085666"/>
+<section title="AdvObjectContainer" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#aeba5a015d14408dc66438806e2d1a89f"/>
+<section title="AdvObjectContainer" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#acc5ca0df4cd01d54369f392e17a7abab"/>
+<section title="add" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a0158d14466fde23c17c6e3d9056df716"/>
+<section title="getList" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#ad061304f7c82b21306c09666ceaa50a3"/>
+<section title="isOpen" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#afab93d2768dc15ef28b8fdcfd6eab9ba"/>
+<section title="remove" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a7dbd9be2cfed60da4da3f17f95a667f8"/>
+<section title="setList" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a9f75dd8709217523d56ca479d3ba3539"/>
+<section title="setOpen" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a684f5cb2780a824c01fc298360a8b820"/>
+</section>
+<section title="Command" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html">
+<section title="Command" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#ad13496a4b773e3abb3e491c0f1d0ee16"/>
+<section title="Command" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a7e7257f1c2555fcfd6873ebe05c516a7"/>
+<section title="equals" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a394849e9b6380da535c097b902cc6e1a"/>
+<section title="getAlias" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a88c458e30ca1787481c02362e6283b57"/>
+<section title="getName" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a2212e5826aa6cb1e661d3be2bc634fab"/>
+<section title="getType" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#aec1582f0d37d094451b1ff3db9c36679"/>
+<section title="hashCode" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#afac06e619dd7d96837850394bf758d24"/>
+<section title="setAlias" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a18478c4fe0dcbcb6b6579dff9ce24f68"/>
+<section title="setAlias" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#add7bc83e556054882d1a5804a309486d"/>
+</section>
+<section title="CommandType" ref="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type.html">
+</section>
+<section title="Inventory" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html">
+<section title="add" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a86bd329bd6fb344f12b2047fa3122dd5"/>
+<section title="getList" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a35a41397bf6092212327c88802a5b5db"/>
+<section title="remove" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#ad4ddbcd49137df052bbacd2959c8ad05"/>
+<section title="setList" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a6611eaee3eea9f31e795724ad5579f2f"/>
+</section>
+<section title="Room" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html">
+<section title="Room" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#abacf16b0d0e836274a9d38461a95a346"/>
+<section title="Room" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#a78a1480376484a874aea85338c3e1929"/>
+<section title="addObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#aa674792199afea2b3f339b8bd790bebf"/>
+<section title="getDynamicLook" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#a8f844d2b047d7717ec27479f77950a40"/>
+</section>
+</section>
+<section title="Engine" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html">
+<section title="Engine" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0aac5add5a958af0c635be1d49581f3a"/>
+<section title="execute" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a16eb715b8df13421f41cf1995106b4cc"/>
+<section title="main" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0e23d03537aa3d882ae3e62418a209f9"/>
+</section>
+<section title="GameDescription" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html">
+<section title="addObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a8866a8bbe3fea390a0e4f89741b80f77"/>
+<section title="getCommands" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#aac13b7db39539b6f2449e754561b9871"/>
+<section title="getCurrentRoom" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a63b6f071dc00caa521638067b84ce514"/>
+<section title="getInventory" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a3442fbe52e16d3e0993f0d3d3dcc56a1"/>
+<section title="getObjectById" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ac2c90759e68c6f9f17265f2d2d0ab3cb"/>
+<section title="getRooms" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ae6d265375fc241fb5346dc1521d35497"/>
+<section title="getWelcomeMsg" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a1019a567cc65258ba7231be04b6f6c44"/>
+<section title="init" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ace481a2be2f2f56ee9cbaf26c8692516"/>
+<section title="isKeyUsed" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ac7ab01cd9fd9d243243f4cc0b1a13a1f"/>
+<section title="nextMove" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ae0bcdd2f802d72bb4de83f7b4e80ef84"/>
+<section title="setCurrentRoom" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#adc3220b5f1adbcd7115d0a2f230f054d"/>
+<section title="setCurrentRoomById" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a184c5cecd35b4e50cda8b1a77ff6dbfe"/>
+<section title="setGame" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a9a7e02f4831b6c8600f62b7296cf6f12"/>
+<section title="setKeyUsed" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a27453ac5288756a63348ca699ec8af05"/>
+</section>
+<section title="GameObservable" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html">
+<section title="attach" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#a7c5c0719519fe02e6ef8ad1a03a7e743"/>
+<section title="detach" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#ae310adf10210d4108e8ccb55d80910b4"/>
+<section title="notifyObservers" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#aee803193d726892552f3c24ea5dd8d80"/>
+</section>
+<section title="GameObserver" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html">
+<section title="update" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html#a580cffeadfcbea825b482519e4deadb6"/>
+</section>
+<section title="GameUtils" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html">
+<section title="getObjectFromInventory" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html#abc449f8cf790ce32ce610be40a80e0fd"/>
+</section>
+<section title="Utils" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html">
+<section title="loadFileListInSet" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#ac62e8ebb99f39d3af6c6cf06f534ed5f"/>
+<section title="parseString" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#a7e85679dc02c8c772afe2604c5a98c20"/>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section title="Class Index" ref="classes.html"/>
+<section title="Class Hierarchy" ref="hierarchy.html">
+<section title="di.uniba.map.b.adventure.type.AdvObject" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html">
+<section title="di.uniba.map.b.adventure.type.AdvObjectContainer" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"/>
+</section>
+<section title="di.uniba.map.b.adventure.impl.AePlayWave" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html"/>
+<section title="di.uniba.map.b.adventure.type.Command" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"/>
+<section title="di.uniba.map.b.adventure.type.CommandType" ref="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type.html"/>
+<section title="di.uniba.map.b.adventure.impl.Database" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"/>
+<section title="di.uniba.map.b.adventure.Engine" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html"/>
+<section title="di.uniba.map.b.adventure.GameDescription" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html">
+<section title="di.uniba.map.b.adventure.impl.SpaceEscape" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"/>
+</section>
+<section title="di.uniba.map.b.adventure.GameObservable" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html">
+<section title="di.uniba.map.b.adventure.impl.SpaceEscape" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"/>
+</section>
+<section title="di.uniba.map.b.adventure.GameObserver" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html">
+<section title="di.uniba.map.b.adventure.impl.InventoryObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html"/>
+<section title="di.uniba.map.b.adventure.impl.KillObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html"/>
+<section title="di.uniba.map.b.adventure.impl.LookAtObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html"/>
+<section title="di.uniba.map.b.adventure.impl.MoveObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html"/>
+<section title="di.uniba.map.b.adventure.impl.OpenObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html"/>
+<section title="di.uniba.map.b.adventure.impl.PickUpObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html"/>
+<section title="di.uniba.map.b.adventure.impl.PushObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html"/>
+<section title="di.uniba.map.b.adventure.impl.ReadObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html"/>
+<section title="di.uniba.map.b.adventure.impl.UseObserver" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html"/>
+</section>
+<section title="di.uniba.map.b.adventure.GameUtils" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html"/>
+<section title="di.uniba.map.b.adventure.type.Inventory" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html"/>
+<section title="di.uniba.map.b.adventure.parser.Parser" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html"/>
+<section title="di.uniba.map.b.adventure.parser.ParserOutput" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"/>
+<section title="di.uniba.map.b.adventure.impl.PlayerData" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"/>
+<section title="di.uniba.map.b.adventure.impl.RESTClient" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html"/>
+<section title="di.uniba.map.b.adventure.type.Room" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html"/>
+<section title="di.uniba.map.b.adventure.impl.SaveGame" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html"/>
+<section title="di.uniba.map.b.adventure.Utils" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html"/>
+<section title="di.uniba.map.b.adventure.impl.Window" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"/>
+</section>
+<section title="Class Members" ref="functions.html">
+<section title="All" ref="functions.html"/>
+<section title="Functions" ref="functions_func.html"/>
+</section>
+</section>
+<section title="Files" ref="files.html">
+<section title="File List" ref="files.html">
+<section title="adventure" ref="dir_de3212e4b297ef0279f9067d9062d987.html">
+<section title="src" ref="dir_8d538571e6144d01ec27c9a0f55aecb9.html">
+<section title="main" ref="dir_4daf57147b74d32dfcd0f1c8ce44e4a3.html">
+<section title="java" ref="dir_ede4cd8b2e213a70518a547c208f6f37.html">
+<section title="di" ref="dir_d1c28538a5b70138318b5de9cb2d20ee.html">
+<section title="uniba" ref="dir_a56be5738e3c0ada1c0ab50610cb6f05.html">
+<section title="map" ref="dir_a950c4bbd0d6200042c2cc65e8766a5f.html">
+<section title="b" ref="dir_2c6de2d4684bae29e172351164871999.html">
+<section title="adventure" ref="dir_36d6029a23660d2baf672c648090ee14.html">
+<section title="impl" ref="dir_e5b91f08b6a4e3e680ea2723cb7a0c79.html">
+<section title="AePlayWave.java" ref="_ae_play_wave_8java_source.html"/>
+<section title="Database.java" ref="_database_8java_source.html"/>
+<section title="InventoryObserver.java" ref="_inventory_observer_8java_source.html"/>
+<section title="KillObserver.java" ref="_kill_observer_8java_source.html"/>
+<section title="LookAtObserver.java" ref="_look_at_observer_8java_source.html"/>
+<section title="MoveObserver.java" ref="_move_observer_8java_source.html"/>
+<section title="OpenObserver.java" ref="_open_observer_8java_source.html"/>
+<section title="PickUpObserver.java" ref="_pick_up_observer_8java_source.html"/>
+<section title="PlayerData.java" ref="_player_data_8java_source.html"/>
+<section title="PushObserver.java" ref="_push_observer_8java_source.html"/>
+<section title="ReadObserver.java" ref="_read_observer_8java_source.html"/>
+<section title="RESTClient.java" ref="_r_e_s_t_client_8java_source.html"/>
+<section title="SaveGame.java" ref="_save_game_8java_source.html"/>
+<section title="SpaceEscape.java" ref="_space_escape_8java_source.html"/>
+<section title="UseObserver.java" ref="_use_observer_8java_source.html"/>
+<section title="Window.java" ref="_window_8java_source.html"/>
+</section>
+<section title="parser" ref="dir_09c200f4e10cfb1bf516e23bd4648736.html">
+<section title="Parser.java" ref="_parser_8java_source.html"/>
+<section title="ParserOutput.java" ref="_parser_output_8java_source.html"/>
+</section>
+<section title="type" ref="dir_9cef88f3061897f698776950a565cbef.html">
+<section title="AdvObject.java" ref="_adv_object_8java_source.html"/>
+<section title="AdvObjectContainer.java" ref="_adv_object_container_8java_source.html"/>
+<section title="Command.java" ref="_command_8java_source.html"/>
+<section title="CommandType.java" ref="_command_type_8java_source.html"/>
+<section title="Inventory.java" ref="_inventory_8java_source.html"/>
+<section title="Room.java" ref="_room_8java_source.html"/>
+</section>
+<section title="Engine.java" ref="_engine_8java_source.html"/>
+<section title="GameDescription.java" ref="_game_description_8java_source.html"/>
+<section title="GameObservable.java" ref="_game_observable_8java_source.html"/>
+<section title="GameObserver.java" ref="_game_observer_8java_source.html"/>
+<section title="GameUtils.java" ref="_game_utils_8java_source.html"/>
+<section title="Utils.java" ref="_utils_8java_source.html"/>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+</toc>
+<keywords>
+<keyword name="di::uniba::map::b::adventure::type::AdvObject" id="di::uniba::map::b::adventure::type::AdvObject_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"/>
+<keyword name="di::uniba::map::b::adventure::type::AdvObjectContainer" id="di::uniba::map::b::adventure::type::AdvObjectContainer_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::AePlayWave" id="di::uniba::map::b::adventure::impl::AePlayWave_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html"/>
+<keyword name="di::uniba::map::b::adventure::type::Command" id="di::uniba::map::b::adventure::type::Command_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"/>
+<keyword name="di::uniba::map::b::adventure::type::CommandType" id="di::uniba::map::b::adventure::type::CommandType_" ref="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::Database" id="di::uniba::map::b::adventure::impl::Database_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"/>
+<keyword name="di::uniba::map::b::adventure::Engine" id="di::uniba::map::b::adventure::Engine_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html"/>
+<keyword name="di::uniba::map::b::adventure::GameDescription" id="di::uniba::map::b::adventure::GameDescription_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"/>
+<keyword name="di::uniba::map::b::adventure::GameObservable" id="di::uniba::map::b::adventure::GameObservable_" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html"/>
+<keyword name="di::uniba::map::b::adventure::GameObserver" id="di::uniba::map::b::adventure::GameObserver_" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::GameUtils" id="di::uniba::map::b::adventure::GameUtils_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html"/>
+<keyword name="di::uniba::map::b::adventure::type::Inventory" id="di::uniba::map::b::adventure::type::Inventory_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::InventoryObserver" id="di::uniba::map::b::adventure::impl::InventoryObserver_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::KillObserver" id="di::uniba::map::b::adventure::impl::KillObserver_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::LookAtObserver" id="di::uniba::map::b::adventure::impl::LookAtObserver_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::MoveObserver" id="di::uniba::map::b::adventure::impl::MoveObserver_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::OpenObserver" id="di::uniba::map::b::adventure::impl::OpenObserver_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::parser::Parser" id="di::uniba::map::b::adventure::parser::Parser_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html"/>
+<keyword name="di::uniba::map::b::adventure::parser::ParserOutput" id="di::uniba::map::b::adventure::parser::ParserOutput_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::PickUpObserver" id="di::uniba::map::b::adventure::impl::PickUpObserver_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::PlayerData" id="di::uniba::map::b::adventure::impl::PlayerData_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::PushObserver" id="di::uniba::map::b::adventure::impl::PushObserver_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::ReadObserver" id="di::uniba::map::b::adventure::impl::ReadObserver_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::RESTClient" id="di::uniba::map::b::adventure::impl::RESTClient_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html"/>
+<keyword name="di::uniba::map::b::adventure::type::Room" id="di::uniba::map::b::adventure::type::Room_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::SaveGame" id="di::uniba::map::b::adventure::impl::SaveGame_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::SpaceEscape" id="di::uniba::map::b::adventure::impl::SpaceEscape_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::UseObserver" id="di::uniba::map::b::adventure::impl::UseObserver_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html"/>
+<keyword name="di::uniba::map::b::adventure::Utils" id="di::uniba::map::b::adventure::Utils_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html"/>
+<keyword name="di::uniba::map::b::adventure::impl::Window" id="di::uniba::map::b::adventure::impl::Window_" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"/>
+<keyword name="add(AdvObject o)" id="di::uniba::map::b::adventure::type::AdvObjectContainer::add_a0158d14466fde23c17c6e3d9056df716" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a0158d14466fde23c17c6e3d9056df716"/>
+<keyword name="add(AdvObject o)" id="di::uniba::map::b::adventure::type::Inventory::add_a86bd329bd6fb344f12b2047fa3122dd5" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a86bd329bd6fb344f12b2047fa3122dd5"/>
+<keyword name="addObject(AdvObject obj)" id="di::uniba::map::b::adventure::GameDescription::addObject_a8866a8bbe3fea390a0e4f89741b80f77" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a8866a8bbe3fea390a0e4f89741b80f77"/>
+<keyword name="addObject(AdvObject obj)" id="di::uniba::map::b::adventure::type::Room::addObject_aa674792199afea2b3f339b8bd790bebf" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#aa674792199afea2b3f339b8bd790bebf"/>
+<keyword name="addPlayer(PlayerData player)" id="di::uniba::map::b::adventure::impl::RESTClient::addPlayer_a55f0303bae1c4283a839b58d051a7c7d" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a55f0303bae1c4283a839b58d051a7c7d"/>
+<keyword name="AdvObject(int id)" id="di::uniba::map::b::adventure::type::AdvObject::AdvObject_a20838e7d265a7b330bec6c8156230075" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a20838e7d265a7b330bec6c8156230075"/>
+<keyword name="AdvObject(int id, String name)" id="di::uniba::map::b::adventure::type::AdvObject::AdvObject_aa1c2c21ca83266bf6a50ae158a94104f" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aa1c2c21ca83266bf6a50ae158a94104f"/>
+<keyword name="AdvObject(int id, String name, String description)" id="di::uniba::map::b::adventure::type::AdvObject::AdvObject_ad9cf122c01897c5a5c7c51292ad747fa" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ad9cf122c01897c5a5c7c51292ad747fa"/>
+<keyword name="AdvObject(int id, String name, String description, Set&lt; String &gt; alias)" id="di::uniba::map::b::adventure::type::AdvObject::AdvObject_a856690bee70fb6c47bdb8710241df77e" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a856690bee70fb6c47bdb8710241df77e"/>
+<keyword name="AdvObjectContainer(int id)" id="di::uniba::map::b::adventure::type::AdvObjectContainer::AdvObjectContainer_acd9a4a104932848d497c0888215e7524" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#acd9a4a104932848d497c0888215e7524"/>
+<keyword name="AdvObjectContainer(int id, String name)" id="di::uniba::map::b::adventure::type::AdvObjectContainer::AdvObjectContainer_a99b0c89fb5557026682796b07e085666" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a99b0c89fb5557026682796b07e085666"/>
+<keyword name="AdvObjectContainer(int id, String name, String description)" id="di::uniba::map::b::adventure::type::AdvObjectContainer::AdvObjectContainer_aeba5a015d14408dc66438806e2d1a89f" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#aeba5a015d14408dc66438806e2d1a89f"/>
+<keyword name="AdvObjectContainer(int id, String name, String description, Set&lt; String &gt; alias)" id="di::uniba::map::b::adventure::type::AdvObjectContainer::AdvObjectContainer_acc5ca0df4cd01d54369f392e17a7abab" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#acc5ca0df4cd01d54369f392e17a7abab"/>
+<keyword name="attach(GameObserver o)" id="di::uniba::map::b::adventure::GameObservable::attach_a7c5c0719519fe02e6ef8ad1a03a7e743" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#a7c5c0719519fe02e6ef8ad1a03a7e743"/>
+<keyword name="attach(GameObserver o)" id="di::uniba::map::b::adventure::impl::SpaceEscape::attach_a5f50efac1fea5096ba76665f01d728a6" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a5f50efac1fea5096ba76665f01d728a6"/>
+<keyword name="checkForCommand(String token, List&lt; Command &gt; commands)" id="di::uniba::map::b::adventure::parser::Parser::checkForCommand_adadde018ee4a00c9bbf9894a83a172d9" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#adadde018ee4a00c9bbf9894a83a172d9"/>
+<keyword name="close()" id="di::uniba::map::b::adventure::impl::Database::close_a714e5312efe9bd729f1e9b70a0995c11" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a714e5312efe9bd729f1e9b70a0995c11"/>
+<keyword name="Command(CommandType type, String name)" id="di::uniba::map::b::adventure::type::Command::Command_ad13496a4b773e3abb3e491c0f1d0ee16" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#ad13496a4b773e3abb3e491c0f1d0ee16"/>
+<keyword name="Command(CommandType type, String name, Set&lt; String &gt; alias)" id="di::uniba::map::b::adventure::type::Command::Command_a7e7257f1c2555fcfd6873ebe05c516a7" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a7e7257f1c2555fcfd6873ebe05c516a7"/>
+<keyword name="Database()" id="di::uniba::map::b::adventure::impl::Database::Database_ab8f61a7b1ba1fc40053f9b3535c7d354" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#ab8f61a7b1ba1fc40053f9b3535c7d354"/>
+<keyword name="detach(GameObserver o)" id="di::uniba::map::b::adventure::GameObservable::detach_ae310adf10210d4108e8ccb55d80910b4" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#ae310adf10210d4108e8ccb55d80910b4"/>
+<keyword name="detach(GameObserver o)" id="di::uniba::map::b::adventure::impl::SpaceEscape::detach_aafaa92ab8492f68d5d20f8194425b425" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aafaa92ab8492f68d5d20f8194425b425"/>
+<keyword name="Engine(GameDescription game)" id="di::uniba::map::b::adventure::Engine::Engine_a0aac5add5a958af0c635be1d49581f3a" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0aac5add5a958af0c635be1d49581f3a"/>
+<keyword name="equals(Object obj)" id="di::uniba::map::b::adventure::type::AdvObject::equals_a1278661f5736763873ab3407d7464486" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a1278661f5736763873ab3407d7464486"/>
+<keyword name="equals(Object obj)" id="di::uniba::map::b::adventure::type::Command::equals_a394849e9b6380da535c097b902cc6e1a" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a394849e9b6380da535c097b902cc6e1a"/>
+<keyword name="execute()" id="di::uniba::map::b::adventure::Engine::execute_a16eb715b8df13421f41cf1995106b4cc" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a16eb715b8df13421f41cf1995106b4cc"/>
+<keyword name="gameExists(String gameName)" id="di::uniba::map::b::adventure::impl::SaveGame::gameExists_a6615a57fbc0112ac161b5557852354c6" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a6615a57fbc0112ac161b5557852354c6"/>
+<keyword name="getAlias()" id="di::uniba::map::b::adventure::type::AdvObject::getAlias_a5aba1d8f4fc217957dc87c0a015083db" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a5aba1d8f4fc217957dc87c0a015083db"/>
+<keyword name="getAlias()" id="di::uniba::map::b::adventure::type::Command::getAlias_a88c458e30ca1787481c02362e6283b57" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a88c458e30ca1787481c02362e6283b57"/>
+<keyword name="getCommand()" id="di::uniba::map::b::adventure::parser::ParserOutput::getCommand_a94f39efa449452a2cde5aabf835cb261" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a94f39efa449452a2cde5aabf835cb261"/>
+<keyword name="getCommands()" id="di::uniba::map::b::adventure::GameDescription::getCommands_aac13b7db39539b6f2449e754561b9871" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#aac13b7db39539b6f2449e754561b9871"/>
+<keyword name="getContents()" id="di::uniba::map::b::adventure::type::AdvObject::getContents_a079d6994871e7ed4fb8dc4844c2e2da8" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a079d6994871e7ed4fb8dc4844c2e2da8"/>
+<keyword name="getCurrentRoom()" id="di::uniba::map::b::adventure::GameDescription::getCurrentRoom_a63b6f071dc00caa521638067b84ce514" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a63b6f071dc00caa521638067b84ce514"/>
+<keyword name="getDate()" id="di::uniba::map::b::adventure::impl::PlayerData::getDate_ae5bc41ce832360883ad9ef38effc2970" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#ae5bc41ce832360883ad9ef38effc2970"/>
+<keyword name="getDescription()" id="di::uniba::map::b::adventure::type::AdvObject::getDescription_ab3c2f2b70e45f651431ebcd1e631ae14" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ab3c2f2b70e45f651431ebcd1e631ae14"/>
+<keyword name="getDescriptionById(String id)" id="di::uniba::map::b::adventure::impl::Database::getDescriptionById_abba764263d9d62ab0c3785f2a4146803" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#abba764263d9d62ab0c3785f2a4146803"/>
+<keyword name="getDynamicLook()" id="di::uniba::map::b::adventure::type::Room::getDynamicLook_a8f844d2b047d7717ec27479f77950a40" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#a8f844d2b047d7717ec27479f77950a40"/>
+<keyword name="getId()" id="di::uniba::map::b::adventure::type::AdvObject::getId_a574de9727e7d8957bd265a06e1611052" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a574de9727e7d8957bd265a06e1611052"/>
+<keyword name="getInsertText()" id="di::uniba::map::b::adventure::impl::Window::getInsertText_a10756cfd003a108ab2025ca5ee45a86d" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a10756cfd003a108ab2025ca5ee45a86d"/>
+<keyword name="getInventory()" id="di::uniba::map::b::adventure::GameDescription::getInventory_a3442fbe52e16d3e0993f0d3d3dcc56a1" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a3442fbe52e16d3e0993f0d3d3dcc56a1"/>
+<keyword name="getInvObject()" id="di::uniba::map::b::adventure::parser::ParserOutput::getInvObject_a19d36754b0020953c69ae2e8149d5f4c" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a19d36754b0020953c69ae2e8149d5f4c"/>
+<keyword name="getLeaderboard()" id="di::uniba::map::b::adventure::impl::RESTClient::getLeaderboard_a56214565b72918918d359c5c1e30ea2a" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a56214565b72918918d359c5c1e30ea2a"/>
+<keyword name="getList()" id="di::uniba::map::b::adventure::type::AdvObjectContainer::getList_ad061304f7c82b21306c09666ceaa50a3" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#ad061304f7c82b21306c09666ceaa50a3"/>
+<keyword name="getList()" id="di::uniba::map::b::adventure::type::Inventory::getList_a35a41397bf6092212327c88802a5b5db" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a35a41397bf6092212327c88802a5b5db"/>
+<keyword name="getName()" id="di::uniba::map::b::adventure::impl::PlayerData::getName_a160f236df4b269dd01b55bcaf82da4bc" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a160f236df4b269dd01b55bcaf82da4bc"/>
+<keyword name="getName()" id="di::uniba::map::b::adventure::type::AdvObject::getName_a094731968d56cadb1274bfcf31c474fa" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a094731968d56cadb1274bfcf31c474fa"/>
+<keyword name="getName()" id="di::uniba::map::b::adventure::type::Command::getName_a2212e5826aa6cb1e661d3be2bc634fab" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a2212e5826aa6cb1e661d3be2bc634fab"/>
+<keyword name="getNameById(String id)" id="di::uniba::map::b::adventure::impl::Database::getNameById_a379089667952dc981cb9ab4b8a6952f8" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a379089667952dc981cb9ab4b8a6952f8"/>
+<keyword name="getObject()" id="di::uniba::map::b::adventure::parser::ParserOutput::getObject_a717066c607a85979b776a12a32b9059f" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a717066c607a85979b776a12a32b9059f"/>
+<keyword name="getObjectById(int id)" id="di::uniba::map::b::adventure::GameDescription::getObjectById_ac2c90759e68c6f9f17265f2d2d0ab3cb" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ac2c90759e68c6f9f17265f2d2d0ab3cb"/>
+<keyword name="getObjectFromInventory(List&lt; AdvObject &gt; inventory, int id)" id="di::uniba::map::b::adventure::GameUtils::getObjectFromInventory_abc449f8cf790ce32ce610be40a80e0fd" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html#abc449f8cf790ce32ce610be40a80e0fd"/>
+<keyword name="getRoomLookById(String id)" id="di::uniba::map::b::adventure::impl::Database::getRoomLookById_af3d19c59a0b5cfe6a92f0c47529396aa" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#af3d19c59a0b5cfe6a92f0c47529396aa"/>
+<keyword name="getRooms()" id="di::uniba::map::b::adventure::GameDescription::getRooms_ae6d265375fc241fb5346dc1521d35497" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ae6d265375fc241fb5346dc1521d35497"/>
+<keyword name="getTime()" id="di::uniba::map::b::adventure::impl::PlayerData::getTime_ada1a07121459f98bcdfdf3ff8422ef8c" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#ada1a07121459f98bcdfdf3ff8422ef8c"/>
+<keyword name="getType()" id="di::uniba::map::b::adventure::type::Command::getType_aec1582f0d37d094451b1ff3db9c36679" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#aec1582f0d37d094451b1ff3db9c36679"/>
+<keyword name="getWelcomeMsg()" id="di::uniba::map::b::adventure::GameDescription::getWelcomeMsg_a1019a567cc65258ba7231be04b6f6c44" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a1019a567cc65258ba7231be04b6f6c44"/>
+<keyword name="getWelcomeMsg()" id="di::uniba::map::b::adventure::impl::SpaceEscape::getWelcomeMsg_a6be501aa2b5a1c70fd9c38ba10e894d5" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a6be501aa2b5a1c70fd9c38ba10e894d5"/>
+<keyword name="hashCode()" id="di::uniba::map::b::adventure::type::AdvObject::hashCode_ac8d0e063e0971fd775eccc45373553dd" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ac8d0e063e0971fd775eccc45373553dd"/>
+<keyword name="hashCode()" id="di::uniba::map::b::adventure::type::Command::hashCode_afac06e619dd7d96837850394bf758d24" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#afac06e619dd7d96837850394bf758d24"/>
+<keyword name="init()" id="di::uniba::map::b::adventure::GameDescription::init_ace481a2be2f2f56ee9cbaf26c8692516" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ace481a2be2f2f56ee9cbaf26c8692516"/>
+<keyword name="init()" id="di::uniba::map::b::adventure::impl::SpaceEscape::init_a7a02f030860fe5216c2f347fbc983dbe" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a7a02f030860fe5216c2f347fbc983dbe"/>
+<keyword name="insertNewData()" id="di::uniba::map::b::adventure::impl::Database::insertNewData_adb497352ce996d96b4bae8c09d79ba9b" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#adb497352ce996d96b4bae8c09d79ba9b"/>
+<keyword name="isCreature()" id="di::uniba::map::b::adventure::type::AdvObject::isCreature_ae6347f2c165add59f417f46b48fe1fbb" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ae6347f2c165add59f417f46b48fe1fbb"/>
+<keyword name="isKeyUsed()" id="di::uniba::map::b::adventure::GameDescription::isKeyUsed_ac7ab01cd9fd9d243243f4cc0b1a13a1f" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ac7ab01cd9fd9d243243f4cc0b1a13a1f"/>
+<keyword name="isLiving()" id="di::uniba::map::b::adventure::type::AdvObject::isLiving_aacb51db33d66a1ed86da7c547102239e" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aacb51db33d66a1ed86da7c547102239e"/>
+<keyword name="isOpen()" id="di::uniba::map::b::adventure::type::AdvObject::isOpen_a31027928ec81ef8e1ad0f140135e8315" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a31027928ec81ef8e1ad0f140135e8315"/>
+<keyword name="isOpen()" id="di::uniba::map::b::adventure::type::AdvObjectContainer::isOpen_afab93d2768dc15ef28b8fdcfd6eab9ba" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#afab93d2768dc15ef28b8fdcfd6eab9ba"/>
+<keyword name="isOpenable()" id="di::uniba::map::b::adventure::type::AdvObject::isOpenable_a443b6651c97cb2edfbb38d9363d95b98" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a443b6651c97cb2edfbb38d9363d95b98"/>
+<keyword name="isPickupable()" id="di::uniba::map::b::adventure::type::AdvObject::isPickupable_a70ec19949e8e3637ca915920cf3ba2c4" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a70ec19949e8e3637ca915920cf3ba2c4"/>
+<keyword name="isPush()" id="di::uniba::map::b::adventure::type::AdvObject::isPush_aef3cc255646b9115b68d5da313b3749c" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aef3cc255646b9115b68d5da313b3749c"/>
+<keyword name="isPushable()" id="di::uniba::map::b::adventure::type::AdvObject::isPushable_a0498094520bcd048b59d9cf6f3b1ad9b" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a0498094520bcd048b59d9cf6f3b1ad9b"/>
+<keyword name="isReadable()" id="di::uniba::map::b::adventure::type::AdvObject::isReadable_a8f17062d6613e6a829bfe6c5ddda52c3" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a8f17062d6613e6a829bfe6c5ddda52c3"/>
+<keyword name="load(String gameName)" id="di::uniba::map::b::adventure::impl::SaveGame::load_a5e7b7efbc8049d4a9ea4c22a188265cd" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a5e7b7efbc8049d4a9ea4c22a188265cd"/>
+<keyword name="loadFileListInSet(File file)" id="di::uniba::map::b::adventure::Utils::loadFileListInSet_ac62e8ebb99f39d3af6c6cf06f534ed5f" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#ac62e8ebb99f39d3af6c6cf06f534ed5f"/>
+<keyword name="main(String[] args)" id="di::uniba::map::b::adventure::Engine::main_a0e23d03537aa3d882ae3e62418a209f9" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0e23d03537aa3d882ae3e62418a209f9"/>
+<keyword name="nextMove(ParserOutput p, Window window)" id="di::uniba::map::b::adventure::GameDescription::nextMove_ae0bcdd2f802d72bb4de83f7b4e80ef84" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ae0bcdd2f802d72bb4de83f7b4e80ef84"/>
+<keyword name="nextMove(ParserOutput p, Window window)" id="di::uniba::map::b::adventure::impl::SpaceEscape::nextMove_a45631b42e31c7663c2baecf4bf0c4cee" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee"/>
+<keyword name="notifyObservers(Window window)" id="di::uniba::map::b::adventure::GameObservable::notifyObservers_aee803193d726892552f3c24ea5dd8d80" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#aee803193d726892552f3c24ea5dd8d80"/>
+<keyword name="notifyObservers(Window window)" id="di::uniba::map::b::adventure::impl::SpaceEscape::notifyObservers_aff4f17f6db842fdbb46c01198abeb670" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aff4f17f6db842fdbb46c01198abeb670"/>
+<keyword name="openObject(StringBuilder msg, GameDescription description, AdvObject object)" id="di::uniba::map::b::adventure::impl::OpenObserver::openObject_a60a902699e64320759b6871ed86f6ade" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#a60a902699e64320759b6871ed86f6ade"/>
+<keyword name="parse(String command, List&lt; Command &gt; commands, List&lt; AdvObject &gt; objects, List&lt; AdvObject &gt; inventory)" id="di::uniba::map::b::adventure::parser::Parser::parse_a1671cce0ea9375ac45ff8b15beff3291" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#a1671cce0ea9375ac45ff8b15beff3291"/>
+<keyword name="Parser(Set&lt; String &gt; stopwords)" id="di::uniba::map::b::adventure::parser::Parser::Parser_a0e24595f9263ddcd796c3d46176fb01b" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#a0e24595f9263ddcd796c3d46176fb01b"/>
+<keyword name="ParserOutput(Command command, AdvObject object)" id="di::uniba::map::b::adventure::parser::ParserOutput::ParserOutput_aadce6083d0c0dade8d0604543add28f1" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#aadce6083d0c0dade8d0604543add28f1"/>
+<keyword name="ParserOutput(Command command, AdvObject object, AdvObject invObejct)" id="di::uniba::map::b::adventure::parser::ParserOutput::ParserOutput_a9ec1aac4862a937a26579511deeb25e4" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a9ec1aac4862a937a26579511deeb25e4"/>
+<keyword name="parseString(String string, Set&lt; String &gt; stopwords)" id="di::uniba::map::b::adventure::Utils::parseString_a7e85679dc02c8c772afe2604c5a98c20" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#a7e85679dc02c8c772afe2604c5a98c20"/>
+<keyword name="PlayerData(String name, String date, String time)" id="di::uniba::map::b::adventure::impl::PlayerData::PlayerData_a97ae769aeafd2a9b4666e7dfc9e9cca4" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a97ae769aeafd2a9b4666e7dfc9e9cca4"/>
+<keyword name="remove(AdvObject o)" id="di::uniba::map::b::adventure::type::AdvObjectContainer::remove_a7dbd9be2cfed60da4da3f17f95a667f8" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a7dbd9be2cfed60da4da3f17f95a667f8"/>
+<keyword name="remove(AdvObject o)" id="di::uniba::map::b::adventure::type::Inventory::remove_ad4ddbcd49137df052bbacd2959c8ad05" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#ad4ddbcd49137df052bbacd2959c8ad05"/>
+<keyword name="RESTClient()" id="di::uniba::map::b::adventure::impl::RESTClient::RESTClient_a6ae57a1ffa8980c2f10b52d33aa652a4" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a6ae57a1ffa8980c2f10b52d33aa652a4"/>
+<keyword name="Room(int id, GameDescription game)" id="di::uniba::map::b::adventure::type::Room::Room_abacf16b0d0e836274a9d38461a95a346" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#abacf16b0d0e836274a9d38461a95a346"/>
+<keyword name="Room(int id, String name, String description, GameDescription game)" id="di::uniba::map::b::adventure::type::Room::Room_a78a1480376484a874aea85338c3e1929" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#a78a1480376484a874aea85338c3e1929"/>
+<keyword name="save(Room currentRoom, List&lt; AdvObject &gt; inventory, String gameName, int elapsedSeconds, boolean monsterAlive, boolean isDoorOpen)" id="di::uniba::map::b::adventure::impl::SaveGame::save_a9a143f46c1029a94f48a4d6a3bacbd32" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a9a143f46c1029a94f48a4d6a3bacbd32"/>
+<keyword name="setAlias(Set&lt; String &gt; alias)" id="di::uniba::map::b::adventure::type::AdvObject::setAlias_aac77d8af8bc19180b52cd1a3fc103ac4" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aac77d8af8bc19180b52cd1a3fc103ac4"/>
+<keyword name="setAlias(String[] alias)" id="di::uniba::map::b::adventure::type::AdvObject::setAlias_a631a338a0ae33c89c5a9c06473ae7588" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a631a338a0ae33c89c5a9c06473ae7588"/>
+<keyword name="setAlias(Set&lt; String &gt; alias)" id="di::uniba::map::b::adventure::type::Command::setAlias_a18478c4fe0dcbcb6b6579dff9ce24f68" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a18478c4fe0dcbcb6b6579dff9ce24f68"/>
+<keyword name="setAlias(String[] alias)" id="di::uniba::map::b::adventure::type::Command::setAlias_add7bc83e556054882d1a5804a309486d" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#add7bc83e556054882d1a5804a309486d"/>
+<keyword name="setCommand(Command command)" id="di::uniba::map::b::adventure::parser::ParserOutput::setCommand_ad42b865bf724d5949bd0725325113bdb" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#ad42b865bf724d5949bd0725325113bdb"/>
+<keyword name="setContents(String contents)" id="di::uniba::map::b::adventure::type::AdvObject::setContents_a77b9388c3f94e334e6bec615c87d21fd" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a77b9388c3f94e334e6bec615c87d21fd"/>
+<keyword name="setCreature(boolean creature)" id="di::uniba::map::b::adventure::type::AdvObject::setCreature_a8405505a0e5da051ac72e6f81a7b9a46" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a8405505a0e5da051ac72e6f81a7b9a46"/>
+<keyword name="setCurrentRoom(Room currentRoom)" id="di::uniba::map::b::adventure::GameDescription::setCurrentRoom_adc3220b5f1adbcd7115d0a2f230f054d" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#adc3220b5f1adbcd7115d0a2f230f054d"/>
+<keyword name="setCurrentRoomById(int roomId)" id="di::uniba::map::b::adventure::GameDescription::setCurrentRoomById_a184c5cecd35b4e50cda8b1a77ff6dbfe" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a184c5cecd35b4e50cda8b1a77ff6dbfe"/>
+<keyword name="setDate(String date)" id="di::uniba::map::b::adventure::impl::PlayerData::setDate_a59fabb365de8a67573c6945310cb6022" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a59fabb365de8a67573c6945310cb6022"/>
+<keyword name="setDescription(String description)" id="di::uniba::map::b::adventure::type::AdvObject::setDescription_a9aad9fee5eea5e2623a8d24ebf07d4f6" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a9aad9fee5eea5e2623a8d24ebf07d4f6"/>
+<keyword name="setGame(int roomId, List&lt; Integer &gt; inventoryIds, boolean monsterAlive, boolean isDoorOpen)" id="di::uniba::map::b::adventure::GameDescription::setGame_a9a7e02f4831b6c8600f62b7296cf6f12" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a9a7e02f4831b6c8600f62b7296cf6f12"/>
+<keyword name="setInvObject(AdvObject invObject)" id="di::uniba::map::b::adventure::parser::ParserOutput::setInvObject_a8519c7725df385366d7a7d2474509893" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a8519c7725df385366d7a7d2474509893"/>
+<keyword name="setKeyUsed(boolean keyUsed)" id="di::uniba::map::b::adventure::GameDescription::setKeyUsed_a27453ac5288756a63348ca699ec8af05" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a27453ac5288756a63348ca699ec8af05"/>
+<keyword name="setList(List&lt; AdvObject &gt; list)" id="di::uniba::map::b::adventure::type::AdvObjectContainer::setList_a9f75dd8709217523d56ca479d3ba3539" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a9f75dd8709217523d56ca479d3ba3539"/>
+<keyword name="setList(List&lt; AdvObject &gt; list)" id="di::uniba::map::b::adventure::type::Inventory::setList_a6611eaee3eea9f31e795724ad5579f2f" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a6611eaee3eea9f31e795724ad5579f2f"/>
+<keyword name="setLiving(boolean living)" id="di::uniba::map::b::adventure::type::AdvObject::setLiving_af5b165b7cdca0f00ff832dad38949ba6" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#af5b165b7cdca0f00ff832dad38949ba6"/>
+<keyword name="setName(String name)" id="di::uniba::map::b::adventure::impl::PlayerData::setName_a12dbb78b538a084659b894abcdef2066" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a12dbb78b538a084659b894abcdef2066"/>
+<keyword name="setName(String name)" id="di::uniba::map::b::adventure::type::AdvObject::setName_a89b408c2cae991b09d4cca16f1c1dde7" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a89b408c2cae991b09d4cca16f1c1dde7"/>
+<keyword name="setObject(AdvObject object)" id="di::uniba::map::b::adventure::parser::ParserOutput::setObject_aaa492c0b903a325f86139b32a6de56bc" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#aaa492c0b903a325f86139b32a6de56bc"/>
+<keyword name="setOpen(boolean open)" id="di::uniba::map::b::adventure::type::AdvObject::setOpen_abfd22cc782ae3395c0af61b747b8797b" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#abfd22cc782ae3395c0af61b747b8797b"/>
+<keyword name="setOpen(boolean open)" id="di::uniba::map::b::adventure::type::AdvObjectContainer::setOpen_a684f5cb2780a824c01fc298360a8b820" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a684f5cb2780a824c01fc298360a8b820"/>
+<keyword name="setOpenable(boolean openable)" id="di::uniba::map::b::adventure::type::AdvObject::setOpenable_a58b77d327d599e34e91479637ebf7ee6" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a58b77d327d599e34e91479637ebf7ee6"/>
+<keyword name="setPickupable(boolean pickupable)" id="di::uniba::map::b::adventure::type::AdvObject::setPickupable_abeb7c9ea6b9bfb1890ed139798494619" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#abeb7c9ea6b9bfb1890ed139798494619"/>
+<keyword name="setPush(boolean push)" id="di::uniba::map::b::adventure::type::AdvObject::setPush_a261b682698bd7d3369a372c243daf380" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a261b682698bd7d3369a372c243daf380"/>
+<keyword name="setPushable(boolean pushable)" id="di::uniba::map::b::adventure::type::AdvObject::setPushable_aadb1cedc859c20a8f2e1b0cc21332bbf" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aadb1cedc859c20a8f2e1b0cc21332bbf"/>
+<keyword name="setReadable(boolean readable)" id="di::uniba::map::b::adventure::type::AdvObject::setReadable_af6dde388988aed97e0298aaaaaebec11" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#af6dde388988aed97e0298aaaaaebec11"/>
+<keyword name="setTime(String time)" id="di::uniba::map::b::adventure::impl::PlayerData::setTime_a9e4b8a765072938167fc11f56c65f8fa" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a9e4b8a765072938167fc11f56c65f8fa"/>
+<keyword name="showLeaderBoard()" id="di::uniba::map::b::adventure::impl::Window::showLeaderBoard_ac4aa46b98d4df7232d639b7cfe1a85e7" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#ac4aa46b98d4df7232d639b7cfe1a85e7"/>
+<keyword name="showMessage(String message)" id="di::uniba::map::b::adventure::impl::Window::showMessage_a80196f752c0b9526fd64a57d484a57b7" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a80196f752c0b9526fd64a57d484a57b7"/>
+<keyword name="showRoomDescription(String roomDescription)" id="di::uniba::map::b::adventure::impl::Window::showRoomDescription_a7d48bd7d07aa3d24b4bd41f487db360c" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a7d48bd7d07aa3d24b4bd41f487db360c"/>
+<keyword name="showRoomName(String roomName)" id="di::uniba::map::b::adventure::impl::Window::showRoomName_aa45f0143ed093c6ce28415bcff983ca7" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#aa45f0143ed093c6ce28415bcff983ca7"/>
+<keyword name="showStartDescription(String startDescription)" id="di::uniba::map::b::adventure::impl::Window::showStartDescription_a24105046a31874be367da6483142aa16" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a24105046a31874be367da6483142aa16"/>
+<keyword name="toString()" id="di::uniba::map::b::adventure::impl::PlayerData::toString_a1f70fb2e58319aea81e8df263a92c377" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a1f70fb2e58319aea81e8df263a92c377"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::GameObserver::update_a580cffeadfcbea825b482519e4deadb6" ref="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html#a580cffeadfcbea825b482519e4deadb6"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::impl::InventoryObserver::update_a207e3d5f908ea6e751e10534d159f1f1" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html#a207e3d5f908ea6e751e10534d159f1f1"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::impl::KillObserver::update_a6f74bf9bc7ff679eccfe9c50177f2003" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html#a6f74bf9bc7ff679eccfe9c50177f2003"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::impl::LookAtObserver::update_a28cdef8cf07906c6886c516e6763913f" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html#a28cdef8cf07906c6886c516e6763913f"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::impl::MoveObserver::update_ae51630cc6a0529974a3d64869d4b1013" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html#ae51630cc6a0529974a3d64869d4b1013"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::impl::OpenObserver::update_af5f5d96d94324ba5e0e9070ede8e789a" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#af5f5d96d94324ba5e0e9070ede8e789a"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::impl::PickUpObserver::update_a859e7f0b50a281e571a85ef872ee1374" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html#a859e7f0b50a281e571a85ef872ee1374"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::impl::PushObserver::update_ac3e97a89860c377b76277749109befa4" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ac3e97a89860c377b76277749109befa4"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::impl::ReadObserver::update_a3c550a2289d5b47a7411bf138078e19b" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html#a3c550a2289d5b47a7411bf138078e19b"/>
+<keyword name="update(GameDescription description, ParserOutput parserOutput, Window window)" id="di::uniba::map::b::adventure::impl::UseObserver::update_a4e2335cd4239f4fac2f69d3591585a28" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html#a4e2335cd4239f4fac2f69d3591585a28"/>
+<keyword name="updateDescriptionById(String id, String newDescription)" id="di::uniba::map::b::adventure::impl::Database::updateDescriptionById_a9da44c7659651cab0c086cdc1163e6ef" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9da44c7659651cab0c086cdc1163e6ef"/>
+<keyword name="updateNameById(String id, String newName)" id="di::uniba::map::b::adventure::impl::Database::updateNameById_a9ed1bc2b29d6412b294c2c80af5b4234" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9ed1bc2b29d6412b294c2c80af5b4234"/>
+<keyword name="updateRoomLookById(String id, String newRoomLook)" id="di::uniba::map::b::adventure::impl::Database::updateRoomLookById_a933fe7549e0d415271874fa7bde8aa9e" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a933fe7549e0d415271874fa7bde8aa9e"/>
+<keyword name="verify(final String input)" id="di::uniba::map::b::adventure::impl::PushObserver::verify_ada881c7baabc1190437c7af00a6a3421" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ada881c7baabc1190437c7af00a6a3421"/>
+<keyword name="Window(GameDescription game, Parser parser)" id="di::uniba::map::b::adventure::impl::Window::Window_a3e9d3603a5d8b7fc174a91b7912f3045" ref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a3e9d3603a5d8b7fc174a91b7912f3045"/>
+</keywords>
+<files>
+<file>_adv_object_8java_source.html</file>
+<file>_adv_object_container_8java_source.html</file>
+<file>_ae_play_wave_8java_source.html</file>
+<file>_command_8java_source.html</file>
+<file>_command_type_8java_source.html</file>
+<file>_database_8java_source.html</file>
+<file>_engine_8java_source.html</file>
+<file>_game_description_8java_source.html</file>
+<file>_game_observable_8java_source.html</file>
+<file>_game_observer_8java_source.html</file>
+<file>_game_utils_8java_source.html</file>
+<file>_inventory_8java_source.html</file>
+<file>_inventory_observer_8java_source.html</file>
+<file>_kill_observer_8java_source.html</file>
+<file>_look_at_observer_8java_source.html</file>
+<file>_move_observer_8java_source.html</file>
+<file>_open_observer_8java_source.html</file>
+<file>_parser_8java_source.html</file>
+<file>_parser_output_8java_source.html</file>
+<file>_pick_up_observer_8java_source.html</file>
+<file>_player_data_8java_source.html</file>
+<file>_push_observer_8java_source.html</file>
+<file>_r_e_s_t_client_8java_source.html</file>
+<file>_read_observer_8java_source.html</file>
+<file>_room_8java_source.html</file>
+<file>_save_game_8java_source.html</file>
+<file>_space_escape_8java_source.html</file>
+<file>_use_observer_8java_source.html</file>
+<file>_utils_8java_source.html</file>
+<file>_window_8java_source.html</file>
+<file>annotated.html</file>
+<file>bc_s.png</file>
+<file>bc_sd.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_a0aac5add5a958af0c635be1d49581f3a_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_a0aac5add5a958af0c635be1d49581f3a_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_a0e23d03537aa3d882ae3e62418a209f9_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_a16eb715b8df13421f41cf1995106b4cc_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_a16eb715b8df13421f41cf1995106b4cc_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_a1019a567cc65258ba7231be04b6f6c44_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_a27453ac5288756a63348ca699ec8af05_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_a3442fbe52e16d3e0993f0d3d3dcc56a1_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_a63b6f071dc00caa521638067b84ce514_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_a8866a8bbe3fea390a0e4f89741b80f77_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_a9a7e02f4831b6c8600f62b7296cf6f12_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_aac13b7db39539b6f2449e754561b9871_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_ac2c90759e68c6f9f17265f2d2d0ab3cb_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_ac7ab01cd9fd9d243243f4cc0b1a13a1f_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_ace481a2be2f2f56ee9cbaf26c8692516_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_adc3220b5f1adbcd7115d0a2f230f054d_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_ae6d265375fc241fb5346dc1521d35497_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils_abc449f8cf790ce32ce610be40a80e0fd_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_a7e85679dc02c8c772afe2604c5a98c20_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_ac62e8ebb99f39d3af6c6cf06f534ed5f_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a379089667952dc981cb9ab4b8a6952f8_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a714e5312efe9bd729f1e9b70a0995c11_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_abba764263d9d62ab0c3785f2a4146803_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_af3d19c59a0b5cfe6a92f0c47529396aa_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer_a207e3d5f908ea6e751e10534d159f1f1_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_a6f74bf9bc7ff679eccfe9c50177f2003_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer_a28cdef8cf07906c6886c516e6763913f_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer_ae51630cc6a0529974a3d64869d4b1013_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_a60a902699e64320759b6871ed86f6ade_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_a60a902699e64320759b6871ed86f6ade_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_af5f5d96d94324ba5e0e9070ede8e789a_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer_a859e7f0b50a281e571a85ef872ee1374_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_ac3e97a89860c377b76277749109befa4_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client_a56214565b72918918d359c5c1e30ea2a_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer_a3c550a2289d5b47a7411bf138078e19b_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game_a6615a57fbc0112ac161b5557852354c6_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game_a9a143f46c1029a94f48a4d6a3bacbd32_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_a45631b42e31c7663c2baecf4bf0c4cee_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_a5f50efac1fea5096ba76665f01d728a6_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_a7a02f030860fe5216c2f347fbc983dbe_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_aff4f17f6db842fdbb46c01198abeb670_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer_a4e2335cd4239f4fac2f69d3591585a28_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_a24105046a31874be367da6483142aa16_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_a7d48bd7d07aa3d24b4bd41f487db360c_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_a80196f752c0b9526fd64a57d484a57b7_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_aa45f0143ed093c6ce28415bcff983ca7_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_ac4aa46b98d4df7232d639b7cfe1a85e7_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a1671cce0ea9375ac45ff8b15beff3291_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_adadde018ee4a00c9bbf9894a83a172d9_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_a19d36754b0020953c69ae2e8149d5f4c_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_a717066c607a85979b776a12a32b9059f_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_a94f39efa449452a2cde5aabf835cb261_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a0498094520bcd048b59d9cf6f3b1ad9b_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a079d6994871e7ed4fb8dc4844c2e2da8_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a094731968d56cadb1274bfcf31c474fa_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a1278661f5736763873ab3407d7464486_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a20838e7d265a7b330bec6c8156230075_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a261b682698bd7d3369a372c243daf380_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a443b6651c97cb2edfbb38d9363d95b98_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a574de9727e7d8957bd265a06e1611052_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a58b77d327d599e34e91479637ebf7ee6_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a70ec19949e8e3637ca915920cf3ba2c4_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a77b9388c3f94e334e6bec615c87d21fd_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a8405505a0e5da051ac72e6f81a7b9a46_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a8f17062d6613e6a829bfe6c5ddda52c3_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aac77d8af8bc19180b52cd1a3fc103ac4_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aadb1cedc859c20a8f2e1b0cc21332bbf_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ab3c2f2b70e45f651431ebcd1e631ae14_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_abeb7c9ea6b9bfb1890ed139798494619_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_abfd22cc782ae3395c0af61b747b8797b_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aef3cc255646b9115b68d5da313b3749c_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_af6dde388988aed97e0298aaaaaebec11_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container__inherit__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container__inherit__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_a0158d14466fde23c17c6e3d9056df716_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_a684f5cb2780a824c01fc298360a8b820_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_ad061304f7c82b21306c09666ceaa50a3_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_afab93d2768dc15ef28b8fdcfd6eab9ba_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_a18478c4fe0dcbcb6b6579dff9ce24f68_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_a394849e9b6380da535c097b902cc6e1a_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_ad13496a4b773e3abb3e491c0f1d0ee16_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_aec1582f0d37d094451b1ff3db9c36679_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room-members.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room__coll__graph.pdf</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room__coll__graph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_a8f844d2b047d7717ec27479f77950a40_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_a8f844d2b047d7717ec27479f77950a40_icgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_aa674792199afea2b3f339b8bd790bebf_cgraph.png</file>
+<file>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_aa674792199afea2b3f339b8bd790bebf_icgraph.png</file>
+<file>classes.html</file>
+<file>closed.png</file>
+<file>dir_09c200f4e10cfb1bf516e23bd4648736.html</file>
+<file>dir_09c200f4e10cfb1bf516e23bd4648736_dep.png</file>
+<file>dir_2c6de2d4684bae29e172351164871999.html</file>
+<file>dir_2c6de2d4684bae29e172351164871999_dep.png</file>
+<file>dir_36d6029a23660d2baf672c648090ee14.html</file>
+<file>dir_36d6029a23660d2baf672c648090ee14_dep.png</file>
+<file>dir_4daf57147b74d32dfcd0f1c8ce44e4a3.html</file>
+<file>dir_4daf57147b74d32dfcd0f1c8ce44e4a3_dep.png</file>
+<file>dir_8d538571e6144d01ec27c9a0f55aecb9.html</file>
+<file>dir_8d538571e6144d01ec27c9a0f55aecb9_dep.png</file>
+<file>dir_9cef88f3061897f698776950a565cbef.html</file>
+<file>dir_9cef88f3061897f698776950a565cbef_dep.png</file>
+<file>dir_a56be5738e3c0ada1c0ab50610cb6f05.html</file>
+<file>dir_a56be5738e3c0ada1c0ab50610cb6f05_dep.png</file>
+<file>dir_a950c4bbd0d6200042c2cc65e8766a5f.html</file>
+<file>dir_a950c4bbd0d6200042c2cc65e8766a5f_dep.png</file>
+<file>dir_d1c28538a5b70138318b5de9cb2d20ee.html</file>
+<file>dir_d1c28538a5b70138318b5de9cb2d20ee_dep.png</file>
+<file>dir_de3212e4b297ef0279f9067d9062d987.html</file>
+<file>dir_e5b91f08b6a4e3e680ea2723cb7a0c79.html</file>
+<file>dir_e5b91f08b6a4e3e680ea2723cb7a0c79_dep.png</file>
+<file>dir_ede4cd8b2e213a70518a547c208f6f37.html</file>
+<file>dir_ede4cd8b2e213a70518a547c208f6f37_dep.png</file>
+<file>doxygen.css</file>
+<file>doxygen.svg</file>
+<file>doxygen_blank.html</file>
+<file>doxygen_crawl.html</file>
+<file>dynsections.js</file>
+<file>enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type-members.html</file>
+<file>enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type.html</file>
+<file>enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type__coll__graph.pdf</file>
+<file>enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type__coll__graph.png</file>
+<file>files.html</file>
+<file>functions.html</file>
+<file>functions_func.html</file>
+<file>graph_legend.html</file>
+<file>graph_legend.png</file>
+<file>hierarchy.html</file>
+<file>index.html</file>
+<file>inherit_graph_0.png</file>
+<file>inherit_graph_1.png</file>
+<file>inherit_graph_10.png</file>
+<file>inherit_graph_11.png</file>
+<file>inherit_graph_12.png</file>
+<file>inherit_graph_13.png</file>
+<file>inherit_graph_14.png</file>
+<file>inherit_graph_15.png</file>
+<file>inherit_graph_16.png</file>
+<file>inherit_graph_17.png</file>
+<file>inherit_graph_2.png</file>
+<file>inherit_graph_3.png</file>
+<file>inherit_graph_4.png</file>
+<file>inherit_graph_5.png</file>
+<file>inherit_graph_6.png</file>
+<file>inherit_graph_7.png</file>
+<file>inherit_graph_8.png</file>
+<file>inherit_graph_9.png</file>
+<file>inherits.html</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable-members.html</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable__coll__graph.pdf</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable__coll__graph.png</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable__inherit__graph.pdf</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable__inherit__graph.png</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer-members.html</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer__coll__graph.pdf</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer__coll__graph.png</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer__inherit__graph.pdf</file>
+<file>interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer__inherit__graph.png</file>
+<file>jquery.js</file>
+<file>minus.svg</file>
+<file>minusd.svg</file>
+<file>nav_f.png</file>
+<file>nav_fd.png</file>
+<file>nav_g.png</file>
+<file>nav_h.png</file>
+<file>nav_hd.png</file>
+<file>navtree.css</file>
+<file>open.png</file>
+<file>plus.svg</file>
+<file>plusd.svg</file>
+<file>resize.js</file>
+<file>search/close.svg</file>
+<file>search/mag.svg</file>
+<file>search/mag_d.svg</file>
+<file>search/mag_sel.svg</file>
+<file>search/mag_seld.svg</file>
+<file>search/search.css</file>
+<file>splitbar.png</file>
+<file>splitbard.png</file>
+<file>svg.min.js</file>
+<file>sync_off.png</file>
+<file>sync_on.png</file>
+<file>tab_a.png</file>
+<file>tab_ad.png</file>
+<file>tab_b.png</file>
+<file>tab_bd.png</file>
+<file>tab_h.png</file>
+<file>tab_hd.png</file>
+<file>tab_s.png</file>
+<file>tab_sd.png</file>
+<file>tabs.css</file>
+</files>
+</filterSection>
+</QtHelpProject>

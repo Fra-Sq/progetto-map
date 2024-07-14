@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" xml:lang="en-US">
+<title>di.uniba.map.b.adventure.impl.Window Class Reference</title>
+<indexterm><primary>di.uniba.map.b.adventure.impl.Window</primary></indexterm>
+<para>
+Inherits JFrame.</para>
+Collaboration diagram for di.uniba.map.b.adventure.impl.Window:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a3e9d3603a5d8b7fc174a91b7912f3045">Window</link> (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> game, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser">Parser</link> parser)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a24105046a31874be367da6483142aa16">showStartDescription</link> (String startDescription)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1aa45f0143ed093c6ce28415bcff983ca7">showRoomName</link> (String roomName)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a7d48bd7d07aa3d24b4bd41f487db360c">showRoomDescription</link> (String roomDescription)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a80196f752c0b9526fd64a57d484a57b7">showMessage</link> (String message)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1ac4aa46b98d4df7232d639b7cfe1a85e7">showLeaderBoard</link> ()</para>
+</listitem>
+            <listitem><para>String <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a10756cfd003a108ab2025ca5ee45a86d">getInsertText</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The main window for the adventure game, providing the graphical user interface. This class extends JFrame, incorporating various UI components to interact with the game. </para>
+<para>
+Definition at line <link linkend="__window_8java_source_1l00023">23</link> of file <link linkend="__window_8java_source">Window.java</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a3e9d3603a5d8b7fc174a91b7912f3045"/><section>
+    <title>Window()</title>
+<indexterm><primary>Window</primary><secondary>di.uniba.map.b.adventure.impl.Window</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.impl.Window</primary><secondary>Window</secondary></indexterm>
+<para><computeroutput>di.uniba.map.b.adventure.impl.Window.Window (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> game, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser">Parser</link> parser)</computeroutput></para>
+<para>Constructs the main game window, initializing UI components and setting up event listeners. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>game</entry><entry>
+<para>The game description, containing the state and logic of the adventure game. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>parser</entry><entry>
+<para>The parser used to interpret player commands. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8java_source_1l00068">68</link> of file <link linkend="__window_8java_source">Window.java</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a10756cfd003a108ab2025ca5ee45a86d"/><section>
+    <title>getInsertText()</title>
+<indexterm><primary>getInsertText</primary><secondary>di.uniba.map.b.adventure.impl.Window</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.impl.Window</primary><secondary>getInsertText</secondary></indexterm>
+<para><computeroutput>String di.uniba.map.b.adventure.impl.Window.getInsertText ( )</computeroutput></para>
+<para>Retrieves the text currently inserted by the player. <formalpara><title>Returns</title>
+
+<para>The text inserted by the player. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__window_8java_source_1l00785">785</link> of file <link linkend="__window_8java_source">Window.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1ac4aa46b98d4df7232d639b7cfe1a85e7"/><section>
+    <title>showLeaderBoard()</title>
+<indexterm><primary>showLeaderBoard</primary><secondary>di.uniba.map.b.adventure.impl.Window</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.impl.Window</primary><secondary>showLeaderBoard</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.impl.Window.showLeaderBoard ( )</computeroutput></para>
+<para>Fetches and displays the leaderboard from a RESTful service. </para>
+<para>
+Definition at line <link linkend="__window_8java_source_1l00776">776</link> of file <link linkend="__window_8java_source">Window.java</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_ac4aa46b98d4df7232d639b7cfe1a85e7_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a80196f752c0b9526fd64a57d484a57b7"/><section>
+    <title>showMessage()</title>
+<indexterm><primary>showMessage</primary><secondary>di.uniba.map.b.adventure.impl.Window</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.impl.Window</primary><secondary>showMessage</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.impl.Window.showMessage (String message)</computeroutput></para>
+<para>Displays a message in a text area, typically used for feedback or game instructions. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>The message to display. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8java_source_1l00769">769</link> of file <link linkend="__window_8java_source">Window.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_a80196f752c0b9526fd64a57d484a57b7_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a7d48bd7d07aa3d24b4bd41f487db360c"/><section>
+    <title>showRoomDescription()</title>
+<indexterm><primary>showRoomDescription</primary><secondary>di.uniba.map.b.adventure.impl.Window</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.impl.Window</primary><secondary>showRoomDescription</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.impl.Window.showRoomDescription (String roomDescription)</computeroutput></para>
+<para>Updates and displays the description of the current room in a text area. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>roomDescription</entry><entry>
+<para>The description of the current room. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8java_source_1l00761">761</link> of file <link linkend="__window_8java_source">Window.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_a7d48bd7d07aa3d24b4bd41f487db360c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1aa45f0143ed093c6ce28415bcff983ca7"/><section>
+    <title>showRoomName()</title>
+<indexterm><primary>showRoomName</primary><secondary>di.uniba.map.b.adventure.impl.Window</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.impl.Window</primary><secondary>showRoomName</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.impl.Window.showRoomName (String roomName)</computeroutput></para>
+<para>Updates and displays the name of the current room in a text area. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>roomName</entry><entry>
+<para>The name of the current room. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8java_source_1l00743">743</link> of file <link linkend="__window_8java_source">Window.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_aa45f0143ed093c6ce28415bcff983ca7_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a24105046a31874be367da6483142aa16"/><section>
+    <title>showStartDescription()</title>
+<indexterm><primary>showStartDescription</primary><secondary>di.uniba.map.b.adventure.impl.Window</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.impl.Window</primary><secondary>showStartDescription</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.impl.Window.showStartDescription (String startDescription)</computeroutput></para>
+<para>Displays the starting description of the game in a text area. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>startDescription</entry><entry>
+<para>The starting description text. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8java_source_1l00734">734</link> of file <link linkend="__window_8java_source">Window.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_a24105046a31874be367da6483142aa16_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+adventure/src/main/java/di/uniba/map/b/adventure/impl/Window.java</section>
+</section>

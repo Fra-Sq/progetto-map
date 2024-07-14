@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__utils_8java_source" xml:lang="en-US">
+<title>Utils.java</title>
+<indexterm><primary>adventure/src/main/java/di/uniba/map/b/adventure/Utils.java</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="__utils_8java_source_1l00001"/>00001 <emphasis role="comment">/*</emphasis>
+<anchor xml:id="__utils_8java_source_1l00002"/>00002 <emphasis role="comment">&#32;*&#32;Click&#32;nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt&#32;to&#32;change&#32;this&#32;license</emphasis>
+<anchor xml:id="__utils_8java_source_1l00003"/>00003 <emphasis role="comment">&#32;*&#32;Click&#32;nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java&#32;to&#32;edit&#32;this&#32;template</emphasis>
+<anchor xml:id="__utils_8java_source_1l00004"/>00004 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="__utils_8java_source_1l00005"/>00005 <emphasis role="keyword">package&#32;</emphasis>di.uniba.map.b.adventure;
+<anchor xml:id="__utils_8java_source_1l00006"/>00006 
+<anchor xml:id="__utils_8java_source_1l00007"/>00007 <emphasis role="keyword">import</emphasis>&#32;java.io.BufferedReader;
+<anchor xml:id="__utils_8java_source_1l00008"/>00008 <emphasis role="keyword">import</emphasis>&#32;java.io.File;
+<anchor xml:id="__utils_8java_source_1l00009"/>00009 <emphasis role="keyword">import</emphasis>&#32;java.io.FileReader;
+<anchor xml:id="__utils_8java_source_1l00010"/>00010 <emphasis role="keyword">import</emphasis>&#32;java.io.IOException;
+<anchor xml:id="__utils_8java_source_1l00011"/>00011 <emphasis role="keyword">import</emphasis>&#32;java.util.ArrayList;
+<anchor xml:id="__utils_8java_source_1l00012"/>00012 <emphasis role="keyword">import</emphasis>&#32;java.util.HashSet;
+<anchor xml:id="__utils_8java_source_1l00013"/>00013 <emphasis role="keyword">import</emphasis>&#32;java.util.List;
+<anchor xml:id="__utils_8java_source_1l00014"/>00014 <emphasis role="keyword">import</emphasis>&#32;java.util.Set;
+<anchor xml:id="__utils_8java_source_1l00015"/>00015 
+<anchor xml:id="__utils_8java_source_1l00019"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils">00019</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils">Utils</link>&#32;{
+<anchor xml:id="__utils_8java_source_1l00020"/>00020 
+<anchor xml:id="__utils_8java_source_1l00028"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1ac62e8ebb99f39d3af6c6cf06f534ed5f">00028</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;Set&lt;String&gt;&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1ac62e8ebb99f39d3af6c6cf06f534ed5f">loadFileListInSet</link>(File&#32;file)&#32;<emphasis role="keywordflow">throws</emphasis>&#32;IOException&#32;{
+<anchor xml:id="__utils_8java_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Set&lt;String&gt;&#32;<emphasis role="keyword">set</emphasis>&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;HashSet&lt;&gt;();
+<anchor xml:id="__utils_8java_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>&#32;(BufferedReader&#32;reader&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;BufferedReader(<emphasis role="keyword">new</emphasis>&#32;FileReader(file)))&#32;{
+<anchor xml:id="__utils_8java_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(reader.ready())&#32;{
+<anchor xml:id="__utils_8java_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">set</emphasis>.add(reader.readLine().trim().toLowerCase());
+<anchor xml:id="__utils_8java_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__utils_8java_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__utils_8java_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">set</emphasis>;
+<anchor xml:id="__utils_8java_source_1l00036"/>00036 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__utils_8java_source_1l00037"/>00037 
+<anchor xml:id="__utils_8java_source_1l00045"/><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1a7e85679dc02c8c772afe2604c5a98c20">00045</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;List&lt;String&gt;&#32;<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1a7e85679dc02c8c772afe2604c5a98c20">parseString</link>(String&#32;<emphasis role="keywordtype">string</emphasis>,&#32;Set&lt;String&gt;&#32;stopwords)&#32;{
+<anchor xml:id="__utils_8java_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;String&gt;&#32;tokens&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;ArrayList&lt;&gt;();
+<anchor xml:id="__utils_8java_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;String[]&#32;split&#32;=&#32;<emphasis role="keywordtype">string</emphasis>.toLowerCase().split(<emphasis role="stringliteral">&quot;\\s+&quot;</emphasis>);
+<anchor xml:id="__utils_8java_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(String&#32;t&#32;:&#32;split)&#32;{
+<anchor xml:id="__utils_8java_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!stopwords.contains(t))&#32;{
+<anchor xml:id="__utils_8java_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tokens.add(t);
+<anchor xml:id="__utils_8java_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__utils_8java_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__utils_8java_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;tokens;
+<anchor xml:id="__utils_8java_source_1l00054"/>00054 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__utils_8java_source_1l00055"/>00055 
+<anchor xml:id="__utils_8java_source_1l00056"/>00056 }
+</programlisting></section>

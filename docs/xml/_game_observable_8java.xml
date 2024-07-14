@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_game_observable_8java" kind="file" language="Java">
+    <compoundname>GameObservable.java</compoundname>
+    <innerclass refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable" prot="public">di::uniba::map::b::adventure::GameObservable</innerclass>
+    <innernamespace refid="namespacedi_1_1uniba_1_1map_1_1b_1_1adventure">di::uniba::map::b::adventure</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Click<sp/>nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt<sp/>to<sp/>change<sp/>this<sp/>license</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Click<sp/>nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java<sp/>to<sp/>edit<sp/>this<sp/>template</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">di.uniba.map.b.adventure;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>di.uniba.map.b.adventure.impl.Window;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable" kindref="compound">GameObservable</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1a7c5c0719519fe02e6ef8ad1a03a7e743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1a7c5c0719519fe02e6ef8ad1a03a7e743" kindref="member">attach</ref>(<ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" kindref="compound">GameObserver</ref><sp/>o);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1ae310adf10210d4108e8ccb55d80910b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1ae310adf10210d4108e8ccb55d80910b4" kindref="member">detach</ref>(<ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" kindref="compound">GameObserver</ref><sp/>o);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1aee803193d726892552f3c24ea5dd8d80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable_1aee803193d726892552f3c24ea5dd8d80" kindref="member">notifyObservers</ref>(<ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref><sp/>window);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameObservable.java"/>
+  </compounddef>
+</doxygen>

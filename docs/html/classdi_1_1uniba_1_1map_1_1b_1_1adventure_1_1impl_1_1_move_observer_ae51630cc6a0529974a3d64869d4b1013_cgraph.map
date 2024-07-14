@@ -1,0 +1,11 @@
+<map id="di.uniba.map.b.adventure.impl.MoveObserver.update" name="di.uniba.map.b.adventure.impl.MoveObserver.update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,105,203,148"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a94f39efa449452a2cde5aabf835cb261" title=" " alt="" coords="256,5,465,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,102,250,58,268,51,270,56,252,62,150,107"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a63b6f071dc00caa521638067b84ce514" title=" " alt="" coords="251,72,470,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,111,235,107,236,112,203,116"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#aec1582f0d37d094451b1ff3db9c36679" title=" " alt="" coords="261,139,460,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,137,246,142,245,148,203,142"/>
+<area shape="rect" id="Node000005" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#adc3220b5f1adbcd7115d0a2f230f054d" title=" " alt="" coords="251,205,470,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="150,146,252,191,270,197,268,202,250,196,148,151"/>
+</map>

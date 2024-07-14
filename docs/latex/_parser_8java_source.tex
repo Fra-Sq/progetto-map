@@ -1,0 +1,83 @@
+\doxysection{Parser.\+java}
+\hypertarget{_parser_8java_source}{}\label{_parser_8java_source}\index{adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java@{adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00002}00002\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt\ to\ change\ this\ license}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00003}00003\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java\ to\ edit\ this\ template}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00004}00004\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00005}00005\ \textcolor{keyword}{package\ }di.uniba.map.b.adventure.parser;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00007}00007\ \textcolor{keyword}{import}\ di.uniba.map.b.adventure.Utils;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00008}00008\ \textcolor{keyword}{import}\ di.uniba.map.b.adventure.type.AdvObject;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00009}00009\ \textcolor{keyword}{import}\ di.uniba.map.b.adventure.type.Command;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00010}00010\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00011}00011\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00019}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser}{00019}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser}{Parser}}\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ Set<String>\ stopwords;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00027}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a0e24595f9263ddcd796c3d46176fb01b}{00027}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a0e24595f9263ddcd796c3d46176fb01b}{Parser}}(Set<String>\ stopwords)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ this.stopwords\ =\ stopwords;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00029}00029\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00037}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_adadde018ee4a00c9bbf9894a83a172d9}{00037}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_adadde018ee4a00c9bbf9894a83a172d9}{checkForCommand}}(String\ token,\ List<Command>\ commands)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ commands.size();\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (commands.get(i).getName().equals(token)\ ||\ commands.get(i).getAlias().contains(token))\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ i;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00047}00047\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ checkForObject(String\ token,\ List<AdvObject>\ obejcts)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ obejcts.size();\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obejcts.get(i).getName().equals(token)\ ||\ obejcts.get(i).getAlias().contains(token))\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ i;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00054}00054\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00063}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a1671cce0ea9375ac45ff8b15beff3291}{00063}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{ParserOutput}}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a1671cce0ea9375ac45ff8b15beff3291}{parse}}(String\ command,\ List<Command>\ commands,\ List<AdvObject>\ objects,\ List<AdvObject>\ inventory)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00064}00064\ \ \ \ \ \ \ \ \ List<String>\ tokens\ =\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils}{Utils}}.\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_a7e85679dc02c8c772afe2604c5a98c20}{parseString}}(command,\ stopwords);}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!tokens.isEmpty())\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ic\ =\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_adadde018ee4a00c9bbf9894a83a172d9}{checkForCommand}}(tokens.get(0),\ commands);}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ic\ >\ -\/1)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tokens.size()\ >\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ io\ =\ checkForObject(tokens.get(1),\ objects);}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ioinv\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (io\ <\ 0\ \&\&\ tokens.size()\ >\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ io\ =\ checkForObject(tokens.get(2),\ objects);}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (io\ <\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ioinv\ =\ checkForObject(tokens.get(1),\ inventory);}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ioinv\ <\ 0\ \&\&\ tokens.size()\ >\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ioinv\ =\ checkForObject(tokens.get(2),\ inventory);}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (io\ >\ -\/1\ \&\&\ ioinv\ >\ -\/1)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{ParserOutput}}(commands.get(ic),\ objects.get(io),\ inventory.get(ioinv));}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (io\ >\ -\/1)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{ParserOutput}}(commands.get(ic),\ objects.get(io),\ \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (ioinv\ >\ -\/1)\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{ParserOutput}}(commands.get(ic),\ \textcolor{keyword}{null},\ inventory.get(ioinv));}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{ParserOutput}}(commands.get(ic),\ \textcolor{keyword}{null},\ \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{ParserOutput}}(commands.get(ic),\ \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{ParserOutput}}(\textcolor{keyword}{null},\ \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00095}00095\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00097}00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00098}00098\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{_parser_8java_source_l00100}00100\ \}}
+
+\end{DoxyCode}

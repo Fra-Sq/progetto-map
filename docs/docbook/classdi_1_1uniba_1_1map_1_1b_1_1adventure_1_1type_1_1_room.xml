@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room" xml:lang="en-US">
+<title>di.uniba.map.b.adventure.type.Room Class Reference</title>
+<indexterm><primary>di.uniba.map.b.adventure.type.Room</primary></indexterm>
+Collaboration diagram for di.uniba.map.b.adventure.type.Room:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_1abacf16b0d0e836274a9d38461a95a346">Room</link> (int id, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> game)</para>
+</listitem>
+            <listitem><para><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_1a78a1480376484a874aea85338c3e1929">Room</link> (int id, String name, String description, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> game)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_1aa674792199afea2b3f339b8bd790bebf">addObject</link> (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> obj)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_1a8f844d2b047d7717ec27479f77950a40">getDynamicLook</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents a room within the adventure game. A room can have various properties such as a name, description, visibility, connections to other rooms (north, south, east, west), and objects within it. Rooms can also contain a monster, and have dynamic descriptions based on game state. </para>
+<para>
+Definition at line <link linkend="__room_8java_source_1l00016">16</link> of file <link linkend="__room_8java_source">Room.java</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_1abacf16b0d0e836274a9d38461a95a346"/><section>
+    <title>Room()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Room</primary><secondary>di.uniba.map.b.adventure.type.Room</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.Room</primary><secondary>Room</secondary></indexterm>
+<para><computeroutput>di.uniba.map.b.adventure.type.Room.Room (int id, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> game)</computeroutput></para>
+<para>Constructs a <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link> with a specified ID and a reference to the game description. This constructor initializes a room without a name or a static description.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>The unique identifier for the room. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>game</entry><entry>
+<para>The game description, providing access to global game state. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__room_8java_source_1l00039">39</link> of file <link linkend="__room_8java_source">Room.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_1a78a1480376484a874aea85338c3e1929"/><section>
+    <title>Room()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Room</primary><secondary>di.uniba.map.b.adventure.type.Room</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.Room</primary><secondary>Room</secondary></indexterm>
+<para><computeroutput>di.uniba.map.b.adventure.type.Room.Room (int id, String name, String description, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> game)</computeroutput></para>
+<para>Constructs a <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link> with a specified ID, name, description, and a reference to the game description.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>The unique identifier for the room. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>name</entry><entry>
+<para>The name of the room. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>description</entry><entry>
+<para>The static description of the room. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>game</entry><entry>
+<para>The game description, providing access to global game state. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__room_8java_source_1l00052">52</link> of file <link linkend="__room_8java_source">Room.java</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_1aa674792199afea2b3f339b8bd790bebf"/><section>
+    <title>addObject()</title>
+<indexterm><primary>addObject</primary><secondary>di.uniba.map.b.adventure.type.Room</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.Room</primary><secondary>addObject</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.Room.addObject (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> obj)</computeroutput></para>
+<para>Adds an object to the room. If the object&apos;s ID is not 6, it is added to the room&apos;s object list and the global game object list.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>obj</entry><entry>
+<para>The object to add to the room. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__room_8java_source_1l00125">125</link> of file <link linkend="__room_8java_source">Room.java</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_aa674792199afea2b3f339b8bd790bebf_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_aa674792199afea2b3f339b8bd790bebf_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_1a8f844d2b047d7717ec27479f77950a40"/><section>
+    <title>getDynamicLook()</title>
+<indexterm><primary>getDynamicLook</primary><secondary>di.uniba.map.b.adventure.type.Room</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.Room</primary><secondary>getDynamicLook</secondary></indexterm>
+<para><computeroutput>String di.uniba.map.b.adventure.type.Room.getDynamicLook ( )</computeroutput></para>
+<para>Generates a dynamic description of the room, including details about objects and their states. For example, if a reinforced door object (ID 9) is open, this is reflected in the description.</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>A string representing the dynamic look of the room. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__room_8java_source_1l00180">180</link> of file <link linkend="__room_8java_source">Room.java</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_a8f844d2b047d7717ec27479f77950a40_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_a8f844d2b047d7717ec27479f77950a40_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+adventure/src/main/java/di/uniba/map/b/adventure/type/Room.java</section>
+</section>

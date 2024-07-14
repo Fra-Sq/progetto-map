@@ -1,0 +1,4 @@
+var classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer =
+[
+    [ "update", "classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html#a28cdef8cf07906c6886c516e6763913f", null ]
+];

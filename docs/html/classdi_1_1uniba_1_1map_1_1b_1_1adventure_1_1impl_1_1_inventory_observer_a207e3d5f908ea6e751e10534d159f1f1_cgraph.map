@@ -1,0 +1,9 @@
+<map id="di.uniba.map.b.adventure.impl.InventoryObserver.update" name="di.uniba.map.b.adventure.impl.InventoryObserver.update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,203,115"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a94f39efa449452a2cde5aabf835cb261" title=" " alt="" coords="251,5,460,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,69,257,50,259,55,188,74"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a3442fbe52e16d3e0993f0d3d3dcc56a1" title=" " alt="" coords="258,72,452,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,91,243,91,243,96,203,96"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#aec1582f0d37d094451b1ff3db9c36679" title=" " alt="" coords="256,139,454,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,113,259,132,257,137,186,118"/>
+</map>

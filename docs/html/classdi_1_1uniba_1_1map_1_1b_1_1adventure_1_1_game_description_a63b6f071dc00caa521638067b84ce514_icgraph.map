@@ -1,0 +1,25 @@
+<map id="di.uniba.map.b.adventure.GameDescription.getCurrentRoom" name="di.uniba.map.b.adventure.GameDescription.getCurrentRoom">
+<area shape="rect" id="Node000001" title=" " alt="" coords="496,272,715,315"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a16eb715b8df13421f41cf1995106b4cc" title=" " alt="" coords="265,5,434,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="587,259,565,214,534,161,494,108,446,62,428,51,431,46,450,58,498,105,538,158,570,212,592,257"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee" title=" " alt="" coords="251,72,448,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="579,261,523,194,486,159,447,129,426,118,428,113,449,124,490,155,527,191,583,258"/>
+<area shape="rect" id="Node000005" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#a60a902699e64320759b6871ed86f6ade" title=" " alt="" coords="251,139,448,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="561,265,508,230,447,196,420,184,422,179,449,191,511,225,564,261"/>
+<area shape="rect" id="Node000007" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html#a6f74bf9bc7ff679eccfe9c50177f2003" title=" " alt="" coords="251,205,448,248"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="506,270,433,251,435,246,507,265"/>
+<area shape="rect" id="Node000008" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html#a28cdef8cf07906c6886c516e6763913f" title=" " alt="" coords="251,272,448,315"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="480,296,448,296,448,291,480,291"/>
+<area shape="rect" id="Node000009" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html#ae51630cc6a0529974a3d64869d4b1013" title=" " alt="" coords="251,339,448,381"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="507,322,435,341,433,335,506,317"/>
+<area shape="rect" id="Node000010" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html#a859e7f0b50a281e571a85ef872ee1374" title=" " alt="" coords="251,405,448,448"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="564,326,511,362,449,396,422,407,420,402,447,391,508,357,561,322"/>
+<area shape="rect" id="Node000011" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ac3e97a89860c377b76277749109befa4" title=" " alt="" coords="251,472,448,515"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="583,329,527,396,490,431,449,462,428,474,426,469,447,458,486,427,523,392,579,325"/>
+<area shape="rect" id="Node000012" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html#a4e2335cd4239f4fac2f69d3591585a28" title=" " alt="" coords="251,539,448,581"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="592,330,570,375,538,428,498,482,450,529,431,540,428,536,446,525,494,479,534,425,565,372,587,328"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0e23d03537aa3d882ae3e62418a209f9" title=" " alt="" coords="19,5,189,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,29,189,29,189,24,249,24"/>
+<area shape="rect" id="Node000006" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#af5f5d96d94324ba5e0e9070ede8e789a" title=" " alt="" coords="5,139,203,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="235,163,203,163,203,157,235,157"/>
+</map>

@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::impl::PushObserver</compoundname>
+    <basecompoundref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" prot="public" virt="non-virtual">di.uniba.map.b.adventure.GameObserver</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_1ac3e97a89860c377b76277749109befa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String di.uniba.map.b.adventure.impl.PushObserver.update</definition>
+        <argsstring>(GameDescription description, ParserOutput parserOutput, Window window)</argsstring>
+        <name>update</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.PushObserver.update</qualifiedname>
+        <reimplements refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_1a580cffeadfcbea825b482519e4deadb6">update</reimplements>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" kindref="compound">GameDescription</ref></type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref></type>
+          <declname>parserOutput</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Processes a &quot;push&quot; command, performing actions based on the object being pushed. If the object is pushable, it triggers specific events such as activating a control panel or requiring further input from the player. Messages are generated to inform the player of the action&apos;s outcome or next steps.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current state of the game, including the player&apos;s current room and inventory. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parserOutput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed output of the player&apos;s command, including the command type and targeted object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game window where output messages are displayed and interactive elements may be shown. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string message indicating the outcome of the &quot;push&quot; command or further instructions for the player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/PushObserver.java" line="32" column="19" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/PushObserver.java" bodystart="32" bodyend="56"/>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a94f39efa449452a2cde5aabf835cb261" compoundref="_parser_output_8java" startline="48" endline="50">di.uniba.map.b.adventure.parser.ParserOutput.getCommand</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514" compoundref="_game_description_8java" startline="110" endline="112">di.uniba.map.b.adventure.GameDescription.getCurrentRoom</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a574de9727e7d8957bd265a06e1611052" compoundref="_adv_object_8java" startline="227" endline="229">di.uniba.map.b.adventure.type.AdvObject.getId</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1" compoundref="_game_description_8java" startline="142" endline="144">di.uniba.map.b.adventure.GameDescription.getInventory</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a094731968d56cadb1274bfcf31c474fa" compoundref="_adv_object_8java" startline="91" endline="93">di.uniba.map.b.adventure.type.AdvObject.getName</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a717066c607a85979b776a12a32b9059f" compoundref="_parser_output_8java" startline="64" endline="66">di.uniba.map.b.adventure.parser.ParserOutput.getObject</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils_1abc449f8cf790ce32ce610be40a80e0fd" compoundref="_game_utils_8java" startline="22" endline="29">di.uniba.map.b.adventure.GameUtils.getObjectFromInventory</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1aec1582f0d37d094451b1ff3db9c36679" compoundref="_command_8java" startline="92" endline="94">di.uniba.map.b.adventure.type.Command.getType</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aef3cc255646b9115b68d5da313b3749c" compoundref="_adv_object_8java" startline="187" endline="189">di.uniba.map.b.adventure.type.AdvObject.isPush</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a0498094520bcd048b59d9cf6f3b1ad9b" compoundref="_adv_object_8java" startline="155" endline="157">di.uniba.map.b.adventure.type.AdvObject.isPushable</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a261b682698bd7d3369a372c243daf380" compoundref="_adv_object_8java" startline="195" endline="197">di.uniba.map.b.adventure.type.AdvObject.setPush</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_1ada881c7baabc1190437c7af00a6a3421" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean di.uniba.map.b.adventure.impl.PushObserver.verify</definition>
+        <argsstring>(final String input)</argsstring>
+        <name>verify</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.PushObserver.verify</qualifiedname>
+        <param>
+          <type>final String</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Verifies if the given input matches a specific pattern, typically used for validating codes or inputs in the game. This method is used to check if the player has entered a correct access code or similar input.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string input to be verified against the pattern. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the input matches the pattern, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/PushObserver.java" line="65" column="27" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/PushObserver.java" bodystart="65" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Observer implementation for handling &quot;push&quot; commands within the game. This observer allows players to interact with objects that can be pushed, triggering specific game events or actions. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.PushObserver</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameObserver</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.PushObserver</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameObserver</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/PushObserver.java" line="19" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/PushObserver.java" bodystart="19" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_1ac3e97a89860c377b76277749109befa4" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::PushObserver</scope><name>update</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_1ada881c7baabc1190437c7af00a6a3421" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::PushObserver</scope><name>verify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

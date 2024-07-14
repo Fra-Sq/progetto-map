@@ -1,0 +1,9 @@
+<map id="di.uniba.map.b.adventure.GameDescription.setGame" name="di.uniba.map.b.adventure.GameDescription.setGame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,184,115"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ac2c90759e68c6f9f17265f2d2d0ab3cb" title=" " alt="" coords="232,5,439,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,69,240,50,242,55,175,74"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a27453ac5288756a63348ca699ec8af05" title=" " alt="" coords="237,72,434,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,91,221,91,221,96,184,96"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a58b77d327d599e34e91479637ebf7ee6" title=" " alt="" coords="236,139,434,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,113,242,131,240,137,173,118"/>
+</map>

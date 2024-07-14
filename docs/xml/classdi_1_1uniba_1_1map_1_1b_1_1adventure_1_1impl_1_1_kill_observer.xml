@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::impl::KillObserver</compoundname>
+    <basecompoundref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" prot="public" virt="non-virtual">di.uniba.map.b.adventure.GameObserver</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_1a6f74bf9bc7ff679eccfe9c50177f2003" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String di.uniba.map.b.adventure.impl.KillObserver.update</definition>
+        <argsstring>(GameDescription description, ParserOutput parserOutput, Window window)</argsstring>
+        <name>update</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.KillObserver.update</qualifiedname>
+        <reimplements refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_1a580cffeadfcbea825b482519e4deadb6">update</reimplements>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" kindref="compound">GameDescription</ref></type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref></type>
+          <declname>parserOutput</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Processes a &quot;kill&quot; command, determining if the player successfully kills a monster in the current room. The method checks if the player is in the correct room, if the monster is alive, and if the player has the required weapon. If the conditions are met, the monster is killed, and a success message is returned. Otherwise, appropriate messages are returned based on the failure condition (e.g., no monster, no weapon).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current state of the game, including rooms, inventory, and game objects. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parserOutput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed output of the player&apos;s command, including the command type and arguments. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game window where output messages are displayed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string message indicating the outcome of the &quot;kill&quot; command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/KillObserver.java" line="34" column="19" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/KillObserver.java" bodystart="34" bodyend="63"/>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a94f39efa449452a2cde5aabf835cb261" compoundref="_parser_output_8java" startline="48" endline="50">di.uniba.map.b.adventure.parser.ParserOutput.getCommand</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514" compoundref="_game_description_8java" startline="110" endline="112">di.uniba.map.b.adventure.GameDescription.getCurrentRoom</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1" compoundref="_game_description_8java" startline="142" endline="144">di.uniba.map.b.adventure.GameDescription.getInventory</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1aec1582f0d37d094451b1ff3db9c36679" compoundref="_command_8java" startline="92" endline="94">di.uniba.map.b.adventure.type.Command.getType</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Observer implementation for handling &quot;kill&quot; commands within the game. This observer checks if the player can kill a monster in the current room, based on the presence of a weapon in the player&apos;s inventory and the monster&apos;s existence. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.KillObserver</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameObserver</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.KillObserver</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameObserver</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/KillObserver.java" line="20" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/KillObserver.java" bodystart="20" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_1a6f74bf9bc7ff679eccfe9c50177f2003" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::KillObserver</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

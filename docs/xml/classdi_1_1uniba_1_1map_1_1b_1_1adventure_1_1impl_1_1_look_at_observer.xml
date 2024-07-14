@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::impl::LookAtObserver</compoundname>
+    <basecompoundref refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer" prot="public" virt="non-virtual">di.uniba.map.b.adventure.GameObserver</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer_1a28cdef8cf07906c6886c516e6763913f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String di.uniba.map.b.adventure.impl.LookAtObserver.update</definition>
+        <argsstring>(GameDescription description, ParserOutput parserOutput, Window window)</argsstring>
+        <name>update</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.LookAtObserver.update</qualifiedname>
+        <reimplements refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_1a580cffeadfcbea825b482519e4deadb6">update</reimplements>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" kindref="compound">GameDescription</ref></type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref></type>
+          <declname>parserOutput</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Processes a &quot;look at&quot; command, returning a description of the current room or an object within it. If the current room has a special description, it is returned; otherwise, a generic message is provided.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current state of the game, including the player&apos;s current room. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parserOutput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed output of the player&apos;s command, including the command type and arguments. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game window where output messages are displayed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string message containing the description of the current room or a generic message if the room has no special description. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/LookAtObserver.java" line="29" column="19" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/LookAtObserver.java" bodystart="29" bodyend="39"/>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a94f39efa449452a2cde5aabf835cb261" compoundref="_parser_output_8java" startline="48" endline="50">di.uniba.map.b.adventure.parser.ParserOutput.getCommand</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514" compoundref="_game_description_8java" startline="110" endline="112">di.uniba.map.b.adventure.GameDescription.getCurrentRoom</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1aec1582f0d37d094451b1ff3db9c36679" compoundref="_command_8java" startline="92" endline="94">di.uniba.map.b.adventure.type.Command.getType</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Observer implementation for handling &quot;look at&quot; commands within the game. This observer is responsible for providing descriptions of the current room or objects within it when the player uses the &quot;look at&quot; command. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.LookAtObserver</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameObserver</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.LookAtObserver</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameObserver</label>
+        <link refid="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/LookAtObserver.java" line="17" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/LookAtObserver.java" bodystart="17" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer_1a28cdef8cf07906c6886c516e6763913f" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::LookAtObserver</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

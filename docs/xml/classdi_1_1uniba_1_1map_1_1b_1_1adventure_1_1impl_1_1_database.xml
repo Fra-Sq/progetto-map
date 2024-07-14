@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::impl::Database</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a06121712b9605f56c6585374a99784f9" prot="package" static="no" mutable="no">
+        <type>Properties</type>
+        <definition>Properties di.uniba.map.b.adventure.impl.Database.dbprops</definition>
+        <argsstring></argsstring>
+        <name>dbprops</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.dbprops</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="21" column="16" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a64a8a66649ffb03667e17333c24b7e70" prot="package" static="no" mutable="no">
+        <type>Connection</type>
+        <definition>Connection di.uniba.map.b.adventure.impl.Database.conn</definition>
+        <argsstring></argsstring>
+        <name>conn</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.conn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="22" column="16" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1ab8f61a7b1ba1fc40053f9b3535c7d354" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.impl.Database.Database</definition>
+        <argsstring>()</argsstring>
+        <name>Database</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.Database</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database" kindref="compound">Database</ref>. Initializes the database connection using JDBC and H2 database. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="27" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="27" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1adb497352ce996d96b4bae8c09d79ba9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.impl.Database.insertNewData</definition>
+        <argsstring>()</argsstring>
+        <name>insertNewData</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.insertNewData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserts new data into the database by prompting the user for input. Data includes ID, name, description, and room look.</para>
+<para><simplesect kind="return"><para>true if the data was successfully inserted, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="45" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="45" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a379089667952dc981cb9ab4b8a6952f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String di.uniba.map.b.adventure.impl.Database.getNameById</definition>
+        <argsstring>(String id)</argsstring>
+        <name>getNameById</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.getNameById</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the name associated with a given ID from the database. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID for which the name is to be retrieved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The name associated with the ID, or null if not found or in case of an error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="77" column="19" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="77" bodyend="92"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe" compoundref="_space_escape_8java" startline="37" endline="239">di.uniba.map.b.adventure.impl.SpaceEscape.init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1abba764263d9d62ab0c3785f2a4146803" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String di.uniba.map.b.adventure.impl.Database.getDescriptionById</definition>
+        <argsstring>(String id)</argsstring>
+        <name>getDescriptionById</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.getDescriptionById</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the description associated with a given ID from the database. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID for which the description is to be retrieved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The description associated with the ID, or null if not found or in case of an error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="99" column="19" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="99" bodyend="114"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe" compoundref="_space_escape_8java" startline="37" endline="239">di.uniba.map.b.adventure.impl.SpaceEscape.init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1af3d19c59a0b5cfe6a92f0c47529396aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String di.uniba.map.b.adventure.impl.Database.getRoomLookById</definition>
+        <argsstring>(String id)</argsstring>
+        <name>getRoomLookById</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.getRoomLookById</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the room look associated with a given ID from the database. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID for which the room look is to be retrieved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The room look associated with the ID, or null if not found or in case of an error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="121" column="19" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="121" bodyend="136"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe" compoundref="_space_escape_8java" startline="37" endline="239">di.uniba.map.b.adventure.impl.SpaceEscape.init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a9ed1bc2b29d6412b294c2c80af5b4234" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.impl.Database.updateNameById</definition>
+        <argsstring>(String id, String newName)</argsstring>
+        <name>updateNameById</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.updateNameById</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>newName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates the name associated with a given ID in the database. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID for which the name is to be updated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new name to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the update was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="144" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="144" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a9da44c7659651cab0c086cdc1163e6ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.impl.Database.updateDescriptionById</definition>
+        <argsstring>(String id, String newDescription)</argsstring>
+        <name>updateDescriptionById</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.updateDescriptionById</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>newDescription</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates the description associated with a given ID in the database. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID for which the description is to be updated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new description to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the update was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="165" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="165" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a933fe7549e0d415271874fa7bde8aa9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.impl.Database.updateRoomLookById</definition>
+        <argsstring>(String id, String newRoomLook)</argsstring>
+        <name>updateRoomLookById</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.updateRoomLookById</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>newRoomLook</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates the room look associated with a given ID in the database. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID for which the room look is to be updated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newRoomLook</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new room look to be set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the update was successful, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="186" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="186" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a714e5312efe9bd729f1e9b70a0995c11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.impl.Database.close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Closes the database connection. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="206" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="206" bodyend="215"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe" compoundref="_space_escape_8java" startline="37" endline="239">di.uniba.map.b.adventure.impl.SpaceEscape.init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class provides database operations for the adventure game. It handles connections to the database and provides methods to retrieve and update game data. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.impl.Database</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="19" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="19" bodyend="216"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a714e5312efe9bd729f1e9b70a0995c11" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>close</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a64a8a66649ffb03667e17333c24b7e70" prot="package" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>conn</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1ab8f61a7b1ba1fc40053f9b3535c7d354" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>Database</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a06121712b9605f56c6585374a99784f9" prot="package" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>dbprops</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1abba764263d9d62ab0c3785f2a4146803" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>getDescriptionById</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a379089667952dc981cb9ab4b8a6952f8" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>getNameById</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1af3d19c59a0b5cfe6a92f0c47529396aa" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>getRoomLookById</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1adb497352ce996d96b4bae8c09d79ba9b" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>insertNewData</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a9da44c7659651cab0c086cdc1163e6ef" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>updateDescriptionById</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a9ed1bc2b29d6412b294c2c80af5b4234" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>updateNameById</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a933fe7549e0d415271874fa7bde8aa9e" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>updateRoomLookById</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

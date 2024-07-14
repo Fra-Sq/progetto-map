@@ -1,0 +1,17 @@
+<map id="di.uniba.map.b.adventure.impl.ReadObserver.update" name="di.uniba.map.b.adventure.impl.ReadObserver.update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,205,203,248"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a94f39efa449452a2cde5aabf835cb261" title=" " alt="" coords="251,5,460,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,203,169,132,206,92,249,58,257,53,260,58,252,62,210,96,173,136,121,206"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a079d6994871e7ed4fb8dc4844c2e2da8" title=" " alt="" coords="256,72,454,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,203,184,164,249,124,262,118,264,123,252,129,186,168,133,207"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a574de9727e7d8957bd265a06e1611052" title=" " alt="" coords="256,139,454,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,202,257,183,259,188,188,207"/>
+<area shape="rect" id="Node000005" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a19d36754b0020953c69ae2e8149d5f4c" title=" " alt="" coords="251,205,460,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="203,224,235,224,235,229,203,229"/>
+<area shape="rect" id="Node000006" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a717066c607a85979b776a12a32b9059f" title=" " alt="" coords="251,272,460,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="188,246,259,265,257,270,186,251"/>
+<area shape="rect" id="Node000007" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#aec1582f0d37d094451b1ff3db9c36679" title=" " alt="" coords="256,339,454,381"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="133,246,186,285,252,324,264,330,262,335,249,329,184,290,130,250"/>
+<area shape="rect" id="Node000008" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a8f17062d6613e6a829bfe6c5ddda52c3" title=" " alt="" coords="256,405,454,448"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="121,247,173,318,210,357,252,391,260,396,257,400,249,396,206,361,169,321,116,250"/>
+</map>

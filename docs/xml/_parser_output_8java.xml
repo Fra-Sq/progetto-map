@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_parser_output_8java" kind="file" language="Java">
+    <compoundname>ParserOutput.java</compoundname>
+    <innerclass refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" prot="public">di::uniba::map::b::adventure::parser::ParserOutput</innerclass>
+    <innernamespace refid="namespacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser">di::uniba::map::b::adventure::parser</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Click<sp/>nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt<sp/>to<sp/>change<sp/>this<sp/>license</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Click<sp/>nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java<sp/>to<sp/>edit<sp/>this<sp/>template</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">di.uniba.map.b.adventure.parser;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>di.uniba.map.b.adventure.type.AdvObject;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>di.uniba.map.b.adventure.type.Command;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref><sp/>command;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref><sp/>object;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref><sp/>invObject;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1aadce6083d0c0dade8d0604543add28f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1aadce6083d0c0dade8d0604543add28f1" kindref="member">ParserOutput</ref>(<ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref><sp/>command,<sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.command<sp/>=<sp/>command;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.object<sp/>=<sp/>object;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a9ec1aac4862a937a26579511deeb25e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a9ec1aac4862a937a26579511deeb25e4" kindref="member">ParserOutput</ref>(<ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref><sp/>command,<sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref><sp/>invObejct)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.command<sp/>=<sp/>command;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.object<sp/>=<sp/>object;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.invObject<sp/>=<sp/>invObejct;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a94f39efa449452a2cde5aabf835cb261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a94f39efa449452a2cde5aabf835cb261" kindref="member">getCommand</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>command;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1ad42b865bf724d5949bd0725325113bdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1ad42b865bf724d5949bd0725325113bdb" kindref="member">setCommand</ref>(<ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref><sp/>command)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.command<sp/>=<sp/>command;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a717066c607a85979b776a12a32b9059f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a717066c607a85979b776a12a32b9059f" kindref="member">getObject</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1aaa492c0b903a325f86139b32a6de56bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1aaa492c0b903a325f86139b32a6de56bc" kindref="member">setObject</ref>(<ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.object<sp/>=<sp/>object;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a19d36754b0020953c69ae2e8149d5f4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a19d36754b0020953c69ae2e8149d5f4c" kindref="member">getInvObject</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>invObject;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a8519c7725df385366d7a7d2474509893" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_1a8519c7725df385366d7a7d2474509893" kindref="member">setInvObject</ref>(<ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref><sp/>invObject)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.invObject<sp/>=<sp/>invObject;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/parser/ParserOutput.java"/>
+  </compounddef>
+</doxygen>

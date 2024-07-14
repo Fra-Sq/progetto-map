@@ -1,0 +1,117 @@
+\doxysection{di.\+uniba.\+map.\+b.\+adventure.\+parser.\+Parser Class Reference}
+\hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser}{}\label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser}\index{di.uniba.map.b.adventure.parser.Parser@{di.uniba.map.b.adventure.parser.Parser}}
+
+
+Collaboration diagram for di.\+uniba.\+map.\+b.\+adventure.\+parser.\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a0e24595f9263ddcd796c3d46176fb01b}{Parser}} (Set$<$ String $>$ stopwords)
+\item 
+\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}} \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a1671cce0ea9375ac45ff8b15beff3291}{parse}} (String command, List$<$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command}{Command}} $>$ commands, List$<$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{Adv\+Object}} $>$ objects, List$<$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{Adv\+Object}} $>$ inventory)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_adadde018ee4a00c9bbf9894a83a172d9}{check\+For\+Command}} (String token, List$<$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command}{Command}} $>$ commands)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser}{Parser} class is responsible for interpreting player commands within the game. It processes input strings, removing stopwords, and identifies commands and objects mentioned in the input. It supports simple sentences structured as $<$action$>$ $<$object$>$ $<$object$>$, with articles and prepositions being ignored. 
+
+Definition at line \mbox{\hyperlink{_parser_8java_source_l00019}{19}} of file \mbox{\hyperlink{_parser_8java_source}{Parser.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a0e24595f9263ddcd796c3d46176fb01b}\index{di.uniba.map.b.adventure.parser.Parser@{di.uniba.map.b.adventure.parser.Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!di.uniba.map.b.adventure.parser.Parser@{di.uniba.map.b.adventure.parser.Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a0e24595f9263ddcd796c3d46176fb01b} 
+di.\+uniba.\+map.\+b.\+adventure.\+parser.\+Parser.\+Parser (\begin{DoxyParamCaption}\item[{Set$<$ String $>$}]{stopwords}{}\end{DoxyParamCaption})}
+
+Constructs a \doxylink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser}{Parser} with a specified set of stopwords. 
+\begin{DoxyParams}{Parameters}
+{\em stopwords} & A set of strings representing stopwords to be ignored during parsing. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_parser_8java_source_l00027}{27}} of file \mbox{\hyperlink{_parser_8java_source}{Parser.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_adadde018ee4a00c9bbf9894a83a172d9}\index{di.uniba.map.b.adventure.parser.Parser@{di.uniba.map.b.adventure.parser.Parser}!checkForCommand@{checkForCommand}}
+\index{checkForCommand@{checkForCommand}!di.uniba.map.b.adventure.parser.Parser@{di.uniba.map.b.adventure.parser.Parser}}
+\doxysubsubsection{\texorpdfstring{checkForCommand()}{checkForCommand()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_adadde018ee4a00c9bbf9894a83a172d9} 
+int di.\+uniba.\+map.\+b.\+adventure.\+parser.\+Parser.\+check\+For\+Command (\begin{DoxyParamCaption}\item[{String}]{token}{, }\item[{List$<$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command}{Command}} $>$}]{commands}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Checks if a token is a command. 
+\begin{DoxyParams}{Parameters}
+{\em token} & The token to check. \\
+\hline
+{\em commands} & A list of commands to check against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the command in the list, or -\/1 if the token is not a command. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_parser_8java_source_l00037}{37}} of file \mbox{\hyperlink{_parser_8java_source}{Parser.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_adadde018ee4a00c9bbf9894a83a172d9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a1671cce0ea9375ac45ff8b15beff3291}\index{di.uniba.map.b.adventure.parser.Parser@{di.uniba.map.b.adventure.parser.Parser}!parse@{parse}}
+\index{parse@{parse}!di.uniba.map.b.adventure.parser.Parser@{di.uniba.map.b.adventure.parser.Parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a1671cce0ea9375ac45ff8b15beff3291} 
+\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}} di.\+uniba.\+map.\+b.\+adventure.\+parser.\+Parser.\+parse (\begin{DoxyParamCaption}\item[{String}]{command}{, }\item[{List$<$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command}{Command}} $>$}]{commands}{, }\item[{List$<$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{Adv\+Object}} $>$}]{objects}{, }\item[{List$<$ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{Adv\+Object}} $>$}]{inventory}{}\end{DoxyParamCaption})}
+
+Parses a player command, identifying the command and objects mentioned in the input. 
+\begin{DoxyParams}{Parameters}
+{\em command} & The player command to parse. \\
+\hline
+{\em commands} & A list of commands to check against. \\
+\hline
+{\em objects} & A list of objects to check against. \\
+\hline
+{\em inventory} & A list of objects in the player\textquotesingle{}s inventory to check against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output} object containing the identified command and objects. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_parser_8java_source_l00063}{63}} of file \mbox{\hyperlink{_parser_8java_source}{Parser.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_a1671cce0ea9375ac45ff8b15beff3291_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.\+java\end{DoxyCompactItemize}

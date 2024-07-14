@@ -1,0 +1,5 @@
+<map id="di.uniba.map.b.adventure.type.Room.getDynamicLook" name="di.uniba.map.b.adventure.type.Room.getDynamicLook">
+<area shape="rect" id="Node000001" title=" " alt="" coords="251,5,449,48"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee" title=" " alt="" coords="5,5,203,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,29,203,29,203,24,235,24"/>
+</map>

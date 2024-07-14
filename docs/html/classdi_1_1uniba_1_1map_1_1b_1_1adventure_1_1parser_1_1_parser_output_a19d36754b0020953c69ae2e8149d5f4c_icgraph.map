@@ -1,0 +1,9 @@
+<map id="di.uniba.map.b.adventure.parser.ParserOutput.getInvObject" name="di.uniba.map.b.adventure.parser.ParserOutput.getInvObject">
+<area shape="rect" id="Node000001" title=" " alt="" coords="251,72,460,115"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#af5f5d96d94324ba5e0e9070ede8e789a" title=" " alt="" coords="5,5,203,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,70,186,51,188,46,259,65"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html#a3c550a2289d5b47a7411bf138078e19b" title=" " alt="" coords="5,72,203,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,96,203,96,203,91,235,91"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html#a4e2335cd4239f4fac2f69d3591585a28" title=" " alt="" coords="5,139,203,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="259,122,188,141,186,135,257,117"/>
+</map>

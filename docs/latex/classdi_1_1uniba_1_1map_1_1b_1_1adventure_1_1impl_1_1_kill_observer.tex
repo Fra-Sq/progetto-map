@@ -1,0 +1,78 @@
+\doxysection{di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Kill\+Observer Class Reference}
+\hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer}{}\label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer}\index{di.uniba.map.b.adventure.impl.KillObserver@{di.uniba.map.b.adventure.impl.KillObserver}}
+
+
+Inheritance diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Kill\+Observer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Kill\+Observer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_a6f74bf9bc7ff679eccfe9c50177f2003}{update}} (\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}} description, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}} parser\+Output, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}} window)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Observer implementation for handling "{}kill"{} commands within the game. This observer checks if the player can kill a monster in the current room, based on the presence of a weapon in the player\textquotesingle{}s inventory and the monster\textquotesingle{}s existence. 
+
+Definition at line \mbox{\hyperlink{_kill_observer_8java_source_l00020}{20}} of file \mbox{\hyperlink{_kill_observer_8java_source}{Kill\+Observer.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_a6f74bf9bc7ff679eccfe9c50177f2003}\index{di.uniba.map.b.adventure.impl.KillObserver@{di.uniba.map.b.adventure.impl.KillObserver}!update@{update}}
+\index{update@{update}!di.uniba.map.b.adventure.impl.KillObserver@{di.uniba.map.b.adventure.impl.KillObserver}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_a6f74bf9bc7ff679eccfe9c50177f2003} 
+String di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Kill\+Observer.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}}}]{description}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}}}]{parser\+Output}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}}}]{window}{}\end{DoxyParamCaption})}
+
+Processes a "{}kill"{} command, determining if the player successfully kills a monster in the current room. The method checks if the player is in the correct room, if the monster is alive, and if the player has the required weapon. If the conditions are met, the monster is killed, and a success message is returned. Otherwise, appropriate messages are returned based on the failure condition (e.\+g., no monster, no weapon).
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The current state of the game, including rooms, inventory, and game objects. \\
+\hline
+{\em parser\+Output} & The parsed output of the player\textquotesingle{}s command, including the command type and arguments. \\
+\hline
+{\em window} & The game window where output messages are displayed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string message indicating the outcome of the "{}kill"{} command. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_a580cffeadfcbea825b482519e4deadb6}{di.\+uniba.\+map.\+b.\+adventure.\+Game\+Observer}}.
+
+
+
+Definition at line \mbox{\hyperlink{_kill_observer_8java_source_l00034}{34}} of file \mbox{\hyperlink{_kill_observer_8java_source}{Kill\+Observer.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_a6f74bf9bc7ff679eccfe9c50177f2003_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+adventure/src/main/java/di/uniba/map/b/adventure/impl/Kill\+Observer.\+java\end{DoxyCompactItemize}

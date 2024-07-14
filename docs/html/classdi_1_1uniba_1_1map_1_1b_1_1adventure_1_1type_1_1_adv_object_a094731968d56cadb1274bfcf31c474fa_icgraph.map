@@ -1,0 +1,9 @@
+<map id="di.uniba.map.b.adventure.type.AdvObject.getName" name="di.uniba.map.b.adventure.type.AdvObject.getName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="496,39,694,81"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#a60a902699e64320759b6871ed86f6ade" title=" " alt="" coords="251,5,448,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="480,47,448,43,449,37,481,42"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ac3e97a89860c377b76277749109befa4" title=" " alt="" coords="251,72,448,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="481,78,449,83,448,77,480,73"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#af5f5d96d94324ba5e0e9070ede8e789a" title=" " alt="" coords="5,5,203,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,29,203,29,203,24,235,24"/>
+</map>

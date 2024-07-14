@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer" xml:lang="en-US">
+<title>di.uniba.map.b.adventure.impl.ReadObserver Class Reference</title>
+<indexterm><primary>di.uniba.map.b.adventure.impl.ReadObserver</primary></indexterm>
+Inheritance diagram for di.uniba.map.b.adventure.impl.ReadObserver:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for di.uniba.map.b.adventure.impl.ReadObserver:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>String <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer_1a3c550a2289d5b47a7411bf138078e19b">update</link> (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> description, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output">ParserOutput</link> parserOutput, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window">Window</link> window)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Observer implementation for handling &quot;read&quot; commands within the game. This observer allows players to read objects that contain readable content, such as maps or notes. </para>
+<para>
+Definition at line <link linkend="__read_observer_8java_source_1l00016">16</link> of file <link linkend="__read_observer_8java_source">ReadObserver.java</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer_1a3c550a2289d5b47a7411bf138078e19b"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>di.uniba.map.b.adventure.impl.ReadObserver</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.impl.ReadObserver</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>String di.uniba.map.b.adventure.impl.ReadObserver.update (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> description, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output">ParserOutput</link> parserOutput, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window">Window</link> window)</computeroutput></para>
+<para>Processes a &quot;read&quot; command, displaying the content of the readable object to the player. It checks if the object is in the player&apos;s inventory or in the current room and if it is readable. If the object is a map, it provides additional handling.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>description</entry><entry>
+<para>The current state of the game, including the player&apos;s current room and inventory. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>parserOutput</entry><entry>
+<para>The parsed output of the player&apos;s command, including the command type and targeted object. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>window</entry><entry>
+<para>The game window where output messages are displayed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A string message indicating the outcome of the &quot;read&quot; command, such as the content of the object or an error message. </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_1a580cffeadfcbea825b482519e4deadb6">di.uniba.map.b.adventure.GameObserver</link>.</para>
+<para>
+Definition at line <link linkend="__read_observer_8java_source_1l00029">29</link> of file <link linkend="__read_observer_8java_source">ReadObserver.java</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer_a3c550a2289d5b47a7411bf138078e19b_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+adventure/src/main/java/di/uniba/map/b/adventure/impl/ReadObserver.java</section>
+</section>

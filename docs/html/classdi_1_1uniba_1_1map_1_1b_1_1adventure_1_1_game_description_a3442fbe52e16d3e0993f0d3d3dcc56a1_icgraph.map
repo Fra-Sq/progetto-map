@@ -1,0 +1,13 @@
+<map id="di.uniba.map.b.adventure.GameDescription.getInventory" name="di.uniba.map.b.adventure.GameDescription.getInventory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="251,139,445,181"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee" title=" " alt="" coords="5,5,203,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,131,258,96,201,62,176,51,178,46,204,58,260,91,309,127"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html#a207e3d5f908ea6e751e10534d159f1f1" title=" " alt="" coords="5,72,203,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,137,184,118,185,113,253,131"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html#a6f74bf9bc7ff679eccfe9c50177f2003" title=" " alt="" coords="5,139,203,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,163,203,163,203,157,235,157"/>
+<area shape="rect" id="Node000005" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html#a859e7f0b50a281e571a85ef872ee1374" title=" " alt="" coords="5,205,203,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="253,189,185,207,184,202,252,183"/>
+<area shape="rect" id="Node000006" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ac3e97a89860c377b76277749109befa4" title=" " alt="" coords="5,272,203,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="309,193,260,229,204,262,178,274,176,269,201,258,258,224,306,189"/>
+</map>

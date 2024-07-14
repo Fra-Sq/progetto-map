@@ -1,0 +1,1033 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" xml:lang="en-US">
+<title>di.uniba.map.b.adventure.type.AdvObject Class Reference</title>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary></indexterm>
+Inheritance diagram for di.uniba.map.b.adventure.type.AdvObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for di.uniba.map.b.adventure.type.AdvObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a20838e7d265a7b330bec6c8156230075">AdvObject</link> (int id)</para>
+</listitem>
+            <listitem><para><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aa1c2c21ca83266bf6a50ae158a94104f">AdvObject</link> (int id, String name)</para>
+</listitem>
+            <listitem><para><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ad9cf122c01897c5a5c7c51292ad747fa">AdvObject</link> (int id, String name, String description)</para>
+</listitem>
+            <listitem><para><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a856690bee70fb6c47bdb8710241df77e">AdvObject</link> (int id, String name, String description, Set&lt; String &gt; alias)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a094731968d56cadb1274bfcf31c474fa">getName</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a89b408c2cae991b09d4cca16f1c1dde7">setName</link> (String name)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ab3c2f2b70e45f651431ebcd1e631ae14">getDescription</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a9aad9fee5eea5e2623a8d24ebf07d4f6">setDescription</link> (String description)</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a443b6651c97cb2edfbb38d9363d95b98">isOpenable</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a58b77d327d599e34e91479637ebf7ee6">setOpenable</link> (boolean openable)</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a70ec19949e8e3637ca915920cf3ba2c4">isPickupable</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1abeb7c9ea6b9bfb1890ed139798494619">setPickupable</link> (boolean pickupable)</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a0498094520bcd048b59d9cf6f3b1ad9b">isPushable</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aadb1cedc859c20a8f2e1b0cc21332bbf">setPushable</link> (boolean pushable)</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a31027928ec81ef8e1ad0f140135e8315">isOpen</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1abfd22cc782ae3395c0af61b747b8797b">setOpen</link> (boolean open)</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aef3cc255646b9115b68d5da313b3749c">isPush</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a261b682698bd7d3369a372c243daf380">setPush</link> (boolean push)</para>
+</listitem>
+            <listitem><para>Set&lt; String &gt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a5aba1d8f4fc217957dc87c0a015083db">getAlias</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aac77d8af8bc19180b52cd1a3fc103ac4">setAlias</link> (Set&lt; String &gt; alias)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a631a338a0ae33c89c5a9c06473ae7588">setAlias</link> (String[] alias)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a574de9727e7d8957bd265a06e1611052">getId</link> ()</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ae6347f2c165add59f417f46b48fe1fbb">isCreature</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a8405505a0e5da051ac72e6f81a7b9a46">setCreature</link> (boolean creature)</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aacb51db33d66a1ed86da7c547102239e">isLiving</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1af5b165b7cdca0f00ff832dad38949ba6">setLiving</link> (boolean living)</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a8f17062d6613e6a829bfe6c5ddda52c3">isReadable</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1af6dde388988aed97e0298aaaaaebec11">setReadable</link> (boolean readable)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a77b9388c3f94e334e6bec615c87d21fd">setContents</link> (String contents)</para>
+</listitem>
+            <listitem><para>String <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a079d6994871e7ed4fb8dc4844c2e2da8">getContents</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ac8d0e063e0971fd775eccc45373553dd">hashCode</link> ()</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a1278661f5736763873ab3407d7464486">equals</link> (Object obj)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><formalpara><title>Author</title>
+
+<para>sangiovannesi </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00015">15</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a20838e7d265a7b330bec6c8156230075"/><section>
+    <title>AdvObject()<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>AdvObject</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>AdvObject</secondary></indexterm>
+<para><computeroutput>di.uniba.map.b.adventure.type.AdvObject.AdvObject (int id)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00047">47</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a20838e7d265a7b330bec6c8156230075_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aa1c2c21ca83266bf6a50ae158a94104f"/><section>
+    <title>AdvObject()<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>AdvObject</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>AdvObject</secondary></indexterm>
+<para><computeroutput>di.uniba.map.b.adventure.type.AdvObject.AdvObject (int id, String name)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>name</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00056">56</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ad9cf122c01897c5a5c7c51292ad747fa"/><section>
+    <title>AdvObject()<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>AdvObject</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>AdvObject</secondary></indexterm>
+<para><computeroutput>di.uniba.map.b.adventure.type.AdvObject.AdvObject (int id, String name, String description)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>name</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>description</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00067">67</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a856690bee70fb6c47bdb8710241df77e"/><section>
+    <title>AdvObject()<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>AdvObject</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>AdvObject</secondary></indexterm>
+<para><computeroutput>di.uniba.map.b.adventure.type.AdvObject.AdvObject (int id, String name, String description, Set&lt; String &gt; alias)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>name</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>description</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>alias</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00080">80</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a1278661f5736763873ab3407d7464486"/><section>
+    <title>equals()</title>
+<indexterm><primary>equals</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>equals</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.type.AdvObject.equals (Object obj)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>obj</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00300">300</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a1278661f5736763873ab3407d7464486_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a5aba1d8f4fc217957dc87c0a015083db"/><section>
+    <title>getAlias()</title>
+<indexterm><primary>getAlias</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>getAlias</secondary></indexterm>
+<para><computeroutput>Set&lt; String &gt; di.uniba.map.b.adventure.type.AdvObject.getAlias ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00203">203</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a079d6994871e7ed4fb8dc4844c2e2da8"/><section>
+    <title>getContents()</title>
+<indexterm><primary>getContents</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>getContents</secondary></indexterm>
+<para><computeroutput>String di.uniba.map.b.adventure.type.AdvObject.getContents ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>contents </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00277">277</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a079d6994871e7ed4fb8dc4844c2e2da8_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ab3c2f2b70e45f651431ebcd1e631ae14"/><section>
+    <title>getDescription()</title>
+<indexterm><primary>getDescription</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>getDescription</secondary></indexterm>
+<para><computeroutput>String di.uniba.map.b.adventure.type.AdvObject.getDescription ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00107">107</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ab3c2f2b70e45f651431ebcd1e631ae14_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a574de9727e7d8957bd265a06e1611052"/><section>
+    <title>getId()</title>
+<indexterm><primary>getId</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>getId</secondary></indexterm>
+<para><computeroutput>int di.uniba.map.b.adventure.type.AdvObject.getId ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00227">227</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a574de9727e7d8957bd265a06e1611052_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a094731968d56cadb1274bfcf31c474fa"/><section>
+    <title>getName()</title>
+<indexterm><primary>getName</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>getName</secondary></indexterm>
+<para><computeroutput>String di.uniba.map.b.adventure.type.AdvObject.getName ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00091">91</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a094731968d56cadb1274bfcf31c474fa_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ac8d0e063e0971fd775eccc45373553dd"/><section>
+    <title>hashCode()</title>
+<indexterm><primary>hashCode</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>hashCode</secondary></indexterm>
+<para><computeroutput>int di.uniba.map.b.adventure.type.AdvObject.hashCode ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00284">284</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1ae6347f2c165add59f417f46b48fe1fbb"/><section>
+    <title>isCreature()</title>
+<indexterm><primary>isCreature</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>isCreature</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.type.AdvObject.isCreature ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00235">235</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aacb51db33d66a1ed86da7c547102239e"/><section>
+    <title>isLiving()</title>
+<indexterm><primary>isLiving</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>isLiving</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.type.AdvObject.isLiving ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00247">247</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a31027928ec81ef8e1ad0f140135e8315"/><section>
+    <title>isOpen()</title>
+<indexterm><primary>isOpen</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>isOpen</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.type.AdvObject.isOpen ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1afab93d2768dc15ef28b8fdcfd6eab9ba">di.uniba.map.b.adventure.type.AdvObjectContainer</link>.</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00171">171</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a443b6651c97cb2edfbb38d9363d95b98"/><section>
+    <title>isOpenable()</title>
+<indexterm><primary>isOpenable</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>isOpenable</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.type.AdvObject.isOpenable ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00123">123</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a443b6651c97cb2edfbb38d9363d95b98_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a70ec19949e8e3637ca915920cf3ba2c4"/><section>
+    <title>isPickupable()</title>
+<indexterm><primary>isPickupable</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>isPickupable</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.type.AdvObject.isPickupable ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00139">139</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a70ec19949e8e3637ca915920cf3ba2c4_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aef3cc255646b9115b68d5da313b3749c"/><section>
+    <title>isPush()</title>
+<indexterm><primary>isPush</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>isPush</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.type.AdvObject.isPush ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00187">187</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aef3cc255646b9115b68d5da313b3749c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a0498094520bcd048b59d9cf6f3b1ad9b"/><section>
+    <title>isPushable()</title>
+<indexterm><primary>isPushable</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>isPushable</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.type.AdvObject.isPushable ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00155">155</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a0498094520bcd048b59d9cf6f3b1ad9b_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a8f17062d6613e6a829bfe6c5ddda52c3"/><section>
+    <title>isReadable()</title>
+<indexterm><primary>isReadable</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>isReadable</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.type.AdvObject.isReadable ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>readable </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00259">259</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a8f17062d6613e6a829bfe6c5ddda52c3_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aac77d8af8bc19180b52cd1a3fc103ac4"/><section>
+    <title>setAlias()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>setAlias</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setAlias</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setAlias (Set&lt; String &gt; alias)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>alias</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00211">211</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aac77d8af8bc19180b52cd1a3fc103ac4_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a631a338a0ae33c89c5a9c06473ae7588"/><section>
+    <title>setAlias()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>setAlias</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setAlias</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setAlias (String[] alias)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>alias</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00219">219</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a77b9388c3f94e334e6bec615c87d21fd"/><section>
+    <title>setContents()</title>
+<indexterm><primary>setContents</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setContents</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setContents (String contents)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>contents</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00271">271</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a77b9388c3f94e334e6bec615c87d21fd_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a8405505a0e5da051ac72e6f81a7b9a46"/><section>
+    <title>setCreature()</title>
+<indexterm><primary>setCreature</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setCreature</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setCreature (boolean creature)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>creature</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00241">241</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a8405505a0e5da051ac72e6f81a7b9a46_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a9aad9fee5eea5e2623a8d24ebf07d4f6"/><section>
+    <title>setDescription()</title>
+<indexterm><primary>setDescription</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setDescription</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setDescription (String description)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>description</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00115">115</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1af5b165b7cdca0f00ff832dad38949ba6"/><section>
+    <title>setLiving()</title>
+<indexterm><primary>setLiving</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setLiving</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setLiving (boolean living)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>living</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00253">253</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a89b408c2cae991b09d4cca16f1c1dde7"/><section>
+    <title>setName()</title>
+<indexterm><primary>setName</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setName</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setName (String name)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00099">99</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1abfd22cc782ae3395c0af61b747b8797b"/><section>
+    <title>setOpen()</title>
+<indexterm><primary>setOpen</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setOpen</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setOpen (boolean open)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>open</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Reimplemented in <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container_1a684f5cb2780a824c01fc298360a8b820">di.uniba.map.b.adventure.type.AdvObjectContainer</link>.</para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00179">179</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_abfd22cc782ae3395c0af61b747b8797b_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a58b77d327d599e34e91479637ebf7ee6"/><section>
+    <title>setOpenable()</title>
+<indexterm><primary>setOpenable</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setOpenable</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setOpenable (boolean openable)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>openable</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00131">131</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a58b77d327d599e34e91479637ebf7ee6_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1abeb7c9ea6b9bfb1890ed139798494619"/><section>
+    <title>setPickupable()</title>
+<indexterm><primary>setPickupable</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setPickupable</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setPickupable (boolean pickupable)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pickupable</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00147">147</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_abeb7c9ea6b9bfb1890ed139798494619_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a261b682698bd7d3369a372c243daf380"/><section>
+    <title>setPush()</title>
+<indexterm><primary>setPush</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setPush</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setPush (boolean push)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>push</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00195">195</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a261b682698bd7d3369a372c243daf380_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1aadb1cedc859c20a8f2e1b0cc21332bbf"/><section>
+    <title>setPushable()</title>
+<indexterm><primary>setPushable</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setPushable</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setPushable (boolean pushable)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pushable</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00163">163</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aadb1cedc859c20a8f2e1b0cc21332bbf_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1af6dde388988aed97e0298aaaaaebec11"/><section>
+    <title>setReadable()</title>
+<indexterm><primary>setReadable</primary><secondary>di.uniba.map.b.adventure.type.AdvObject</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.AdvObject</primary><secondary>setReadable</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.AdvObject.setReadable (boolean readable)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>readable</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__adv_object_8java_source_1l00265">265</link> of file <link linkend="__adv_object_8java_source">AdvObject.java</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_af6dde388988aed97e0298aaaaaebec11_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObject.java</section>
+</section>

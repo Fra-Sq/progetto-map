@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::parser::Parser</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1ac47b1a4b419f0caf817f6996019e80db" prot="private" static="no" mutable="no">
+        <type>final Set&lt; String &gt;</type>
+        <definition>final Set&lt;String&gt; di.uniba.map.b.adventure.parser.Parser.stopwords</definition>
+        <argsstring></argsstring>
+        <name>stopwords</name>
+        <qualifiedname>di.uniba.map.b.adventure.parser.Parser.stopwords</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" line="21" column="23" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1a0e24595f9263ddcd796c3d46176fb01b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.parser.Parser.Parser</definition>
+        <argsstring>(Set&lt; String &gt; stopwords)</argsstring>
+        <name>Parser</name>
+        <qualifiedname>di.uniba.map.b.adventure.parser.Parser.Parser</qualifiedname>
+        <param>
+          <type>Set&lt; String &gt;</type>
+          <declname>stopwords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser" kindref="compound">Parser</ref> with a specified set of stopwords. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stopwords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A set of strings representing stopwords to be ignored during parsing. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" line="27" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1a1671cce0ea9375ac45ff8b15beff3291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref></type>
+        <definition>ParserOutput di.uniba.map.b.adventure.parser.Parser.parse</definition>
+        <argsstring>(String command, List&lt; Command &gt; commands, List&lt; AdvObject &gt; objects, List&lt; AdvObject &gt; inventory)</argsstring>
+        <name>parse</name>
+        <qualifiedname>di.uniba.map.b.adventure.parser.Parser.parse</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref> &gt;</type>
+          <declname>commands</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+          <declname>objects</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+          <declname>inventory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses a player command, identifying the command and objects mentioned in the input. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player command to parse. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>commands</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of commands to check against. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>objects</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of objects to check against. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inventory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of objects in the player&apos;s inventory to check against. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref> object containing the identified command and objects. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" line="63" column="25" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" bodystart="63" bodyend="98"/>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1adadde018ee4a00c9bbf9894a83a172d9" compoundref="_parser_8java" startline="37" endline="44">di.uniba.map.b.adventure.parser.Parser.checkForCommand</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1a7e85679dc02c8c772afe2604c5a98c20" compoundref="_utils_8java" startline="45" endline="54">di.uniba.map.b.adventure.Utils.parseString</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1adadde018ee4a00c9bbf9894a83a172d9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int di.uniba.map.b.adventure.parser.Parser.checkForCommand</definition>
+        <argsstring>(String token, List&lt; Command &gt; commands)</argsstring>
+        <name>checkForCommand</name>
+        <qualifiedname>di.uniba.map.b.adventure.parser.Parser.checkForCommand</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref> &gt;</type>
+          <declname>commands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a token is a command. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The token to check. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>commands</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of commands to check against. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The index of the command in the list, or -1 if the token is not a command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" line="37" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" bodystart="37" bodyend="44"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1a1671cce0ea9375ac45ff8b15beff3291" compoundref="_parser_8java" startline="63" endline="98">di.uniba.map.b.adventure.parser.Parser.parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1a48fc6ba6ee0664bc59cd9b660f9461f8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int di.uniba.map.b.adventure.parser.Parser.checkForObject</definition>
+        <argsstring>(String token, List&lt; AdvObject &gt; obejcts)</argsstring>
+        <name>checkForObject</name>
+        <qualifiedname>di.uniba.map.b.adventure.parser.Parser.checkForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+          <declname>obejcts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" line="47" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" bodystart="47" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser" kindref="compound">Parser</ref> class is responsible for interpreting player commands within the game. It processes input strings, removing stopwords, and identifies commands and objects mentioned in the input. It supports simple sentences structured as &lt;action&gt; &lt;object&gt; &lt;object&gt;, with articles and prepositions being ignored. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.parser.Parser</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" line="19" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/parser/Parser.java" bodystart="19" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1adadde018ee4a00c9bbf9894a83a172d9" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::parser::Parser</scope><name>checkForCommand</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1a48fc6ba6ee0664bc59cd9b660f9461f8" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::parser::Parser</scope><name>checkForObject</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1a1671cce0ea9375ac45ff8b15beff3291" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::parser::Parser</scope><name>parse</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1a0e24595f9263ddcd796c3d46176fb01b" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::parser::Parser</scope><name>Parser</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1ac47b1a4b419f0caf817f6996019e80db" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::parser::Parser</scope><name>stopwords</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

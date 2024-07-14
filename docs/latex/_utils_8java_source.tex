@@ -1,0 +1,45 @@
+\doxysection{Utils.\+java}
+\hypertarget{_utils_8java_source}{}\label{_utils_8java_source}\index{adventure/src/main/java/di/uniba/map/b/adventure/Utils.java@{adventure/src/main/java/di/uniba/map/b/adventure/Utils.java}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00002}00002\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt\ to\ change\ this\ license}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00003}00003\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java\ to\ edit\ this\ template}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00004}00004\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00005}00005\ \textcolor{keyword}{package\ }di.uniba.map.b.adventure;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00007}00007\ \textcolor{keyword}{import}\ java.io.BufferedReader;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00008}00008\ \textcolor{keyword}{import}\ java.io.File;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00009}00009\ \textcolor{keyword}{import}\ java.io.FileReader;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00010}00010\ \textcolor{keyword}{import}\ java.io.IOException;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00011}00011\ \textcolor{keyword}{import}\ java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00012}00012\ \textcolor{keyword}{import}\ java.util.HashSet;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00013}00013\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00014}00014\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00019}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils}{00019}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils}{Utils}}\ \{}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00028}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_ac62e8ebb99f39d3af6c6cf06f534ed5f}{00028}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ Set<String>\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_ac62e8ebb99f39d3af6c6cf06f534ed5f}{loadFileListInSet}}(File\ file)\ \textcolor{keywordflow}{throws}\ IOException\ \{}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ Set<String>\ \textcolor{keyword}{set}\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (BufferedReader\ reader\ =\ \textcolor{keyword}{new}\ BufferedReader(\textcolor{keyword}{new}\ FileReader(file)))\ \{}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (reader.ready())\ \{}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}.add(reader.readLine().trim().toLowerCase());}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{set};}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00036}00036\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00045}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_a7e85679dc02c8c772afe2604c5a98c20}{00045}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ List<String>\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_a7e85679dc02c8c772afe2604c5a98c20}{parseString}}(String\ \textcolor{keywordtype}{string},\ Set<String>\ stopwords)\ \{}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00046}00046\ \ \ \ \ \ \ \ \ List<String>\ tokens\ =\ \textcolor{keyword}{new}\ ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00047}00047\ \ \ \ \ \ \ \ \ String[]\ split\ =\ \textcolor{keywordtype}{string}.toLowerCase().split(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)s+"{}});}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ t\ :\ split)\ \{}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!stopwords.contains(t))\ \{}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tokens.add(t);}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ tokens;}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00054}00054\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_utils_8java_source_l00056}00056\ \}}
+
+\end{DoxyCode}

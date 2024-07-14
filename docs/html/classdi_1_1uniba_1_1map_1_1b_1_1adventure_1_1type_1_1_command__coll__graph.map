@@ -1,0 +1,5 @@
+<map id="di.uniba.map.b.adventure.type.Command" name="di.uniba.map.b.adventure.type.Command">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,155,195,411"/>
+<area shape="rect" id="Node000002" href="$enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type.html" title=" " alt="" coords="5,5,195,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,90,103,138,97,138,97,90"/>
+</map>

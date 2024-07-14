@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::Engine</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1ab33d4b81c21667746ed7f362754ae196" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" kindref="compound">GameDescription</ref></type>
+        <definition>final GameDescription di.uniba.map.b.adventure.Engine.game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <qualifiedname>di.uniba.map.b.adventure.Engine.game</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="18" column="35" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1af6d052adfebf0c2eb60574d92c4f4ebf" prot="private" static="no" mutable="no">
+        <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser" kindref="compound">Parser</ref></type>
+        <definition>Parser di.uniba.map.b.adventure.Engine.parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <qualifiedname>di.uniba.map.b.adventure.Engine.parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="20" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1ac7d8df4db2890bb5bac921cb7ad8702c" prot="private" static="no" mutable="no">
+        <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
+        <definition>Window di.uniba.map.b.adventure.Engine.window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>di.uniba.map.b.adventure.Engine.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="21" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0aac5add5a958af0c635be1d49581f3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.Engine.Engine</definition>
+        <argsstring>(GameDescription game)</argsstring>
+        <name>Engine</name>
+        <qualifiedname>di.uniba.map.b.adventure.Engine.Engine</qualifiedname>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" kindref="compound">GameDescription</ref></type>
+          <declname>game</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs an <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" kindref="compound">Engine</ref> object with a specified game description.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>game</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game description to be used for this engine instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="28" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="28" bodyend="41"/>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ace481a2be2f2f56ee9cbaf26c8692516">di.uniba.map.b.adventure.GameDescription.init</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1ac62e8ebb99f39d3af6c6cf06f534ed5f" compoundref="_utils_8java" startline="28" endline="36">di.uniba.map.b.adventure.Utils.loadFileListInSet</references>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0e23d03537aa3d882ae3e62418a209f9" compoundref="_engine_8java" startline="60" endline="63">di.uniba.map.b.adventure.Engine.main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.Engine.execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>di.uniba.map.b.adventure.Engine.execute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Executes the game by setting up the window, displaying the start description, and showing the current room&apos;s name and description. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="47" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="47" bodyend="52"/>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514" compoundref="_game_description_8java" startline="110" endline="112">di.uniba.map.b.adventure.GameDescription.getCurrentRoom</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a1019a567cc65258ba7231be04b6f6c44">di.uniba.map.b.adventure.GameDescription.getWelcomeMsg</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a7d48bd7d07aa3d24b4bd41f487db360c" compoundref="_window_8java" startline="761" endline="763">di.uniba.map.b.adventure.impl.Window.showRoomDescription</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1aa45f0143ed093c6ce28415bcff983ca7" compoundref="_window_8java" startline="743" endline="755">di.uniba.map.b.adventure.impl.Window.showRoomName</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window_1a24105046a31874be367da6483142aa16" compoundref="_window_8java" startline="734" endline="737">di.uniba.map.b.adventure.impl.Window.showStartDescription</references>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0e23d03537aa3d882ae3e62418a209f9" compoundref="_engine_8java" startline="60" endline="63">di.uniba.map.b.adventure.Engine.main</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0e23d03537aa3d882ae3e62418a209f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void di.uniba.map.b.adventure.Engine.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>di.uniba.map.b.adventure.Engine.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The main method to start the game. It creates an <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" kindref="compound">Engine</ref> instance with a SpaceEscape game description and executes the game.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the command line arguments (not used). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="60" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="60" bodyend="63"/>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0aac5add5a958af0c635be1d49581f3a" compoundref="_engine_8java" startline="28" endline="41">di.uniba.map.b.adventure.Engine.Engine</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc" compoundref="_engine_8java" startline="47" endline="52">di.uniba.map.b.adventure.Engine.execute</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" kindref="compound">Engine</ref> class is the main driver of the game. It initializes the game environment, including the game description, parser, and window. It also handles the execution of the game by displaying the start description, room name, and room description. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.Engine</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-game</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-parser</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-window</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.GameDescription</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-currentRoom</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>di.uniba.map.b.adventure.impl.AePlayWave</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave"/>
+      </node>
+      <node id="7">
+        <label>di.uniba.map.b.adventure.impl.RESTClient</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client"/>
+      </node>
+      <node id="5">
+        <label>di.uniba.map.b.adventure.impl.Window</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>~sottofondo</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>~client</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>di.uniba.map.b.adventure.parser.Parser</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser"/>
+      </node>
+      <node id="3">
+        <label>di.uniba.map.b.adventure.type.Room</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-east</edgelabel>
+          <edgelabel>-north</edgelabel>
+          <edgelabel>-south</edgelabel>
+          <edgelabel>-west</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-game</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="16" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="16" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0aac5add5a958af0c635be1d49581f3a" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>Engine</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>execute</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1ab33d4b81c21667746ed7f362754ae196" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>game</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0e23d03537aa3d882ae3e62418a209f9" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>main</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1af6d052adfebf0c2eb60574d92c4f4ebf" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>parser</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1ac7d8df4db2890bb5bac921cb7ad8702c" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

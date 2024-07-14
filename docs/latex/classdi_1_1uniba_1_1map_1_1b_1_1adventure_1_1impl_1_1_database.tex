@@ -1,0 +1,232 @@
+\doxysection{di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database Class Reference}
+\hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database}{}\label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+
+
+Collaboration diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_ab8f61a7b1ba1fc40053f9b3535c7d354}{Database}} ()
+\item 
+boolean \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_adb497352ce996d96b4bae8c09d79ba9b}{insert\+New\+Data}} ()
+\item 
+String \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a379089667952dc981cb9ab4b8a6952f8}{get\+Name\+By\+Id}} (String id)
+\item 
+String \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_abba764263d9d62ab0c3785f2a4146803}{get\+Description\+By\+Id}} (String id)
+\item 
+String \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_af3d19c59a0b5cfe6a92f0c47529396aa}{get\+Room\+Look\+By\+Id}} (String id)
+\item 
+boolean \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a9ed1bc2b29d6412b294c2c80af5b4234}{update\+Name\+By\+Id}} (String id, String new\+Name)
+\item 
+boolean \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a9da44c7659651cab0c086cdc1163e6ef}{update\+Description\+By\+Id}} (String id, String new\+Description)
+\item 
+boolean \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a933fe7549e0d415271874fa7bde8aa9e}{update\+Room\+Look\+By\+Id}} (String id, String new\+Room\+Look)
+\item 
+void \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a714e5312efe9bd729f1e9b70a0995c11}{close}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides database operations for the adventure game. It handles connections to the database and provides methods to retrieve and update game data. 
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00019}{19}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_ab8f61a7b1ba1fc40053f9b3535c7d354}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}!Database@{Database}}
+\index{Database@{Database}!di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+\doxysubsubsection{\texorpdfstring{Database()}{Database()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_ab8f61a7b1ba1fc40053f9b3535c7d354} 
+di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database.\+Database (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor for \doxylink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database}{Database}. Initializes the database connection using JDBC and H2 database. 
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00027}{27}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a714e5312efe9bd729f1e9b70a0995c11}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}!close@{close}}
+\index{close@{close}!di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a714e5312efe9bd729f1e9b70a0995c11} 
+void di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database.\+close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Closes the database connection. 
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00206}{206}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a714e5312efe9bd729f1e9b70a0995c11_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_abba764263d9d62ab0c3785f2a4146803}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}!getDescriptionById@{getDescriptionById}}
+\index{getDescriptionById@{getDescriptionById}!di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+\doxysubsubsection{\texorpdfstring{getDescriptionById()}{getDescriptionById()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_abba764263d9d62ab0c3785f2a4146803} 
+String di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database.\+get\+Description\+By\+Id (\begin{DoxyParamCaption}\item[{String}]{id}{}\end{DoxyParamCaption})}
+
+Retrieves the description associated with a given ID from the database. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID for which the description is to be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The description associated with the ID, or null if not found or in case of an error. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00099}{99}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_abba764263d9d62ab0c3785f2a4146803_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a379089667952dc981cb9ab4b8a6952f8}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}!getNameById@{getNameById}}
+\index{getNameById@{getNameById}!di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+\doxysubsubsection{\texorpdfstring{getNameById()}{getNameById()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a379089667952dc981cb9ab4b8a6952f8} 
+String di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database.\+get\+Name\+By\+Id (\begin{DoxyParamCaption}\item[{String}]{id}{}\end{DoxyParamCaption})}
+
+Retrieves the name associated with a given ID from the database. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID for which the name is to be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name associated with the ID, or null if not found or in case of an error. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00077}{77}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a379089667952dc981cb9ab4b8a6952f8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_af3d19c59a0b5cfe6a92f0c47529396aa}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}!getRoomLookById@{getRoomLookById}}
+\index{getRoomLookById@{getRoomLookById}!di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+\doxysubsubsection{\texorpdfstring{getRoomLookById()}{getRoomLookById()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_af3d19c59a0b5cfe6a92f0c47529396aa} 
+String di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database.\+get\+Room\+Look\+By\+Id (\begin{DoxyParamCaption}\item[{String}]{id}{}\end{DoxyParamCaption})}
+
+Retrieves the room look associated with a given ID from the database. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID for which the room look is to be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The room look associated with the ID, or null if not found or in case of an error. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00121}{121}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_af3d19c59a0b5cfe6a92f0c47529396aa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_adb497352ce996d96b4bae8c09d79ba9b}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}!insertNewData@{insertNewData}}
+\index{insertNewData@{insertNewData}!di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+\doxysubsubsection{\texorpdfstring{insertNewData()}{insertNewData()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_adb497352ce996d96b4bae8c09d79ba9b} 
+boolean di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database.\+insert\+New\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Inserts new data into the database by prompting the user for input. Data includes ID, name, description, and room look.
+
+\begin{DoxyReturn}{Returns}
+true if the data was successfully inserted, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00045}{45}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a9da44c7659651cab0c086cdc1163e6ef}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}!updateDescriptionById@{updateDescriptionById}}
+\index{updateDescriptionById@{updateDescriptionById}!di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+\doxysubsubsection{\texorpdfstring{updateDescriptionById()}{updateDescriptionById()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a9da44c7659651cab0c086cdc1163e6ef} 
+boolean di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database.\+update\+Description\+By\+Id (\begin{DoxyParamCaption}\item[{String}]{id}{, }\item[{String}]{new\+Description}{}\end{DoxyParamCaption})}
+
+Updates the description associated with a given ID in the database. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID for which the description is to be updated. \\
+\hline
+{\em new\+Description} & The new description to be set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the update was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00165}{165}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a9ed1bc2b29d6412b294c2c80af5b4234}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}!updateNameById@{updateNameById}}
+\index{updateNameById@{updateNameById}!di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+\doxysubsubsection{\texorpdfstring{updateNameById()}{updateNameById()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a9ed1bc2b29d6412b294c2c80af5b4234} 
+boolean di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database.\+update\+Name\+By\+Id (\begin{DoxyParamCaption}\item[{String}]{id}{, }\item[{String}]{new\+Name}{}\end{DoxyParamCaption})}
+
+Updates the name associated with a given ID in the database. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID for which the name is to be updated. \\
+\hline
+{\em new\+Name} & The new name to be set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the update was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00144}{144}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a933fe7549e0d415271874fa7bde8aa9e}\index{di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}!updateRoomLookById@{updateRoomLookById}}
+\index{updateRoomLookById@{updateRoomLookById}!di.uniba.map.b.adventure.impl.Database@{di.uniba.map.b.adventure.impl.Database}}
+\doxysubsubsection{\texorpdfstring{updateRoomLookById()}{updateRoomLookById()}}
+{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_a933fe7549e0d415271874fa7bde8aa9e} 
+boolean di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Database.\+update\+Room\+Look\+By\+Id (\begin{DoxyParamCaption}\item[{String}]{id}{, }\item[{String}]{new\+Room\+Look}{}\end{DoxyParamCaption})}
+
+Updates the room look associated with a given ID in the database. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID for which the room look is to be updated. \\
+\hline
+{\em new\+Room\+Look} & The new room look to be set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the update was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_8java_source_l00186}{186}} of file \mbox{\hyperlink{_database_8java_source}{Database.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.\+java\end{DoxyCompactItemize}

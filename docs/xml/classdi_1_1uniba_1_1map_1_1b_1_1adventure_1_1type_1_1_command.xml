@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::type::Command</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a0585de505a4761501a79c202c30db47b" prot="private" static="no" mutable="no">
+        <type>final <ref refid="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type" kindref="compound">CommandType</ref></type>
+        <definition>final CommandType di.uniba.map.b.adventure.type.Command.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="18" column="31" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1ad893917d338e9efbd4a4bc52e1171406" prot="private" static="no" mutable="no">
+        <type>final String</type>
+        <definition>final String di.uniba.map.b.adventure.type.Command.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="20" column="26" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1ad661816c1adbf771f95b6f590ef345f0" prot="private" static="no" mutable="no">
+        <type>Set&lt; String &gt;</type>
+        <definition>Set&lt;String&gt; di.uniba.map.b.adventure.type.Command.alias</definition>
+        <argsstring></argsstring>
+        <name>alias</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.alias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="22" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1ad13496a4b773e3abb3e491c0f1d0ee16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.type.Command.Command</definition>
+        <argsstring>(CommandType type, String name)</argsstring>
+        <name>Command</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.Command</qualifiedname>
+        <param>
+          <type><ref refid="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type" kindref="compound">CommandType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref> with a specified type and name. This constructor initializes a command without any aliases.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the command. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The primary name of the command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="31" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="31" bodyend="34"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a394849e9b6380da535c097b902cc6e1a" compoundref="_command_8java" startline="117" endline="129">di.uniba.map.b.adventure.type.Command.equals</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a7e7257f1c2555fcfd6873ebe05c516a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>di.uniba.map.b.adventure.type.Command.Command</definition>
+        <argsstring>(CommandType type, String name, Set&lt; String &gt; alias)</argsstring>
+        <name>Command</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.Command</qualifiedname>
+        <param>
+          <type><ref refid="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type" kindref="compound">CommandType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Set&lt; String &gt;</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref> with a specified type, name, and set of aliases. This constructor allows for the initialization of a command with multiple names.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the command. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The primary name of the command. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A set of alternative names or aliases for the command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="44" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a2212e5826aa6cb1e661d3be2bc634fab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String di.uniba.map.b.adventure.type.Command.getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the primary name of the command.</para>
+<para><simplesect kind="return"><para>The primary name of the command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="55" column="19" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a88c458e30ca1787481c02362e6283b57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; String &gt;</type>
+        <definition>Set&lt; String &gt; di.uniba.map.b.adventure.type.Command.getAlias</definition>
+        <argsstring>()</argsstring>
+        <name>getAlias</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.getAlias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the set of aliases for the command.</para>
+<para><simplesect kind="return"><para>A set of alternative names or aliases for the command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="64" column="16" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a18478c4fe0dcbcb6b6579dff9ce24f68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.type.Command.setAlias</definition>
+        <argsstring>(Set&lt; String &gt; alias)</argsstring>
+        <name>setAlias</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.setAlias</qualifiedname>
+        <param>
+          <type>Set&lt; String &gt;</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the aliases for the command.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A set of alternative names or aliases for the command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="73" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="73" bodyend="75"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe" compoundref="_space_escape_8java" startline="37" endline="239">di.uniba.map.b.adventure.impl.SpaceEscape.init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1add7bc83e556054882d1a5804a309486d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.type.Command.setAlias</definition>
+        <argsstring>(String[] alias)</argsstring>
+        <name>setAlias</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.setAlias</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the aliases for the command from an array of strings. This method converts the array into a set and assigns it to the command.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of alternative names or aliases for the command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="83" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1aec1582f0d37d094451b1ff3db9c36679" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type" kindref="compound">CommandType</ref></type>
+        <definition>CommandType di.uniba.map.b.adventure.type.Command.getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.getType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the type of the command.</para>
+<para><simplesect kind="return"><para>The type of the command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="92" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="92" bodyend="94"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee" compoundref="_space_escape_8java" startline="251" endline="312">di.uniba.map.b.adventure.impl.SpaceEscape.nextMove</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer_1a207e3d5f908ea6e751e10534d159f1f1" compoundref="_inventory_observer_8java" startline="31" endline="44">di.uniba.map.b.adventure.impl.InventoryObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_1a6f74bf9bc7ff679eccfe9c50177f2003" compoundref="_kill_observer_8java" startline="34" endline="63">di.uniba.map.b.adventure.impl.KillObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer_1a28cdef8cf07906c6886c516e6763913f" compoundref="_look_at_observer_8java" startline="29" endline="39">di.uniba.map.b.adventure.impl.LookAtObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer_1ae51630cc6a0529974a3d64869d4b1013" compoundref="_move_observer_8java" startline="28" endline="58">di.uniba.map.b.adventure.impl.MoveObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_1af5f5d96d94324ba5e0e9070ede8e789a" compoundref="_open_observer_8java" startline="33" endline="51">di.uniba.map.b.adventure.impl.OpenObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer_1a859e7f0b50a281e571a85ef872ee1374" compoundref="_pick_up_observer_8java" startline="31" endline="54">di.uniba.map.b.adventure.impl.PickUpObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_1ac3e97a89860c377b76277749109befa4" compoundref="_push_observer_8java" startline="32" endline="56">di.uniba.map.b.adventure.impl.PushObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer_1a3c550a2289d5b47a7411bf138078e19b" compoundref="_read_observer_8java" startline="29" endline="56">di.uniba.map.b.adventure.impl.ReadObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer_1a4e2335cd4239f4fac2f69d3591585a28" compoundref="_use_observer_8java" startline="27" endline="106">di.uniba.map.b.adventure.impl.UseObserver.update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1afac06e619dd7d96837850394bf758d24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int di.uniba.map.b.adventure.type.Command.hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.hashCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generates a hash code for the command. The hash code is based primarily on the command&apos;s type.</para>
+<para><simplesect kind="return"><para>A hash code for the command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="103" column="16" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a394849e9b6380da535c097b902cc6e1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.type.Command.equals</definition>
+        <argsstring>(Object obj)</argsstring>
+        <name>equals</name>
+        <qualifiedname>di.uniba.map.b.adventure.type.Command.equals</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compares this command to another object for equality. Two commands are considered equal if they have the same type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compare with this command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the specified object is a command with the same type; false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="117" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="117" bodyend="129"/>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1ad13496a4b773e3abb3e491c0f1d0ee16" compoundref="_command_8java" startline="31" endline="34">di.uniba.map.b.adventure.type.Command.Command</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents a command in the adventure game. Commands are actions that the player can perform, such as moving, picking up items, or interacting with the game world. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.type.Command</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-type</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.type.CommandType</label>
+        <link refid="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" line="16" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/type/Command.java" bodystart="16" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1ad661816c1adbf771f95b6f590ef345f0" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>alias</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1ad13496a4b773e3abb3e491c0f1d0ee16" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>Command</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a7e7257f1c2555fcfd6873ebe05c516a7" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>Command</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a394849e9b6380da535c097b902cc6e1a" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>equals</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a88c458e30ca1787481c02362e6283b57" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>getAlias</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a2212e5826aa6cb1e661d3be2bc634fab" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>getName</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1aec1582f0d37d094451b1ff3db9c36679" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>getType</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1afac06e619dd7d96837850394bf758d24" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>hashCode</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1ad893917d338e9efbd4a4bc52e1171406" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>name</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a18478c4fe0dcbcb6b6579dff9ce24f68" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>setAlias</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1add7bc83e556054882d1a5804a309486d" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>setAlias</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_1a0585de505a4761501a79c202c30db47b" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::type::Command</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

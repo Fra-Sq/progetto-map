@@ -1,0 +1,33 @@
+\doxysection{Look\+At\+Observer.\+java}
+\hypertarget{_look_at_observer_8java_source}{}\label{_look_at_observer_8java_source}\index{adventure/src/main/java/di/uniba/map/b/adventure/impl/LookAtObserver.java@{adventure/src/main/java/di/uniba/map/b/adventure/impl/LookAtObserver.java}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00002}00002\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt\ to\ change\ this\ license}}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00003}00003\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java\ to\ edit\ this\ template}}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00004}00004\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00005}00005\ \textcolor{keyword}{package\ }di.uniba.map.b.adventure.impl;}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00007}00007\ \textcolor{keyword}{import}\ di.uniba.map.b.adventure.GameDescription;}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00008}00008\ \textcolor{keyword}{import}\ di.uniba.map.b.adventure.parser.ParserOutput;}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00009}00009\ \textcolor{keyword}{import}\ di.uniba.map.b.adventure.type.CommandType;}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00010}00010\ \textcolor{keyword}{import}\ di.uniba.map.b.adventure.GameObserver;}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00017}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer}{00017}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer}{LookAtObserver}}\ \textcolor{keyword}{implements}\ \mbox{\hyperlink{interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer}{GameObserver}}\ \{}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00028}00028\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00029}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer_a28cdef8cf07906c6886c516e6763913f}{00029}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer_a28cdef8cf07906c6886c516e6763913f}{update}}(\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{GameDescription}}\ description,\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{ParserOutput}}\ parserOutput,\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}}\ window)\ \{}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ StringBuilder\ msg\ =\ \textcolor{keyword}{new}\ StringBuilder();}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (parserOutput.\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output_a94f39efa449452a2cde5aabf835cb261}{getCommand}}().\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_aec1582f0d37d094451b1ff3db9c36679}{getType}}()\ ==\ \mbox{\hyperlink{enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type}{CommandType}}.LOOK\_AT)\ \{}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (description.\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_a63b6f071dc00caa521638067b84ce514}{getCurrentRoom}}().getLook()\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ msg.append(description.\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_a63b6f071dc00caa521638067b84ce514}{getCurrentRoom}}().getLook());}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ msg.append(\textcolor{stringliteral}{"{}Non\ c'è\ niente\ di\ interessante\ qui."{}});}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ msg.toString();}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00039}00039\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_look_at_observer_8java_source_l00041}00041\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils" kind="class" language="Java" prot="public">
+    <compoundname>di::uniba::map::b::adventure::Utils</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1ac62e8ebb99f39d3af6c6cf06f534ed5f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; String &gt;</type>
+        <definition>static Set&lt; String &gt; di.uniba.map.b.adventure.Utils.loadFileListInSet</definition>
+        <argsstring>(File file)</argsstring>
+        <name>loadFileListInSet</name>
+        <qualifiedname>di.uniba.map.b.adventure.Utils.loadFileListInSet</qualifiedname>
+        <param>
+          <type>File</type>
+          <declname>file</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Loads each line from a specified file into a <computeroutput><ref refid="" kindref="compound">Set</ref></computeroutput> of strings. This method is useful for loading data where each line represents a unique entry, such as a list of stopwords.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file to read from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <computeroutput><ref refid="" kindref="compound">Set</ref></computeroutput> containing all lines from the file, trimmed and converted to lowercase. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If an I/O error occurs reading from the file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Utils.java" line="28" column="23" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Utils.java" bodystart="28" bodyend="36"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0aac5add5a958af0c635be1d49581f3a" compoundref="_engine_8java" startline="28" endline="41">di.uniba.map.b.adventure.Engine.Engine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1a7e85679dc02c8c772afe2604c5a98c20" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; String &gt;</type>
+        <definition>static List&lt; String &gt; di.uniba.map.b.adventure.Utils.parseString</definition>
+        <argsstring>(String string, Set&lt; String &gt; stopwords)</argsstring>
+        <name>parseString</name>
+        <qualifiedname>di.uniba.map.b.adventure.Utils.parseString</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>Set&lt; String &gt;</type>
+          <declname>stopwords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses a given string into a list of tokens (words), excluding any tokens that are contained in a provided set of stopwords. This method is useful for text processing tasks such as tokenization.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to parse. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stopwords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <computeroutput><ref refid="" kindref="compound">Set</ref></computeroutput> of stopwords to exclude from the resulting list of tokens. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <computeroutput><ref refid="" kindref="compound">List</ref></computeroutput> of tokens derived from the input string, excluding any stopwords. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Utils.java" line="45" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Utils.java" bodystart="45" bodyend="54"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_1a1671cce0ea9375ac45ff8b15beff3291" compoundref="_parser_8java" startline="63" endline="98">di.uniba.map.b.adventure.parser.Parser.parse</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utility class providing static methods for common operations such as loading a list of strings from a file into a set and parsing strings into a list of tokens. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.Utils</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils"/>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/Utils.java" line="19" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Utils.java" bodystart="19" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1ac62e8ebb99f39d3af6c6cf06f534ed5f" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::Utils</scope><name>loadFileListInSet</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1a7e85679dc02c8c772afe2604c5a98c20" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::Utils</scope><name>parseString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

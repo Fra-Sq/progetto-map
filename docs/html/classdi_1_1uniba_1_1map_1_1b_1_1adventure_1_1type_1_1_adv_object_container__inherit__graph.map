@@ -1,0 +1,5 @@
+<map id="di.uniba.map.b.adventure.type.AdvObjectContainer" name="di.uniba.map.b.adventure.type.AdvObjectContainer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,352,195,629"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html" title=" " alt="" coords="5,5,195,304"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,319,103,352,97,352,97,319"/>
+</map>

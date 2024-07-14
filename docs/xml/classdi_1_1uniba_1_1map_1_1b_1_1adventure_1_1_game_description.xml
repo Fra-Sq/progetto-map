@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>di::uniba::map::b::adventure::GameDescription</compoundname>
+    <derivedcompoundref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape" prot="public" virt="non-virtual">di.uniba.map.b.adventure.impl.SpaceEscape</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8938bb1cd7f886a148272362eb5e19b7" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room" kindref="compound">Room</ref> &gt;</type>
+        <definition>final List&lt;Room&gt; di.uniba.map.b.adventure.GameDescription.rooms</definition>
+        <argsstring></argsstring>
+        <name>rooms</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.rooms</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="23" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a34915934b05dc0dad8ee6d98bd3be969" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>final List&lt;Command&gt; di.uniba.map.b.adventure.GameDescription.commands</definition>
+        <argsstring></argsstring>
+        <name>commands</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.commands</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="24" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a07a8411b8e7819589db3b704f46651a6" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+        <definition>List&lt;AdvObject&gt; di.uniba.map.b.adventure.GameDescription.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.inventory</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="25" column="18" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1af9c39419e782971237766cab0aa00d09" prot="private" static="no" mutable="no">
+        <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room" kindref="compound">Room</ref></type>
+        <definition>Room di.uniba.map.b.adventure.GameDescription.currentRoom</definition>
+        <argsstring></argsstring>
+        <name>currentRoom</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.currentRoom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="26" column="18" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a29a33c25c048e9a694ed88cef64184ee" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.GameDescription.keyUsed</definition>
+        <argsstring></argsstring>
+        <name>keyUsed</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.keyUsed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="27" column="21" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1acf62a25748545ff275960bfa6b5b0e88" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+        <definition>final List&lt;AdvObject&gt; di.uniba.map.b.adventure.GameDescription.allObjects</definition>
+        <argsstring></argsstring>
+        <name>allObjects</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.allObjects</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="28" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae6d265375fc241fb5346dc1521d35497" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room" kindref="compound">Room</ref> &gt;</type>
+        <definition>List&lt; Room &gt; di.uniba.map.b.adventure.GameDescription.getRooms</definition>
+        <argsstring>()</argsstring>
+        <name>getRooms</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.getRooms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the list of rooms in the game. <simplesect kind="return"><para>List of Room objects </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="34" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="34" bodyend="36"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe" compoundref="_space_escape_8java" startline="37" endline="239">di.uniba.map.b.adventure.impl.SpaceEscape.init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a184c5cecd35b4e50cda8b1a77ff6dbfe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.GameDescription.setCurrentRoomById</definition>
+        <argsstring>(int roomId)</argsstring>
+        <name>setCurrentRoomById</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.setCurrentRoomById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>roomId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the current room based on the provided room ID. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>roomId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the room to set as the current room </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="42" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a9a7e02f4831b6c8600f62b7296cf6f12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.GameDescription.setGame</definition>
+        <argsstring>(int roomId, List&lt; Integer &gt; inventoryIds, boolean monsterAlive, boolean isDoorOpen)</argsstring>
+        <name>setGame</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.setGame</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>roomId</declname>
+        </param>
+        <param>
+          <type>List&lt; Integer &gt;</type>
+          <declname>inventoryIds</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>monsterAlive</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>isDoorOpen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets up the game state based on the provided parameters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>roomId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the current room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inventoryIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of IDs for objects in the player&apos;s inventory </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>monsterAlive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag indicating if the monster is alive </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isDoorOpen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag indicating if a door is open </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="56" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="56" bodyend="90"/>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac2c90759e68c6f9f17265f2d2d0ab3cb" compoundref="_game_description_8java" startline="179" endline="183">di.uniba.map.b.adventure.GameDescription.getObjectById</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05" compoundref="_game_description_8java" startline="126" endline="128">di.uniba.map.b.adventure.GameDescription.setKeyUsed</references>
+        <references refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_1a58b77d327d599e34e91479637ebf7ee6" compoundref="_adv_object_8java" startline="131" endline="133">di.uniba.map.b.adventure.type.AdvObject.setOpenable</references>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1aac13b7db39539b6f2449e754561b9871" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>List&lt; Command &gt; di.uniba.map.b.adventure.GameDescription.getCommands</definition>
+        <argsstring>()</argsstring>
+        <name>getCommands</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.getCommands</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the list of commands available in the game. <simplesect kind="return"><para>List of Command objects </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="102" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="102" bodyend="104"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe" compoundref="_space_escape_8java" startline="37" endline="239">di.uniba.map.b.adventure.impl.SpaceEscape.init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room" kindref="compound">Room</ref></type>
+        <definition>Room di.uniba.map.b.adventure.GameDescription.getCurrentRoom</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentRoom</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.getCurrentRoom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the current room where the player is located. <simplesect kind="return"><para>Current Room object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="110" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="110" bodyend="112"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc" compoundref="_engine_8java" startline="47" endline="52">di.uniba.map.b.adventure.Engine.execute</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee" compoundref="_space_escape_8java" startline="251" endline="312">di.uniba.map.b.adventure.impl.SpaceEscape.nextMove</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_1a60a902699e64320759b6871ed86f6ade" compoundref="_open_observer_8java" startline="62" endline="86">di.uniba.map.b.adventure.impl.OpenObserver.openObject</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_1a6f74bf9bc7ff679eccfe9c50177f2003" compoundref="_kill_observer_8java" startline="34" endline="63">di.uniba.map.b.adventure.impl.KillObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer_1a28cdef8cf07906c6886c516e6763913f" compoundref="_look_at_observer_8java" startline="29" endline="39">di.uniba.map.b.adventure.impl.LookAtObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer_1ae51630cc6a0529974a3d64869d4b1013" compoundref="_move_observer_8java" startline="28" endline="58">di.uniba.map.b.adventure.impl.MoveObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer_1a859e7f0b50a281e571a85ef872ee1374" compoundref="_pick_up_observer_8java" startline="31" endline="54">di.uniba.map.b.adventure.impl.PickUpObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_1ac3e97a89860c377b76277749109befa4" compoundref="_push_observer_8java" startline="32" endline="56">di.uniba.map.b.adventure.impl.PushObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer_1a4e2335cd4239f4fac2f69d3591585a28" compoundref="_use_observer_8java" startline="27" endline="106">di.uniba.map.b.adventure.impl.UseObserver.update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac7ab01cd9fd9d243243f4cc0b1a13a1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean di.uniba.map.b.adventure.GameDescription.isKeyUsed</definition>
+        <argsstring>()</argsstring>
+        <name>isKeyUsed</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.isKeyUsed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether a key has been used in the game. <simplesect kind="return"><para>true if the key has been used, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="118" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="118" bodyend="120"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee" compoundref="_space_escape_8java" startline="251" endline="312">di.uniba.map.b.adventure.impl.SpaceEscape.nextMove</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer_1a4e2335cd4239f4fac2f69d3591585a28" compoundref="_use_observer_8java" startline="27" endline="106">di.uniba.map.b.adventure.impl.UseObserver.update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.GameDescription.setKeyUsed</definition>
+        <argsstring>(boolean keyUsed)</argsstring>
+        <name>setKeyUsed</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.setKeyUsed</qualifiedname>
+        <param>
+          <type>boolean</type>
+          <declname>keyUsed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the flag indicating whether a key has been used in the game. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>keyUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to indicate the key has been used, false otherwise </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="126" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="126" bodyend="128"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a9a7e02f4831b6c8600f62b7296cf6f12" compoundref="_game_description_8java" startline="56" endline="90">di.uniba.map.b.adventure.GameDescription.setGame</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer_1a4e2335cd4239f4fac2f69d3591585a28" compoundref="_use_observer_8java" startline="27" endline="106">di.uniba.map.b.adventure.impl.UseObserver.update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1adc3220b5f1adbcd7115d0a2f230f054d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.GameDescription.setCurrentRoom</definition>
+        <argsstring>(Room currentRoom)</argsstring>
+        <name>setCurrentRoom</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.setCurrentRoom</qualifiedname>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room" kindref="compound">Room</ref></type>
+          <declname>currentRoom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the current room where the player is located. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentRoom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Room object to set as the current room </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="134" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="134" bodyend="136"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe" compoundref="_space_escape_8java" startline="37" endline="239">di.uniba.map.b.adventure.impl.SpaceEscape.init</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee" compoundref="_space_escape_8java" startline="251" endline="312">di.uniba.map.b.adventure.impl.SpaceEscape.nextMove</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer_1ae51630cc6a0529974a3d64869d4b1013" compoundref="_move_observer_8java" startline="28" endline="58">di.uniba.map.b.adventure.impl.MoveObserver.update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+        <definition>List&lt; AdvObject &gt; di.uniba.map.b.adventure.GameDescription.getInventory</definition>
+        <argsstring>()</argsstring>
+        <name>getInventory</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.getInventory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the player&apos;s inventory. <simplesect kind="return"><para>List of AdvObject objects in the player&apos;s inventory </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="142" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="142" bodyend="144"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee" compoundref="_space_escape_8java" startline="251" endline="312">di.uniba.map.b.adventure.impl.SpaceEscape.nextMove</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer_1a207e3d5f908ea6e751e10534d159f1f1" compoundref="_inventory_observer_8java" startline="31" endline="44">di.uniba.map.b.adventure.impl.InventoryObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer_1a6f74bf9bc7ff679eccfe9c50177f2003" compoundref="_kill_observer_8java" startline="34" endline="63">di.uniba.map.b.adventure.impl.KillObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer_1a859e7f0b50a281e571a85ef872ee1374" compoundref="_pick_up_observer_8java" startline="31" endline="54">di.uniba.map.b.adventure.impl.PickUpObserver.update</referencedby>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer_1ac3e97a89860c377b76277749109befa4" compoundref="_push_observer_8java" startline="32" endline="56">di.uniba.map.b.adventure.impl.PushObserver.update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ace481a2be2f2f56ee9cbaf26c8692516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void di.uniba.map.b.adventure.GameDescription.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.init</qualifiedname>
+        <reimplementedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe">init</reimplementedby>
+        <exceptions> throws Exception</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the game. This method must be implemented by subclasses. <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if an error occurs during initialization </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="150" column="26"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0aac5add5a958af0c635be1d49581f3a" compoundref="_engine_8java" startline="28" endline="41">di.uniba.map.b.adventure.Engine.Engine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae0bcdd2f802d72bb4de83f7b4e80ef84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void di.uniba.map.b.adventure.GameDescription.nextMove</definition>
+        <argsstring>(ParserOutput p, Window window)</argsstring>
+        <name>nextMove</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.nextMove</qualifiedname>
+        <reimplementedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee">nextMove</reimplementedby>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output" kindref="compound">ParserOutput</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Processes the player&apos;s next move based on the parsed input and updates the game state accordingly. This method must be implemented by subclasses. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed player input </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game window for displaying output </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="158" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a1019a567cc65258ba7231be04b6f6c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract String</type>
+        <definition>abstract String di.uniba.map.b.adventure.GameDescription.getWelcomeMsg</definition>
+        <argsstring>()</argsstring>
+        <name>getWelcomeMsg</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.getWelcomeMsg</qualifiedname>
+        <reimplementedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a6be501aa2b5a1c70fd9c38ba10e894d5">getWelcomeMsg</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the welcome message for the game. This method must be implemented by subclasses. <simplesect kind="return"><para>The welcome message as a String </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="164" column="28"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc" compoundref="_engine_8java" startline="47" endline="52">di.uniba.map.b.adventure.Engine.execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8866a8bbe3fea390a0e4f89741b80f77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.GameDescription.addObject</definition>
+        <argsstring>(AdvObject obj)</argsstring>
+        <name>addObject</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.addObject</qualifiedname>
+        <param>
+          <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds an object to the list of all objects in the game. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AdvObject to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="170" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="170" bodyend="172"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room_1aa674792199afea2b3f339b8bd790bebf" compoundref="_room_8java" startline="125" endline="129">di.uniba.map.b.adventure.type.Room.addObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac2c90759e68c6f9f17265f2d2d0ab3cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Optional&lt; <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object" kindref="compound">AdvObject</ref> &gt;</type>
+        <definition>Optional&lt; AdvObject &gt; di.uniba.map.b.adventure.GameDescription.getObjectById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>getObjectById</name>
+        <qualifiedname>di.uniba.map.b.adventure.GameDescription.getObjectById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves an object by its ID from the list of all objects in the game. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the object to retrieve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An Optional containing the AdvObject if found, or an empty Optional otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="179" column="21" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="179" bodyend="183"/>
+        <referencedby refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a9a7e02f4831b6c8600f62b7296cf6f12" compoundref="_game_description_8java" startline="56" endline="90">di.uniba.map.b.adventure.GameDescription.setGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstract class representing the game description. It serves as a blueprint for creating specific game instances, defining the common structure and behavior of the game. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.GameDescription</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description"/>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.impl.SpaceEscape</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>di.uniba.map.b.adventure.GameDescription</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-currentRoom</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>di.uniba.map.b.adventure.GameDescription</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-currentRoom</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>di.uniba.map.b.adventure.type.Room</label>
+        <link refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-east</edgelabel>
+          <edgelabel>-north</edgelabel>
+          <edgelabel>-south</edgelabel>
+          <edgelabel>-west</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-game</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" line="21" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java" bodystart="21" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8866a8bbe3fea390a0e4f89741b80f77" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>addObject</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1acf62a25748545ff275960bfa6b5b0e88" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>allObjects</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a34915934b05dc0dad8ee6d98bd3be969" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>commands</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1af9c39419e782971237766cab0aa00d09" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>currentRoom</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1aac13b7db39539b6f2449e754561b9871" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>getCommands</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>getCurrentRoom</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>getInventory</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac2c90759e68c6f9f17265f2d2d0ab3cb" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>getObjectById</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae6d265375fc241fb5346dc1521d35497" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>getRooms</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a1019a567cc65258ba7231be04b6f6c44" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>getWelcomeMsg</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ace481a2be2f2f56ee9cbaf26c8692516" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>init</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a07a8411b8e7819589db3b704f46651a6" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>inventory</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac7ab01cd9fd9d243243f4cc0b1a13a1f" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>isKeyUsed</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a29a33c25c048e9a694ed88cef64184ee" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>keyUsed</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae0bcdd2f802d72bb4de83f7b4e80ef84" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>nextMove</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8938bb1cd7f886a148272362eb5e19b7" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>rooms</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1adc3220b5f1adbcd7115d0a2f230f054d" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>setCurrentRoom</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a184c5cecd35b4e50cda8b1a77ff6dbfe" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>setCurrentRoomById</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a9a7e02f4831b6c8600f62b7296cf6f12" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>setGame</name></member>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::GameDescription</scope><name>setKeyUsed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

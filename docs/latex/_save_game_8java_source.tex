@@ -1,0 +1,104 @@
+\doxysection{Save\+Game.\+java}
+\hypertarget{_save_game_8java_source}{}\label{_save_game_8java_source}\index{adventure/src/main/java/di/uniba/map/b/adventure/impl/SaveGame.java@{adventure/src/main/java/di/uniba/map/b/adventure/impl/SaveGame.java}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00002}00002\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt\ to\ change\ this\ license}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00003}00003\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java\ to\ edit\ this\ template}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00004}00004\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00005}00005\ \textcolor{keyword}{package\ }di.uniba.map.b.adventure.impl;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00007}00007\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00008}00008\ \textcolor{keyword}{import}\ di.uniba.map.b.adventure.type.AdvObject;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00009}00009\ \textcolor{keyword}{import}\ di.uniba.map.b.adventure.type.Room;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00010}00010\ \textcolor{keyword}{import}\ java.io.BufferedWriter;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00011}00011\ \textcolor{keyword}{import}\ java.io.FileWriter;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00012}00012\ \textcolor{keyword}{import}\ java.io.IOException;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00013}00013\ \textcolor{keyword}{import}\ java.io.BufferedReader;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00014}00014\ \textcolor{keyword}{import}\ java.io.FileReader;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00015}00015\ \textcolor{keyword}{import}\ java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00016}00016\ \textcolor{keyword}{import}\ java.util.HashMap;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00017}00017\ \textcolor{keyword}{import}\ java.util.Map;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00023}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game}{00023}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game}{SaveGame}}\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{final}\ String\ SAVE\_FILE\ =\ \textcolor{stringliteral}{"{}./resources/files/gamesSaved"{}};}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00038}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game_a9a143f46c1029a94f48a4d6a3bacbd32}{00038}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game_a9a143f46c1029a94f48a4d6a3bacbd32}{save}}(\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room}{Room}}\ currentRoom,\ List<AdvObject>\ inventory,\ String\ gameName,\ \textcolor{keywordtype}{int}\ elapsedSeconds,\ \textcolor{keywordtype}{boolean}\ monsterAlive,\ \textcolor{keywordtype}{boolean}\ isDoorOpen)\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ currentRoomId\ =\ currentRoom.getId();}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Check\ if\ a\ game\ with\ the\ same\ name\ already\ exists}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game_a6615a57fbc0112ac161b5557852354c6}{gameExists}}(gameName))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ System.out.println(\textcolor{stringliteral}{"{}Una\ partita\ con\ questo\ nome\ esiste\ già.\ Salvataggio\ annullato."{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00044}00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00046}00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (BufferedWriter\ writer\ =\ \textcolor{keyword}{new}\ BufferedWriter(\textcolor{keyword}{new}\ FileWriter(SAVE\_FILE,\ \textcolor{keyword}{true})))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ writer.write(\textcolor{stringliteral}{"{}GameName:"{}}\ +\ gameName\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ writer.write(\textcolor{stringliteral}{"{}ElapsedSeconds:"{}}\ +\ elapsedSeconds\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ writer.write(\textcolor{stringliteral}{"{}CurrentRoom:"{}}\ +\ currentRoomId\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ writer.write(\textcolor{stringliteral}{"{}MonsterAlive:"{}}\ +\ monsterAlive\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ writer.write(\textcolor{stringliteral}{"{}IsDoorOpen:"{}}\ +\ isDoorOpen\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ writer.write(\textcolor{stringliteral}{"{}Inventory:"{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{AdvObject}}\ obj\ :\ inventory)\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ writer.write(obj.getId()\ +\ \textcolor{stringliteral}{"{},"{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ writer.write(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ writer.write(\textcolor{stringliteral}{"{}-\/-\/-\/\(\backslash\)n"{}});\ \textcolor{comment}{//\ delimiter\ between\ different\ game\ saves}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00058}00058\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (IOException\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00059}00059\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00060}00060\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00068}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game_a6615a57fbc0112ac161b5557852354c6}{00068}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game_a6615a57fbc0112ac161b5557852354c6}{gameExists}}(String\ gameName)\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00069}00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (BufferedReader\ reader\ =\ \textcolor{keyword}{new}\ BufferedReader(\textcolor{keyword}{new}\ FileReader(SAVE\_FILE)))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ String\ line;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ ((line\ =\ reader.readLine())\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (line.startsWith(\textcolor{stringliteral}{"{}GameName:"{}})\ \&\&\ line.substring(9).trim().equals(gameName))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (IOException\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00079}00079\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00089}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game_a5e7b7efbc8049d4a9ea4c22a188265cd}{00089}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ Map<String,\ Object>\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game_a5e7b7efbc8049d4a9ea4c22a188265cd}{load}}(String\ gameName)\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00090}00090\ \ \ \ \ \ \ \ \ Map<String,\ Object>\ gameData\ =\ \textcolor{keyword}{new}\ HashMap<>();}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00091}00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ (BufferedReader\ reader\ =\ \textcolor{keyword}{new}\ BufferedReader(\textcolor{keyword}{new}\ FileReader(SAVE\_FILE)))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ String\ line;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{boolean}\ isGameFound\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ ((line\ =\ reader.readLine())\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (line.startsWith(\textcolor{stringliteral}{"{}GameName:"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ isGameFound\ =\ line.substring(9).trim().equals(gameName);}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isGameFound)\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (line.startsWith(\textcolor{stringliteral}{"{}ElapsedSeconds:"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ gameData.put(\textcolor{stringliteral}{"{}ElapsedSeconds"{}},\ Integer.valueOf(line.substring(15).trim()));}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (line.startsWith(\textcolor{stringliteral}{"{}CurrentRoom:"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ gameData.put(\textcolor{stringliteral}{"{}CurrentRoom"{}},\ Integer.valueOf(line.substring(12).trim()));}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (line.startsWith(\textcolor{stringliteral}{"{}MonsterAlive:"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ gameData.put(\textcolor{stringliteral}{"{}MonsterAlive"{}},\ Boolean.valueOf(line.substring(13).trim()));}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (line.startsWith(\textcolor{stringliteral}{"{}IsDoorOpen:"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ gameData.put(\textcolor{stringliteral}{"{}IsDoorOpen"{}},\ Boolean.valueOf(line.substring(11).trim()));}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (line.startsWith(\textcolor{stringliteral}{"{}Inventory:"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ String[]\ inventoryIds\ =\ line.substring(10).trim().split(\textcolor{stringliteral}{"{},"{}});}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<Integer>\ inventory\ =\ \textcolor{keyword}{new}\ ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (String\ \textcolor{keywordtype}{id}\ :\ inventoryIds)\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\textcolor{keywordtype}{id}.isEmpty())\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inventory.add(Integer.valueOf(\textcolor{keywordtype}{id}.trim()));}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ gameData.put(\textcolor{stringliteral}{"{}Inventory"{}},\ inventory);}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (line.equals(\textcolor{stringliteral}{"{}-\/-\/-\/"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00122}00122\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (IOException\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00123}00123\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00124}00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ gameData;}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00125}00125\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_save_game_8java_source_l00127}00127\ \}}
+
+\end{DoxyCode}

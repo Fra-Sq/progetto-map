@@ -1,0 +1,177 @@
+\doxysection{Adv\+Object.\+java}
+\hypertarget{_adv_object_8java_source}{}\label{_adv_object_8java_source}\index{adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObject.java@{adventure/src/main/java/di/uniba/map/b/adventure/type/AdvObject.java}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00002}00002\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt\ to\ change\ this\ license}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00003}00003\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java\ to\ edit\ this\ template}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00004}00004\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00005}00005\ \textcolor{keyword}{package\ }di.uniba.map.b.adventure.type;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00007}00007\ \textcolor{keyword}{import}\ java.util.Arrays;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00008}00008\ \textcolor{keyword}{import}\ java.util.HashSet;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00009}00009\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00015}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{00015}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{AdvObject}}\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00019}00019\ \ \ \ \ \textcolor{keyword}{private}\ String\ name;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{private}\ String\ description;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00023}00023\ \ \ \ \ \textcolor{keyword}{private}\ String\ contents;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00024}00024\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{private}\ Set<String>\ alias;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00027}00027\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{boolean}\ openable\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{boolean}\ pickupable\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00031}00031\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{boolean}\ pushable\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00033}00033\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{boolean}\ open\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00035}00035\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{boolean}\ push\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{boolean}\ creature\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{boolean}\ living\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00041}00041\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{boolean}\ readable\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00047}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a20838e7d265a7b330bec6c8156230075}{00047}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a20838e7d265a7b330bec6c8156230075}{AdvObject}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ this.id\ =\ id;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00056}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aa1c2c21ca83266bf6a50ae158a94104f}{00056}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aa1c2c21ca83266bf6a50ae158a94104f}{AdvObject}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ String\ name)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ this.id\ =\ id;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00058}00058\ \ \ \ \ \ \ \ \ this.name\ =\ name;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00059}00059\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00067}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ad9cf122c01897c5a5c7c51292ad747fa}{00067}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ad9cf122c01897c5a5c7c51292ad747fa}{AdvObject}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ String\ name,\ String\ description)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00068}00068\ \ \ \ \ \ \ \ \ this.id\ =\ id;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00069}00069\ \ \ \ \ \ \ \ \ this.name\ =\ name;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00070}00070\ \ \ \ \ \ \ \ \ this.description\ =\ description;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00071}00071\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00080}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a856690bee70fb6c47bdb8710241df77e}{00080}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a856690bee70fb6c47bdb8710241df77e}{AdvObject}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ String\ name,\ String\ description,\ Set<String>\ alias)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ this.id\ =\ id;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00082}00082\ \ \ \ \ \ \ \ \ this.name\ =\ name;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00083}00083\ \ \ \ \ \ \ \ \ this.description\ =\ description;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00084}00084\ \ \ \ \ \ \ \ \ this.alias\ =\ alias;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00091}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a094731968d56cadb1274bfcf31c474fa}{00091}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a094731968d56cadb1274bfcf31c474fa}{getName}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ name;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00093}00093\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00099}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a89b408c2cae991b09d4cca16f1c1dde7}{00099}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a89b408c2cae991b09d4cca16f1c1dde7}{setName}}(String\ name)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00100}00100\ \ \ \ \ \ \ \ \ this.name\ =\ name;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00101}00101\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00107}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ab3c2f2b70e45f651431ebcd1e631ae14}{00107}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ab3c2f2b70e45f651431ebcd1e631ae14}{getDescription}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00108}00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ description;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00109}00109\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00115}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a9aad9fee5eea5e2623a8d24ebf07d4f6}{00115}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a9aad9fee5eea5e2623a8d24ebf07d4f6}{setDescription}}(String\ description)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00116}00116\ \ \ \ \ \ \ \ \ this.description\ =\ description;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00117}00117\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00123}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a443b6651c97cb2edfbb38d9363d95b98}{00123}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a443b6651c97cb2edfbb38d9363d95b98}{isOpenable}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00124}00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ openable;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00125}00125\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00131}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a58b77d327d599e34e91479637ebf7ee6}{00131}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a58b77d327d599e34e91479637ebf7ee6}{setOpenable}}(\textcolor{keywordtype}{boolean}\ openable)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00132}00132\ \ \ \ \ \ \ \ \ this.openable\ =\ openable;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00133}00133\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00139}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a70ec19949e8e3637ca915920cf3ba2c4}{00139}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a70ec19949e8e3637ca915920cf3ba2c4}{isPickupable}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00140}00140\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pickupable;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00141}00141\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00142}00142\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00147}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_abeb7c9ea6b9bfb1890ed139798494619}{00147}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_abeb7c9ea6b9bfb1890ed139798494619}{setPickupable}}(\textcolor{keywordtype}{boolean}\ pickupable)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00148}00148\ \ \ \ \ \ \ \ \ this.pickupable\ =\ pickupable;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00149}00149\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00150}00150\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00155}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a0498094520bcd048b59d9cf6f3b1ad9b}{00155}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a0498094520bcd048b59d9cf6f3b1ad9b}{isPushable}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00156}00156\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pushable;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00157}00157\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00163}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aadb1cedc859c20a8f2e1b0cc21332bbf}{00163}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aadb1cedc859c20a8f2e1b0cc21332bbf}{setPushable}}(\textcolor{keywordtype}{boolean}\ pushable)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00164}00164\ \ \ \ \ \ \ \ \ this.pushable\ =\ pushable;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00165}00165\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00171}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a31027928ec81ef8e1ad0f140135e8315}{00171}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a31027928ec81ef8e1ad0f140135e8315}{isOpen}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00172}00172\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ open;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00173}00173\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00174}00174\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00179}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_abfd22cc782ae3395c0af61b747b8797b}{00179}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_abfd22cc782ae3395c0af61b747b8797b}{setOpen}}(\textcolor{keywordtype}{boolean}\ open)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00180}00180\ \ \ \ \ \ \ \ \ this.open\ =\ open;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00181}00181\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00182}00182\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00187}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aef3cc255646b9115b68d5da313b3749c}{00187}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aef3cc255646b9115b68d5da313b3749c}{isPush}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00188}00188\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ push;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00189}00189\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00190}00190\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00195}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a261b682698bd7d3369a372c243daf380}{00195}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a261b682698bd7d3369a372c243daf380}{setPush}}(\textcolor{keywordtype}{boolean}\ push)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00196}00196\ \ \ \ \ \ \ \ \ this.push\ =\ push;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00197}00197\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00198}00198\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00203}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a5aba1d8f4fc217957dc87c0a015083db}{00203}}\ \ \ \ \ \textcolor{keyword}{public}\ Set<String>\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a5aba1d8f4fc217957dc87c0a015083db}{getAlias}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00204}00204\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ alias;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00205}00205\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00206}00206\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00211}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aac77d8af8bc19180b52cd1a3fc103ac4}{00211}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aac77d8af8bc19180b52cd1a3fc103ac4}{setAlias}}(Set<String>\ alias)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00212}00212\ \ \ \ \ \ \ \ \ this.alias\ =\ alias;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00213}00213\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00214}00214\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00219}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a631a338a0ae33c89c5a9c06473ae7588}{00219}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a631a338a0ae33c89c5a9c06473ae7588}{setAlias}}(String[]\ alias)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00220}00220\ \ \ \ \ \ \ \ \ this.alias\ =\ \textcolor{keyword}{new}\ HashSet<>(Arrays.asList(alias));}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00221}00221\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00222}00222\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00227}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a574de9727e7d8957bd265a06e1611052}{00227}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a574de9727e7d8957bd265a06e1611052}{getId}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00228}00228\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ id;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00229}00229\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00230}00230\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00235}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ae6347f2c165add59f417f46b48fe1fbb}{00235}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ae6347f2c165add59f417f46b48fe1fbb}{isCreature}}()\ \{\ \textcolor{keywordflow}{return}\ creature;\ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00236}00236\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00241}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a8405505a0e5da051ac72e6f81a7b9a46}{00241}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a8405505a0e5da051ac72e6f81a7b9a46}{setCreature}}(\textcolor{keywordtype}{boolean}\ creature)\ \{\ this.creature\ =\ creature;\ this.living\ =\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00242}00242\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00247}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aacb51db33d66a1ed86da7c547102239e}{00247}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_aacb51db33d66a1ed86da7c547102239e}{isLiving}}()\ \{\ \textcolor{keywordflow}{return}\ living;\ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00248}00248\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00253}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_af5b165b7cdca0f00ff832dad38949ba6}{00253}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_af5b165b7cdca0f00ff832dad38949ba6}{setLiving}}(\textcolor{keywordtype}{boolean}\ living)\ \{\ this.living\ =\ living;\ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00254}00254\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00259}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a8f17062d6613e6a829bfe6c5ddda52c3}{00259}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a8f17062d6613e6a829bfe6c5ddda52c3}{isReadable}}()\ \{\ \textcolor{keywordflow}{return}\ this.readable;\ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00260}00260\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00265}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_af6dde388988aed97e0298aaaaaebec11}{00265}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_af6dde388988aed97e0298aaaaaebec11}{setReadable}}(\textcolor{keywordtype}{boolean}\ readable)\ \{\ this.readable\ =\ readable;\ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00266}00266\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00271}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a77b9388c3f94e334e6bec615c87d21fd}{00271}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a77b9388c3f94e334e6bec615c87d21fd}{setContents}}(String\ contents)\ \{\ this.contents\ =\ contents;\ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00272}00272\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00277}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a079d6994871e7ed4fb8dc4844c2e2da8}{00277}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a079d6994871e7ed4fb8dc4844c2e2da8}{getContents}}()\ \{\ \textcolor{keywordflow}{return}\ this.contents;\ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00278}00278\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00283}00283\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00284}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ac8d0e063e0971fd775eccc45373553dd}{00284}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_ac8d0e063e0971fd775eccc45373553dd}{hashCode}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00285}00285\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Integer.hashCode(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00286}00286\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00287}00287\ \ \ \ \ \textcolor{comment}{/*@Override}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00288}00288\ \textcolor{comment}{\ \ \ \ public\ int\ hashCode()\ \{}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00289}00289\ \textcolor{comment}{\ \ \ \ \ \ \ \ int\ hash\ =\ 7;}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00290}00290\ \textcolor{comment}{\ \ \ \ \ \ \ \ hash\ =\ 37\ *\ hash\ +\ this.id;}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00291}00291\ \textcolor{comment}{\ \ \ \ \ \ \ \ return\ hash;}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00292}00292\ \textcolor{comment}{\ \ \ \ \}*/}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00293}00293\ }
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00299}00299\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00300}\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a1278661f5736763873ab3407d7464486}{00300}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a1278661f5736763873ab3407d7464486}{equals}}(Object\ obj)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00301}00301\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ ==\ obj)\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00302}00302\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00303}00303\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00304}00304\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null}\ ||\ getClass()\ !=\ obj.getClass())\ \{}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00305}00305\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00306}00306\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00307}00307\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{AdvObject}}\ other\ =\ (\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_a20838e7d265a7b330bec6c8156230075}{AdvObject}})\ obj;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00308}00308\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{id}\ ==\ other.id;}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00309}00309\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_adv_object_8java_source_l00310}00310\ \}}
+
+\end{DoxyCode}

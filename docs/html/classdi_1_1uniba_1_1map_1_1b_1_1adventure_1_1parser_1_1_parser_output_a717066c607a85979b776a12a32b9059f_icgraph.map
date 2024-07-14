@@ -1,0 +1,13 @@
+<map id="di.uniba.map.b.adventure.parser.ParserOutput.getObject" name="di.uniba.map.b.adventure.parser.ParserOutput.getObject">
+<area shape="rect" id="Node000001" title=" " alt="" coords="251,139,460,181"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee" title=" " alt="" coords="5,5,203,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,131,260,96,201,62,175,51,177,46,204,58,263,92,315,127"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#af5f5d96d94324ba5e0e9070ede8e789a" title=" " alt="" coords="5,72,203,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,137,186,118,188,113,259,132"/>
+<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html#a859e7f0b50a281e571a85ef872ee1374" title=" " alt="" coords="5,139,203,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,163,203,163,203,157,235,157"/>
+<area shape="rect" id="Node000005" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ac3e97a89860c377b76277749109befa4" title=" " alt="" coords="5,205,203,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="259,188,188,207,186,202,257,183"/>
+<area shape="rect" id="Node000006" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html#a3c550a2289d5b47a7411bf138078e19b" title=" " alt="" coords="5,272,203,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="315,193,263,228,204,262,177,274,175,269,201,258,260,224,312,189"/>
+</map>
