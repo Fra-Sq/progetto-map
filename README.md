@@ -50,7 +50,7 @@ Azione: Usare il comando apri per aprire la cassa.<br>
 Oggetto: All'interno della cassa si trova una gemma. Il giocatore deve usare il comando prendi per raccogliere la gemma.
 Scopo: La gemma è necessaria per l'attivazione del portale.<br><br>
 
-Dirigersi verso l'Armeria<br><br>
+Dirigersi verso l'Armeria<br>
 Descrizione: L'Armeria contiene varie armi che il giocatore può utilizzare.<br>
 Azione: Usare il comando prendi per raccogliere un'arma.<br>
 Oggetto: L'arma sarà indispensabile per sconfiggere il mostro alieno che si trova nell'anticamera.<br><br>
@@ -63,9 +63,9 @@ Oggetto: Dopo aver sconfitto il mostro, il giocatore noterà un tatuaggio sul co
 Ottenere la Mappa delle Coordinate Spaziali<br>
 Descrizione: La mappa delle coordinate spaziali si trova nell'archivio.<br>
 Azione: Usare il comando prendi per raccogliere la mappa.<br>
-Oggetto: La mappa contiene le coordinate di tutti i pianeti della galassia, compresa la Terra. Queste coordinate saranno necessarie per tornare a casa.
+Oggetto: La mappa contiene le coordinate di tutti i pianeti della galassia, compresa la Terra. Queste coordinate saranno necessarie per tornare a casa.<br><br>
 
-Attivare il Portale<br><br>
+Attivare il Portale<br>
 Descrizione: Tornare alla stanza del portale con tutti gli oggetti e le informazioni raccolte.<br>
 Azione:<br>
 Usare il comando attiva portale per iniziare la procedura.<br>
