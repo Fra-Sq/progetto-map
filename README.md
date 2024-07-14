@@ -6,15 +6,18 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 ## INDICE
 
 1. [Introduzione](#introduzione)
+   - [Descrizione del gioco](#descrizione-del-gioco)
+   - [Come si gioca](#Come-si-gioca)
+   - [Obiettivo del gioco](#obiettivo-del-gioco)
    - [Mappa di gioco](#mappa-di-gioco)
-2. [Utilizzo](#utilizzo)
+3. [Utilizzo](#utilizzo)
    - [Comandi principali](#comandi-principali)
-3. [Diagrammi UML](#diagrammi-uml)
-4. [Specifica algebrica](#specifica-algebrica)
+4. [Diagrammi UML](#diagrammi-uml)
+5. [Specifica algebrica](#specifica-algebrica)
    - [Specifica sintattica](#specifica-sintattica)
    - [Specifica semantica](#specifica-semantica)
    - [Specifica di restrizione](#specifica-di-restrizione)
-5. [Contenuti rilevanti](#contenuti-rilevanti)
+6. [Contenuti rilevanti](#contenuti-rilevanti)
    - [Utilizzo della Programmazione Orientata agli Oggetti (OOP)](#utilizzo-della-programmazione-orientata-agli-oggetti-oop)
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
@@ -22,7 +25,7 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [Swing](#swing)
    - [RESTful](#restful)
    - [Lambda expressions](#lambda-expressions)
-6. [Doxygen](#doxygen)
+7. [Doxygen](#doxygen)
 
 <br><br>
    
@@ -33,7 +36,43 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 L'obiettivo del gioco è scappare dalla navicella spaziale per tornare sani e salvi sulla Terra. Per raggiungere questo obiettivo, i giocatori devono esplorare la mappa di gioco, raccogliere oggetti e codici, e risolvere enigmi. Il gioco inizia con una schermata introduttiva che spiega il contesto e le prime istruzioni per iniziare.
 
 ### Come si gioca
-Per muoversi all'interno della mappa, il giocatore deve utilizzare i comandi direzionali **nord**, **sud**, **est** e **ovest**. È possibile esplorare le stanze e i corridoi usando il comando **osserva**, che fornisce una descrizione dettagliata dell'ambiente circostante. Inoltre, il giocatore può interagire con oggetti e porte tramite comandi come **utilizza**, **prendi**, **apri**, e altri.
+Per muoversi all'interno della mappa, il giocatore deve utilizzare i comandi direzionali nord, sud, est e ovest. È possibile esplorare le stanze e i corridoi usando il comando osserva, che fornisce una descrizione dettagliata dell'ambiente circostante. Inoltre, il giocatore può interagire con oggetti e porte tramite comandi come utilizza, prendi, apri, e altri.
+
+### Obiettivo del gioco
+L'obiettivo finale del gioco è attivare un portale che permetterà al giocatore di tornare a casa. Per raggiungere questo obiettivo, il giocatore dovrà seguire una serie di passi chiave che richiedono l'esplorazione della mappa e l'interazione con vari oggetti e personaggi.
+
+**Fasi del gioco**<br>
+Raggiungere la Sala Comandi
+<br>
+Descrizione: La Sala Comandi è una stanza fondamentale dove il giocatore troverà una cassa chiusa.<br>
+Azione: Usare il comando apri per aprire la cassa.<br>
+Oggetto: All'interno della cassa si trova una gemma. Il giocatore deve usare il comando prendi per raccogliere la gemma.
+Scopo: La gemma è necessaria per l'attivazione del portale.<br>
+Dirigersi verso l'Armeria<br>
+
+Descrizione: L'Armeria contiene varie armi che il giocatore può utilizzare.<br>
+Azione: Usare il comando prendi per raccogliere un'arma.<br>
+Oggetto: L'arma sarà indispensabile per sconfiggere il mostro alieno che si trova nell'anticamera.<br>
+Affrontare il Mostro Alieno nell'Anticamera
+<br>
+Descrizione: L'anticamera ospita un mostro alieno che deve essere sconfitto.
+Azione: Usare il comando utilizza seguito dal nome dell'arma e per attaccare usare il comando ammazza per uccidere il mostro.<br>
+Oggetto: Dopo aver sconfitto il mostro, il giocatore noterà un tatuaggio sul corpo dell'alieno. Il tatuaggio contiene un codice essenziale per l'attivazione del portale. Usare il comando osserva per leggere e annotare il codice.<br>
+Ottenere la Mappa delle Coordinate Spaziali<br>
+
+Descrizione: La mappa delle coordinate spaziali si trova nell'archivio.<br>
+Azione: Usare il comando prendi per raccogliere la mappa.<br>
+Oggetto: La mappa contiene le coordinate di tutti i pianeti della galassia, compresa la Terra. Queste coordinate saranno necessarie per tornare a casa.
+Attivare il Portale<br>
+
+Descrizione: Tornare alla stanza del portale con tutti gli oggetti e le informazioni raccolte.<br>
+Azione:<br>
+Usare il comando attiva portale per iniziare la procedura.<br>
+Usare il comando attiva pannello per accendere il pannello di controllo del portale.<br>
+Inserire il codice del mostro alieno alla seconda riga del pannello.<br>
+Inserire le coordinate della Terra alla seconda riga del pannello.<br>
+Fine del gioco: Se tutte le operazioni sono state eseguite correttamente, il portale si attiverà e il giocatore potrà tornare a casa, completando così il gioco.<br>
+Seguendo attentamente questi passaggi e utilizzando correttamente i comandi, il giocatore riuscirà a superare le sfide e a raggiungere l'obiettivo finale del gioco.
 
 ### Mappa di gioco
 ![Mappa di gioco](mappa_gioco.png)  
