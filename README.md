@@ -282,7 +282,9 @@ La classe `LeaderboardService` è il cuore del servizio RESTful che gestisce le 
 #### Interazione tra i Componenti
 1. **Aggiunta di un Giocatore**: Il client (`RESTClient`) invia una richiesta PUT al server per aggiungere un nuovo giocatore alla classifica. La richiesta è gestita dal servizio (`LeaderboardService`), che inserisce i dati nel database e restituisce una risposta al client.
 2. **Recupero della Classifica**: Il client invia una richiesta GET al server per ottenere la classifica attuale. Il servizio (`LeaderboardService`) recupera i dati dal database, li converte in formato JSON e li restituisce al client, che li deserializza e formatta in una stringa leggibile.
-Questa architettura separa chiaramente le responsabilità tra client, server e logica di business, facilitando la manutenzione e l'estensione dell'applicazione. Il client REST è responsabile dell'invio delle richieste e della gestione delle risposte, il server REST gestisce le connessioni HTTP e il servizio RESTful contiene la logica di business per l'elaborazione delle richieste relative alla classifica.
+Questa architettura separa chiaramente le responsabilità tra client, server e logica di business, facilitando la manutenzione e l'estensione dell'applicazione. Il client REST è responsabile dell'invio delle richieste e della gestione delle risposte, il server REST gestisce le connessioni HTTP e il servizio RESTful contiene la logica di business per l'elaborazione delle richieste relative alla classifica.<br><br>
+
+Per un corretto funzionamento  della visualizzazione della classifica basta far partire il progetto `RESTServer` e lasciarlo in run, sucecssivamente si può far partire il proggetto `SPACE ESCAPE`. 
 
 <br><br>
 ## Doxygen
