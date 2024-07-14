@@ -120,11 +120,11 @@
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a9ed1bc2b29d6412b294c2c80af5b4234" kind="function"><name>updateNameById</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a9da44c7659651cab0c086cdc1163e6ef" kind="function"><name>updateDescriptionById</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a933fe7549e0d415271874fa7bde8aa9e" kind="function"><name>updateRoomLookById</name></member>
+    <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a714e5312efe9bd729f1e9b70a0995c11" kind="function"><name>close</name></member>
   </compound>
   <compound refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" kind="class"><name>di::uniba::map::b::adventure::Engine</name>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1ab33d4b81c21667746ed7f362754ae196" kind="variable"><name>game</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1af6d052adfebf0c2eb60574d92c4f4ebf" kind="variable"><name>parser</name></member>
-    <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a5f807ff5c30029f6e4be85bf0fee7c63" kind="variable"><name>database</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1ac7d8df4db2890bb5bac921cb7ad8702c" kind="variable"><name>window</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0aac5add5a958af0c635be1d49581f3a" kind="function"><name>Engine</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc" kind="function"><name>execute</name></member>
@@ -146,7 +146,7 @@
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05" kind="function"><name>setKeyUsed</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1adc3220b5f1adbcd7115d0a2f230f054d" kind="function"><name>setCurrentRoom</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1" kind="function"><name>getInventory</name></member>
-    <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a36349151ae38dc99267786336138a5d5" kind="function"><name>init</name></member>
+    <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ace481a2be2f2f56ee9cbaf26c8692516" kind="function"><name>init</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae0bcdd2f802d72bb4de83f7b4e80ef84" kind="function"><name>nextMove</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a1019a567cc65258ba7231be04b6f6c44" kind="function"><name>getWelcomeMsg</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8866a8bbe3fea390a0e4f89741b80f77" kind="function"><name>addObject</name></member>
@@ -296,9 +296,10 @@
   </compound>
   <compound refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape" kind="class"><name>di::uniba::map::b::adventure::impl::SpaceEscape</name>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a5106a4e5815ed5f763edb374eb508572" kind="variable"><name>observer</name></member>
+    <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a6b628253324b322a6685eeb964f3c391" kind="variable"><name>database</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a9d3e2d3d06edc5f1c96d475dbefa6740" kind="variable"><name>parserOutput</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a35902a0964d555b4208f5c58e97e5de2" kind="variable"><name>messages</name></member>
-    <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a31f539d1ede9f25760a7aeb6595f1542" kind="function"><name>init</name></member>
+    <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe" kind="function"><name>init</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee" kind="function"><name>nextMove</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a5f50efac1fea5096ba76665f01d728a6" kind="function"><name>attach</name></member>
     <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1aafaa92ab8492f68d5d20f8194425b425" kind="function"><name>detach</name></member>

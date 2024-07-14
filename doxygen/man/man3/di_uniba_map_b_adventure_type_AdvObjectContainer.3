@@ -1,0 +1,267 @@
+.TH "di.uniba.map.b.adventure.type.AdvObjectContainer" 3 "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+di.uniba.map.b.adventure.type.AdvObjectContainer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdi\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObject\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAdvObjectContainer\fP (int id)"
+.br
+.ti -1c
+.RI "\fBAdvObjectContainer\fP (int id, String name)"
+.br
+.ti -1c
+.RI "\fBAdvObjectContainer\fP (int id, String name, String description)"
+.br
+.ti -1c
+.RI "\fBAdvObjectContainer\fP (int id, String name, String description, Set< String > alias)"
+.br
+.ti -1c
+.RI "List< \fBAdvObject\fP > \fBgetList\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetList\fP (List< \fBAdvObject\fP > list)"
+.br
+.ti -1c
+.RI "void \fBadd\fP (\fBAdvObject\fP o)"
+.br
+.ti -1c
+.RI "void \fBremove\fP (\fBAdvObject\fP o)"
+.br
+.ti -1c
+.RI "boolean \fBisOpen\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetOpen\fP (boolean open)"
+.br
+.ti -1c
+.RI "boolean \fBsetOpen\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBdi\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObject\fP
+.in +1c
+.ti -1c
+.RI "\fBAdvObject\fP (int id)"
+.br
+.ti -1c
+.RI "\fBAdvObject\fP (int id, String name)"
+.br
+.ti -1c
+.RI "\fBAdvObject\fP (int id, String name, String description)"
+.br
+.ti -1c
+.RI "\fBAdvObject\fP (int id, String name, String description, Set< String > alias)"
+.br
+.ti -1c
+.RI "String \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetName\fP (String name)"
+.br
+.ti -1c
+.RI "String \fBgetDescription\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetDescription\fP (String description)"
+.br
+.ti -1c
+.RI "boolean \fBisOpenable\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetOpenable\fP (boolean openable)"
+.br
+.ti -1c
+.RI "boolean \fBisPickupable\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPickupable\fP (boolean pickupable)"
+.br
+.ti -1c
+.RI "boolean \fBisPushable\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPushable\fP (boolean pushable)"
+.br
+.ti -1c
+.RI "boolean \fBisPush\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPush\fP (boolean push)"
+.br
+.ti -1c
+.RI "Set< String > \fBgetAlias\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAlias\fP (Set< String > alias)"
+.br
+.ti -1c
+.RI "void \fBsetAlias\fP (String[] alias)"
+.br
+.ti -1c
+.RI "int \fBgetId\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBisCreature\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCreature\fP (boolean creature)"
+.br
+.ti -1c
+.RI "boolean \fBisLiving\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetLiving\fP (boolean living)"
+.br
+.ti -1c
+.RI "boolean \fBisReadable\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetReadable\fP (boolean readable)"
+.br
+.ti -1c
+.RI "void \fBsetContents\fP (String contents)"
+.br
+.ti -1c
+.RI "String \fBgetContents\fP ()"
+.br
+.ti -1c
+.RI "int \fBhashCode\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBequals\fP (Object obj)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBAuthor\fP
+.RS 4
+sangiovannesi 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.AdvObjectContainer (int id)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP 
+.RE
+.PP
+
+.SS "di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.AdvObjectContainer (int id, String name)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP 
+.br
+\fIname\fP 
+.RE
+.PP
+
+.SS "di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.AdvObjectContainer (int id, String name, String description)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP 
+.br
+\fIname\fP 
+.br
+\fIdescription\fP 
+.RE
+.PP
+
+.SS "di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.AdvObjectContainer (int id, String name, String description, Set< String > alias)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP 
+.br
+\fIname\fP 
+.br
+\fIdescription\fP 
+.br
+\fIalias\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.add (\fBAdvObject\fP o)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIo\fP 
+.RE
+.PP
+
+.SS "List< \fBAdvObject\fP > di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.getList ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "boolean di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.isOpen ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Reimplemented from \fBdi\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObject\fP\&.
+.SS "void di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.remove (\fBAdvObject\fP o)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIo\fP 
+.RE
+.PP
+
+.SS "void di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.setList (List< \fBAdvObject\fP > list)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIlist\fP 
+.RE
+.PP
+
+.SS "boolean di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.setOpen ()"
+
+.SS "void di\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObjectContainer\&.setOpen (boolean open)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIopen\fP 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBdi\&.uniba\&.map\&.b\&.adventure\&.type\&.AdvObject\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl" xml:lang="en-US">
+<title>Package di.uniba.map.b.adventure.impl</title>
+<indexterm><primary>di.uniba.map.b.adventure.impl</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave">AePlayWave</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database">Database</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer">InventoryObserver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer">KillObserver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer">LookAtObserver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer">MoveObserver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer">OpenObserver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer">PickUpObserver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data">PlayerData</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer">PushObserver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer">ReadObserver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client">RESTClient</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game">SaveGame</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape">SpaceEscape</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer">UseObserver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window">Window</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_de3212e4b297ef0279f9067d9062d987" xml:lang="en-US">
+<title>adventure Directory Reference</title>
+<indexterm><primary>adventure Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_8d538571e6144d01ec27c9a0f55aecb9">src</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

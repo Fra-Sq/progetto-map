@@ -1,0 +1,146 @@
+.TH "di.uniba.map.b.adventure.impl.SpaceEscape" 3 "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+di.uniba.map.b.adventure.impl.SpaceEscape
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameDescription\fP, and \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObservable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()  throws Exception "
+.br
+.ti -1c
+.RI "void \fBnextMove\fP (\fBParserOutput\fP p, \fBWindow\fP window)"
+.br
+.ti -1c
+.RI "void \fBattach\fP (\fBGameObserver\fP o)"
+.br
+.ti -1c
+.RI "void \fBdetach\fP (\fBGameObserver\fP o)"
+.br
+.ti -1c
+.RI "void \fBnotifyObservers\fP (\fBWindow\fP window)"
+.br
+.ti -1c
+.RI "String \fBgetWelcomeMsg\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameDescription\fP
+.in +1c
+.ti -1c
+.RI "List< \fBRoom\fP > \fBgetRooms\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCurrentRoomById\fP (int roomId)"
+.br
+.ti -1c
+.RI "void \fBsetGame\fP (int roomId, List< Integer > inventoryIds, boolean monsterAlive, boolean isDoorOpen)"
+.br
+.ti -1c
+.RI "List< \fBCommand\fP > \fBgetCommands\fP ()"
+.br
+.ti -1c
+.RI "\fBRoom\fP \fBgetCurrentRoom\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBisKeyUsed\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetKeyUsed\fP (boolean keyUsed)"
+.br
+.ti -1c
+.RI "void \fBsetCurrentRoom\fP (\fBRoom\fP currentRoom)"
+.br
+.ti -1c
+.RI "List< \fBAdvObject\fP > \fBgetInventory\fP ()"
+.br
+.ti -1c
+.RI "void \fBaddObject\fP (\fBAdvObject\fP obj)"
+.br
+.ti -1c
+.RI "Optional< \fBAdvObject\fP > \fBgetObjectById\fP (int id)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main class for the \fBSpaceEscape\fP game, extending \fBGameDescription\fP and implementing \fBGameObservable\fP\&. This class initializes the game environment, including rooms, objects, and commands, and handles player moves\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void di\&.uniba\&.map\&.b\&.adventure\&.impl\&.SpaceEscape\&.attach (\fBGameObserver\fP o)"
+Attaches an observer to the game\&. Observers are notified of game events and can update the game state or display messages\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIo\fP The observer to attach\&. 
+.RE
+.PP
+
+.PP
+Implements \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObservable\fP\&.
+.SS "void di\&.uniba\&.map\&.b\&.adventure\&.impl\&.SpaceEscape\&.detach (\fBGameObserver\fP o)"
+Detaches an observer from the game\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIo\fP The observer to detach\&. 
+.RE
+.PP
+
+.PP
+Implements \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObservable\fP\&.
+.SS "String di\&.uniba\&.map\&.b\&.adventure\&.impl\&.SpaceEscape\&.getWelcomeMsg ()"
+Returns the welcome message to be displayed at the start of the game\&.
+.PP
+\fBReturns\fP
+.RS 4
+The welcome message string\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameDescription\fP\&.
+.SS "void di\&.uniba\&.map\&.b\&.adventure\&.impl\&.SpaceEscape\&.init () throws Exception"
+Initializes the game environment using data from the provided database\&. This includes setting up rooms, commands, objects, and observers\&.
+.PP
+\fBExceptions\fP
+.RS 4
+\fIException\fP If there is an error accessing the database\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameDescription\fP\&.
+.SS "void di\&.uniba\&.map\&.b\&.adventure\&.impl\&.SpaceEscape\&.nextMove (\fBParserOutput\fP p, \fBWindow\fP window)"
+Processes the next move based on the player's command\&. This method updates the game state, notifies observers, and displays messages to the player\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP The parsed output of the player's command\&. 
+.br
+\fIwindow\fP The game window where messages are displayed\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameDescription\fP\&.
+.SS "void di\&.uniba\&.map\&.b\&.adventure\&.impl\&.SpaceEscape\&.notifyObservers (\fBWindow\fP window)"
+Notifies all attached observers of a game event\&. Observers can update the game state or generate messages based on the event\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIwindow\fP The game window where messages may be displayed\&. 
+.RE
+.PP
+
+.PP
+Implements \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObservable\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

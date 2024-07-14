@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils" xml:lang="en-US">
+<title>di.uniba.map.b.adventure.Utils Class Reference</title>
+<indexterm><primary>di.uniba.map.b.adventure.Utils</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static Set&lt; String &gt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1ac62e8ebb99f39d3af6c6cf06f534ed5f">loadFileListInSet</link> (File file)  throws IOException </para>
+</listitem>
+            <listitem><para>static List&lt; String &gt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1a7e85679dc02c8c772afe2604c5a98c20">parseString</link> (String string, Set&lt; String &gt; stopwords)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Utility class providing static methods for common operations such as loading a list of strings from a file into a set and parsing strings into a list of tokens. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1ac62e8ebb99f39d3af6c6cf06f534ed5f"/><section>
+    <title>loadFileListInSet()</title>
+<indexterm><primary>loadFileListInSet</primary><secondary>di.uniba.map.b.adventure.Utils</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.Utils</primary><secondary>loadFileListInSet</secondary></indexterm>
+<para><computeroutput>static Set&lt; String &gt; di.uniba.map.b.adventure.Utils.loadFileListInSet (File file) throws IOException<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>Loads each line from a specified file into a <computeroutput><link linkend="_">Set</link></computeroutput> of strings. This method is useful for loading data where each line represents a unique entry, such as a list of stopwords.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>file</entry><entry>
+<para>The file to read from. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A <computeroutput><link linkend="_">Set</link></computeroutput> containing all lines from the file, trimmed and converted to lowercase. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>IOException</entry><entry>
+<para>If an I/O error occurs reading from the file. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils_1a7e85679dc02c8c772afe2604c5a98c20"/><section>
+    <title>parseString()</title>
+<indexterm><primary>parseString</primary><secondary>di.uniba.map.b.adventure.Utils</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.Utils</primary><secondary>parseString</secondary></indexterm>
+<para><computeroutput>static List&lt; String &gt; di.uniba.map.b.adventure.Utils.parseString (String string, Set&lt; String &gt; stopwords)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>Parses a given string into a list of tokens (words), excluding any tokens that are contained in a provided set of stopwords. This method is useful for text processing tasks such as tokenization.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>string</entry><entry>
+<para>The string to parse. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>stopwords</entry><entry>
+<para>A <computeroutput><link linkend="_">Set</link></computeroutput> of stopwords to exclude from the resulting list of tokens. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A <computeroutput><link linkend="_">List</link></computeroutput> of tokens derived from the input string, excluding any stopwords. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+adventure/src/main/java/di/uniba/map/b/adventure/<link linkend="__utils_8java">Utils.java</link></section>
+</section>

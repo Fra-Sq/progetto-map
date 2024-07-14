@@ -144,11 +144,10 @@ public abstract class GameDescription {
     }
 
     /**
-     * Initializes the game with the provided database. This method must be implemented by subclasses.
-     * @param database The Database object used for game initialization
+     * Initializes the game. This method must be implemented by subclasses.
      * @throws Exception if an error occurs during initialization
      */
-    public abstract void init(Database database) throws Exception;
+    public abstract void init() throws Exception;
 
     /**
      * Processes the player's next move based on the parsed input and updates the game state accordingly.

@@ -1,0 +1,46 @@
+.TH "di.uniba.map.b.adventure.impl.UseObserver" 3 "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+di.uniba.map.b.adventure.impl.UseObserver
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObserver\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBupdate\fP (\fBGameDescription\fP description, \fBParserOutput\fP parserOutput, \fBWindow\fP window)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Observer implementation for handling 'use' commands within the game\&. This observer allows players to interact with objects by using them, triggering specific game events or actions\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "String di\&.uniba\&.map\&.b\&.adventure\&.impl\&.UseObserver\&.update (\fBGameDescription\fP description, \fBParserOutput\fP parserOutput, \fBWindow\fP window)"
+Updates the game state based on the player's input\&. This observer handles the 'use' command, allowing players to interact with objects by using them\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIdescription\fP The current game description\&. 
+.br
+\fIparserOutput\fP The output of the parser, containing the command and the objects involved\&. 
+.br
+\fIwindow\fP The game window\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A message describing the result of the interaction\&. 
+.RE
+.PP
+
+.PP
+Implements \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObserver\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

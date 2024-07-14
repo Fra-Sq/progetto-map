@@ -10,7 +10,7 @@ import java.util.Set;
 
 /**
  * The Engine class is the main driver of the game. It initializes the game environment,
- * including the game description, parser, database, and window. It also handles the execution
+ * including the game description, parser, and window. It also handles the execution
  * of the game by displaying the start description, room name, and room description.
  */
 public class Engine {
@@ -18,20 +18,17 @@ public class Engine {
     private final GameDescription game; // The game description instance
 
     private Parser parser; // The parser instance for interpreting player commands
-    private Database database; // The database instance for game data management
     private Window window; // The window instance for displaying game information
 
     /**
      * Constructs an Engine object with a specified game description.
-     * Initializes the database and attempts to initialize the game and parser.
      *
      * @param game The game description to be used for this engine instance.
      */
     public Engine(GameDescription game) {
         this.game = game;
-        database = new Database();
         try {
-            this.game.init(database);
+            this.game.init();
         } catch (Exception ex) {
             System.err.println(ex);
         }

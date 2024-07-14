@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__game_observable_8java" xml:lang="en-US">
+<title>adventure/src/main/java/di/uniba/map/b/adventure/GameObservable.java File Reference</title>
+<indexterm><primary>adventure/src/main/java/di/uniba/map/b/adventure/GameObservable.java</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>interface <link linkend="_interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable">di.uniba.map.b.adventure.GameObservable</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Packages    </title>
+        <itemizedlist>
+            <listitem><para>package <link linkend="_namespacedi_1_1uniba_1_1map_1_1b_1_1adventure">di.uniba.map.b.adventure</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

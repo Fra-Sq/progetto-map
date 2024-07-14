@@ -31,20 +31,6 @@
         </inbodydescription>
         <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="20" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="20" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a5f807ff5c30029f6e4be85bf0fee7c63" prot="private" static="no" mutable="no">
-        <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database" kindref="compound">Database</ref></type>
-        <definition>Database di.uniba.map.b.adventure.Engine.database</definition>
-        <argsstring></argsstring>
-        <name>database</name>
-        <qualifiedname>di.uniba.map.b.adventure.Engine.database</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="21" column="22" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="21" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1ac7d8df4db2890bb5bac921cb7ad8702c" prot="private" static="no" mutable="no">
         <type><ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window" kindref="compound">Window</ref></type>
         <definition>Window di.uniba.map.b.adventure.Engine.window</definition>
@@ -57,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="22" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="22" bodyend="-1"/>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="21" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="21" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -74,7 +60,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Constructs an <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" kindref="compound">Engine</ref> object with a specified game description. Initializes the database and attempts to initialize the game and parser.</para>
+<para>Constructs an <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" kindref="compound">Engine</ref> object with a specified game description.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>game</parametername>
@@ -88,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="30" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="30" bodyend="44"/>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="28" column="12" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="28" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -103,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="50" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="50" bodyend="55"/>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="47" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="47" bodyend="52"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -134,17 +120,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="63" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="63" bodyend="66"/>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="60" column="24" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="60" bodyend="63"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>The <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" kindref="compound">Engine</ref> class is the main driver of the game. It initializes the game environment, including the game description, parser, database, and window. It also handles the execution of the game by displaying the start description, room name, and room description. </para>
+<para>The <ref refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" kindref="compound">Engine</ref> class is the main driver of the game. It initializes the game environment, including the game description, parser, and window. It also handles the execution of the game by displaying the start description, room name, and room description. </para>
     </detaileddescription>
-    <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="16" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="16" bodyend="67"/>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" line="16" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/Engine.java" bodystart="16" bodyend="64"/>
     <listofallmembers>
-      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a5f807ff5c30029f6e4be85bf0fee7c63" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>database</name></member>
       <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0aac5add5a958af0c635be1d49581f3a" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>Engine</name></member>
       <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>execute</name></member>
       <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1ab33d4b81c21667746ed7f362754ae196" prot="private" virt="non-virtual"><scope>di::uniba::map::b::adventure::Engine</scope><name>game</name></member>

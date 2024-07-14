@@ -282,6 +282,21 @@
         </inbodydescription>
         <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="186" column="20" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="186" bodyend="199"/>
       </memberdef>
+      <memberdef kind="function" id="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a714e5312efe9bd729f1e9b70a0995c11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void di.uniba.map.b.adventure.impl.Database.close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>di.uniba.map.b.adventure.impl.Database.close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Closes the database connection. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="206" column="17" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="206" bodyend="215"/>
+      </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -306,8 +321,9 @@
         <label>Properties</label>
       </node>
     </collaborationgraph>
-    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="19" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="19" bodyend="200"/>
+    <location file="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" line="19" column="7" bodyfile="adventure/src/main/java/di/uniba/map/b/adventure/impl/Database.java" bodystart="19" bodyend="216"/>
     <listofallmembers>
+      <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a714e5312efe9bd729f1e9b70a0995c11" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>close</name></member>
       <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a64a8a66649ffb03667e17333c24b7e70" prot="package" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>conn</name></member>
       <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1ab8f61a7b1ba1fc40053f9b3535c7d354" prot="public" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>Database</name></member>
       <member refid="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database_1a06121712b9605f56c6585374a99784f9" prot="package" virt="non-virtual"><scope>di::uniba::map::b::adventure::impl::Database</scope><name>dbprops</name></member>

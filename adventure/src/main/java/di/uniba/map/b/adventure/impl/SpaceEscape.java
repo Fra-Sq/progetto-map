@@ -23,20 +23,19 @@ import di.uniba.map.b.adventure.GameObserver;
 public class SpaceEscape extends GameDescription implements GameObservable {
 
     private final List<GameObserver> observer = new ArrayList<>();
-
+    private Database database;
     private ParserOutput parserOutput;
-
     private final List<String> messages = new ArrayList<>();
 
     /**
      * Initializes the game environment using data from the provided database.
      * This includes setting up rooms, commands, objects, and observers.
      *
-     * @param database The database containing game data such as room descriptions and object details.
      * @throws Exception If there is an error accessing the database.
      */
     @Override
-    public void init(Database database) throws Exception {
+    public void init() throws Exception {
+        database = new Database();
         messages.clear();
         //Commands
         Command nord = new Command(CommandType.NORD, "nord");
@@ -236,6 +235,7 @@ public class SpaceEscape extends GameDescription implements GameObservable {
         getRooms().add(armory);
         getRooms().add(engineRoom);
         setCurrentRoom(portalRoom);
+        database.close();
     }
 
 

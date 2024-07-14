@@ -1,0 +1,46 @@
+.TH "di.uniba.map.b.adventure.impl.KillObserver" 3 "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+di.uniba.map.b.adventure.impl.KillObserver
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObserver\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBupdate\fP (\fBGameDescription\fP description, \fBParserOutput\fP parserOutput, \fBWindow\fP window)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Observer implementation for handling 'kill' commands within the game\&. This observer checks if the player can kill a monster in the current room, based on the presence of a weapon in the player's inventory and the monster's existence\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "String di\&.uniba\&.map\&.b\&.adventure\&.impl\&.KillObserver\&.update (\fBGameDescription\fP description, \fBParserOutput\fP parserOutput, \fBWindow\fP window)"
+Processes a 'kill' command, determining if the player successfully kills a monster in the current room\&. The method checks if the player is in the correct room, if the monster is alive, and if the player has the required weapon\&. If the conditions are met, the monster is killed, and a success message is returned\&. Otherwise, appropriate messages are returned based on the failure condition (e\&.g\&., no monster, no weapon)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIdescription\fP The current state of the game, including rooms, inventory, and game objects\&. 
+.br
+\fIparserOutput\fP The parsed output of the player's command, including the command type and arguments\&. 
+.br
+\fIwindow\fP The game window where output messages are displayed\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A string message indicating the outcome of the 'kill' command\&. 
+.RE
+.PP
+
+.PP
+Implements \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObserver\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

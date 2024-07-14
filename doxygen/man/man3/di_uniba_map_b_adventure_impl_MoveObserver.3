@@ -1,0 +1,46 @@
+.TH "di.uniba.map.b.adventure.impl.MoveObserver" 3 "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+di.uniba.map.b.adventure.impl.MoveObserver
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObserver\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBupdate\fP (\fBGameDescription\fP description, \fBParserOutput\fP parserOutput, \fBWindow\fP window)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Observer implementation for handling movement commands within the game\&. This observer updates the player's current room based on the direction specified in the command\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "String di\&.uniba\&.map\&.b\&.adventure\&.impl\&.MoveObserver\&.update (\fBGameDescription\fP description, \fBParserOutput\fP parserOutput, \fBWindow\fP window)"
+Processes movement commands (NORTH, SOUTH, EAST, WEST), updating the player's current room accordingly\&. If the movement is not possible (e\&.g\&., a wall blocks the way), it returns a message indicating so\&. Otherwise, it silently updates the player's current room to the new location\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIdescription\fP The current state of the game, including the player's current room\&. 
+.br
+\fIparserOutput\fP The parsed output of the player's command, including the command type and arguments\&. 
+.br
+\fIwindow\fP The game window where output messages are displayed\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A string message indicating the outcome of the movement command, or an empty string if the movement was successful\&. 
+.RE
+.PP
+
+.PP
+Implements \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObserver\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

@@ -1,0 +1,67 @@
+.TH "di.uniba.map.b.adventure.impl.PushObserver" 3 "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+di.uniba.map.b.adventure.impl.PushObserver
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObserver\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBupdate\fP (\fBGameDescription\fP description, \fBParserOutput\fP parserOutput, \fBWindow\fP window)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static boolean \fBverify\fP (final String input)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Observer implementation for handling 'push' commands within the game\&. This observer allows players to interact with objects that can be pushed, triggering specific game events or actions\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "String di\&.uniba\&.map\&.b\&.adventure\&.impl\&.PushObserver\&.update (\fBGameDescription\fP description, \fBParserOutput\fP parserOutput, \fBWindow\fP window)"
+Processes a 'push' command, performing actions based on the object being pushed\&. If the object is pushable, it triggers specific events such as activating a control panel or requiring further input from the player\&. Messages are generated to inform the player of the action's outcome or next steps\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIdescription\fP The current state of the game, including the player's current room and inventory\&. 
+.br
+\fIparserOutput\fP The parsed output of the player's command, including the command type and targeted object\&. 
+.br
+\fIwindow\fP The game window where output messages are displayed and interactive elements may be shown\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A string message indicating the outcome of the 'push' command or further instructions for the player\&. 
+.RE
+.PP
+
+.PP
+Implements \fBdi\&.uniba\&.map\&.b\&.adventure\&.GameObserver\fP\&.
+.SS "static boolean di\&.uniba\&.map\&.b\&.adventure\&.impl\&.PushObserver\&.verify (final String input)\fR [static]\fP"
+Verifies if the given input matches a specific pattern, typically used for validating codes or inputs in the game\&. This method is used to check if the player has entered a correct access code or similar input\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput\fP The string input to be verified against the pattern\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the input matches the pattern, false otherwise\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

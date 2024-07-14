@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxyfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doxyfile.xsd" version="1.11.0" xml:lang="en-US">
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
-  <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA["Space Escape"]]></value></option>
+  <option  id='PROJECT_NAME' default='yes' type='string'><value><![CDATA["My Project"]]></value></option>
   <option  id='PROJECT_NUMBER' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PROJECT_BRIEF' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PROJECT_LOGO' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PROJECT_ICON' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA["C:/Users/Nicola Russo/Desktop/Progetto-scarale/progetto-map/doxygen"]]></value></option>
+  <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA["C:/Users/Nicola Russo/Desktop/Progetto-scarale/progetto-map/Doxygen"]]></value></option>
   <option  id='CREATE_SUBDIRS' default='yes' type='bool'><value>NO</value></option>
   <option  id='CREATE_SUBDIRS_LEVEL' default='yes' type='int'><value>8</value></option>
   <option  id='ALLOW_UNICODE_NAMES' default='yes' type='bool'><value>NO</value></option>
@@ -68,7 +68,7 @@
   <option  id='LOOKUP_CACHE_SIZE' default='yes' type='int'><value>0</value></option>
   <option  id='NUM_PROC_THREADS' default='yes' type='int'><value>1</value></option>
   <option  id='TIMESTAMP' default='yes' type='string'><value>NO</value></option>
-  <option  id='EXTRACT_ALL' default='yes' type='bool'><value>NO</value></option>
+  <option  id='EXTRACT_ALL' default='no' type='bool'><value>YES</value></option>
   <option  id='EXTRACT_PRIVATE' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTRACT_PRIV_VIRTUAL' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTRACT_PACKAGE' default='yes' type='bool'><value>NO</value></option>
@@ -122,7 +122,7 @@
   <option  id='WARN_LINE_FORMAT' default='yes' type='string'><value><![CDATA["at line $line of file $file"]]></value></option>
   <option  id='WARN_LOGFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='INPUT' default='no' type='stringlist'>
-    <value><![CDATA["C:/Users/Nicola Russo/Desktop/Progetto-scarale/progetto-map/adventure/src"]]></value>
+    <value><![CDATA["C:/Users/Nicola Russo/Desktop/Progetto-scarale/progetto-map/adventure"]]></value>
   </option>
   <option  id='INPUT_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='INPUT_FILE_ENCODING' default='yes' type='stringlist'>
@@ -311,7 +311,7 @@
   <option  id='LATEX_HIDE_INDICES' default='yes' type='bool'><value>NO</value></option>
   <option  id='LATEX_BIB_STYLE' default='yes' type='string'><value><![CDATA[plain]]></value></option>
   <option  id='LATEX_EMOJI_DIRECTORY' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='GENERATE_RTF' default='yes' type='bool'><value>NO</value></option>
+  <option  id='GENERATE_RTF' default='no' type='bool'><value>YES</value></option>
   <option  id='RTF_OUTPUT' default='yes' type='string'><value><![CDATA[rtf]]></value></option>
   <option  id='COMPACT_RTF' default='yes' type='bool'><value>NO</value></option>
   <option  id='RTF_HYPERLINKS' default='yes' type='bool'><value>NO</value></option>
@@ -319,7 +319,7 @@
   <option  id='RTF_EXTENSIONS_FILE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='RTF_EXTRA_FILES' default='yes' type='stringlist'>
   </option>
-  <option  id='GENERATE_MAN' default='yes' type='bool'><value>NO</value></option>
+  <option  id='GENERATE_MAN' default='no' type='bool'><value>YES</value></option>
   <option  id='MAN_OUTPUT' default='yes' type='string'><value><![CDATA[man]]></value></option>
   <option  id='MAN_EXTENSION' default='yes' type='string'><value><![CDATA[.3]]></value></option>
   <option  id='MAN_SUBDIR' default='yes' type='string'><value><![CDATA[]]></value></option>
@@ -328,7 +328,7 @@
   <option  id='XML_OUTPUT' default='yes' type='string'><value><![CDATA[xml]]></value></option>
   <option  id='XML_PROGRAMLISTING' default='yes' type='bool'><value>YES</value></option>
   <option  id='XML_NS_MEMB_FILE_SCOPE' default='yes' type='bool'><value>NO</value></option>
-  <option  id='GENERATE_DOCBOOK' default='yes' type='bool'><value>NO</value></option>
+  <option  id='GENERATE_DOCBOOK' default='no' type='bool'><value>YES</value></option>
   <option  id='DOCBOOK_OUTPUT' default='yes' type='string'><value><![CDATA[docbook]]></value></option>
   <option  id='GENERATE_AUTOGEN_DEF' default='yes' type='bool'><value>NO</value></option>
   <option  id='GENERATE_SQLITE3' default='yes' type='bool'><value>NO</value></option>

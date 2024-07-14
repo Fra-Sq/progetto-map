@@ -197,4 +197,20 @@ public class Database {
             return false;
         }
     }
+    
+
+    /**
+     * Closes the database connection.
+     * 
+     */
+    public void close() {
+        try {
+            if (conn != null && !conn.isClosed()) {
+                conn.close();
+                System.out.println("Database connection closed.");
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex.getSQLState() + ": " + ex.getMessage());
+        }
+    }
 }

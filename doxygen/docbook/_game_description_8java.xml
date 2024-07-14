@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__game_description_8java" xml:lang="en-US">
+<title>adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java File Reference</title>
+<indexterm><primary>adventure/src/main/java/di/uniba/map/b/adventure/GameDescription.java</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">di.uniba.map.b.adventure.GameDescription</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Packages    </title>
+        <itemizedlist>
+            <listitem><para>package <link linkend="_namespacedi_1_1uniba_1_1map_1_1b_1_1adventure">di.uniba.map.b.adventure</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

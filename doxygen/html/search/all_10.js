@@ -4,6 +4,9 @@ var searchData=
   ['updatedescriptionbyid_1',['updateDescriptionById',['../classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9da44c7659651cab0c086cdc1163e6ef',1,'di::uniba::map::b::adventure::impl::Database']]],
   ['updatenamebyid_2',['updateNameById',['../classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9ed1bc2b29d6412b294c2c80af5b4234',1,'di::uniba::map::b::adventure::impl::Database']]],
   ['updateroomlookbyid_3',['updateRoomLookById',['../classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a933fe7549e0d415271874fa7bde8aa9e',1,'di::uniba::map::b::adventure::impl::Database']]],
-  ['useobserver_4',['UseObserver',['../classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html',1,'di::uniba::map::b::adventure::impl']]],
-  ['utils_5',['Utils',['../classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html',1,'di::uniba::map::b::adventure']]]
+  ['use_4',['USE',['../enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type.html#aa38591fe7b79312e242b848f8d5e8ee1',1,'di::uniba::map::b::adventure::type::CommandType']]],
+  ['useobserver_5',['UseObserver',['../classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html',1,'di::uniba::map::b::adventure::impl']]],
+  ['useobserver_2ejava_6',['UseObserver.java',['../_use_observer_8java.html',1,'']]],
+  ['utils_7',['Utils',['../classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html',1,'di::uniba::map::b::adventure']]],
+  ['utils_2ejava_8',['Utils.java',['../_utils_8java.html',1,'']]]
 ];

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine" xml:lang="en-US">
+<title>di.uniba.map.b.adventure.Engine Class Reference</title>
+<indexterm><primary>di.uniba.map.b.adventure.Engine</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0aac5add5a958af0c635be1d49581f3a">Engine</link> (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> game)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc">execute</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0e23d03537aa3d882ae3e62418a209f9">main</link> (String[] args)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine">Engine</link> class is the main driver of the game. It initializes the game environment, including the game description, parser, and window. It also handles the execution of the game by displaying the start description, room name, and room description. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0aac5add5a958af0c635be1d49581f3a"/><section>
+    <title>Engine()</title>
+<indexterm><primary>Engine</primary><secondary>di.uniba.map.b.adventure.Engine</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.Engine</primary><secondary>Engine</secondary></indexterm>
+<para><computeroutput>di.uniba.map.b.adventure.Engine.Engine (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description">GameDescription</link> game)</computeroutput></para>
+<para>Constructs an <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine">Engine</link> object with a specified game description.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>game</entry><entry>
+<para>The game description to be used for this engine instance. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a16eb715b8df13421f41cf1995106b4cc"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>di.uniba.map.b.adventure.Engine</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.Engine</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.Engine.execute ( )</computeroutput></para>
+<para>Executes the game by setting up the window, displaying the start description, and showing the current room&apos;s name and description. </para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine_1a0e23d03537aa3d882ae3e62418a209f9"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>di.uniba.map.b.adventure.Engine</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.Engine</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>static void di.uniba.map.b.adventure.Engine.main (String[] args)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>The main method to start the game. It creates an <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine">Engine</link> instance with a SpaceEscape game description and executes the game.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>args</entry><entry>
+<para>the command line arguments (not used). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+adventure/src/main/java/di/uniba/map/b/adventure/<link linkend="__engine_8java">Engine.java</link></section>
+</section>

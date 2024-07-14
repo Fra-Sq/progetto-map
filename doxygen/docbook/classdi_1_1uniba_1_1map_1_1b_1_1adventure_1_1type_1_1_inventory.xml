@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory" xml:lang="en-US">
+<title>di.uniba.map.b.adventure.type.Inventory Class Reference</title>
+<indexterm><primary>di.uniba.map.b.adventure.type.Inventory</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> &gt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory_1a35a41397bf6092212327c88802a5b5db">getList</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory_1a6611eaee3eea9f31e795724ad5579f2f">setList</link> (List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> &gt; list)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory_1a86bd329bd6fb344f12b2047fa3122dd5">add</link> (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> o)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory_1ad4ddbcd49137df052bbacd2959c8ad05">remove</link> (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> o)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><formalpara><title>Author</title>
+
+<para>sangiovannesi </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory_1a86bd329bd6fb344f12b2047fa3122dd5"/><section>
+    <title>add()</title>
+<indexterm><primary>add</primary><secondary>di.uniba.map.b.adventure.type.Inventory</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.Inventory</primary><secondary>add</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.Inventory.add (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> o)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>o</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory_1a35a41397bf6092212327c88802a5b5db"/><section>
+    <title>getList()</title>
+<indexterm><primary>getList</primary><secondary>di.uniba.map.b.adventure.type.Inventory</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.Inventory</primary><secondary>getList</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> &gt; di.uniba.map.b.adventure.type.Inventory.getList ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory_1ad4ddbcd49137df052bbacd2959c8ad05"/><section>
+    <title>remove()</title>
+<indexterm><primary>remove</primary><secondary>di.uniba.map.b.adventure.type.Inventory</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.Inventory</primary><secondary>remove</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.Inventory.remove (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> o)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>o</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory_1a6611eaee3eea9f31e795724ad5579f2f"/><section>
+    <title>setList()</title>
+<indexterm><primary>setList</primary><secondary>di.uniba.map.b.adventure.type.Inventory</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.type.Inventory</primary><secondary>setList</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.type.Inventory.setList (List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> &gt; list)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>list</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+adventure/src/main/java/di/uniba/map/b/adventure/type/<link linkend="__inventory_8java">Inventory.java</link></section>
+</section>

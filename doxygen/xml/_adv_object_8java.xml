@@ -13,7 +13,7 @@
 <codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Click<sp/>nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt<sp/>to<sp/>change<sp/>this<sp/>license</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Click<sp/>nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java<sp/>to<sp/>edit<sp/>this<sp/>template</highlight></codeline>
 <codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">di.uniba.map.b.adventure.type;</highlight></codeline>
+<codeline lineno="5" refid="namespacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">di.uniba.map.b.adventure.type;</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Arrays;</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.HashSet;</highlight></codeline>

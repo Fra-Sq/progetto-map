@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description" xml:lang="en-US">
+<title>di.uniba.map.b.adventure.GameDescription Class Reference</title>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary></indexterm>
+<para>Inheritance diagram for di.uniba.map.b.adventure.GameDescription:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link> &gt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae6d265375fc241fb5346dc1521d35497">getRooms</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a184c5cecd35b4e50cda8b1a77ff6dbfe">setCurrentRoomById</link> (int roomId)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a9a7e02f4831b6c8600f62b7296cf6f12">setGame</link> (int roomId, List&lt; Integer &gt; inventoryIds, boolean monsterAlive, boolean isDoorOpen)</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command">Command</link> &gt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1aac13b7db39539b6f2449e754561b9871">getCommands</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link> <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514">getCurrentRoom</link> ()</para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac7ab01cd9fd9d243243f4cc0b1a13a1f">isKeyUsed</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05">setKeyUsed</link> (boolean keyUsed)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1adc3220b5f1adbcd7115d0a2f230f054d">setCurrentRoom</link> (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link> currentRoom)</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> &gt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1">getInventory</link> ()</para>
+</listitem>
+            <listitem><para>abstract void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ace481a2be2f2f56ee9cbaf26c8692516">init</link> ()  throws Exception</para>
+</listitem>
+            <listitem><para>abstract void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae0bcdd2f802d72bb4de83f7b4e80ef84">nextMove</link> (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output">ParserOutput</link> p, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window">Window</link> window)</para>
+</listitem>
+            <listitem><para>abstract String <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a1019a567cc65258ba7231be04b6f6c44">getWelcomeMsg</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8866a8bbe3fea390a0e4f89741b80f77">addObject</link> (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> obj)</para>
+</listitem>
+            <listitem><para>Optional&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> &gt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac2c90759e68c6f9f17265f2d2d0ab3cb">getObjectById</link> (int id)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Abstract class representing the game description. It serves as a blueprint for creating specific game instances, defining the common structure and behavior of the game. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a8866a8bbe3fea390a0e4f89741b80f77"/><section>
+    <title>addObject()</title>
+<indexterm><primary>addObject</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>addObject</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.GameDescription.addObject (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> obj)</computeroutput></para>
+<para>Adds an object to the list of all objects in the game. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>obj</entry><entry>
+<para>The AdvObject to add </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1aac13b7db39539b6f2449e754561b9871"/><section>
+    <title>getCommands()</title>
+<indexterm><primary>getCommands</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>getCommands</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command">Command</link> &gt; di.uniba.map.b.adventure.GameDescription.getCommands ( )</computeroutput></para>
+<para>Returns the list of commands available in the game. <formalpara><title>Returns</title>
+
+<para>List of Command objects </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a63b6f071dc00caa521638067b84ce514"/><section>
+    <title>getCurrentRoom()</title>
+<indexterm><primary>getCurrentRoom</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>getCurrentRoom</secondary></indexterm>
+<para><computeroutput><link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link> di.uniba.map.b.adventure.GameDescription.getCurrentRoom ( )</computeroutput></para>
+<para>Returns the current room where the player is located. <formalpara><title>Returns</title>
+
+<para>Current Room object </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a3442fbe52e16d3e0993f0d3d3dcc56a1"/><section>
+    <title>getInventory()</title>
+<indexterm><primary>getInventory</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>getInventory</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> &gt; di.uniba.map.b.adventure.GameDescription.getInventory ( )</computeroutput></para>
+<para>Returns the player&apos;s inventory. <formalpara><title>Returns</title>
+
+<para>List of AdvObject objects in the player&apos;s inventory </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac2c90759e68c6f9f17265f2d2d0ab3cb"/><section>
+    <title>getObjectById()</title>
+<indexterm><primary>getObjectById</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>getObjectById</secondary></indexterm>
+<para><computeroutput>Optional&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object">AdvObject</link> &gt; di.uniba.map.b.adventure.GameDescription.getObjectById (int id)</computeroutput></para>
+<para>Retrieves an object by its ID from the list of all objects in the game. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>The ID of the object to retrieve </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>An Optional containing the AdvObject if found, or an empty Optional otherwise </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae6d265375fc241fb5346dc1521d35497"/><section>
+    <title>getRooms()</title>
+<indexterm><primary>getRooms</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>getRooms</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link> &gt; di.uniba.map.b.adventure.GameDescription.getRooms ( )</computeroutput></para>
+<para>Returns the list of rooms in the game. <formalpara><title>Returns</title>
+
+<para>List of Room objects </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a1019a567cc65258ba7231be04b6f6c44"/><section>
+    <title>getWelcomeMsg()</title>
+<indexterm><primary>getWelcomeMsg</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>getWelcomeMsg</secondary></indexterm>
+<para><computeroutput>abstract String di.uniba.map.b.adventure.GameDescription.getWelcomeMsg ( )<computeroutput>[abstract]</computeroutput></computeroutput></para>
+<para>Returns the welcome message for the game. This method must be implemented by subclasses. <formalpara><title>Returns</title>
+
+<para>The welcome message as a String </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a6be501aa2b5a1c70fd9c38ba10e894d5">di.uniba.map.b.adventure.impl.SpaceEscape</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ace481a2be2f2f56ee9cbaf26c8692516"/><section>
+    <title>init()</title>
+<indexterm><primary>init</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>init</secondary></indexterm>
+<para><computeroutput>abstract void di.uniba.map.b.adventure.GameDescription.init ( ) throws Exception<computeroutput>[abstract]</computeroutput></computeroutput></para>
+<para>Initializes the game. This method must be implemented by subclasses. 
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>if an error occurs during initialization </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Reimplemented in <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a7a02f030860fe5216c2f347fbc983dbe">di.uniba.map.b.adventure.impl.SpaceEscape</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ac7ab01cd9fd9d243243f4cc0b1a13a1f"/><section>
+    <title>isKeyUsed()</title>
+<indexterm><primary>isKeyUsed</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>isKeyUsed</secondary></indexterm>
+<para><computeroutput>boolean di.uniba.map.b.adventure.GameDescription.isKeyUsed ( )</computeroutput></para>
+<para>Returns whether a key has been used in the game. <formalpara><title>Returns</title>
+
+<para>true if the key has been used, false otherwise </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1ae0bcdd2f802d72bb4de83f7b4e80ef84"/><section>
+    <title>nextMove()</title>
+<indexterm><primary>nextMove</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>nextMove</secondary></indexterm>
+<para><computeroutput>abstract void di.uniba.map.b.adventure.GameDescription.nextMove (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output">ParserOutput</link> p, <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window">Window</link> window)<computeroutput>[abstract]</computeroutput></computeroutput></para>
+<para>Processes the player&apos;s next move based on the parsed input and updates the game state accordingly. This method must be implemented by subclasses. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>The parsed player input </para>
+</entry>
+                            </row>
+                            <row>
+<entry>window</entry><entry>
+<para>The game window for displaying output </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Reimplemented in <link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape_1a45631b42e31c7663c2baecf4bf0c4cee">di.uniba.map.b.adventure.impl.SpaceEscape</link>.</para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1adc3220b5f1adbcd7115d0a2f230f054d"/><section>
+    <title>setCurrentRoom()</title>
+<indexterm><primary>setCurrentRoom</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>setCurrentRoom</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.GameDescription.setCurrentRoom (<link linkend="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room">Room</link> currentRoom)</computeroutput></para>
+<para>Sets the current room where the player is located. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>currentRoom</entry><entry>
+<para>The Room object to set as the current room </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a184c5cecd35b4e50cda8b1a77ff6dbfe"/><section>
+    <title>setCurrentRoomById()</title>
+<indexterm><primary>setCurrentRoomById</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>setCurrentRoomById</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.GameDescription.setCurrentRoomById (int roomId)</computeroutput></para>
+<para>Sets the current room based on the provided room ID. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>roomId</entry><entry>
+<para>ID of the room to set as the current room </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a9a7e02f4831b6c8600f62b7296cf6f12"/><section>
+    <title>setGame()</title>
+<indexterm><primary>setGame</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>setGame</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.GameDescription.setGame (int roomId, List&lt; Integer &gt; inventoryIds, boolean monsterAlive, boolean isDoorOpen)</computeroutput></para>
+<para>Sets up the game state based on the provided parameters. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>roomId</entry><entry>
+<para>ID of the current room </para>
+</entry>
+                            </row>
+                            <row>
+<entry>inventoryIds</entry><entry>
+<para>List of IDs for objects in the player&apos;s inventory </para>
+</entry>
+                            </row>
+                            <row>
+<entry>monsterAlive</entry><entry>
+<para>Flag indicating if the monster is alive </para>
+</entry>
+                            </row>
+                            <row>
+<entry>isDoorOpen</entry><entry>
+<para>Flag indicating if a door is open </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description_1a27453ac5288756a63348ca699ec8af05"/><section>
+    <title>setKeyUsed()</title>
+<indexterm><primary>setKeyUsed</primary><secondary>di.uniba.map.b.adventure.GameDescription</secondary></indexterm>
+<indexterm><primary>di.uniba.map.b.adventure.GameDescription</primary><secondary>setKeyUsed</secondary></indexterm>
+<para><computeroutput>void di.uniba.map.b.adventure.GameDescription.setKeyUsed (boolean keyUsed)</computeroutput></para>
+<para>Sets the flag indicating whether a key has been used in the game. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>keyUsed</entry><entry>
+<para>true to indicate the key has been used, false otherwise </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+adventure/src/main/java/di/uniba/map/b/adventure/<link linkend="__game_description_8java">GameDescription.java</link></section>
+</section>
