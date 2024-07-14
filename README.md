@@ -34,7 +34,7 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
 **SPACE ESCAPE** è un'avventura testuale interattiva progettata per l'esame di 'Metodi avanzati di programmazione', sviluppata interamente in linguaggio java. Il gioco si svolge attraverso un'interfaccia grafica (**GUI**), che consente agli utenti interagire con essa e immergersi nell'avventura di una navicella spaziale intrappolata nello spazio. Inoltre il programma supporta il salvataggio e il caricamento di una partita, oltre ad una classifica globale gestita tramite server.
 
 ### Descrizione del gioco
-L'obiettivo del gioco è scappare dalla navicella spaziale per tornare sani e salvi sulla Terra. Per raggiungere questo obiettivo, i giocatori devono esplorare la mappa di gioco, raccogliere oggetti e codici, e risolvere enigmi. Il gioco inizia con una schermata introduttiva che spiega il contesto e le prime istruzioni per iniziare.
+Il gioco si basa su una fuga da una navicella spaziale per tornare sani e salvi sulla Terra. Per raggiungere questo obiettivo, i giocatori devono esplorare la mappa di gioco, raccogliere oggetti e codici, e risolvere enigmi. Il gioco inizia con una schermata introduttiva che spiega il contesto e le prime istruzioni per iniziare.
 
 ### Come si gioca
 Per muoversi all'interno della mappa, il giocatore deve utilizzare i comandi direzionali nord, sud, est e ovest. È possibile esplorare le stanze e i corridoi usando il comando osserva, che fornisce una descrizione dettagliata dell'ambiente circostante. Inoltre, il giocatore può interagire con oggetti e porte tramite comandi come utilizza, prendi, apri, e altri.
@@ -42,30 +42,30 @@ Per muoversi all'interno della mappa, il giocatore deve utilizzare i comandi dir
 ### Obiettivo del gioco
 L'obiettivo finale del gioco è attivare un portale che permetterà al giocatore di tornare a casa. Per raggiungere questo obiettivo, il giocatore dovrà seguire una serie di passi chiave che richiedono l'esplorazione della mappa e l'interazione con vari oggetti e personaggi.
 
-### Fasi del gioco
+#### Fasi del gioco
 Raggiungere la Sala Comandi
 <br>
 Descrizione: La Sala Comandi è una stanza fondamentale dove il giocatore troverà una cassa chiusa.<br>
 Azione: Usare il comando apri per aprire la cassa.<br>
 Oggetto: All'interno della cassa si trova una gemma. Il giocatore deve usare il comando prendi per raccogliere la gemma.
-Scopo: La gemma è necessaria per l'attivazione del portale.<br>
-Dirigersi verso l'Armeria<br>
+Scopo: La gemma è necessaria per l'attivazione del portale.<br><br>
 
+Dirigersi verso l'Armeria<br><br>
 Descrizione: L'Armeria contiene varie armi che il giocatore può utilizzare.<br>
 Azione: Usare il comando prendi per raccogliere un'arma.<br>
-Oggetto: L'arma sarà indispensabile per sconfiggere il mostro alieno che si trova nell'anticamera.<br>
-Affrontare il Mostro Alieno nell'Anticamera
-<br>
+Oggetto: L'arma sarà indispensabile per sconfiggere il mostro alieno che si trova nell'anticamera.<br><br>
+
+Affrontare il Mostro Alieno nell'Anticamera<br>
 Descrizione: L'anticamera ospita un mostro alieno che deve essere sconfitto.
 Azione: Usare il comando utilizza seguito dal nome dell'arma e per attaccare usare il comando ammazza per uccidere il mostro.<br>
-Oggetto: Dopo aver sconfitto il mostro, il giocatore noterà un tatuaggio sul corpo dell'alieno. Il tatuaggio contiene un codice essenziale per l'attivazione del portale. Usare il comando osserva per leggere e annotare il codice.<br>
-Ottenere la Mappa delle Coordinate Spaziali<br>
+Oggetto: Dopo aver sconfitto il mostro, il giocatore noterà un tatuaggio sul corpo dell'alieno. Il tatuaggio contiene un codice essenziale per l'attivazione del portale. Usare il comando osserva per leggere e annotare il codice.<br><br>
 
+Ottenere la Mappa delle Coordinate Spaziali<br>
 Descrizione: La mappa delle coordinate spaziali si trova nell'archivio.<br>
 Azione: Usare il comando prendi per raccogliere la mappa.<br>
 Oggetto: La mappa contiene le coordinate di tutti i pianeti della galassia, compresa la Terra. Queste coordinate saranno necessarie per tornare a casa.
-Attivare il Portale<br>
 
+Attivare il Portale<br><br>
 Descrizione: Tornare alla stanza del portale con tutti gli oggetti e le informazioni raccolte.<br>
 Azione:<br>
 Usare il comando attiva portale per iniziare la procedura.<br>
