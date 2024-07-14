@@ -106,7 +106,7 @@ Declase:d:dizionario, k:chiave, v:valore.<br>
 La specifica di restrizione aggiunge vincoli che le operazioni devono rispettare per garantire la coerenza del dizionario.<br><br>
 
 restrictions:<br>
-∀ d:Dizionario, k: chiave, v: valore.<br><br>
+∀ d:Dizionario, k: chiave, v: valore.<br>
 - ∀k' | (k' ≠ k implica get(put(d, k, v), k') = get(d, k'))        
 - ∀k' | (k' ≠ k implica get(remove(d, k), k') = get(d, k'))
 - keySet(d).contains(k) = containsKey(d, k)
