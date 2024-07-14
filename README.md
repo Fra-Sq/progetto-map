@@ -15,7 +15,7 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [Specifica semantica](#specifica-semantica)
    - [Specifica di restrizione](#specifica-di-restrizione)
 5. [Contenuti rilevanti](#contenuti-rilevanti)
-   - [OOP](#oop)
+   - [Utilizzo della Programmazione Orientata agli Oggetti (OOP)](#oop)
    - [Utilizzo dei file](#utilizzo-dei-file)
    - [Utilizzo dei database](#Utilizzo-dei-database)
    - [Utilizzo dei thread](#utilizzo-dei-thread)
@@ -23,6 +23,8 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [RESTful](#restful)
    - [Lambda expressions](#lambda-expressions)
 6. [Doxygen](#doxygen)
+
+<br><br>
    
 ## Introduzione
 **SPACE ESCAPE** è un'avventura testuale interattiva progettata per l'esame di 'Metodi avanzati di programmazione', sviluppata interamente in linguaggio java. Il gioco si svolge attraverso un'interfaccia grafica (**GUI**), che consente agli utenti interagire con essa e immergersi nell'avventura di una navicella spaziale intrappolata nello spazio. Inoltre il programma supporta il salvataggio e il caricamento di una partita, oltre ad una classifica globale gestita tramite server.
@@ -36,6 +38,7 @@ Per muoversi all'interno della mappa, il giocatore deve utilizzare i comandi dir
 ### Mappa di gioco
 ![Mappa di gioco](mappa_gioco.png)  
 La mappa di gioco mostra tutte le stanze e i corridoi esplorabili. Le freccette nere indicano i possibili movimenti tra le diverse aree. Gli oggetti e gli ostacoli rappresentati nella mappa sono quelli che i giocatori incontreranno durante l'avventura.
+<br><br>
 
 ## Utilizzo
 In **SPACE ESCAPE**, il giocatore assume il ruolo di un astronauta intrappolato su una navicella spaziale alla deriva nello spazio. L'obiettivo è esplorare l'ambiente, risolvere enigmi e raccogliere oggetti necessari per attivare la navicella e tornare sulla Terra.
@@ -57,7 +60,7 @@ abbandona: Termina il gioco.<br>
 attiva: Attiva i vari pannelli e portali.<br>
 leggi: Legge le varie mappe/cartine.<br>
 Man mano che esplori la navicella, troverai vari oggetti che potrebbero essere utili per risolvere enigmi e superare ostacoli. Usa i comandi sopra elencati per interagire con l'ambiente e avanzare nel gioco.
-
+<br><br>
 
 ## Specifica algebrica
 Questa specifica algebrica definisce il comportamento di un dizionario, una struttura dati che associa chiavi uniche a valori. Il dizionario è rappresentato tramite diverse operazioni che permettono di creare, modificare e interrogare la struttura.
@@ -112,14 +115,19 @@ restrictions:<br>
 - keySet(d).contains(k) = containsKey(d, k)
 - values(d).contains(v) = containsValue(d, v)        
 - ∀k . containsKey(clear(d), k) = false
+<br><br>
+
+
+
+
+
 
 ## Contenuti rilevanti
-### OOP
-## Utilizzo della Programmazione Orientata agli Oggetti (OOP)
+### Utilizzo della Programmazione Orientata agli Oggetti (OOP)
 
 Nel nostro progetto, abbiamo adottato il paradigma della Programmazione Orientata agli Oggetti (OOP) per organizzare il codice in modo modulare, riutilizzabile e mantenibile.
 
-### Principali Concetti OOP Utilizzati
+#### Principali Concetti OOP Utilizzati
 
 - **Classi e Oggetti:** 
   - Le classi rappresentano i modelli dei vari elementi del gioco, come stanze, oggetti e giocatori. Gli oggetti sono istanze di queste classi, che contengono dati e metodi per manipolarli.
@@ -137,21 +145,7 @@ Nel nostro progetto, abbiamo adottato il paradigma della Programmazione Orientat
   - Il polimorfismo permette di trattare oggetti di diverse classi attraverso un'interfaccia comune, facilitando l'uso intercambiabile di oggetti.
   - Esempio: Anche se non è direttamente visibile nel codice fornito, il polimorfismo può essere utilizzato per implementare comportamenti diversi a seconda del tipo di oggetto (ad esempio, diverse modalità di salvataggio dei dati).
 
-### Esempi di Classi e Metodi
-
-- **Classe `Database` (package `di.uniba.map.b.adventure.impl`):**
-  - Gestisce le operazioni di connessione, inserimento, aggiornamento e recupero dei dati per stanze e oggetti.
-  - Metodi principali: `getNameById(String id)`, `getDescriptionById(String id)`, `insertNewData()`, `close()`.
-
-- **Classe `Database` (package `com.mycompany.restserver`):**
-  - Gestisce le operazioni di connessione, inserimento e recupero dei dati relativi ai giocatori.
-  - Metodi principali: `insertInLeaderboard(String name, String date, String time)`, `getFromLeaderboard(String id)`, `getTopPlayers(int maxPlayers)`, `close()`.
-
-- **Classe `PlayerData`:**
-  - Rappresenta i dati di un giocatore, inclusi nome, data e tempo di gioco.
-  - Campi principali: `name`, `date`, `time`.
-
-### Vantaggi dell'OOP nel Progetto
+#### Vantaggi dell'OOP nel Progetto
 
 - **Modularità:** Ogni classe è responsabile di una specifica funzionalità, rendendo il codice più organizzato e facile da gestire.
 - **Riutilizzabilità:** Le classi e i metodi possono essere riutilizzati in diverse parti del progetto senza duplicare il codice.
@@ -254,6 +248,7 @@ La classe `LeaderboardService` è il cuore del servizio RESTful che gestisce le 
 2. **Recupero della Classifica**: Il client invia una richiesta GET al server per ottenere la classifica attuale. Il servizio (`LeaderboardService`) recupera i dati dal database, li converte in formato JSON e li restituisce al client, che li deserializza e formatta in una stringa leggibile.
 Questa architettura separa chiaramente le responsabilità tra client, server e logica di business, facilitando la manutenzione e l'estensione dell'applicazione. Il client REST è responsabile dell'invio delle richieste e della gestione delle risposte, il server REST gestisce le connessioni HTTP e il servizio RESTful contiene la logica di business per l'elaborazione delle richieste relative alla classifica.
 
+<br><br>
 ## Doxygen
 Per visualizzare la documentazione doxygen aprire il collegamento `index` inserito nella cartella `progetto-map`.
 
