@@ -1,7 +1,11 @@
 <map id="di.uniba.map.b.adventure.impl.Window" name="di.uniba.map.b.adventure.impl.Window">
-<area shape="rect" id="Node000001" title=" " alt="" coords="112,197,301,411"/>
-<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html" title=" " alt="" coords="5,27,195,112"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,110,153,181,149,183,116,113"/>
-<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html" title=" " alt="" coords="219,5,408,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="287,134,265,183,260,181,282,132"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="424,56,622,99"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="182,5,246,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,25,424,56,423,61,260,30"/>
+<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html" title=" " alt="" coords="115,56,312,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="328,75,424,75,424,80,328,80"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,64,66,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="81,75,115,75,115,80,81,80"/>
+<area shape="rect" id="Node000005" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html" title=" " alt="" coords="115,123,312,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="327,117,423,96,424,101,328,122"/>
 </map>

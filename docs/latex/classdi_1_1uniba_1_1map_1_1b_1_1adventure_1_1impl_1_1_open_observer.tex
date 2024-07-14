@@ -2,22 +2,20 @@
 \hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer}{}\label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer}\index{di.uniba.map.b.adventure.impl.OpenObserver@{di.uniba.map.b.adventure.impl.OpenObserver}}
 
 
-Inheritance diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Open\+Observer\+:
-\nopagebreak
+Inheritance diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Open\+Observer\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=222pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer__inherit__graph}
+\includegraphics[width=228pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Open\+Observer\+:
-\nopagebreak
+Collaboration diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Open\+Observer\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=222pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer__coll__graph}
+\includegraphics[width=228pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -25,58 +23,12 @@ Collaboration diagram for di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Open\+Observ
 \item 
 String \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_af5f5d96d94324ba5e0e9070ede8e789a}{update}} (\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}} description, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output}{Parser\+Output}} parser\+Output, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window}{Window}} window)
 \end{DoxyCompactItemize}
-\doxysubsubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-void \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_a60a902699e64320759b6871ed86f6ade}{open\+Object}} (String\+Builder msg, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}} description, \mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{Adv\+Object}} object)
-\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Observer implementation for handling "{}open"{} commands within the game. This observer allows players to open objects or containers in the game environment, potentially revealing or releasing items contained within. 
 
-Definition at line \mbox{\hyperlink{_open_observer_8java_source_l00020}{20}} of file \mbox{\hyperlink{_open_observer_8java_source}{Open\+Observer.\+java}}.
-
-
-
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_a60a902699e64320759b6871ed86f6ade}\index{di.uniba.map.b.adventure.impl.OpenObserver@{di.uniba.map.b.adventure.impl.OpenObserver}!openObject@{openObject}}
-\index{openObject@{openObject}!di.uniba.map.b.adventure.impl.OpenObserver@{di.uniba.map.b.adventure.impl.OpenObserver}}
-\doxysubsubsection{\texorpdfstring{openObject()}{openObject()}}
-{\footnotesize\ttfamily \label{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_a60a902699e64320759b6871ed86f6ade} 
-void di.\+uniba.\+map.\+b.\+adventure.\+impl.\+Open\+Observer.\+open\+Object (\begin{DoxyParamCaption}\item[{String\+Builder}]{msg}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description}{Game\+Description}}}]{description}{, }\item[{\mbox{\hyperlink{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object}{Adv\+Object}}}]{object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Attempts to open a specified object or container. If the object is an instance of Adv\+Object\+Container and contains items, those items are moved to the current room. Messages are generated to inform the player of the action\textquotesingle{}s outcome.
-
-
-\begin{DoxyParams}{Parameters}
-{\em msg} & The String\+Builder object used to build the outcome message. \\
-\hline
-{\em description} & The current state of the game, including the player\textquotesingle{}s current room. \\
-\hline
-{\em object} & The object or container to be opened. \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line \mbox{\hyperlink{_open_observer_8java_source_l00062}{62}} of file \mbox{\hyperlink{_open_observer_8java_source}{Open\+Observer.\+java}}.
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_a60a902699e64320759b6871ed86f6ade_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_a60a902699e64320759b6871ed86f6ade_icgraph}
-\end{center}
-\end{figure}
 \Hypertarget{classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer_af5f5d96d94324ba5e0e9070ede8e789a}\index{di.uniba.map.b.adventure.impl.OpenObserver@{di.uniba.map.b.adventure.impl.OpenObserver}!update@{update}}
 \index{update@{update}!di.uniba.map.b.adventure.impl.OpenObserver@{di.uniba.map.b.adventure.impl.OpenObserver}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
@@ -101,12 +53,7 @@ A string message indicating the outcome of the "{}open"{} command.
 
 Implements \mbox{\hyperlink{interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer_a580cffeadfcbea825b482519e4deadb6}{di.\+uniba.\+map.\+b.\+adventure.\+Game\+Observer}}.
 
-
-
-Definition at line \mbox{\hyperlink{_open_observer_8java_source_l00033}{33}} of file \mbox{\hyperlink{_open_observer_8java_source}{Open\+Observer.\+java}}.
-
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

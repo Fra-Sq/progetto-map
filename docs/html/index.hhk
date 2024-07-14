@@ -1,0 +1,889 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a0158d14466fde23c17c6e3d9056df716"><param name="Name" value="add(AdvObject o)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a0158d14466fde23c17c6e3d9056df716"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a86bd329bd6fb344f12b2047fa3122dd5"><param name="Name" value="add(AdvObject o)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a86bd329bd6fb344f12b2047fa3122dd5"><param name="Name" value="di::uniba::map::b::adventure::type::Inventory"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a8866a8bbe3fea390a0e4f89741b80f77"><param name="Name" value="addObject(AdvObject obj)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a8866a8bbe3fea390a0e4f89741b80f77"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#aa674792199afea2b3f339b8bd790bebf"><param name="Name" value="addObject(AdvObject obj)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#aa674792199afea2b3f339b8bd790bebf"><param name="Name" value="di::uniba::map::b::adventure::type::Room"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a55f0303bae1c4283a839b58d051a7c7d"><param name="Name" value="addPlayer(PlayerData player)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a20838e7d265a7b330bec6c8156230075"><param name="Name" value="AdvObject(int id)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aa1c2c21ca83266bf6a50ae158a94104f"><param name="Name" value="AdvObject(int id, String name)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ad9cf122c01897c5a5c7c51292ad747fa"><param name="Name" value="AdvObject(int id, String name, String description)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a856690bee70fb6c47bdb8710241df77e"><param name="Name" value="AdvObject(int id, String name, String description, Set&lt; String &gt; alias)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#acd9a4a104932848d497c0888215e7524"><param name="Name" value="AdvObjectContainer(int id)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a99b0c89fb5557026682796b07e085666"><param name="Name" value="AdvObjectContainer(int id, String name)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#aeba5a015d14408dc66438806e2d1a89f"><param name="Name" value="AdvObjectContainer(int id, String name, String description)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#acc5ca0df4cd01d54369f392e17a7abab"><param name="Name" value="AdvObjectContainer(int id, String name, String description, Set&lt; String &gt; alias)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#a7c5c0719519fe02e6ef8ad1a03a7e743"><param name="Name" value="attach(GameObserver o)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#a7c5c0719519fe02e6ef8ad1a03a7e743"><param name="Name" value="di::uniba::map::b::adventure::GameObservable"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a5f50efac1fea5096ba76665f01d728a6"><param name="Name" value="attach(GameObserver o)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a5f50efac1fea5096ba76665f01d728a6"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a714e5312efe9bd729f1e9b70a0995c11"><param name="Name" value="close()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#ad13496a4b773e3abb3e491c0f1d0ee16"><param name="Name" value="Command(CommandType type, String name)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a7e7257f1c2555fcfd6873ebe05c516a7"><param name="Name" value="Command(CommandType type, String name, Set&lt; String &gt; alias)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#ab8f61a7b1ba1fc40053f9b3535c7d354"><param name="Name" value="Database()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#ae310adf10210d4108e8ccb55d80910b4"><param name="Name" value="detach(GameObserver o)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#ae310adf10210d4108e8ccb55d80910b4"><param name="Name" value="di::uniba::map::b::adventure::GameObservable"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aafaa92ab8492f68d5d20f8194425b425"><param name="Name" value="detach(GameObserver o)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aafaa92ab8492f68d5d20f8194425b425"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html"><param name="Name" value="di::uniba::map::b::adventure::Engine"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html"><param name="Name" value="di::uniba::map::b::adventure::Engine"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0aac5add5a958af0c635be1d49581f3a"><param name="Name" value="Engine(GameDescription game)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html"><param name="Name" value="di::uniba::map::b::adventure::Engine"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a16eb715b8df13421f41cf1995106b4cc"><param name="Name" value="execute()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html"><param name="Name" value="di::uniba::map::b::adventure::Engine"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0e23d03537aa3d882ae3e62418a209f9"><param name="Name" value="main(String[] args)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a8866a8bbe3fea390a0e4f89741b80f77"><param name="Name" value="addObject(AdvObject obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#aac13b7db39539b6f2449e754561b9871"><param name="Name" value="getCommands()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a63b6f071dc00caa521638067b84ce514"><param name="Name" value="getCurrentRoom()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a3442fbe52e16d3e0993f0d3d3dcc56a1"><param name="Name" value="getInventory()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ac2c90759e68c6f9f17265f2d2d0ab3cb"><param name="Name" value="getObjectById(int id)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ae6d265375fc241fb5346dc1521d35497"><param name="Name" value="getRooms()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a1019a567cc65258ba7231be04b6f6c44"><param name="Name" value="getWelcomeMsg()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ace481a2be2f2f56ee9cbaf26c8692516"><param name="Name" value="init()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ac7ab01cd9fd9d243243f4cc0b1a13a1f"><param name="Name" value="isKeyUsed()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ae0bcdd2f802d72bb4de83f7b4e80ef84"><param name="Name" value="nextMove(ParserOutput p, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#adc3220b5f1adbcd7115d0a2f230f054d"><param name="Name" value="setCurrentRoom(Room currentRoom)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a184c5cecd35b4e50cda8b1a77ff6dbfe"><param name="Name" value="setCurrentRoomById(int roomId)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a9a7e02f4831b6c8600f62b7296cf6f12"><param name="Name" value="setGame(int roomId, List&lt; Integer &gt; inventoryIds, boolean monsterAlive, boolean isDoorOpen)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a27453ac5288756a63348ca699ec8af05"><param name="Name" value="setKeyUsed(boolean keyUsed)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html"><param name="Name" value="di::uniba::map::b::adventure::GameObservable"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html"><param name="Name" value="di::uniba::map::b::adventure::GameObservable"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#a7c5c0719519fe02e6ef8ad1a03a7e743"><param name="Name" value="attach(GameObserver o)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html"><param name="Name" value="di::uniba::map::b::adventure::GameObservable"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#ae310adf10210d4108e8ccb55d80910b4"><param name="Name" value="detach(GameObserver o)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html"><param name="Name" value="di::uniba::map::b::adventure::GameObservable"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#aee803193d726892552f3c24ea5dd8d80"><param name="Name" value="notifyObservers(Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html"><param name="Name" value="di::uniba::map::b::adventure::GameObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html"><param name="Name" value="di::uniba::map::b::adventure::GameObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html#a580cffeadfcbea825b482519e4deadb6"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html"><param name="Name" value="di::uniba::map::b::adventure::GameUtils"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html"><param name="Name" value="di::uniba::map::b::adventure::GameUtils"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html#abc449f8cf790ce32ce610be40a80e0fd"><param name="Name" value="getObjectFromInventory(List&lt; AdvObject &gt; inventory, int id)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html"><param name="Name" value="di::uniba::map::b::adventure::impl::AePlayWave"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1_1_position.html"><param name="Name" value="di::uniba::map::b::adventure::impl::AePlayWave::Position"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a714e5312efe9bd729f1e9b70a0995c11"><param name="Name" value="close()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#ab8f61a7b1ba1fc40053f9b3535c7d354"><param name="Name" value="Database()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#abba764263d9d62ab0c3785f2a4146803"><param name="Name" value="getDescriptionById(String id)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a379089667952dc981cb9ab4b8a6952f8"><param name="Name" value="getNameById(String id)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#af3d19c59a0b5cfe6a92f0c47529396aa"><param name="Name" value="getRoomLookById(String id)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#adb497352ce996d96b4bae8c09d79ba9b"><param name="Name" value="insertNewData()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9da44c7659651cab0c086cdc1163e6ef"><param name="Name" value="updateDescriptionById(String id, String newDescription)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9ed1bc2b29d6412b294c2c80af5b4234"><param name="Name" value="updateNameById(String id, String newName)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Database"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a933fe7549e0d415271874fa7bde8aa9e"><param name="Name" value="updateRoomLookById(String id, String newRoomLook)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::InventoryObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::InventoryObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html#a207e3d5f908ea6e751e10534d159f1f1"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::KillObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::KillObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html#a6f74bf9bc7ff679eccfe9c50177f2003"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::LookAtObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::LookAtObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html#a28cdef8cf07906c6886c516e6763913f"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::MoveObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::MoveObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html#ae51630cc6a0529974a3d64869d4b1013"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::OpenObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::OpenObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#af5f5d96d94324ba5e0e9070ede8e789a"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PickUpObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PickUpObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html#a859e7f0b50a281e571a85ef872ee1374"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#ae5bc41ce832360883ad9ef38effc2970"><param name="Name" value="getDate()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a160f236df4b269dd01b55bcaf82da4bc"><param name="Name" value="getName()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#ada1a07121459f98bcdfdf3ff8422ef8c"><param name="Name" value="getTime()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a97ae769aeafd2a9b4666e7dfc9e9cca4"><param name="Name" value="PlayerData(String name, String date, String time)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a59fabb365de8a67573c6945310cb6022"><param name="Name" value="setDate(String date)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a12dbb78b538a084659b894abcdef2066"><param name="Name" value="setName(String name)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a9e4b8a765072938167fc11f56c65f8fa"><param name="Name" value="setTime(String time)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a1f70fb2e58319aea81e8df263a92c377"><param name="Name" value="toString()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PushObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PushObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ac3e97a89860c377b76277749109befa4"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::PushObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ada881c7baabc1190437c7af00a6a3421"><param name="Name" value="verify(final String input)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::ReadObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::ReadObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html#a3c550a2289d5b47a7411bf138078e19b"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html"><param name="Name" value="di::uniba::map::b::adventure::impl::RESTClient"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html"><param name="Name" value="di::uniba::map::b::adventure::impl::RESTClient"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a55f0303bae1c4283a839b58d051a7c7d"><param name="Name" value="addPlayer(PlayerData player)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html"><param name="Name" value="di::uniba::map::b::adventure::impl::RESTClient"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a56214565b72918918d359c5c1e30ea2a"><param name="Name" value="getLeaderboard()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html"><param name="Name" value="di::uniba::map::b::adventure::impl::RESTClient"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a6ae57a1ffa8980c2f10b52d33aa652a4"><param name="Name" value="RESTClient()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SaveGame"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SaveGame"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a6615a57fbc0112ac161b5557852354c6"><param name="Name" value="gameExists(String gameName)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SaveGame"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a5e7b7efbc8049d4a9ea4c22a188265cd"><param name="Name" value="load(String gameName)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SaveGame"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a9a143f46c1029a94f48a4d6a3bacbd32"><param name="Name" value="save(Room currentRoom, List&lt; AdvObject &gt; inventory, String gameName, int elapsedSeconds, boolean monsterAlive, boolean isDoorOpen)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a5f50efac1fea5096ba76665f01d728a6"><param name="Name" value="attach(GameObserver o)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aafaa92ab8492f68d5d20f8194425b425"><param name="Name" value="detach(GameObserver o)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a6be501aa2b5a1c70fd9c38ba10e894d5"><param name="Name" value="getWelcomeMsg()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a7a02f030860fe5216c2f347fbc983dbe"><param name="Name" value="init()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee"><param name="Name" value="nextMove(ParserOutput p, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aff4f17f6db842fdbb46c01198abeb670"><param name="Name" value="notifyObservers(Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::UseObserver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html"><param name="Name" value="di::uniba::map::b::adventure::impl::UseObserver"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html#a4e2335cd4239f4fac2f69d3591585a28"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Window"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a10756cfd003a108ab2025ca5ee45a86d"><param name="Name" value="getInsertText()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#ac4aa46b98d4df7232d639b7cfe1a85e7"><param name="Name" value="showLeaderBoard()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a80196f752c0b9526fd64a57d484a57b7"><param name="Name" value="showMessage(String message)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a7d48bd7d07aa3d24b4bd41f487db360c"><param name="Name" value="showRoomDescription(String roomDescription)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#aa45f0143ed093c6ce28415bcff983ca7"><param name="Name" value="showRoomName(String roomName)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a24105046a31874be367da6483142aa16"><param name="Name" value="showStartDescription(String startDescription)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html"><param name="Name" value="di::uniba::map::b::adventure::impl::Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a3e9d3603a5d8b7fc174a91b7912f3045"><param name="Name" value="Window(GameDescription game, Parser parser)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html"><param name="Name" value="di::uniba::map::b::adventure::parser::Parser"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html"><param name="Name" value="di::uniba::map::b::adventure::parser::Parser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#a1671cce0ea9375ac45ff8b15beff3291"><param name="Name" value="parse(String command, List&lt; Command &gt; commands, List&lt; AdvObject &gt; objects, List&lt; AdvObject &gt; inventory)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html"><param name="Name" value="di::uniba::map::b::adventure::parser::Parser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#a0e24595f9263ddcd796c3d46176fb01b"><param name="Name" value="Parser(Set&lt; String &gt; stopwords)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"><param name="Name" value="di::uniba::map::b::adventure::parser::ParserOutput"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"><param name="Name" value="di::uniba::map::b::adventure::parser::ParserOutput"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a94f39efa449452a2cde5aabf835cb261"><param name="Name" value="getCommand()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"><param name="Name" value="di::uniba::map::b::adventure::parser::ParserOutput"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a19d36754b0020953c69ae2e8149d5f4c"><param name="Name" value="getInvObject()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"><param name="Name" value="di::uniba::map::b::adventure::parser::ParserOutput"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a717066c607a85979b776a12a32b9059f"><param name="Name" value="getObject()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"><param name="Name" value="di::uniba::map::b::adventure::parser::ParserOutput"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#aadce6083d0c0dade8d0604543add28f1"><param name="Name" value="ParserOutput(Command command, AdvObject object)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"><param name="Name" value="di::uniba::map::b::adventure::parser::ParserOutput"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a9ec1aac4862a937a26579511deeb25e4"><param name="Name" value="ParserOutput(Command command, AdvObject object, AdvObject invObejct)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"><param name="Name" value="di::uniba::map::b::adventure::parser::ParserOutput"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#ad42b865bf724d5949bd0725325113bdb"><param name="Name" value="setCommand(Command command)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"><param name="Name" value="di::uniba::map::b::adventure::parser::ParserOutput"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a8519c7725df385366d7a7d2474509893"><param name="Name" value="setInvObject(AdvObject invObject)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html"><param name="Name" value="di::uniba::map::b::adventure::parser::ParserOutput"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#aaa492c0b903a325f86139b32a6de56bc"><param name="Name" value="setObject(AdvObject object)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a20838e7d265a7b330bec6c8156230075"><param name="Name" value="AdvObject(int id)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aa1c2c21ca83266bf6a50ae158a94104f"><param name="Name" value="AdvObject(int id, String name)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ad9cf122c01897c5a5c7c51292ad747fa"><param name="Name" value="AdvObject(int id, String name, String description)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a856690bee70fb6c47bdb8710241df77e"><param name="Name" value="AdvObject(int id, String name, String description, Set&lt; String &gt; alias)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a1278661f5736763873ab3407d7464486"><param name="Name" value="equals(Object obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a5aba1d8f4fc217957dc87c0a015083db"><param name="Name" value="getAlias()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a079d6994871e7ed4fb8dc4844c2e2da8"><param name="Name" value="getContents()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ab3c2f2b70e45f651431ebcd1e631ae14"><param name="Name" value="getDescription()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a574de9727e7d8957bd265a06e1611052"><param name="Name" value="getId()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a094731968d56cadb1274bfcf31c474fa"><param name="Name" value="getName()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ac8d0e063e0971fd775eccc45373553dd"><param name="Name" value="hashCode()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ae6347f2c165add59f417f46b48fe1fbb"><param name="Name" value="isCreature()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aacb51db33d66a1ed86da7c547102239e"><param name="Name" value="isLiving()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a31027928ec81ef8e1ad0f140135e8315"><param name="Name" value="isOpen()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a443b6651c97cb2edfbb38d9363d95b98"><param name="Name" value="isOpenable()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a70ec19949e8e3637ca915920cf3ba2c4"><param name="Name" value="isPickupable()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aef3cc255646b9115b68d5da313b3749c"><param name="Name" value="isPush()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a0498094520bcd048b59d9cf6f3b1ad9b"><param name="Name" value="isPushable()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a8f17062d6613e6a829bfe6c5ddda52c3"><param name="Name" value="isReadable()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aac77d8af8bc19180b52cd1a3fc103ac4"><param name="Name" value="setAlias(Set&lt; String &gt; alias)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a631a338a0ae33c89c5a9c06473ae7588"><param name="Name" value="setAlias(String[] alias)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a77b9388c3f94e334e6bec615c87d21fd"><param name="Name" value="setContents(String contents)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a8405505a0e5da051ac72e6f81a7b9a46"><param name="Name" value="setCreature(boolean creature)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a9aad9fee5eea5e2623a8d24ebf07d4f6"><param name="Name" value="setDescription(String description)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#af5b165b7cdca0f00ff832dad38949ba6"><param name="Name" value="setLiving(boolean living)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a89b408c2cae991b09d4cca16f1c1dde7"><param name="Name" value="setName(String name)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#abfd22cc782ae3395c0af61b747b8797b"><param name="Name" value="setOpen(boolean open)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a58b77d327d599e34e91479637ebf7ee6"><param name="Name" value="setOpenable(boolean openable)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#abeb7c9ea6b9bfb1890ed139798494619"><param name="Name" value="setPickupable(boolean pickupable)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a261b682698bd7d3369a372c243daf380"><param name="Name" value="setPush(boolean push)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aadb1cedc859c20a8f2e1b0cc21332bbf"><param name="Name" value="setPushable(boolean pushable)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#af6dde388988aed97e0298aaaaaebec11"><param name="Name" value="setReadable(boolean readable)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a0158d14466fde23c17c6e3d9056df716"><param name="Name" value="add(AdvObject o)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#acd9a4a104932848d497c0888215e7524"><param name="Name" value="AdvObjectContainer(int id)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a99b0c89fb5557026682796b07e085666"><param name="Name" value="AdvObjectContainer(int id, String name)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#aeba5a015d14408dc66438806e2d1a89f"><param name="Name" value="AdvObjectContainer(int id, String name, String description)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#acc5ca0df4cd01d54369f392e17a7abab"><param name="Name" value="AdvObjectContainer(int id, String name, String description, Set&lt; String &gt; alias)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#ad061304f7c82b21306c09666ceaa50a3"><param name="Name" value="getList()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#afab93d2768dc15ef28b8fdcfd6eab9ba"><param name="Name" value="isOpen()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a7dbd9be2cfed60da4da3f17f95a667f8"><param name="Name" value="remove(AdvObject o)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a9f75dd8709217523d56ca479d3ba3539"><param name="Name" value="setList(List&lt; AdvObject &gt; list)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a684f5cb2780a824c01fc298360a8b820"><param name="Name" value="setOpen(boolean open)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#ad13496a4b773e3abb3e491c0f1d0ee16"><param name="Name" value="Command(CommandType type, String name)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a7e7257f1c2555fcfd6873ebe05c516a7"><param name="Name" value="Command(CommandType type, String name, Set&lt; String &gt; alias)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a394849e9b6380da535c097b902cc6e1a"><param name="Name" value="equals(Object obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a88c458e30ca1787481c02362e6283b57"><param name="Name" value="getAlias()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a2212e5826aa6cb1e661d3be2bc634fab"><param name="Name" value="getName()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#aec1582f0d37d094451b1ff3db9c36679"><param name="Name" value="getType()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#afac06e619dd7d96837850394bf758d24"><param name="Name" value="hashCode()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a18478c4fe0dcbcb6b6579dff9ce24f68"><param name="Name" value="setAlias(Set&lt; String &gt; alias)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#add7bc83e556054882d1a5804a309486d"><param name="Name" value="setAlias(String[] alias)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type.html"><param name="Name" value="di::uniba::map::b::adventure::type::CommandType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html"><param name="Name" value="di::uniba::map::b::adventure::type::Inventory"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html"><param name="Name" value="di::uniba::map::b::adventure::type::Inventory"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a86bd329bd6fb344f12b2047fa3122dd5"><param name="Name" value="add(AdvObject o)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html"><param name="Name" value="di::uniba::map::b::adventure::type::Inventory"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a35a41397bf6092212327c88802a5b5db"><param name="Name" value="getList()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html"><param name="Name" value="di::uniba::map::b::adventure::type::Inventory"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#ad4ddbcd49137df052bbacd2959c8ad05"><param name="Name" value="remove(AdvObject o)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html"><param name="Name" value="di::uniba::map::b::adventure::type::Inventory"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a6611eaee3eea9f31e795724ad5579f2f"><param name="Name" value="setList(List&lt; AdvObject &gt; list)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html"><param name="Name" value="di::uniba::map::b::adventure::type::Room"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html"><param name="Name" value="di::uniba::map::b::adventure::type::Room"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#aa674792199afea2b3f339b8bd790bebf"><param name="Name" value="addObject(AdvObject obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html"><param name="Name" value="di::uniba::map::b::adventure::type::Room"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#a8f844d2b047d7717ec27479f77950a40"><param name="Name" value="getDynamicLook()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html"><param name="Name" value="di::uniba::map::b::adventure::type::Room"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#abacf16b0d0e836274a9d38461a95a346"><param name="Name" value="Room(int id, GameDescription game)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html"><param name="Name" value="di::uniba::map::b::adventure::type::Room"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#a78a1480376484a874aea85338c3e1929"><param name="Name" value="Room(int id, String name, String description, GameDescription game)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html"><param name="Name" value="di::uniba::map::b::adventure::Utils"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html"><param name="Name" value="di::uniba::map::b::adventure::Utils"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#ac62e8ebb99f39d3af6c6cf06f534ed5f"><param name="Name" value="loadFileListInSet(File file)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html"><param name="Name" value="di::uniba::map::b::adventure::Utils"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#a7e85679dc02c8c772afe2604c5a98c20"><param name="Name" value="parseString(String string, Set&lt; String &gt; stopwords)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0aac5add5a958af0c635be1d49581f3a"><param name="Name" value="Engine(GameDescription game)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a1278661f5736763873ab3407d7464486"><param name="Name" value="equals(Object obj)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a1278661f5736763873ab3407d7464486"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a394849e9b6380da535c097b902cc6e1a"><param name="Name" value="equals(Object obj)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a394849e9b6380da535c097b902cc6e1a"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a16eb715b8df13421f41cf1995106b4cc"><param name="Name" value="execute()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a6615a57fbc0112ac161b5557852354c6"><param name="Name" value="gameExists(String gameName)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a5aba1d8f4fc217957dc87c0a015083db"><param name="Name" value="getAlias()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a5aba1d8f4fc217957dc87c0a015083db"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a88c458e30ca1787481c02362e6283b57"><param name="Name" value="getAlias()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a88c458e30ca1787481c02362e6283b57"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a94f39efa449452a2cde5aabf835cb261"><param name="Name" value="getCommand()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#aac13b7db39539b6f2449e754561b9871"><param name="Name" value="getCommands()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a079d6994871e7ed4fb8dc4844c2e2da8"><param name="Name" value="getContents()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a63b6f071dc00caa521638067b84ce514"><param name="Name" value="getCurrentRoom()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#ae5bc41ce832360883ad9ef38effc2970"><param name="Name" value="getDate()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ab3c2f2b70e45f651431ebcd1e631ae14"><param name="Name" value="getDescription()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#abba764263d9d62ab0c3785f2a4146803"><param name="Name" value="getDescriptionById(String id)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#a8f844d2b047d7717ec27479f77950a40"><param name="Name" value="getDynamicLook()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a574de9727e7d8957bd265a06e1611052"><param name="Name" value="getId()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a10756cfd003a108ab2025ca5ee45a86d"><param name="Name" value="getInsertText()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a3442fbe52e16d3e0993f0d3d3dcc56a1"><param name="Name" value="getInventory()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a19d36754b0020953c69ae2e8149d5f4c"><param name="Name" value="getInvObject()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a56214565b72918918d359c5c1e30ea2a"><param name="Name" value="getLeaderboard()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#ad061304f7c82b21306c09666ceaa50a3"><param name="Name" value="getList()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#ad061304f7c82b21306c09666ceaa50a3"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a35a41397bf6092212327c88802a5b5db"><param name="Name" value="getList()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a35a41397bf6092212327c88802a5b5db"><param name="Name" value="di::uniba::map::b::adventure::type::Inventory"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a160f236df4b269dd01b55bcaf82da4bc"><param name="Name" value="getName()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a160f236df4b269dd01b55bcaf82da4bc"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a094731968d56cadb1274bfcf31c474fa"><param name="Name" value="getName()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a094731968d56cadb1274bfcf31c474fa"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a2212e5826aa6cb1e661d3be2bc634fab"><param name="Name" value="getName()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a2212e5826aa6cb1e661d3be2bc634fab"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a379089667952dc981cb9ab4b8a6952f8"><param name="Name" value="getNameById(String id)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a717066c607a85979b776a12a32b9059f"><param name="Name" value="getObject()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ac2c90759e68c6f9f17265f2d2d0ab3cb"><param name="Name" value="getObjectById(int id)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html#abc449f8cf790ce32ce610be40a80e0fd"><param name="Name" value="getObjectFromInventory(List&lt; AdvObject &gt; inventory, int id)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#af3d19c59a0b5cfe6a92f0c47529396aa"><param name="Name" value="getRoomLookById(String id)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ae6d265375fc241fb5346dc1521d35497"><param name="Name" value="getRooms()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#ada1a07121459f98bcdfdf3ff8422ef8c"><param name="Name" value="getTime()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#aec1582f0d37d094451b1ff3db9c36679"><param name="Name" value="getType()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a1019a567cc65258ba7231be04b6f6c44"><param name="Name" value="getWelcomeMsg()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a1019a567cc65258ba7231be04b6f6c44"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a6be501aa2b5a1c70fd9c38ba10e894d5"><param name="Name" value="getWelcomeMsg()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a6be501aa2b5a1c70fd9c38ba10e894d5"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ac8d0e063e0971fd775eccc45373553dd"><param name="Name" value="hashCode()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ac8d0e063e0971fd775eccc45373553dd"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#afac06e619dd7d96837850394bf758d24"><param name="Name" value="hashCode()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#afac06e619dd7d96837850394bf758d24"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ace481a2be2f2f56ee9cbaf26c8692516"><param name="Name" value="init()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ace481a2be2f2f56ee9cbaf26c8692516"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a7a02f030860fe5216c2f347fbc983dbe"><param name="Name" value="init()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a7a02f030860fe5216c2f347fbc983dbe"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#adb497352ce996d96b4bae8c09d79ba9b"><param name="Name" value="insertNewData()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#ae6347f2c165add59f417f46b48fe1fbb"><param name="Name" value="isCreature()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ac7ab01cd9fd9d243243f4cc0b1a13a1f"><param name="Name" value="isKeyUsed()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aacb51db33d66a1ed86da7c547102239e"><param name="Name" value="isLiving()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a31027928ec81ef8e1ad0f140135e8315"><param name="Name" value="isOpen()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a31027928ec81ef8e1ad0f140135e8315"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#afab93d2768dc15ef28b8fdcfd6eab9ba"><param name="Name" value="isOpen()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#afab93d2768dc15ef28b8fdcfd6eab9ba"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a443b6651c97cb2edfbb38d9363d95b98"><param name="Name" value="isOpenable()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a70ec19949e8e3637ca915920cf3ba2c4"><param name="Name" value="isPickupable()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aef3cc255646b9115b68d5da313b3749c"><param name="Name" value="isPush()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a0498094520bcd048b59d9cf6f3b1ad9b"><param name="Name" value="isPushable()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a8f17062d6613e6a829bfe6c5ddda52c3"><param name="Name" value="isReadable()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a5e7b7efbc8049d4a9ea4c22a188265cd"><param name="Name" value="load(String gameName)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#ac62e8ebb99f39d3af6c6cf06f534ed5f"><param name="Name" value="loadFileListInSet(File file)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html#a0e23d03537aa3d882ae3e62418a209f9"><param name="Name" value="main(String[] args)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ae0bcdd2f802d72bb4de83f7b4e80ef84"><param name="Name" value="nextMove(ParserOutput p, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#ae0bcdd2f802d72bb4de83f7b4e80ef84"><param name="Name" value="di::uniba::map::b::adventure::GameDescription"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee"><param name="Name" value="nextMove(ParserOutput p, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#a45631b42e31c7663c2baecf4bf0c4cee"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#aee803193d726892552f3c24ea5dd8d80"><param name="Name" value="notifyObservers(Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html#aee803193d726892552f3c24ea5dd8d80"><param name="Name" value="di::uniba::map::b::adventure::GameObservable"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aff4f17f6db842fdbb46c01198abeb670"><param name="Name" value="notifyObservers(Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html#aff4f17f6db842fdbb46c01198abeb670"><param name="Name" value="di::uniba::map::b::adventure::impl::SpaceEscape"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#a1671cce0ea9375ac45ff8b15beff3291"><param name="Name" value="parse(String command, List&lt; Command &gt; commands, List&lt; AdvObject &gt; objects, List&lt; AdvObject &gt; inventory)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#a0e24595f9263ddcd796c3d46176fb01b"><param name="Name" value="Parser(Set&lt; String &gt; stopwords)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#aadce6083d0c0dade8d0604543add28f1"><param name="Name" value="ParserOutput(Command command, AdvObject object)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a9ec1aac4862a937a26579511deeb25e4"><param name="Name" value="ParserOutput(Command command, AdvObject object, AdvObject invObejct)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#a7e85679dc02c8c772afe2604c5a98c20"><param name="Name" value="parseString(String string, Set&lt; String &gt; stopwords)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a97ae769aeafd2a9b4666e7dfc9e9cca4"><param name="Name" value="PlayerData(String name, String date, String time)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a7dbd9be2cfed60da4da3f17f95a667f8"><param name="Name" value="remove(AdvObject o)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a7dbd9be2cfed60da4da3f17f95a667f8"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#ad4ddbcd49137df052bbacd2959c8ad05"><param name="Name" value="remove(AdvObject o)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#ad4ddbcd49137df052bbacd2959c8ad05"><param name="Name" value="di::uniba::map::b::adventure::type::Inventory"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_r_e_s_t_client.html#a6ae57a1ffa8980c2f10b52d33aa652a4"><param name="Name" value="RESTClient()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#abacf16b0d0e836274a9d38461a95a346"><param name="Name" value="Room(int id, GameDescription game)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html#a78a1480376484a874aea85338c3e1929"><param name="Name" value="Room(int id, String name, String description, GameDescription game)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html#a9a143f46c1029a94f48a4d6a3bacbd32"><param name="Name" value="save(Room currentRoom, List&lt; AdvObject &gt; inventory, String gameName, int elapsedSeconds, boolean monsterAlive, boolean isDoorOpen)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aac77d8af8bc19180b52cd1a3fc103ac4"><param name="Name" value="setAlias(Set&lt; String &gt; alias)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aac77d8af8bc19180b52cd1a3fc103ac4"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a18478c4fe0dcbcb6b6579dff9ce24f68"><param name="Name" value="setAlias(Set&lt; String &gt; alias)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#a18478c4fe0dcbcb6b6579dff9ce24f68"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a631a338a0ae33c89c5a9c06473ae7588"><param name="Name" value="setAlias(String[] alias)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a631a338a0ae33c89c5a9c06473ae7588"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#add7bc83e556054882d1a5804a309486d"><param name="Name" value="setAlias(String[] alias)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html#add7bc83e556054882d1a5804a309486d"><param name="Name" value="di::uniba::map::b::adventure::type::Command"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#ad42b865bf724d5949bd0725325113bdb"><param name="Name" value="setCommand(Command command)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a77b9388c3f94e334e6bec615c87d21fd"><param name="Name" value="setContents(String contents)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a8405505a0e5da051ac72e6f81a7b9a46"><param name="Name" value="setCreature(boolean creature)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#adc3220b5f1adbcd7115d0a2f230f054d"><param name="Name" value="setCurrentRoom(Room currentRoom)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a184c5cecd35b4e50cda8b1a77ff6dbfe"><param name="Name" value="setCurrentRoomById(int roomId)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a59fabb365de8a67573c6945310cb6022"><param name="Name" value="setDate(String date)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a9aad9fee5eea5e2623a8d24ebf07d4f6"><param name="Name" value="setDescription(String description)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a9a7e02f4831b6c8600f62b7296cf6f12"><param name="Name" value="setGame(int roomId, List&lt; Integer &gt; inventoryIds, boolean monsterAlive, boolean isDoorOpen)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#a8519c7725df385366d7a7d2474509893"><param name="Name" value="setInvObject(AdvObject invObject)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html#a27453ac5288756a63348ca699ec8af05"><param name="Name" value="setKeyUsed(boolean keyUsed)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a9f75dd8709217523d56ca479d3ba3539"><param name="Name" value="setList(List&lt; AdvObject &gt; list)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a9f75dd8709217523d56ca479d3ba3539"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a6611eaee3eea9f31e795724ad5579f2f"><param name="Name" value="setList(List&lt; AdvObject &gt; list)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html#a6611eaee3eea9f31e795724ad5579f2f"><param name="Name" value="di::uniba::map::b::adventure::type::Inventory"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#af5b165b7cdca0f00ff832dad38949ba6"><param name="Name" value="setLiving(boolean living)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a12dbb78b538a084659b894abcdef2066"><param name="Name" value="setName(String name)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a12dbb78b538a084659b894abcdef2066"><param name="Name" value="di::uniba::map::b::adventure::impl::PlayerData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a89b408c2cae991b09d4cca16f1c1dde7"><param name="Name" value="setName(String name)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a89b408c2cae991b09d4cca16f1c1dde7"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html#aaa492c0b903a325f86139b32a6de56bc"><param name="Name" value="setObject(AdvObject object)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#abfd22cc782ae3395c0af61b747b8797b"><param name="Name" value="setOpen(boolean open)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#abfd22cc782ae3395c0af61b747b8797b"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a684f5cb2780a824c01fc298360a8b820"><param name="Name" value="setOpen(boolean open)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html#a684f5cb2780a824c01fc298360a8b820"><param name="Name" value="di::uniba::map::b::adventure::type::AdvObjectContainer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a58b77d327d599e34e91479637ebf7ee6"><param name="Name" value="setOpenable(boolean openable)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#abeb7c9ea6b9bfb1890ed139798494619"><param name="Name" value="setPickupable(boolean pickupable)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#a261b682698bd7d3369a372c243daf380"><param name="Name" value="setPush(boolean push)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#aadb1cedc859c20a8f2e1b0cc21332bbf"><param name="Name" value="setPushable(boolean pushable)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html#af6dde388988aed97e0298aaaaaebec11"><param name="Name" value="setReadable(boolean readable)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a9e4b8a765072938167fc11f56c65f8fa"><param name="Name" value="setTime(String time)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#ac4aa46b98d4df7232d639b7cfe1a85e7"><param name="Name" value="showLeaderBoard()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a80196f752c0b9526fd64a57d484a57b7"><param name="Name" value="showMessage(String message)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a7d48bd7d07aa3d24b4bd41f487db360c"><param name="Name" value="showRoomDescription(String roomDescription)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#aa45f0143ed093c6ce28415bcff983ca7"><param name="Name" value="showRoomName(String roomName)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a24105046a31874be367da6483142aa16"><param name="Name" value="showStartDescription(String startDescription)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="md__r_e_a_d_m_e.html"><param name="Name" value="SPACE ESCAPE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html#a1f70fb2e58319aea81e8df263a92c377"><param name="Name" value="toString()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html#a580cffeadfcbea825b482519e4deadb6"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observer.html#a580cffeadfcbea825b482519e4deadb6"><param name="Name" value="di::uniba::map::b::adventure::GameObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html#a207e3d5f908ea6e751e10534d159f1f1"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_inventory_observer.html#a207e3d5f908ea6e751e10534d159f1f1"><param name="Name" value="di::uniba::map::b::adventure::impl::InventoryObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html#a6f74bf9bc7ff679eccfe9c50177f2003"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_kill_observer.html#a6f74bf9bc7ff679eccfe9c50177f2003"><param name="Name" value="di::uniba::map::b::adventure::impl::KillObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html#a28cdef8cf07906c6886c516e6763913f"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_look_at_observer.html#a28cdef8cf07906c6886c516e6763913f"><param name="Name" value="di::uniba::map::b::adventure::impl::LookAtObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html#ae51630cc6a0529974a3d64869d4b1013"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_move_observer.html#ae51630cc6a0529974a3d64869d4b1013"><param name="Name" value="di::uniba::map::b::adventure::impl::MoveObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#af5f5d96d94324ba5e0e9070ede8e789a"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html#af5f5d96d94324ba5e0e9070ede8e789a"><param name="Name" value="di::uniba::map::b::adventure::impl::OpenObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html#a859e7f0b50a281e571a85ef872ee1374"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_pick_up_observer.html#a859e7f0b50a281e571a85ef872ee1374"><param name="Name" value="di::uniba::map::b::adventure::impl::PickUpObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ac3e97a89860c377b76277749109befa4"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ac3e97a89860c377b76277749109befa4"><param name="Name" value="di::uniba::map::b::adventure::impl::PushObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html#a3c550a2289d5b47a7411bf138078e19b"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_read_observer.html#a3c550a2289d5b47a7411bf138078e19b"><param name="Name" value="di::uniba::map::b::adventure::impl::ReadObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html#a4e2335cd4239f4fac2f69d3591585a28"><param name="Name" value="update(GameDescription description, ParserOutput parserOutput, Window window)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_use_observer.html#a4e2335cd4239f4fac2f69d3591585a28"><param name="Name" value="di::uniba::map::b::adventure::impl::UseObserver"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9da44c7659651cab0c086cdc1163e6ef"><param name="Name" value="updateDescriptionById(String id, String newDescription)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a9ed1bc2b29d6412b294c2c80af5b4234"><param name="Name" value="updateNameById(String id, String newName)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html#a933fe7549e0d415271874fa7bde8aa9e"><param name="Name" value="updateRoomLookById(String id, String newRoomLook)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html#ada881c7baabc1190437c7af00a6a3421"><param name="Name" value="verify(final String input)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html#a3e9d3603a5d8b7fc174a91b7912f3045"><param name="Name" value="Window(GameDescription game, Parser parser)"></OBJECT>
+</UL>
+</BODY>
+</HTML>

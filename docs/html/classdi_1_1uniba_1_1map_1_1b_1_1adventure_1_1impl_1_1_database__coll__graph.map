@@ -1,3 +1,7 @@
 <map id="di.uniba.map.b.adventure.impl.Database" name="di.uniba.map.b.adventure.impl.Database">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,195,261"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,203,139"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="10,5,91,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,44,82,71,95,94,90,97,77,73,62,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="116,5,202,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,47,132,73,118,97,114,94,127,71,142,44"/>
 </map>

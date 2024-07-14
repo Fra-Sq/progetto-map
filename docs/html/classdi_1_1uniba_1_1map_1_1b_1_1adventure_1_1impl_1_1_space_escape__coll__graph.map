@@ -1,21 +1,7 @@
 <map id="di.uniba.map.b.adventure.impl.SpaceEscape" name="di.uniba.map.b.adventure.impl.SpaceEscape">
-<area shape="rect" id="Node000001" title=" " alt="" coords="372,960,561,1152"/>
-<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html" title=" " alt="" coords="58,533,219,896"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,890,234,894,266,926,301,955,374,1003,371,1008,298,959,262,930,230,898,227,894"/>
-<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_room.html" title=" " alt="" coords="5,989,229,1123"/>
-<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="81,895,83,936,91,973,86,974,77,936,76,896"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,989,124,913,129,913,124,990"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="230,1032,248,1041,256,1056,253,1066,246,1073,243,1069,249,1063,251,1056,245,1045,228,1037"/>
-<area shape="rect" id="Node000004" href="$interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html" title=" " alt="" coords="243,651,405,779"/>
-<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="359,791,429,960,425,962,354,793"/>
-<area shape="rect" id="Node000005" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_database.html" title=" " alt="" coords="429,587,619,843"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="505,843,488,944,483,943,500,842"/>
-<area shape="rect" id="Node000006" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser_output.html" title=" " alt="" coords="643,597,845,832"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="679,833,633,898,576,960,572,957,629,894,675,830"/>
-<area shape="rect" id="Node000007" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html" title=" " alt="" coords="513,176,703,432"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="653,431,703,580,697,582,648,432"/>
-<area shape="rect" id="Node000008" href="$enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type.html" title=" " alt="" coords="513,5,703,91"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="611,91,611,159,605,159,605,91"/>
-<area shape="rect" id="Node000009" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html" title=" " alt="" coords="727,155,916,453"/>
-<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="796,454,772,582,766,581,791,453"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="87,96,285,139"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_description.html" title=" " alt="" coords="5,5,175,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,57,166,94,162,98,122,61"/>
+<area shape="rect" id="Node000003" href="$interfacedi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_observable.html" title=" " alt="" coords="199,5,368,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,61,211,97,207,93,248,57"/>
 </map>

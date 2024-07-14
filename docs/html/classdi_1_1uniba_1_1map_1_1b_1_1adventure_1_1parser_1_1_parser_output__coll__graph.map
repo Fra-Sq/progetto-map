@@ -1,9 +1,0 @@
-<map id="di.uniba.map.b.adventure.parser.ParserOutput" name="di.uniba.map.b.adventure.parser.ParserOutput">
-<area shape="rect" id="Node000001" title=" " alt="" coords="106,533,307,768"/>
-<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command.html" title=" " alt="" coords="5,176,195,432"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,431,168,517,163,518,137,433"/>
-<area shape="rect" id="Node000003" href="$enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_command_type.html" title=" " alt="" coords="5,5,195,91"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,91,103,159,97,159,97,91"/>
-<area shape="rect" id="Node000004" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object.html" title=" " alt="" coords="219,155,408,453"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="270,454,250,518,245,516,265,452"/>
-</map>

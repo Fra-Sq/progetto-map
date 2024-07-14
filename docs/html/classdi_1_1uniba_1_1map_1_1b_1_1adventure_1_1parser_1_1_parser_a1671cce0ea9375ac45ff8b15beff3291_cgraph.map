@@ -1,7 +1,5 @@
 <map id="di.uniba.map.b.adventure.parser.Parser.parse" name="di.uniba.map.b.adventure.parser.Parser.parse">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,215,81"/>
-<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html#adadde018ee4a00c9bbf9894a83a172d9" title=" " alt="" coords="263,5,472,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,44,247,40,248,45,216,49"/>
-<area shape="rect" id="Node000003" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#a7e85679dc02c8c772afe2604c5a98c20" title=" " alt="" coords="283,72,452,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,71,268,78,267,83,215,76"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,215,48"/>
+<area shape="rect" id="Node000002" href="$classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html#a7e85679dc02c8c772afe2604c5a98c20" title=" " alt="" coords="263,5,432,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,24,247,24,247,29,215,29"/>
 </map>

@@ -6,6 +6,176 @@
       <Path>index.html</Path>
       <Subnodes>
        <Node>
+        <Name>SPACE ESCAPE</Name>
+        <Path>md__r_e_a_d_m_e.html</Path>
+      <Subnodes>
+         <Node>
+          <Name>INDICE</Name>
+          <Path>md__r_e_a_d_m_e.html</Path>
+          <Anchor>autotoc_md1</Anchor>
+         </Node>
+         <Node>
+          <Name>Introduzione</Name>
+          <Path>md__r_e_a_d_m_e.html</Path>
+          <Anchor>autotoc_md2</Anchor>
+        <Subnodes>
+           <Node>
+            <Name>Descrizione del gioco</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md3</Anchor>
+           </Node>
+           <Node>
+            <Name>Come si gioca</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md4</Anchor>
+           </Node>
+           <Node>
+            <Name>Obiettivo del gioco</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md5</Anchor>
+           </Node>
+           <Node>
+            <Name>Fasi del gioco</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md6</Anchor>
+           </Node>
+           <Node>
+            <Name>Mappa di gioco</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md7</Anchor>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Utilizzo</Name>
+          <Path>md__r_e_a_d_m_e.html</Path>
+          <Anchor>autotoc_md8</Anchor>
+        <Subnodes>
+           <Node>
+            <Name>Comandi Principali</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md9</Anchor>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Specifica algebrica</Name>
+          <Path>md__r_e_a_d_m_e.html</Path>
+          <Anchor>autotoc_md10</Anchor>
+        <Subnodes>
+           <Node>
+            <Name>Specifica sintattica</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md11</Anchor>
+           </Node>
+           <Node>
+            <Name>Specifica semantica</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md12</Anchor>
+           </Node>
+           <Node>
+            <Name>Specifica di restrizione</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md13</Anchor>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Contenuti rilevanti</Name>
+          <Path>md__r_e_a_d_m_e.html</Path>
+          <Anchor>autotoc_md14</Anchor>
+        <Subnodes>
+           <Node>
+            <Name>Utilizzo della Programmazione Orientata agli Oggetti (OOP)</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md15</Anchor>
+          <Subnodes>
+             <Node>
+              <Name>Principali Concetti OOP Utilizzati</Name>
+              <Path>md__r_e_a_d_m_e.html</Path>
+              <Anchor>autotoc_md16</Anchor>
+             </Node>
+             <Node>
+              <Name>Vantaggi dell&apos;OOP nel Progetto</Name>
+              <Path>md__r_e_a_d_m_e.html</Path>
+              <Anchor>autotoc_md17</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Utilizzo dei file</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md18</Anchor>
+           </Node>
+           <Node>
+            <Name>Utilizzo dei database</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md19</Anchor>
+          <Subnodes>
+             <Node>
+              <Name>Database delle Stanze e degli Oggetti</Name>
+              <Path>md__r_e_a_d_m_e.html</Path>
+              <Anchor>autotoc_md20</Anchor>
+             </Node>
+             <Node>
+              <Name>Database dei Giocatori</Name>
+              <Path>md__r_e_a_d_m_e.html</Path>
+              <Anchor>autotoc_md21</Anchor>
+             </Node>
+             <Node>
+              <Name>Motore di Database H2</Name>
+              <Path>md__r_e_a_d_m_e.html</Path>
+              <Anchor>autotoc_md22</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Utilizzo dei thread</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md23</Anchor>
+           </Node>
+           <Node>
+            <Name>Swing</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md24</Anchor>
+           </Node>
+           <Node>
+            <Name>RESTful</Name>
+            <Path>md__r_e_a_d_m_e.html</Path>
+            <Anchor>autotoc_md25</Anchor>
+          <Subnodes>
+             <Node>
+              <Name>RESTClient</Name>
+              <Path>md__r_e_a_d_m_e.html</Path>
+              <Anchor>autotoc_md26</Anchor>
+             </Node>
+             <Node>
+              <Name>RESTServer</Name>
+              <Path>md__r_e_a_d_m_e.html</Path>
+              <Anchor>autotoc_md27</Anchor>
+             </Node>
+             <Node>
+              <Name>LeaderboardService</Name>
+              <Path>md__r_e_a_d_m_e.html</Path>
+              <Anchor>autotoc_md28</Anchor>
+             </Node>
+             <Node>
+              <Name>Interazione tra i Componenti</Name>
+              <Path>md__r_e_a_d_m_e.html</Path>
+              <Anchor>autotoc_md29</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Doxygen</Name>
+          <Path>md__r_e_a_d_m_e.html</Path>
+          <Anchor>autotoc_md30</Anchor>
+         </Node>
+        </Subnodes>
+       </Node>
+       <Node>
         <Name>Classes</Name>
         <Path>annotated.html</Path>
       <Subnodes>
@@ -41,6 +211,12 @@
                         <Name>AePlayWave</Name>
                         <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html</Path>
                       <Subnodes>
+                         <Node>
+                          <Name>Position</Name>
+                          <Path>enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1_1_position.html</Path>
+                        <Subnodes>
+                          </Subnodes>
+                         </Node>
                         </Subnodes>
                        </Node>
                        <Node>
@@ -143,11 +319,6 @@
                         <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html</Path>
                       <Subnodes>
                          <Node>
-                          <Name>openObject</Name>
-                          <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html</Path>
-                          <Anchor>a60a902699e64320759b6871ed86f6ade</Anchor>
-                         </Node>
-                         <Node>
                           <Name>update</Name>
                           <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html</Path>
                           <Anchor>af5f5d96d94324ba5e0e9070ede8e789a</Anchor>
@@ -220,11 +391,6 @@
                           <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html</Path>
                           <Anchor>ac3e97a89860c377b76277749109befa4</Anchor>
                          </Node>
-                         <Node>
-                          <Name>verify</Name>
-                          <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_push_observer.html</Path>
-                          <Anchor>ada881c7baabc1190437c7af00a6a3421</Anchor>
-                         </Node>
                         </Subnodes>
                        </Node>
                        <Node>
@@ -263,21 +429,6 @@
                         <Name>SaveGame</Name>
                         <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html</Path>
                       <Subnodes>
-                         <Node>
-                          <Name>gameExists</Name>
-                          <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html</Path>
-                          <Anchor>a6615a57fbc0112ac161b5557852354c6</Anchor>
-                         </Node>
-                         <Node>
-                          <Name>load</Name>
-                          <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html</Path>
-                          <Anchor>a5e7b7efbc8049d4a9ea4c22a188265cd</Anchor>
-                         </Node>
-                         <Node>
-                          <Name>save</Name>
-                          <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html</Path>
-                          <Anchor>a9a143f46c1029a94f48a4d6a3bacbd32</Anchor>
-                         </Node>
                         </Subnodes>
                        </Node>
                        <Node>
@@ -382,11 +533,6 @@
                           <Name>Parser</Name>
                           <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html</Path>
                           <Anchor>a0e24595f9263ddcd796c3d46176fb01b</Anchor>
-                         </Node>
-                         <Node>
-                          <Name>checkForCommand</Name>
-                          <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html</Path>
-                          <Anchor>adadde018ee4a00c9bbf9894a83a172d9</Anchor>
                          </Node>
                          <Node>
                           <Name>parse</Name>
@@ -794,11 +940,6 @@
                         <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html</Path>
                         <Anchor>a16eb715b8df13421f41cf1995106b4cc</Anchor>
                        </Node>
-                       <Node>
-                        <Name>main</Name>
-                        <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_engine.html</Path>
-                        <Anchor>a0e23d03537aa3d882ae3e62418a209f9</Anchor>
-                       </Node>
                       </Subnodes>
                      </Node>
                      <Node>
@@ -913,27 +1054,12 @@
                       <Name>GameUtils</Name>
                       <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html</Path>
                     <Subnodes>
-                       <Node>
-                        <Name>getObjectFromInventory</Name>
-                        <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_game_utils.html</Path>
-                        <Anchor>abc449f8cf790ce32ce610be40a80e0fd</Anchor>
-                       </Node>
                       </Subnodes>
                      </Node>
                      <Node>
                       <Name>Utils</Name>
                       <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html</Path>
                     <Subnodes>
-                       <Node>
-                        <Name>loadFileListInSet</Name>
-                        <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html</Path>
-                        <Anchor>ac62e8ebb99f39d3af6c6cf06f534ed5f</Anchor>
-                       </Node>
-                       <Node>
-                        <Name>parseString</Name>
-                        <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html</Path>
-                        <Anchor>a7e85679dc02c8c772afe2604c5a98c20</Anchor>
-                       </Node>
                       </Subnodes>
                      </Node>
                     </Subnodes>
@@ -965,10 +1091,6 @@
               <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_adv_object_container.html</Path>
              </Node>
             </Subnodes>
-           </Node>
-           <Node>
-            <Name>di.uniba.map.b.adventure.impl.AePlayWave</Name>
-            <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html</Path>
            </Node>
            <Node>
             <Name>di.uniba.map.b.adventure.type.Command</Name>
@@ -1057,6 +1179,16 @@
             <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1type_1_1_inventory.html</Path>
            </Node>
            <Node>
+            <Name>JFrame</Name>
+            <Path></Path>
+          <Subnodes>
+             <Node>
+              <Name>di.uniba.map.b.adventure.impl.Window</Name>
+              <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html</Path>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
             <Name>di.uniba.map.b.adventure.parser.Parser</Name>
             <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html</Path>
            </Node>
@@ -1067,6 +1199,10 @@
            <Node>
             <Name>di.uniba.map.b.adventure.impl.PlayerData</Name>
             <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_player_data.html</Path>
+           </Node>
+           <Node>
+            <Name>di.uniba.map.b.adventure.impl.AePlayWave.Position</Name>
+            <Path>enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1_1_position.html</Path>
            </Node>
            <Node>
             <Name>di.uniba.map.b.adventure.impl.RESTClient</Name>
@@ -1081,12 +1217,18 @@
             <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_save_game.html</Path>
            </Node>
            <Node>
-            <Name>di.uniba.map.b.adventure.Utils</Name>
-            <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html</Path>
+            <Name>Thread</Name>
+            <Path></Path>
+          <Subnodes>
+             <Node>
+              <Name>di.uniba.map.b.adventure.impl.AePlayWave</Name>
+              <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave.html</Path>
+             </Node>
+            </Subnodes>
            </Node>
            <Node>
-            <Name>di.uniba.map.b.adventure.impl.Window</Name>
-            <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html</Path>
+            <Name>di.uniba.map.b.adventure.Utils</Name>
+            <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1_utils.html</Path>
            </Node>
           </Subnodes>
          </Node>
@@ -1101,210 +1243,6 @@
            <Node>
             <Name>Functions</Name>
             <Path>functions_func.html</Path>
-           </Node>
-          </Subnodes>
-         </Node>
-        </Subnodes>
-       </Node>
-       <Node>
-        <Name>Files</Name>
-        <Path>files.html</Path>
-      <Subnodes>
-         <Node>
-          <Name>File List</Name>
-          <Path>files.html</Path>
-        <Subnodes>
-           <Node>
-            <Name>adventure</Name>
-            <Path>dir_de3212e4b297ef0279f9067d9062d987.html</Path>
-          <Subnodes>
-             <Node>
-              <Name>src</Name>
-              <Path>dir_8d538571e6144d01ec27c9a0f55aecb9.html</Path>
-            <Subnodes>
-               <Node>
-                <Name>main</Name>
-                <Path>dir_4daf57147b74d32dfcd0f1c8ce44e4a3.html</Path>
-              <Subnodes>
-                 <Node>
-                  <Name>java</Name>
-                  <Path>dir_ede4cd8b2e213a70518a547c208f6f37.html</Path>
-                <Subnodes>
-                   <Node>
-                    <Name>di</Name>
-                    <Path>dir_d1c28538a5b70138318b5de9cb2d20ee.html</Path>
-                  <Subnodes>
-                     <Node>
-                      <Name>uniba</Name>
-                      <Path>dir_a56be5738e3c0ada1c0ab50610cb6f05.html</Path>
-                    <Subnodes>
-                       <Node>
-                        <Name>map</Name>
-                        <Path>dir_a950c4bbd0d6200042c2cc65e8766a5f.html</Path>
-                      <Subnodes>
-                         <Node>
-                          <Name>b</Name>
-                          <Path>dir_2c6de2d4684bae29e172351164871999.html</Path>
-                        <Subnodes>
-                           <Node>
-                            <Name>adventure</Name>
-                            <Path>dir_36d6029a23660d2baf672c648090ee14.html</Path>
-                          <Subnodes>
-                             <Node>
-                              <Name>impl</Name>
-                              <Path>dir_e5b91f08b6a4e3e680ea2723cb7a0c79.html</Path>
-                            <Subnodes>
-                               <Node>
-                                <Name>AePlayWave.java</Name>
-                                <Path>_ae_play_wave_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>Database.java</Name>
-                                <Path>_database_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>InventoryObserver.java</Name>
-                                <Path>_inventory_observer_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>KillObserver.java</Name>
-                                <Path>_kill_observer_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>LookAtObserver.java</Name>
-                                <Path>_look_at_observer_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>MoveObserver.java</Name>
-                                <Path>_move_observer_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>OpenObserver.java</Name>
-                                <Path>_open_observer_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>PickUpObserver.java</Name>
-                                <Path>_pick_up_observer_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>PlayerData.java</Name>
-                                <Path>_player_data_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>PushObserver.java</Name>
-                                <Path>_push_observer_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>ReadObserver.java</Name>
-                                <Path>_read_observer_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>RESTClient.java</Name>
-                                <Path>_r_e_s_t_client_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>SaveGame.java</Name>
-                                <Path>_save_game_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>SpaceEscape.java</Name>
-                                <Path>_space_escape_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>UseObserver.java</Name>
-                                <Path>_use_observer_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>Window.java</Name>
-                                <Path>_window_8java_source.html</Path>
-                               </Node>
-                              </Subnodes>
-                             </Node>
-                             <Node>
-                              <Name>parser</Name>
-                              <Path>dir_09c200f4e10cfb1bf516e23bd4648736.html</Path>
-                            <Subnodes>
-                               <Node>
-                                <Name>Parser.java</Name>
-                                <Path>_parser_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>ParserOutput.java</Name>
-                                <Path>_parser_output_8java_source.html</Path>
-                               </Node>
-                              </Subnodes>
-                             </Node>
-                             <Node>
-                              <Name>type</Name>
-                              <Path>dir_9cef88f3061897f698776950a565cbef.html</Path>
-                            <Subnodes>
-                               <Node>
-                                <Name>AdvObject.java</Name>
-                                <Path>_adv_object_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>AdvObjectContainer.java</Name>
-                                <Path>_adv_object_container_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>Command.java</Name>
-                                <Path>_command_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>CommandType.java</Name>
-                                <Path>_command_type_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>Inventory.java</Name>
-                                <Path>_inventory_8java_source.html</Path>
-                               </Node>
-                               <Node>
-                                <Name>Room.java</Name>
-                                <Path>_room_8java_source.html</Path>
-                               </Node>
-                              </Subnodes>
-                             </Node>
-                             <Node>
-                              <Name>Engine.java</Name>
-                              <Path>_engine_8java_source.html</Path>
-                             </Node>
-                             <Node>
-                              <Name>GameDescription.java</Name>
-                              <Path>_game_description_8java_source.html</Path>
-                             </Node>
-                             <Node>
-                              <Name>GameObservable.java</Name>
-                              <Path>_game_observable_8java_source.html</Path>
-                             </Node>
-                             <Node>
-                              <Name>GameObserver.java</Name>
-                              <Path>_game_observer_8java_source.html</Path>
-                             </Node>
-                             <Node>
-                              <Name>GameUtils.java</Name>
-                              <Path>_game_utils_8java_source.html</Path>
-                             </Node>
-                             <Node>
-                              <Name>Utils.java</Name>
-                              <Path>_utils_8java_source.html</Path>
-                             </Node>
-                            </Subnodes>
-                           </Node>
-                          </Subnodes>
-                         </Node>
-                        </Subnodes>
-                       </Node>
-                      </Subnodes>
-                     </Node>
-                    </Subnodes>
-                   </Node>
-                  </Subnodes>
-                 </Node>
-                </Subnodes>
-               </Node>
-              </Subnodes>
-             </Node>
-            </Subnodes>
            </Node>
           </Subnodes>
          </Node>

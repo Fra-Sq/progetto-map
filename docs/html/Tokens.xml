@@ -191,6 +191,15 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>di::uniba::map::b::adventure::impl::AePlayWave::Position</Name>
+      <APILanguage>java</APILanguage>
+      <Type>cl</Type>
+      <Scope>di.uniba.map.b.adventure.impl.AePlayWave.Position</Scope>
+    </TokenIdentifier>
+    <Path>enumdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_ae_play_wave_1_1_position.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>di::uniba::map::b::adventure::impl::PushObserver</Name>
       <APILanguage>java</APILanguage>
       <Type>cl</Type>
@@ -269,6 +278,13 @@
       <Scope>di.uniba.map.b.adventure.impl.Window</Scope>
     </TokenIdentifier>
     <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_window.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>md__r_e_a_d_m_e</Name>
+      <APILanguage>markdown</APILanguage>
+    </TokenIdentifier>
+    <Path>md__r_e_a_d_m_e.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -434,17 +450,6 @@
     <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html</Path>
     <Anchor>a5f50efac1fea5096ba76665f01d728a6</Anchor>
     <DeclaredIn>SpaceEscape.java</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>checkForCommand</Name>
-      <APILanguage>java</APILanguage>
-      <Type>instm</Type>
-      <Scope>di.uniba.map.b.adventure.parser.Parser</Scope>
-    </TokenIdentifier>
-    <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1parser_1_1_parser.html</Path>
-    <Anchor>adadde018ee4a00c9bbf9894a83a172d9</Anchor>
-    <DeclaredIn>Parser.java</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -1138,17 +1143,6 @@
     <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_space_escape.html</Path>
     <Anchor>aff4f17f6db842fdbb46c01198abeb670</Anchor>
     <DeclaredIn>SpaceEscape.java</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>openObject</Name>
-      <APILanguage>java</APILanguage>
-      <Type>instm</Type>
-      <Scope>di.uniba.map.b.adventure.impl.OpenObserver</Scope>
-    </TokenIdentifier>
-    <Path>classdi_1_1uniba_1_1map_1_1b_1_1adventure_1_1impl_1_1_open_observer.html</Path>
-    <Anchor>a60a902699e64320759b6871ed86f6ade</Anchor>
-    <DeclaredIn>OpenObserver.java</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
