@@ -21,7 +21,7 @@ Autori: Scarale Francescopio, Russo Nicola, Squarcella-Gorgoglione Francesco.
    - [Swing](#swing)
    - [RESTful](#restful)
    - [Lambda expressions](#lambda-expressions)
-   - [Linguaggio OOP](#linguaggio-oop)
+   - [OOP](#oop)
 6. [Doxygen](#doxygen)
    
 ## Introduzione
@@ -120,10 +120,31 @@ Quando si carica un salvataggio, il metodo load ripristina lo stato della porta 
 In sintesi, il sistema di salvataggio e caricamento utilizza file di testo per memorizzare e ripristinare lo stato del gioco, garantendo che tutte le informazioni cruciali, come lo stato della stanza, l'inventario e lo stato degli oggetti, vengano conservate correttamente tra le sessioni di gioco. Questo approccio permette una gestione semplice ed efficace dello stato del gioco, migliorando l'esperienza del giocatore.
 
 ### Utilizzo dei database
-Abbiamo deciso di utilizzare due database nel nostro programma: uno per il salvataggio delle informazioni delle stanze e degli oggetti (id, nome, descrizione, descrizione dettagliata e tipo) e uno per salvare le informazioni relative ai giocatori che riescono a concludere il gioco (id, nome, data in cui finisce il gioco e tempo di gioco).<br>
-Nel primo caso la gestione del database è effettuata tramite la classe `Database` inserita nel package `di.uniba.map.b.adventure.impl` del progetto `adventure`. In questa classe effettuiamo la connessione al database nel costruttore e abbiamo dei metodi che ci permettono di modificare o cercare nome, descrizione o descrizione dettagliata (look) all'interno del database inserendo in input l'id (`getNameById`, `getDescriptionById`, `getRoomLookById` e `updateNameById`, `updateDescriptionById`, `updateRoomLookById`) e un metodo per l'inserimento dei dati, che ci fa inserire questi ultimi da riga di comando(`insertNewData`). Il database è stato riempito tramite con il metodo `insertNewData` precedentemente.<br>
-Nel secondo caso invece il database viene gestito con la classe `Database` inserita nel package `com.mycompany.restserver` all'interno del progetto `Restserver`. Anche in questo caso la connessione viene effettuata all'interno del costruttore, poi abbiamo dei metodi per l'inserimento dei dati (`insertInLeaderboard`), la restituzione delle info di un giocatore ricevendo in input l'id (`getFromLeaderboard`) e la restituzione dei migliori giocatori ricevendo in input il numero di giocatori che si vuole avere (`getTopPlayers`).<br>
-In entrambi i casi abbiamo utilizzato Database `Engine H2` poiché possono essere utilizzati in modo embedded senza necessità di installare un server.
+Abbiamo deciso di utilizzare due database nel nostro programma: uno per il salvataggio delle informazioni delle stanze e degli oggetti, e uno per salvare le informazioni relative ai giocatori che riescono a concludere il gioco.
+
+### Database delle Stanze e degli Oggetti
+La gestione del database per le stanze e gli oggetti è effettuata tramite la classe `Database` inserita nel package `di.uniba.map.b.adventure.impl` del progetto `adventure`. 
+
+- **Connessione al Database:** La connessione al database avviene all'interno del costruttore della classe utilizzando JDBC e il motore di database H2.
+- **Metodi di Accesso e Modifica:**
+  - `getNameById(String id)`: Restituisce il nome associato a un dato ID.
+  - `getDescriptionById(String id)`: Restituisce la descrizione associata a un dato ID.
+  - `getRoomLookById(String id)`: Restituisce la descrizione dettagliata (look) associata a un dato ID.
+  - `updateNameById(String id, String newName)`: Aggiorna il nome associato a un dato ID.
+  - `updateDescriptionById(String id, String newDescription)`: Aggiorna la descrizione associata a un dato ID.
+  - `updateRoomLookById(String id, String newRoomLook)`: Aggiorna la descrizione dettagliata (look) associata a un dato ID.
+  - `insertNewData()`: Inserisce nuovi dati nel database chiedendo all'utente di fornire input tramite riga di comando.
+
+### Database dei Giocatori
+La gestione del database per i giocatori che concludono il gioco è effettuata con la classe `Database` inserita nel package `com.mycompany.restserver` all'interno del progetto `Restserver`.
+- **Connessione al Database:** Anche in questo caso, la connessione viene effettuata all'interno del costruttore utilizzando JDBC e il motore di database H2.
+- **Metodi di Accesso e Modifica:**
+  - `insertInLeaderboard(String name, String date, String time)`: Inserisce le informazioni di un giocatore nella classifica.
+  - `getFromLeaderboard(String id)`: Restituisce le informazioni di un giocatore ricevendo in input l'ID.
+  - `getTopPlayers(int maxPlayers)`: Restituisce i migliori giocatori in base al numero di giocatori specificato.
+
+### Motore di Database H2
+In entrambi i casi abbiamo utilizzato il gestore di basi di dati relazionale H2 poiché può essere utilizzato in modo embedded senza necessità di installare un server, facilitando così la gestione e l'implementazione.
 
 ### Utilizzo dei thread
 La classe `AePlayWave` è progettata per riprodurre file audio WAV in un thread separato, permettendo così operazioni asincrone come la riproduzione, l'interruzione e la gestione del pan audio (sinistra, destra, normale). Questa classe fa parte del package `di.uniba.map.b.adventure.impl` e gestisce la riproduzione del suono utilizzando la libreria javax.sound.sampled.<br>
