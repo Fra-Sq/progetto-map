@@ -286,5 +286,5 @@ Questa architettura separa chiaramente le responsabilità tra client, server e l
 
 <br><br>
 ## Doxygen
-Per visualizzare la documentazione doxygen aprire il collegamento `index` inserito nella cartella `progetto-map`.
+Per visualizzare la documentazione UML aprire il collegamento `index` inserito nella cartella `progetto-map`.
 
