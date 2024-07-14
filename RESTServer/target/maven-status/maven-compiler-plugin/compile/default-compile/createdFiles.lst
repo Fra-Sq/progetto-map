@@ -1,0 +1,4 @@
+com\mycompany\restserver\RESTServer.class
+com\mycompany\restserver\service\LeaderboardService.class
+com\mycompany\restserver\PlayerData.class
+com\mycompany\restserver\Database.class
